@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Parasite",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "platforms": [],
+    "groupScore": 0.52
+  },
+  {
+    "title": "John Wick",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "platforms": [],
+    "groupScore": 0.4133333333333333
+  },
+  {
+    "title": "Mirzapur",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "platforms": [],
+    "groupScore": 0.4133333333333333
+  },
+  {
+    "title": "Extraction",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "platforms": [],
+    "groupScore": 0.37333333333333335
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "platforms": [],
+    "groupScore": 0.32
+  }
+]

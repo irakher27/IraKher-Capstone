@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Movie Night Agent — Process Walkthrough</title>
+<style>
+  :root {
+    --bg: #14141a;
+    --panel: #1f1f28;
+    --border: #2c2c38;
+    --text: #f0f0f2;
+    --muted: #9a9aa5;
+    --accent: #6c5ce7;
+    --accent2: #a29bfe;
+    --good: #34c77b;
+    --bad: #e6604a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 32px 20px 60px;
+  }
+  h1 { text-align: center; font-size: 1.8rem; margin-bottom: 4px; }
+  .subtitle { text-align: center; color: var(--muted); margin-bottom: 28px; }
+
+  .stepper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 900px;
+    margin: 0 auto 32px;
+  }
+  .step-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  .step-btn.active {
+    color: var(--text);
+    border-color: var(--accent);
+    background: linear-gradient(90deg, rgba(108,92,231,0.25), rgba(162,155,254,0.15));
+  }
+  .step-icon { font-size: 1rem; }
+
+  .panel {
+    max-width: 780px;
+    margin: 0 auto;
+    display: none;
+  }
+  .panel.active { display: block; }
+  .panel h2 { font-size: 1.3rem; margin-bottom: 4px; }
+  .panel .desc { color: var(--muted); margin-bottom: 20px; font-size: 0.95rem; }
+
+  .grid { display: grid; gap: 14px; }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    position: relative;
+  }
+  .persona-card h3 { margin: 0 0 10px; font-size: 1.05rem; }
+  .field { margin-bottom: 8px; font-size: 0.88rem; }
+  .label { display: block; color: var(--muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px; }
+  .muted { color: var(--muted); font-size: 0.85rem; }
+
+  .chip {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    margin: 0 4px 4px 0;
+  }
+  .chip.like { background: rgba(52,199,123,0.15); color: var(--good); }
+  .chip.dislike { background: rgba(230,96,74,0.15); color: var(--bad); }
+  .chip.platform { background: rgba(162,155,254,0.15); color: var(--accent2); }
+  .chip.neutral { background: var(--border); color: var(--text); }
+
+  .candidate-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .candidate-title { font-weight: 600; }
+  .candidate-genres { display: flex; flex-wrap: wrap; gap: 4px; }
+
+  .attempt-summary {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+  }
+  .movie-list { display: grid; gap: 8px; margin-bottom: 20px; }
+  .movie-row {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    background: var(--panel);
+  }
+  .movie-row.survived { border-left-color: var(--good); }
+  .movie-row.excluded { border-left-color: var(--bad); opacity: 0.85; }
+  .movie-row-head { display: flex; align-items: center; gap: 10px; }
+  .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border); }
+  .movie-row.survived .status-dot { background: var(--good); }
+  .movie-row.excluded .status-dot { background: var(--bad); }
+  .verdict { margin-left: auto; font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }
+  .veto-list { margin: 8px 0 0; padding-left: 22px; font-size: 0.82rem; color: var(--muted); }
+  .veto-list li { margin-bottom: 3px; }
+
+  .scored-block { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .scored-block.empty { color: var(--muted); font-size: 0.9rem; text-align: center; }
+  .scored-title { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 10px; }
+  .score-row-full { display: flex; align-items: center; gap: 12px; padding: 6px 0; }
+  .rank-badge { color: var(--accent2); font-weight: 700; width: 28px; }
+  .score-pct { margin-left: auto; color: var(--muted); }
+
+  .reasoning-box {
+    background: linear-gradient(135deg, rgba(108,92,231,0.15), rgba(162,155,254,0.06));
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .rank {
+    position: absolute; top: 14px; right: 18px;
+    color: #5b5b68; font-weight: 700; font-size: 0.9rem;
+  }
+  .final-card h2 { margin: 0 0 6px; font-size: 1.2rem; }
+  .genres { color: var(--muted); font-size: 0.9rem; margin-bottom: 12px; }
+  .score-bar { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+  .score-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2)); border-radius: 4px; }
+  .score-row { display: flex; align-items: center; gap: 10px; }
+  .score-label { font-size: 0.85rem; color: #c7c7d1; width: 40px; text-align: right; }
+
+  .nav-arrows { display: flex; justify-content: space-between; max-width: 780px; margin: 24px auto 0; }
+  .nav-arrows button {
+    background: var(--panel); border: 1px solid var(--border); color: var(--text);
+    padding: 8px 16px; border-radius: 8px; cursor: pointer; font-size: 0.85rem;
+  }
+  .nav-arrows button:disabled { opacity: 0.35; cursor: default; }
+</style>
+</head>
+<body>
+  <h1>Movie Night Agent — Process Walkthrough</h1>
+  <div class="subtitle">Perceive → Act → Observe → Reason → Act again → Output</div>
+
+  <div class="stepper">
+    <button class="step-btn" data-step="personas" data-index="0">
+        <span class="step-icon">👥</span><span>1 · Personas</span>
+      </button>
+<button class="step-btn" data-step="fetch" data-index="1">
+        <span class="step-icon">🎬</span><span>2 · Fetch candidates</span>
+      </button>
+<button class="step-btn" data-step="attempt1" data-index="2">
+        <span class="step-icon">🧮</span><span>3 · Score (attempt 1)</span>
+      </button>
+<button class="step-btn" data-step="reasoning" data-index="3">
+        <span class="step-icon">🤔</span><span>4 · Reasoning</span>
+      </button>
+<button class="step-btn" data-step="attempt2" data-index="4">
+        <span class="step-icon">🔁</span><span>5 · Score (attempt 2)</span>
+      </button>
+<button class="step-btn" data-step="final" data-index="5">
+        <span class="step-icon">🏆</span><span>6 · Final results</span>
+      </button>
+  </div>
+
+  <section class="panel" id="panel-personas">
+    <h2>Step 1 · Perceive: load personas</h2>
+    <div class="desc">5 persona profiles loaded via the filesystem MCP server.</div>
+    <div class="grid">
+    <div class="card persona-card">
+      <h3>Ira</h3>
+      <div class="field"><span class="label">Likes genres</span><span class="chip like">Thriller</span><span class="chip like">Sci-Fi</span><span class="chip like">Action</span></div>
+      <div class="field"><span class="label">Likes titles</span><span class="chip like">Inception</span><span class="chip like">Mirzapur</span></div>
+      <div class="field"><span class="label">Dislikes genres</span><span class="chip dislike">Horror</span></div>
+      <div class="field"><span class="label">Platforms</span><span class="chip platform">Netflix</span><span class="chip platform">Prime Video</span></div>
+    </div>
+
+    <div class="card persona-card">
+      <h3>Richa</h3>
+      <div class="field"><span class="label">Likes genres</span><span class="chip like">Romance</span><span class="chip like">Drama</span><span class="chip like">Comedy</span></div>
+      <div class="field"><span class="label">Likes titles</span><span class="chip like">The Notebook</span><span class="chip like">Zindagi Na Milegi Dobara</span></div>
+      <div class="field"><span class="label">Dislikes genres</span><span class="chip dislike">Sci-Fi</span></div>
+      <div class="field"><span class="label">Platforms</span><span class="chip platform">Netflix</span><span class="chip platform">Disney+ Hotstar</span></div>
+    </div>
+
+    <div class="card persona-card">
+      <h3>Avani</h3>
+      <div class="field"><span class="label">Likes genres</span><span class="chip like">Drama</span><span class="chip like">Thriller</span><span class="chip like">Comedy</span><span class="chip like">Action</span></div>
+      <div class="field"><span class="label">Likes titles</span><span class="chip like">Gangs of Wasseypur</span></div>
+      <div class="field"><span class="label">Dislikes genres</span><span class="chip dislike">Horror</span></div>
+      <div class="field"><span class="label">Platforms</span><span class="chip platform">Prime Video</span></div>
+    </div>
+
+    <div class="card persona-card">
+      <h3>Neela</h3>
+      <div class="field"><span class="label">Likes genres</span><span class="chip like">Korean Drama</span><span class="chip like">Thriller</span><span class="chip like">Mystery</span></div>
+      <div class="field"><span class="label">Likes titles</span><span class="chip like">Parasite</span><span class="chip like">Squid Game</span></div>
+      <div class="field"><span class="label">Dislikes genres</span><span class="chip dislike">Romance</span></div>
+      <div class="field"><span class="label">Platforms</span><span class="chip platform">Netflix</span></div>
+    </div>
+
+    <div class="card persona-card">
+      <h3>Arunima</h3>
+      <div class="field"><span class="label">Likes genres</span><span class="chip like">Action</span><span class="chip like">Thriller</span></div>
+      <div class="field"><span class="label">Likes titles</span><span class="chip like">John Wick</span></div>
+      <div class="field"><span class="label">Dislikes genres</span><span class="muted">none</span></div>
+      <div class="field"><span class="label">Platforms</span><span class="chip platform">Netflix</span><span class="chip platform">Prime Video</span><span class="chip platform">Disney+ Hotstar</span></div>
+    </div></div>
+  </section>
+
+  <section class="panel" id="panel-fetch">
+    <h2>Step 2 · Act: fetch candidate movies</h2>
+    <div class="desc">20 of 20 seed titles found on OMDb. Platforms come back empty — OMDb has no streaming data; that's filled in later.</div>
+    <div>
+    <div class="candidate-row">
+      <span class="candidate-title">Inception</span>
+      <span class="candidate-genres"><span class="chip neutral">Action</span><span class="chip neutral">Adventure</span><span class="chip neutral">Sci-Fi</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">Interstellar</span>
+      <span class="candidate-genres"><span class="chip neutral">Adventure</span><span class="chip neutral">Drama</span><span class="chip neutral">Sci-Fi</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">The Dark Knight</span>
+      <span class="candidate-genres"><span class="chip neutral">Action</span><span class="chip neutral">Crime</span><span class="chip neutral">Drama</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">John Wick</span>
+      <span class="candidate-genres"><span class="chip neutral">Action</span><span class="chip neutral">Crime</span><span class="chip neutral">Thriller</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">Parasite</span>
+      <span class="candidate-genres"><span class="chip neutral">Drama</span><span class="chip neutral">Thriller</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">Squid Game</span>
+      <span class="candidate-genres"><span class="chip neutral">Action</span><span class="chip neutral">Crime</span><span class="chip neutral">Drama</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">The Notebook</span>
+      <span class="candidate-genres"><span class="chip neutral">Drama</span><span class="chip neutral">Romance</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">Zindagi Na Milegi Dobara</span>
+      <span class="candidate-genres"><span class="chip neutral">Comedy</span><span class="chip neutral">Drama</span><span class="chip neutral">Musical</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">Gangs of Wasseypur</span>
+      <span class="candidate-genres"><span class="chip neutral">Action</span><span class="chip neutral">Comedy</span><span class="chip neutral">Crime</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">Mirzapur</span>
+      <span class="candidate-genres"><span class="chip neutral">Action</span><span class="chip neutral">Crime</span><span class="chip neutral">Thriller</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">Knives Out</span>
+      <span class="candidate-genres"><span class="chip neutral">Comedy</span><span class="chip neutral">Crime</span><span class="chip neutral">Drama</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">The Grand Budapest Hotel</span>
+      <span class="candidate-genres"><span class="chip neutral">Comedy</span><span class="chip neutral">Drama</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">3 Idiots</span>
+      <span class="candidate-genres"><span class="chip neutral">Comedy</span><span class="chip neutral">Drama</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">Andhadhun</span>
+      <span class="candidate-genres"><span class="chip neutral">Crime</span><span class="chip neutral">Mystery</span><span class="chip neutral">Thriller</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">Extraction</span>
+      <span class="candidate-genres"><span class="chip neutral">Action</span><span class="chip neutral">Crime</span><span class="chip neutral">Thriller</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">The Conjuring</span>
+      <span class="candidate-genres"><span class="chip neutral">Horror</span><span class="chip neutral">Mystery</span><span class="chip neutral">Thriller</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">La La Land</span>
+      <span class="candidate-genres"><span class="chip neutral">Comedy</span><span class="chip neutral">Drama</span><span class="chip neutral">Music</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">Whiplash</span>
+      <span class="candidate-genres"><span class="chip neutral">Drama</span><span class="chip neutral">Music</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">Train to Busan</span>
+      <span class="candidate-genres"><span class="chip neutral">Action</span><span class="chip neutral">Horror</span><span class="chip neutral">Thriller</span></span>
+    </div>
+
+    <div class="candidate-row">
+      <span class="candidate-title">Decision to Leave</span>
+      <span class="candidate-genres"><span class="chip neutral">Crime</span><span class="chip neutral">Drama</span><span class="chip neutral">Mystery</span></span>
+    </div></div>
+  </section>
+
+  <section class="panel" id="panel-attempt1">
+    <h2>Step 3 · Observe: score with full checks</h2>
+    <div class="desc">Every persona's disliked genres/titles AND platform overlap are enforced. Hover the reasoning to see why each candidate was excluded.</div>
+    
+    <div class="attempt-summary">
+      <strong>Attempt 1</strong> — platform check <em>enforced</em>: 0 of 20 candidates survived exclusion,
+      0 made the final ranked list.
+    </div>
+    <div class="movie-list">
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Inception</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> dislikes genre "Sci-Fi", not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Interstellar</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> dislikes genre "Sci-Fi", not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">The Dark Knight</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">John Wick</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Parasite</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Squid Game</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">The Notebook</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> dislikes genre "Romance", not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Zindagi Na Milegi Dobara</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Gangs of Wasseypur</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Mirzapur</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Knives Out</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">The Grand Budapest Hotel</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">3 Idiots</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Andhadhun</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Extraction</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">The Conjuring</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> dislikes genre "Horror", not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> dislikes genre "Horror", not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">La La Land</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Whiplash</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Train to Busan</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> dislikes genre "Horror", not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> dislikes genre "Horror", not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Decision to Leave</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> not available on any platform this persona has</li><li><strong>Richa:</strong> not available on any platform this persona has</li><li><strong>Avani:</strong> not available on any platform this persona has</li><li><strong>Neela:</strong> not available on any platform this persona has</li><li><strong>Arunima:</strong> not available on any platform this persona has</li></ul>
+      </div></div>
+    <div class="scored-block empty">No results survived to rank.</div>
+  
+  </section>
+
+  <section class="panel" id="panel-reasoning">
+    <h2>Step 4 · Reason</h2>
+    <div class="reasoning-box">Fewer than 5 results survived attempt 1. Platform data isn't filled in yet (that happens later, via web-search MCP), so retrying without the platform check.</div>
+  </section>
+
+  <section class="panel" id="panel-attempt2">
+    <h2>Step 5 · Act again: score with platform check skipped</h2>
+    <div class="desc">Same exclusion rules, minus the platform-overlap veto.</div>
+    
+    <div class="attempt-summary">
+      <strong>Attempt 2</strong> — platform check <em>skipped</em>: 15 of 20 candidates survived exclusion,
+      5 made the final ranked list.
+    </div>
+    <div class="movie-list">
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Inception</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Richa:</strong> dislikes genre "Sci-Fi"</li></ul>
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Interstellar</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Richa:</strong> dislikes genre "Sci-Fi"</li></ul>
+      </div>
+
+      <div class="movie-row survived">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">The Dark Knight</span>
+          <span class="verdict">survives</span>
+        </div>
+        
+      </div>
+
+      <div class="movie-row survived">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">John Wick</span>
+          <span class="verdict">survives</span>
+        </div>
+        
+      </div>
+
+      <div class="movie-row survived">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Parasite</span>
+          <span class="verdict">survives</span>
+        </div>
+        
+      </div>
+
+      <div class="movie-row survived">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Squid Game</span>
+          <span class="verdict">survives</span>
+        </div>
+        
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">The Notebook</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Neela:</strong> dislikes genre "Romance"</li></ul>
+      </div>
+
+      <div class="movie-row survived">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Zindagi Na Milegi Dobara</span>
+          <span class="verdict">survives</span>
+        </div>
+        
+      </div>
+
+      <div class="movie-row survived">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Gangs of Wasseypur</span>
+          <span class="verdict">survives</span>
+        </div>
+        
+      </div>
+
+      <div class="movie-row survived">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Mirzapur</span>
+          <span class="verdict">survives</span>
+        </div>
+        
+      </div>
+
+      <div class="movie-row survived">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Knives Out</span>
+          <span class="verdict">survives</span>
+        </div>
+        
+      </div>
+
+      <div class="movie-row survived">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">The Grand Budapest Hotel</span>
+          <span class="verdict">survives</span>
+        </div>
+        
+      </div>
+
+      <div class="movie-row survived">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">3 Idiots</span>
+          <span class="verdict">survives</span>
+        </div>
+        
+      </div>
+
+      <div class="movie-row survived">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Andhadhun</span>
+          <span class="verdict">survives</span>
+        </div>
+        
+      </div>
+
+      <div class="movie-row survived">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Extraction</span>
+          <span class="verdict">survives</span>
+        </div>
+        
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">The Conjuring</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> dislikes genre "Horror"</li><li><strong>Avani:</strong> dislikes genre "Horror"</li></ul>
+      </div>
+
+      <div class="movie-row survived">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">La La Land</span>
+          <span class="verdict">survives</span>
+        </div>
+        
+      </div>
+
+      <div class="movie-row survived">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Whiplash</span>
+          <span class="verdict">survives</span>
+        </div>
+        
+      </div>
+
+      <div class="movie-row excluded">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Train to Busan</span>
+          <span class="verdict">excluded</span>
+        </div>
+        <ul class="veto-list"><li><strong>Ira:</strong> dislikes genre "Horror"</li><li><strong>Avani:</strong> dislikes genre "Horror"</li></ul>
+      </div>
+
+      <div class="movie-row survived">
+        <div class="movie-row-head">
+          <span class="status-dot"></span>
+          <span class="candidate-title">Decision to Leave</span>
+          <span class="verdict">survives</span>
+        </div>
+        
+      </div></div>
+    <div class="scored-block"><div class="scored-title">Ranked output of this attempt</div>
+      <div class="score-row-full">
+        <span class="rank-badge">#1</span>
+        <span class="candidate-title">Parasite</span>
+        <span class="score-pct">52%</span>
+      </div>
+
+      <div class="score-row-full">
+        <span class="rank-badge">#2</span>
+        <span class="candidate-title">John Wick</span>
+        <span class="score-pct">41%</span>
+      </div>
+
+      <div class="score-row-full">
+        <span class="rank-badge">#3</span>
+        <span class="candidate-title">Mirzapur</span>
+        <span class="score-pct">41%</span>
+      </div>
+
+      <div class="score-row-full">
+        <span class="rank-badge">#4</span>
+        <span class="candidate-title">Extraction</span>
+        <span class="score-pct">37%</span>
+      </div>
+
+      <div class="score-row-full">
+        <span class="rank-badge">#5</span>
+        <span class="candidate-title">The Grand Budapest Hotel</span>
+        <span class="score-pct">32%</span>
+      </div></div>
+  
+  </section>
+
+  <section class="panel" id="panel-final">
+    <h2>Step 6 · Output: final ranked results</h2>
+    <div class="desc">Top 5 picks written to results.json.</div>
+    <div class="grid">
+      <div class="card final-card">
+        <div class="rank">#1</div>
+        <h2>Parasite</h2>
+        <div class="genres">Drama · Thriller</div>
+        <div class="score-row">
+          <div class="score-bar"><div class="score-fill" style="width:52%"></div></div>
+          <span class="score-label">52%</span>
+        </div>
+      </div>
+
+      <div class="card final-card">
+        <div class="rank">#2</div>
+        <h2>John Wick</h2>
+        <div class="genres">Action · Crime · Thriller</div>
+        <div class="score-row">
+          <div class="score-bar"><div class="score-fill" style="width:41%"></div></div>
+          <span class="score-label">41%</span>
+        </div>
+      </div>
+
+      <div class="card final-card">
+        <div class="rank">#3</div>
+        <h2>Mirzapur</h2>
+        <div class="genres">Action · Crime · Thriller</div>
+        <div class="score-row">
+          <div class="score-bar"><div class="score-fill" style="width:41%"></div></div>
+          <span class="score-label">41%</span>
+        </div>
+      </div>
+
+      <div class="card final-card">
+        <div class="rank">#4</div>
+        <h2>Extraction</h2>
+        <div class="genres">Action · Crime · Thriller</div>
+        <div class="score-row">
+          <div class="score-bar"><div class="score-fill" style="width:37%"></div></div>
+          <span class="score-label">37%</span>
+        </div>
+      </div>
+
+      <div class="card final-card">
+        <div class="rank">#5</div>
+        <h2>The Grand Budapest Hotel</h2>
+        <div class="genres">Comedy · Drama</div>
+        <div class="score-row">
+          <div class="score-bar"><div class="score-fill" style="width:32%"></div></div>
+          <span class="score-label">32%</span>
+        </div>
+      </div></div>
+  </section>
+
+  <div class="nav-arrows">
+    <button id="prevBtn">← Back</button>
+    <button id="nextBtn">Next →</button>
+  </div>
+
+<script>
+  const stepIds = ["personas","fetch","attempt1","reasoning","attempt2","final"];
+  let current = 0;
+
+  function show(index) {
+    current = Math.max(0, Math.min(stepIds.length - 1, index));
+    stepIds.forEach((id, i) => {
+      document.getElementById('panel-' + id).classList.toggle('active', i === current);
+    });
+    document.querySelectorAll('.step-btn').forEach((btn) => {
+      btn.classList.toggle('active', Number(btn.dataset.index) === current);
+    });
+    document.getElementById('prevBtn').disabled = current === 0;
+    document.getElementById('nextBtn').disabled = current === stepIds.length - 1;
+  }
+
+  document.querySelectorAll('.step-btn').forEach((btn) => {
+    btn.addEventListener('click', () => show(Number(btn.dataset.index)));
+  });
+  document.getElementById('prevBtn').addEventListener('click', () => show(current - 1));
+  document.getElementById('nextBtn').addEventListener('click', () => show(current + 1));
+
+  show(0);
+</script>
+</body>
+</html>

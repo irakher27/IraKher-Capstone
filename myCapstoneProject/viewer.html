@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Group Movie Night — Results</title>
+<style>
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: #14141a;
+    color: #f0f0f2;
+    margin: 0;
+    padding: 40px 20px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    text-align: center;
+    color: #9a9aa5;
+    margin-bottom: 32px;
+  }
+  .grid {
+    display: grid;
+    gap: 16px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .card {
+    background: #1f1f28;
+    border: 1px solid #2c2c38;
+    border-radius: 12px;
+    padding: 18px 20px;
+    position: relative;
+  }
+  .rank {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    color: #5b5b68;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  h2 {
+    margin: 0 0 6px;
+    font-size: 1.2rem;
+  }
+  .genres {
+    color: #9a9aa5;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+  .score-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .score-bar {
+    flex: 1;
+    height: 8px;
+    background: #2c2c38;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .score-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6c5ce7, #a29bfe);
+    border-radius: 4px;
+  }
+  .score-label {
+    font-size: 0.85rem;
+    color: #c7c7d1;
+    width: 40px;
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+  <h1>Group Movie Night</h1>
+  <div class="subtitle">Top 5 picks, ranked by group score</div>
+  <div class="grid">
+    
+      <div class="card">
+        <div class="rank">#1</div>
+        <h2>Parasite</h2>
+        <div class="genres">Drama · Thriller</div>
+        <div class="score-row">
+          <div class="score-bar"><div class="score-fill" style="width:52%"></div></div>
+          <span class="score-label">52%</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="rank">#2</div>
+        <h2>John Wick</h2>
+        <div class="genres">Action · Crime · Thriller</div>
+        <div class="score-row">
+          <div class="score-bar"><div class="score-fill" style="width:41%"></div></div>
+          <span class="score-label">41%</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="rank">#3</div>
+        <h2>Mirzapur</h2>
+        <div class="genres">Action · Crime · Thriller</div>
+        <div class="score-row">
+          <div class="score-bar"><div class="score-fill" style="width:41%"></div></div>
+          <span class="score-label">41%</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="rank">#4</div>
+        <h2>Extraction</h2>
+        <div class="genres">Action · Crime · Thriller</div>
+        <div class="score-row">
+          <div class="score-bar"><div class="score-fill" style="width:37%"></div></div>
+          <span class="score-label">37%</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="rank">#5</div>
+        <h2>The Grand Budapest Hotel</h2>
+        <div class="genres">Comedy · Drama</div>
+        <div class="score-row">
+          <div class="score-bar"><div class="score-fill" style="width:32%"></div></div>
+          <span class="score-label">32%</span>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

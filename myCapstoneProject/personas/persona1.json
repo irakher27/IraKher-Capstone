@@ -1,0 +1,8 @@
+{
+  "name": "Ira",
+  "liked_genres": ["Thriller", "Sci-Fi", "Action"],
+  "liked_titles": ["Inception", "Mirzapur"],
+  "disliked_genres": ["Horror"],
+  "disliked_titles": [],
+  "platforms": ["Netflix", "Prime Video"]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "irakher-capstone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irakher27/IraKher-Capstone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irakher27/IraKher-Capstone/issues"
+  },
+  "homepage": "https://github.com/irakher27/IraKher-Capstone#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@modelcontextprotocol/server-filesystem": "^2026.8.31",
+    "dotenv": "^18.0.0"
+  }
+}
