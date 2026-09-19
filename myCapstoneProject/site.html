@@ -149,7 +149,7 @@
   </section>
 
   <section class="screen" id="screen-results">
-    <h1>Tonight's Picks</h1>
+    <h1 id="resultsHeading">Tonight's Picks</h1>
     <div class="selected-note" id="selectedNote"></div>
     <div class="grid" id="resultsGrid"></div>
     <button class="ghost-btn" id="restartBtn">Pick different people</button>
@@ -158,15 +158,15 @@
 <script>
   // ---- embedded data (real, from the last actual pipeline run) ----
   const ALL_PERSONAS = [{"name":"Ira","liked_genres":["Thriller","Sci-Fi","Action"],"liked_titles":["Inception","Mirzapur"],"disliked_genres":["Horror"],"disliked_titles":[],"platforms":["Netflix","Prime Video"]},{"name":"Richa","liked_genres":["Romance","Drama","Comedy"],"liked_titles":["The Notebook","Zindagi Na Milegi Dobara"],"disliked_genres":["Sci-Fi"],"disliked_titles":[],"platforms":["Netflix","Disney+ Hotstar"]},{"name":"Avani","liked_genres":["Drama","Thriller","Comedy","Action"],"liked_titles":["Gangs of Wasseypur"],"disliked_genres":["Horror"],"disliked_titles":[],"platforms":["Prime Video"]},{"name":"Neela","liked_genres":["Korean Drama","Thriller","Mystery"],"liked_titles":["Parasite","Squid Game"],"disliked_genres":["Romance"],"disliked_titles":[],"platforms":["Netflix"]},{"name":"Arunima","liked_genres":["Action","Thriller"],"liked_titles":["John Wick"],"disliked_genres":[],"disliked_titles":[],"platforms":["Netflix","Prime Video","Disney+ Hotstar"]}];
-  const CANDIDATES = [{"title":"Inception","genres":["Action","Adventure","Sci-Fi"],"platforms":[]},{"title":"Interstellar","genres":["Adventure","Drama","Sci-Fi"],"platforms":[]},{"title":"The Dark Knight","genres":["Action","Crime","Drama"],"platforms":[]},{"title":"John Wick","genres":["Action","Crime","Thriller"],"platforms":[]},{"title":"Parasite","genres":["Drama","Thriller"],"platforms":[]},{"title":"Squid Game","genres":["Action","Crime","Drama"],"platforms":[]},{"title":"The Notebook","genres":["Drama","Romance"],"platforms":[]},{"title":"Zindagi Na Milegi Dobara","genres":["Comedy","Drama","Musical"],"platforms":[]},{"title":"Gangs of Wasseypur","genres":["Action","Comedy","Crime"],"platforms":[]},{"title":"Mirzapur","genres":["Action","Crime","Thriller"],"platforms":[]},{"title":"Knives Out","genres":["Comedy","Crime","Drama"],"platforms":[]},{"title":"The Grand Budapest Hotel","genres":["Comedy","Drama"],"platforms":[]},{"title":"3 Idiots","genres":["Comedy","Drama"],"platforms":[]},{"title":"Andhadhun","genres":["Crime","Mystery","Thriller"],"platforms":[]},{"title":"Extraction","genres":["Action","Crime","Thriller"],"platforms":[]},{"title":"The Conjuring","genres":["Horror","Mystery","Thriller"],"platforms":[]},{"title":"La La Land","genres":["Comedy","Drama","Music"],"platforms":[]},{"title":"Whiplash","genres":["Drama","Music"],"platforms":[]},{"title":"Train to Busan","genres":["Action","Horror","Thriller"],"platforms":[]},{"title":"Decision to Leave","genres":["Crime","Drama","Mystery"],"platforms":[]}];
+  const CANDIDATES = [{"title":"Dune","genres":["Action","Adventure","Sci-Fi"],"platforms":[]},{"title":"The Odyssey","genres":["Action","Adventure","Fantasy"],"platforms":[]},{"title":"The Avengers","genres":["Action","Sci-Fi"],"platforms":[]},{"title":"Scream","genres":["Horror","Mystery"],"platforms":[]},{"title":"Good Will Hunting","genres":["Drama","Romance"],"platforms":[]},{"title":"Tangled","genres":["Animation","Adventure","Comedy"],"platforms":[]},{"title":"Jurassic Park","genres":["Action","Adventure","Sci-Fi"],"platforms":[]},{"title":"The Karate Kid","genres":["Action","Drama","Family"],"platforms":[]},{"title":"Top Gun","genres":["Action","Drama"],"platforms":[]},{"title":"Finding Nemo","genres":["Animation","Adventure","Comedy"],"platforms":[]},{"title":"Barbie","genres":["Adventure","Comedy","Fantasy"],"platforms":[]},{"title":"Dead Poets Society","genres":["Comedy","Drama"],"platforms":[]},{"title":"The Maze Runner","genres":["Action","Mystery","Sci-Fi"],"platforms":[]},{"title":"Divergent","genres":["Action","Adventure","Drama"],"platforms":[]},{"title":"The Hunger Games","genres":["Action","Adventure","Sci-Fi"],"platforms":[]},{"title":"Spider-Man","genres":["Action","Adventure","Sci-Fi"],"platforms":[]},{"title":"The Sound of Music","genres":["Biography","Drama","Family"],"platforms":[]},{"title":"The Greatest Showman","genres":["Biography","Drama","Musical"],"platforms":[]},{"title":"Mamma Mia!","genres":["Comedy","Musical","Romance"],"platforms":[]},{"title":"Coraline","genres":["Animation","Drama","Family"],"platforms":[]},{"title":"La La Land","genres":["Comedy","Drama","Music"],"platforms":[]},{"title":"Legally Blonde","genres":["Comedy","Romance"],"platforms":[]},{"title":"Set It Up","genres":["Comedy","Romance"],"platforms":[]},{"title":"Monte Carlo","genres":["Adventure","Comedy","Family"],"platforms":[]},{"title":"27 Dresses","genres":["Comedy","Romance"],"platforms":[]},{"title":"13 Going on 30","genres":["Comedy","Fantasy","Romance"],"platforms":[]},{"title":"How to Lose a Guy in 10 Days","genres":["Comedy","Romance"],"platforms":[]},{"title":"10 Things I Hate About You","genres":["Comedy","Drama","Romance"],"platforms":[]},{"title":"Clueless","genres":["Comedy","Romance"],"platforms":[]},{"title":"Marty Supreme","genres":["Drama","Sport"],"platforms":[]},{"title":"M.S. Dhoni: The Untold Story","genres":["Biography","Drama","Sport"],"platforms":[]},{"title":"A Star Is Born","genres":["Drama","Music","Romance"],"platforms":[]},{"title":"Tony","genres":["Biography","Comedy","Drama"],"platforms":[]},{"title":"Lion","genres":["Biography","Drama"],"platforms":[]},{"title":"Michael","genres":["Biography","Drama","History"],"platforms":[]},{"title":"Oppenheimer","genres":["Biography","Drama","History"],"platforms":[]},{"title":"The Hangover","genres":["Comedy"],"platforms":[]},{"title":"21 Jump Street","genres":["Action","Comedy","Crime"],"platforms":[]},{"title":"The Social Network","genres":["Biography","Drama"],"platforms":[]},{"title":"17 Again","genres":["Comedy","Drama","Fantasy"],"platforms":[]},{"title":"Ted","genres":["Comedy"],"platforms":[]},{"title":"Crazy, Stupid, Love.","genres":["Comedy","Drama","Romance"],"platforms":[]},{"title":"Superbad","genres":["Comedy"],"platforms":[]},{"title":"No Hard Feelings","genres":["Comedy","Romance"],"platforms":[]},{"title":"Harry Potter and the Sorcerer's Stone","genres":["Adventure","Family","Fantasy"],"platforms":[]},{"title":"Percy Jackson & the Olympians: The Lightning Thief","genres":["Adventure","Family","Fantasy"],"platforms":[]},{"title":"The Lord of the Rings: The Fellowship of the Ring","genres":["Adventure","Drama","Fantasy"],"platforms":[]},{"title":"Star Wars: Episode IV - A New Hope","genres":["Action","Adventure","Fantasy"],"platforms":[]},{"title":"Inception","genres":["Action","Adventure","Sci-Fi"],"platforms":[]},{"title":"Interstellar","genres":["Adventure","Drama","Sci-Fi"],"platforms":[]}];
 
   // ---- the real skill, unmodified except for its module.exports line ----
   /**
  * Skill: scoreGroupMovies
  * ------------------------
- * ONE repeatable task: given a list of candidate movies and 5 persona
- * preference profiles, remove anything anyone explicitly dislikes,
- * then score and rank what's left.
+ * ONE repeatable task: given a list of candidate movies and persona
+ * preference profiles, remove anything anyone explicitly dislikes or
+ * has already seen, then score and rank what's left.
  *
  * This function does NOT call any external API. It works on plain
  * JavaScript objects, so it stays reusable no matter which movie-data
@@ -190,20 +190,73 @@
  *   disliked_titles: [],
  *   platforms: ["Netflix", "Prime Video"]
  * }
+ *
+ * Recognized genre vocabulary: Musical, Autobiography, Horror, Romance,
+ * Comedy, Thriller, Sci-Fi, Action, Adventure, Drama, Fantasy — plus
+ * whatever else personas/movie data already use. Most of these are
+ * exact matches against the genre tags OMDb returns. "Autobiography"
+ * isn't a real OMDb tag, so GENRE_ALIASES below maps it onto the OMDb
+ * genre ("Biography") that satisfies it.
+ *
+ * All genre/title comparisons are case-insensitive and whitespace-
+ * trimmed (see normalize()) — "sci-fi", " Sci-Fi ", and "SCI-FI" all
+ * match the same thing.
  */
+
+const GENRE_ALIASES = {
+  autobiography: { allOf: ["Biography"] },
+};
+
+function normalize(value) {
+  return String(value).trim().toLowerCase();
+}
+
+function sameText(a, b) {
+  return normalize(a) === normalize(b);
+}
+
+function listIncludes(list, value) {
+  return list.some((item) => sameText(item, value));
+}
+
+/**
+ * Does `movieGenres` satisfy a persona's genre preference (liked or
+ * disliked)? Direct match first (case/whitespace-insensitive), then
+ * falls back to the alias table for synthetic categories like
+ * "Autobiography".
+ */
+function genreMatchesMovie(genrePreference, movieGenres) {
+  if (listIncludes(movieGenres, genrePreference)) return true;
+  const alias = GENRE_ALIASES[normalize(genrePreference)];
+  return !!alias && alias.allOf.every((g) => listIncludes(movieGenres, g));
+}
 
 function scoreGroupMovies(candidateMovies, personas, options = {}) {
   const topN = options.topN || 5;
 
+  // Step 0: de-duplicate candidates by title (case/whitespace-
+  // insensitive) so the same movie can never appear twice in one
+  // result set, however it ended up duplicated upstream.
+  const seenTitles = new Set();
+  const uniqueCandidates = candidateMovies.filter((movie) => {
+    const key = normalize(movie.title);
+    if (seenTitles.has(key)) return false;
+    seenTitles.add(key);
+    return true;
+  });
+
   // Step 1: hard exclusion.
   // Any movie that overlaps with ANY persona's disliked genres/titles,
-  // or isn't available on ANY persona's platforms, gets dropped entirely.
-  const survivors = candidateMovies.filter((movie) => {
+  // that ANY persona has already liked (they've seen it — don't
+  // suggest it again), or isn't available on ANY persona's platforms,
+  // gets dropped entirely.
+  const survivors = uniqueCandidates.filter((movie) => {
     for (const persona of personas) {
-      const hasDislikedGenre = movie.genres.some((g) =>
-        persona.disliked_genres.includes(g)
+      const hasDislikedGenre = persona.disliked_genres.some((g) =>
+        genreMatchesMovie(g, movie.genres)
       );
-      const isDislikedTitle = persona.disliked_titles.includes(movie.title);
+      const isDislikedTitle = listIncludes(persona.disliked_titles, movie.title);
+      const alreadyLiked = listIncludes(persona.liked_titles, movie.title);
 
       // options.skipPlatformCheck lets the agent loop temporarily ignore
       // platform matching — useful early in the pipeline, before the
@@ -212,7 +265,7 @@ function scoreGroupMovies(candidateMovies, personas, options = {}) {
         !options.skipPlatformCheck &&
         !movie.platforms.some((p) => persona.platforms.includes(p));
 
-      if (hasDislikedGenre || isDislikedTitle || noPlatformOverlap) {
+      if (hasDislikedGenre || isDislikedTitle || alreadyLiked || noPlatformOverlap) {
         return false; // excluded — one veto is enough
       }
     }
@@ -223,12 +276,16 @@ function scoreGroupMovies(candidateMovies, personas, options = {}) {
   // Each persona scores a movie based on genre overlap and liked-title match,
   // then we average across the group.
   function scoreForPersona(movie, persona) {
-    const genreMatches = movie.genres.filter((g) =>
-      persona.liked_genres.includes(g)
+    const genreMatches = persona.liked_genres.filter((g) =>
+      genreMatchesMovie(g, movie.genres)
     ).length;
     const genreScore = genreMatches / Math.max(movie.genres.length, 1);
 
-    const titleBonus = persona.liked_titles.includes(movie.title) ? 1 : 0;
+    // In practice this is always 0 now: a movie in ANYONE's liked_titles
+    // is excluded in Step 1 before it ever reaches scoring. Left in place
+    // (harmless) in case liked_titles ever includes movies outside the
+    // candidate pool.
+    const titleBonus = listIncludes(persona.liked_titles, movie.title) ? 1 : 0;
 
     // weighted: genre match matters most, exact liked-title is a bonus
     return genreScore * 0.8 + titleBonus * 0.2;
@@ -247,6 +304,7 @@ function scoreGroupMovies(candidateMovies, personas, options = {}) {
 
   return scored.slice(0, topN);
 }
+
 
 
 </script>
@@ -296,14 +354,20 @@ function scoreGroupMovies(candidateMovies, personas, options = {}) {
 
   function renderResults(selectedPersonas) {
     const results = computeResults(selectedPersonas);
-    document.getElementById('selectedNote').textContent =
-      'Picked for: ' + selectedPersonas.map((p) => p.name).join(', ');
+    const solo = selectedPersonas.length === 1;
+
+    document.getElementById('resultsHeading').textContent = solo ? 'Recommended For You' : "Tonight's Picks";
+    document.getElementById('selectedNote').textContent = solo
+      ? 'Personal picks for ' + selectedPersonas[0].name + '.'
+      : 'What your group should watch — picked for ' + selectedPersonas.map((p) => p.name).join(', ') + '.';
 
     const grid = document.getElementById('resultsGrid');
     grid.innerHTML = '';
 
     if (results.length === 0) {
-      grid.innerHTML = '<div class="empty-note">Nobody in this group agrees on anything tonight.</div>';
+      grid.innerHTML = solo
+        ? '<div class="empty-note">Nothing left that you haven't already seen or would veto.</div>'
+        : '<div class="empty-note">Nobody in this group agrees on anything tonight.</div>';
       return;
     }
 

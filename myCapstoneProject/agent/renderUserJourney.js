@@ -165,7 +165,7 @@ const html = `<!DOCTYPE html>
   </section>
 
   <section class="screen" id="screen-results">
-    <h1>Tonight's Picks</h1>
+    <h1 id="resultsHeading">Tonight's Picks</h1>
     <div class="selected-note" id="selectedNote"></div>
     <div class="grid" id="resultsGrid"></div>
     <button class="ghost-btn" id="restartBtn">Pick different people</button>
@@ -225,14 +225,20 @@ const html = `<!DOCTYPE html>
 
   function renderResults(selectedPersonas) {
     const results = computeResults(selectedPersonas);
-    document.getElementById('selectedNote').textContent =
-      'Picked for: ' + selectedPersonas.map((p) => p.name).join(', ');
+    const solo = selectedPersonas.length === 1;
+
+    document.getElementById('resultsHeading').textContent = solo ? 'Recommended For You' : "Tonight's Picks";
+    document.getElementById('selectedNote').textContent = solo
+      ? 'Personal picks for ' + selectedPersonas[0].name + '.'
+      : 'What your group should watch — picked for ' + selectedPersonas.map((p) => p.name).join(', ') + '.';
 
     const grid = document.getElementById('resultsGrid');
     grid.innerHTML = '';
 
     if (results.length === 0) {
-      grid.innerHTML = '<div class="empty-note">Nobody in this group agrees on anything tonight.</div>';
+      grid.innerHTML = solo
+        ? '<div class="empty-note">Nothing left that you haven\'t already seen or would veto.</div>'
+        : '<div class="empty-note">Nobody in this group agrees on anything tonight.</div>';
       return;
     }
 

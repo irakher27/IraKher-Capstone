@@ -1,9 +1,9 @@
 /**
  * Skill: scoreGroupMovies
  * ------------------------
- * ONE repeatable task: given a list of candidate movies and 5 persona
- * preference profiles, remove anything anyone explicitly dislikes,
- * then score and rank what's left.
+ * ONE repeatable task: given a list of candidate movies and persona
+ * preference profiles, remove anything anyone explicitly dislikes or
+ * has already seen, then score and rank what's left.
  *
  * This function does NOT call any external API. It works on plain
  * JavaScript objects, so it stays reusable no matter which movie-data
@@ -27,20 +27,73 @@
  *   disliked_titles: [],
  *   platforms: ["Netflix", "Prime Video"]
  * }
+ *
+ * Recognized genre vocabulary: Musical, Autobiography, Horror, Romance,
+ * Comedy, Thriller, Sci-Fi, Action, Adventure, Drama, Fantasy — plus
+ * whatever else personas/movie data already use. Most of these are
+ * exact matches against the genre tags OMDb returns. "Autobiography"
+ * isn't a real OMDb tag, so GENRE_ALIASES below maps it onto the OMDb
+ * genre ("Biography") that satisfies it.
+ *
+ * All genre/title comparisons are case-insensitive and whitespace-
+ * trimmed (see normalize()) — "sci-fi", " Sci-Fi ", and "SCI-FI" all
+ * match the same thing.
  */
+
+const GENRE_ALIASES = {
+  autobiography: { allOf: ["Biography"] },
+};
+
+function normalize(value) {
+  return String(value).trim().toLowerCase();
+}
+
+function sameText(a, b) {
+  return normalize(a) === normalize(b);
+}
+
+function listIncludes(list, value) {
+  return list.some((item) => sameText(item, value));
+}
+
+/**
+ * Does `movieGenres` satisfy a persona's genre preference (liked or
+ * disliked)? Direct match first (case/whitespace-insensitive), then
+ * falls back to the alias table for synthetic categories like
+ * "Autobiography".
+ */
+function genreMatchesMovie(genrePreference, movieGenres) {
+  if (listIncludes(movieGenres, genrePreference)) return true;
+  const alias = GENRE_ALIASES[normalize(genrePreference)];
+  return !!alias && alias.allOf.every((g) => listIncludes(movieGenres, g));
+}
 
 function scoreGroupMovies(candidateMovies, personas, options = {}) {
   const topN = options.topN || 5;
 
+  // Step 0: de-duplicate candidates by title (case/whitespace-
+  // insensitive) so the same movie can never appear twice in one
+  // result set, however it ended up duplicated upstream.
+  const seenTitles = new Set();
+  const uniqueCandidates = candidateMovies.filter((movie) => {
+    const key = normalize(movie.title);
+    if (seenTitles.has(key)) return false;
+    seenTitles.add(key);
+    return true;
+  });
+
   // Step 1: hard exclusion.
   // Any movie that overlaps with ANY persona's disliked genres/titles,
-  // or isn't available on ANY persona's platforms, gets dropped entirely.
-  const survivors = candidateMovies.filter((movie) => {
+  // that ANY persona has already liked (they've seen it — don't
+  // suggest it again), or isn't available on ANY persona's platforms,
+  // gets dropped entirely.
+  const survivors = uniqueCandidates.filter((movie) => {
     for (const persona of personas) {
-      const hasDislikedGenre = movie.genres.some((g) =>
-        persona.disliked_genres.includes(g)
+      const hasDislikedGenre = persona.disliked_genres.some((g) =>
+        genreMatchesMovie(g, movie.genres)
       );
-      const isDislikedTitle = persona.disliked_titles.includes(movie.title);
+      const isDislikedTitle = listIncludes(persona.disliked_titles, movie.title);
+      const alreadyLiked = listIncludes(persona.liked_titles, movie.title);
 
       // options.skipPlatformCheck lets the agent loop temporarily ignore
       // platform matching — useful early in the pipeline, before the
@@ -49,7 +102,7 @@ function scoreGroupMovies(candidateMovies, personas, options = {}) {
         !options.skipPlatformCheck &&
         !movie.platforms.some((p) => persona.platforms.includes(p));
 
-      if (hasDislikedGenre || isDislikedTitle || noPlatformOverlap) {
+      if (hasDislikedGenre || isDislikedTitle || alreadyLiked || noPlatformOverlap) {
         return false; // excluded — one veto is enough
       }
     }
@@ -60,12 +113,16 @@ function scoreGroupMovies(candidateMovies, personas, options = {}) {
   // Each persona scores a movie based on genre overlap and liked-title match,
   // then we average across the group.
   function scoreForPersona(movie, persona) {
-    const genreMatches = movie.genres.filter((g) =>
-      persona.liked_genres.includes(g)
+    const genreMatches = persona.liked_genres.filter((g) =>
+      genreMatchesMovie(g, movie.genres)
     ).length;
     const genreScore = genreMatches / Math.max(movie.genres.length, 1);
 
-    const titleBonus = persona.liked_titles.includes(movie.title) ? 1 : 0;
+    // In practice this is always 0 now: a movie in ANYONE's liked_titles
+    // is excluded in Step 1 before it ever reaches scoring. Left in place
+    // (harmless) in case liked_titles ever includes movies outside the
+    // candidate pool.
+    const titleBonus = listIncludes(persona.liked_titles, movie.title) ? 1 : 0;
 
     // weighted: genre match matters most, exact liked-title is a bonus
     return genreScore * 0.8 + titleBonus * 0.2;

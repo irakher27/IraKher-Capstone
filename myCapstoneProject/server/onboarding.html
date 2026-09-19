@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Movie Night — Who's Watching?</title>
+<style>
+  :root {
+    --bg: #14141a; --panel: #1f1f28; --border: #2c2c38;
+    --text: #f0f0f2; --muted: #9a9aa5;
+    --accent: #6c5ce7; --accent2: #a29bfe; --good: #34c77b; --bad: #e6604a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--bg); color: var(--text);
+    margin: 0; min-height: 100vh;
+    display: flex; align-items: flex-start; justify-content: center;
+    padding: 48px 20px;
+  }
+  .screen { width: 100%; max-width: 640px; display: none; }
+  .screen.active { display: block; }
+
+  h1 { text-align: center; font-size: 1.9rem; margin: 0 0 6px; }
+  .subtitle { text-align: center; color: var(--muted); margin-bottom: 28px; }
+
+  .field { margin-bottom: 22px; }
+  .field label.field-label {
+    display: block; font-size: 0.8rem; text-transform: uppercase;
+    letter-spacing: 0.04em; color: var(--muted); margin-bottom: 8px;
+  }
+  input[type="text"] {
+    width: 100%; background: var(--panel); border: 1px solid var(--border);
+    color: var(--text); border-radius: 10px; padding: 12px 14px;
+    font-size: 1rem; margin-bottom: 8px;
+  }
+  input[type="text"]:focus { outline: none; border-color: var(--accent); }
+
+  .chip-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip-option {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 999px; padding: 8px 14px; cursor: pointer;
+    font-size: 0.88rem; user-select: none;
+  }
+  .chip-option input { accent-color: var(--accent); }
+  .chip-option.checked-like { border-color: var(--good); }
+  .chip-option.checked-dislike { border-color: var(--bad); }
+
+  .primary-btn {
+    display: block; width: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    color: white; border: none; border-radius: 12px;
+    padding: 16px; font-size: 1.05rem; font-weight: 600; cursor: pointer;
+  }
+  .primary-btn:disabled { opacity: 0.4; cursor: default; }
+  .ghost-btn {
+    display: block; width: 100%; margin-top: 14px;
+    background: transparent; color: var(--muted);
+    border: 1px solid var(--border); border-radius: 12px;
+    padding: 12px; font-size: 0.9rem; cursor: pointer;
+  }
+  .error-note { color: var(--bad); font-size: 0.88rem; margin: -10px 0 16px; min-height: 1.2em; }
+
+  .roster {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 12px; padding: 18px 20px; margin-bottom: 24px;
+  }
+  .roster-title { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); margin-bottom: 10px; }
+  .roster-names { display: flex; flex-wrap: wrap; gap: 8px; }
+  .roster-name { background: var(--border); border-radius: 999px; padding: 6px 12px; font-size: 0.88rem; }
+  .hint { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 14px; }
+
+  .loading-wrap { text-align: center; padding: 60px 0; }
+  .spinner {
+    width: 48px; height: 48px; margin: 0 auto 24px;
+    border: 4px solid var(--border); border-top-color: var(--accent);
+    border-radius: 50%; animation: spin 0.9s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  #loadingText { color: var(--muted); }
+
+  .grid { display: grid; gap: 14px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 12px; padding: 18px 20px; position: relative;
+    opacity: 0; animation: fadeUp 0.4s ease forwards;
+  }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .rank { position: absolute; top: 14px; right: 18px; color: #5b5b68; font-weight: 700; font-size: 0.9rem; }
+  .card h2 { margin: 0 0 6px; font-size: 1.2rem; }
+  .genres { color: var(--muted); font-size: 0.9rem; margin-bottom: 12px; }
+  .score-row { display: flex; align-items: center; gap: 10px; }
+  .score-bar { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+  .score-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2)); border-radius: 4px; }
+  .score-label { font-size: 0.85rem; color: #c7c7d1; width: 40px; text-align: right; }
+  .selected-note { text-align: center; color: var(--muted); font-size: 0.85rem; margin-bottom: 20px; }
+  .empty-note { text-align: center; color: var(--muted); padding: 24px 0; }
+</style>
+</head>
+<body>
+
+  <section class="screen active" id="screen-form">
+    <h1>Movie Night</h1>
+    <div class="subtitle" id="formSubtitle">Who's up first? Answer for yourself, then hand it off.</div>
+
+    <div class="field">
+      <label class="field-label" for="nameInput">Your name</label>
+      <input type="text" id="nameInput" placeholder="e.g. Ira">
+    </div>
+
+    <div class="field">
+      <label class="field-label">Genres you like (pick any)</label>
+      <div class="chip-grid" id="likedGenresGrid"></div>
+    </div>
+
+    <div class="field">
+      <label class="field-label">Genres you'd rather skip (pick any)</label>
+      <div class="chip-grid" id="dislikedGenresGrid"></div>
+    </div>
+
+    <div class="field">
+      <label class="field-label">A couple of movies you've really liked (1 required, up to 3)</label>
+      <input type="text" id="title1" placeholder="Movie you loved">
+      <input type="text" id="title2" placeholder="Another one (optional)">
+      <input type="text" id="title3" placeholder="One more (optional)">
+    </div>
+
+    <div class="field">
+      <label class="field-label">Streaming platforms you have</label>
+      <div class="chip-grid" id="platformsGrid"></div>
+    </div>
+
+    <div class="error-note" id="formError"></div>
+    <button class="primary-btn" id="submitBtn">Add me to the group</button>
+  </section>
+
+  <section class="screen" id="screen-waiting">
+    <h1>Got it!</h1>
+    <div class="subtitle">Add another person, or get recommendations now.</div>
+    <div class="roster">
+      <div class="roster-title" id="rosterTitle">In the group so far</div>
+      <div class="roster-names" id="rosterNames"></div>
+    </div>
+    <button class="primary-btn" id="addAnotherBtn">Add another person</button>
+    <button class="primary-btn" id="generateBtn" style="margin-top:14px;">Get recommendations</button>
+    <div class="hint" id="generateHint"></div>
+    <button class="ghost-btn" id="resetFromWaitingBtn">Start a new group</button>
+  </section>
+
+  <section class="screen" id="screen-loading">
+    <div class="loading-wrap">
+      <div class="spinner"></div>
+      <div id="loadingText">Checking everyone's preferences…</div>
+    </div>
+  </section>
+
+  <section class="screen" id="screen-results">
+    <h1 id="resultsHeading">Tonight's Picks</h1>
+    <div class="selected-note" id="resultsNote"></div>
+    <div class="grid" id="resultsGrid"></div>
+    <button class="ghost-btn" id="startOverBtn">Start a new group</button>
+  </section>
+
+<script>
+  const CONFIG = __ONBOARDING_CONFIG__;
+
+  const screens = {
+    form: document.getElementById('screen-form'),
+    waiting: document.getElementById('screen-waiting'),
+    loading: document.getElementById('screen-loading'),
+    results: document.getElementById('screen-results'),
+  };
+  function showScreen(name) {
+    Object.values(screens).forEach((s) => s.classList.remove('active'));
+    screens[name].classList.add('active');
+  }
+
+  function buildChipGrid(container, options, kind) {
+    container.innerHTML = '';
+    options.forEach((opt, i) => {
+      const id = kind + '-' + i;
+      const label = document.createElement('label');
+      label.className = 'chip-option';
+      label.setAttribute('for', id);
+      label.innerHTML = '<input type="checkbox" id="' + id + '" value="' + opt + '"> ' + opt;
+      const input = label.querySelector('input');
+      input.addEventListener('change', () => {
+        label.classList.toggle(kind === 'liked' ? 'checked-like' : kind === 'disliked' ? 'checked-dislike' : '', input.checked);
+      });
+      container.appendChild(label);
+    });
+  }
+  buildChipGrid(document.getElementById('likedGenresGrid'), CONFIG.genres, 'liked');
+  buildChipGrid(document.getElementById('dislikedGenresGrid'), CONFIG.genres, 'disliked');
+  buildChipGrid(document.getElementById('platformsGrid'), CONFIG.platforms, 'platform');
+
+  function getChecked(container) {
+    return Array.from(container.querySelectorAll('input:checked')).map((el) => el.value);
+  }
+
+  function resetForm() {
+    document.getElementById('nameInput').value = '';
+    document.getElementById('title1').value = '';
+    document.getElementById('title2').value = '';
+    document.getElementById('title3').value = '';
+    document.querySelectorAll('.chip-option input').forEach((el) => {
+      el.checked = false;
+      el.closest('.chip-option').classList.remove('checked-like', 'checked-dislike');
+    });
+    document.getElementById('formError').textContent = '';
+  }
+
+  async function refreshRoster() {
+    const res = await fetch('/api/state');
+    const state = await res.json();
+    renderRoster(state);
+    return state;
+  }
+
+  function renderRoster(state) {
+    const namesEl = document.getElementById('rosterNames');
+    namesEl.innerHTML = '';
+    state.names.forEach((n) => {
+      const span = document.createElement('span');
+      span.className = 'roster-name';
+      span.textContent = n;
+      namesEl.appendChild(span);
+    });
+    document.getElementById('rosterTitle').textContent =
+      state.count + (state.count === 1 ? ' person' : ' people') + ' in the group so far';
+
+    const generateBtn = document.getElementById('generateBtn');
+    generateBtn.disabled = !state.readyForResults;
+    document.getElementById('generateHint').textContent = state.readyForResults
+      ? (state.count === 1
+          ? 'Flying solo? Get your own recommendation now, or add another person first.'
+          : 'Add another person, or get recommendations for this group now.')
+      : 'Add at least 1 person before you can generate recommendations.';
+  }
+
+  document.getElementById('submitBtn').addEventListener('click', async () => {
+    const errorEl = document.getElementById('formError');
+    errorEl.textContent = '';
+
+    const persona = {
+      name: document.getElementById('nameInput').value.trim(),
+      liked_genres: getChecked(document.getElementById('likedGenresGrid')),
+      disliked_genres: getChecked(document.getElementById('dislikedGenresGrid')),
+      liked_titles: [
+        document.getElementById('title1').value,
+        document.getElementById('title2').value,
+        document.getElementById('title3').value,
+      ].map((t) => t.trim()).filter(Boolean),
+      platforms: getChecked(document.getElementById('platformsGrid')),
+    };
+
+    const res = await fetch('/api/personas', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(persona),
+    });
+    const data = await res.json();
+
+    if (!data.ok) {
+      errorEl.textContent = data.error;
+      return;
+    }
+
+    resetForm();
+    renderRoster(data);
+    showScreen('waiting');
+  });
+
+  document.getElementById('addAnotherBtn').addEventListener('click', () => {
+    document.getElementById('formSubtitle').textContent = "Next person's turn.";
+    showScreen('form');
+  });
+
+  document.getElementById('resetFromWaitingBtn').addEventListener('click', startOver);
+  document.getElementById('startOverBtn').addEventListener('click', startOver);
+
+  async function startOver() {
+    await fetch('/api/reset', { method: 'POST' });
+    resetForm();
+    document.getElementById('formSubtitle').textContent = "Who's up first? Answer for yourself, then hand it off.";
+    showScreen('form');
+  }
+
+  const loadingMessages = [
+    "Checking everyone's preferences…",
+    'Searching the movie database…',
+    'Filtering out anything someone would veto…',
+    'Ranking the best group matches…',
+  ];
+
+  document.getElementById('generateBtn').addEventListener('click', async () => {
+    showScreen('loading');
+    let i = 0;
+    const loadingText = document.getElementById('loadingText');
+    loadingText.textContent = loadingMessages[0];
+    const rotator = setInterval(() => {
+      i = (i + 1) % loadingMessages.length;
+      loadingText.textContent = loadingMessages[i];
+    }, 1200);
+
+    try {
+      const res = await fetch('/api/generate', { method: 'POST' });
+      const data = await res.json();
+      clearInterval(rotator);
+
+      if (!data.ok) {
+        alert(data.error);
+        showScreen('waiting');
+        return;
+      }
+
+      renderResults(data);
+      showScreen('results');
+    } catch (err) {
+      clearInterval(rotator);
+      alert('Something went wrong generating recommendations: ' + err.message);
+      showScreen('waiting');
+    }
+  });
+
+  function renderResults(data) {
+    const solo = data.personaNames.length === 1;
+    document.getElementById('resultsHeading').textContent = solo ? 'Recommended For You' : "Tonight's Picks";
+    document.getElementById('resultsNote').textContent = solo
+      ? 'Personal picks for ' + data.personaNames[0] + '.'
+      : 'What your group should watch — picked for ' + data.personaNames.join(', ') + '.';
+    const grid = document.getElementById('resultsGrid');
+    grid.innerHTML = '';
+
+    if (data.results.length === 0) {
+      grid.innerHTML = solo
+        ? '<div class="empty-note">Nothing left that you haven\'t already seen or would veto.</div>'
+        : '<div class="empty-note">Nobody in this group agrees on anything tonight.</div>';
+      return;
+    }
+
+    data.results.forEach((movie, idx) => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.style.animationDelay = (idx * 90) + 'ms';
+      const pct = Math.round(movie.groupScore * 100);
+      card.innerHTML =
+        '<div class="rank">#' + (idx + 1) + '</div>' +
+        '<h2></h2><div class="genres"></div>' +
+        '<div class="score-row">' +
+          '<div class="score-bar"><div class="score-fill" style="width:' + pct + '%"></div></div>' +
+          '<span class="score-label">' + pct + '%</span>' +
+        '</div>';
+      card.querySelector('h2').textContent = movie.title;
+      card.querySelector('.genres').textContent = movie.genres.join(' · ');
+      grid.appendChild(card);
+    });
+  }
+
+  // Restore state on load (e.g. page refresh mid-round).
+  refreshRoster().then((state) => {
+    if (state.count > 0) showScreen('waiting');
+  });
+</script>
+</body>
+</html>

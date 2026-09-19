@@ -1,50 +1,51 @@
 [
   {
-    "title": "Parasite",
+    "title": "Dreamgirls",
     "genres": [
       "Drama",
-      "Thriller"
+      "Musical"
     ],
     "platforms": [],
-    "groupScore": 0.52
+    "groupScore": 0.4
   },
   {
-    "title": "John Wick",
-    "genres": [
-      "Action",
-      "Crime",
-      "Thriller"
-    ],
-    "platforms": [],
-    "groupScore": 0.4133333333333333
-  },
-  {
-    "title": "Mirzapur",
-    "genres": [
-      "Action",
-      "Crime",
-      "Thriller"
-    ],
-    "platforms": [],
-    "groupScore": 0.4133333333333333
-  },
-  {
-    "title": "Extraction",
-    "genres": [
-      "Action",
-      "Crime",
-      "Thriller"
-    ],
-    "platforms": [],
-    "groupScore": 0.37333333333333335
-  },
-  {
-    "title": "The Grand Budapest Hotel",
+    "title": "Grease",
     "genres": [
       "Comedy",
-      "Drama"
+      "Musical",
+      "Romance"
     ],
     "platforms": [],
-    "groupScore": 0.32
+    "groupScore": 0.26666666666666666
+  },
+  {
+    "title": "Chicago",
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Musical"
+    ],
+    "platforms": [],
+    "groupScore": 0.26666666666666666
+  },
+  {
+    "title": "Moulin Rouge!",
+    "genres": [
+      "Drama",
+      "Musical",
+      "Romance"
+    ],
+    "platforms": [],
+    "groupScore": 0.26666666666666666
+  },
+  {
+    "title": "Hairspray",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Musical"
+    ],
+    "platforms": [],
+    "groupScore": 0.26666666666666666
   }
 ]

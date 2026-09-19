@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T10:15:52.133Z",
+  "generatedAt": "2026-09-19T07:40:26.526Z",
   "personas": [
     {
       "name": "Ira",
@@ -98,28 +98,470 @@
     }
   ],
   "seedTitles": [
-    "Inception",
-    "Interstellar",
-    "The Dark Knight",
-    "John Wick",
-    "Parasite",
-    "Squid Game",
-    "The Notebook",
-    "Zindagi Na Milegi Dobara",
-    "Gangs of Wasseypur",
-    "Mirzapur",
-    "Knives Out",
-    "The Grand Budapest Hotel",
-    "3 Idiots",
-    "Andhadhun",
-    "Extraction",
-    "The Conjuring",
+    "Dune",
+    "The Odyssey",
+    "The Avengers",
+    "Scream",
+    "Good Will Hunting",
+    "Tangled",
+    "Jurassic Park",
+    "The Karate Kid",
+    "Top Gun",
+    "Finding Nemo",
+    "Barbie",
+    "Dead Poets Society",
+    "The Maze Runner",
+    "Divergent",
+    "The Hunger Games",
+    "Spider-Man",
+    "The Sound of Music",
+    "The Greatest Showman",
+    "Mamma Mia!",
+    "Coraline",
     "La La Land",
-    "Whiplash",
-    "Train to Busan",
-    "Decision to Leave"
+    "Legally Blonde",
+    "Set It Up",
+    "Monte Carlo",
+    "27 Dresses",
+    "13 Going on 30",
+    "How to Lose a Guy in 10 Days",
+    "10 Things I Hate About You",
+    "Clueless",
+    "Marty Supreme",
+    "M.S. Dhoni: The Untold Story",
+    "A Star Is Born",
+    "Tony",
+    "Lion",
+    "Michael",
+    "Oppenheimer",
+    "The Hangover",
+    "21 Jump Street",
+    "The Social Network",
+    "17 Again",
+    "Ted",
+    "Crazy, Stupid, Love.",
+    "Superbad",
+    "No Hard Feelings",
+    "Harry Potter and the Sorcerer's Stone",
+    "Percy Jackson & the Olympians: The Lightning Thief",
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "Star Wars",
+    "Inception",
+    "Interstellar"
   ],
   "candidates": [
+    {
+      "title": "Dune",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "The Odyssey",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "The Avengers",
+      "genres": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Scream",
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Good Will Hunting",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Tangled",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Jurassic Park",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "The Karate Kid",
+      "genres": [
+        "Action",
+        "Drama",
+        "Family"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Top Gun",
+      "genres": [
+        "Action",
+        "Drama"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Finding Nemo",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Barbie",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Dead Poets Society",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "The Maze Runner",
+      "genres": [
+        "Action",
+        "Mystery",
+        "Sci-Fi"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Divergent",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "The Hunger Games",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Spider-Man",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "The Sound of Music",
+      "genres": [
+        "Biography",
+        "Drama",
+        "Family"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "The Greatest Showman",
+      "genres": [
+        "Biography",
+        "Drama",
+        "Musical"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Mamma Mia!",
+      "genres": [
+        "Comedy",
+        "Musical",
+        "Romance"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Coraline",
+      "genres": [
+        "Animation",
+        "Drama",
+        "Family"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "La La Land",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Music"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Legally Blonde",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Set It Up",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Monte Carlo",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Family"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "27 Dresses",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "13 Going on 30",
+      "genres": [
+        "Comedy",
+        "Fantasy",
+        "Romance"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "How to Lose a Guy in 10 Days",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "10 Things I Hate About You",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Clueless",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Marty Supreme",
+      "genres": [
+        "Drama",
+        "Sport"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "M.S. Dhoni: The Untold Story",
+      "genres": [
+        "Biography",
+        "Drama",
+        "Sport"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "A Star Is Born",
+      "genres": [
+        "Drama",
+        "Music",
+        "Romance"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Tony",
+      "genres": [
+        "Biography",
+        "Comedy",
+        "Drama"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Lion",
+      "genres": [
+        "Biography",
+        "Drama"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Michael",
+      "genres": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Oppenheimer",
+      "genres": [
+        "Biography",
+        "Drama",
+        "History"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "The Hangover",
+      "genres": [
+        "Comedy"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "21 Jump Street",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Crime"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "The Social Network",
+      "genres": [
+        "Biography",
+        "Drama"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "17 Again",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Fantasy"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Ted",
+      "genres": [
+        "Comedy"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Crazy, Stupid, Love.",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Superbad",
+      "genres": [
+        "Comedy"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "No Hard Feelings",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "genres": [
+        "Adventure",
+        "Family",
+        "Fantasy"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Percy Jackson & the Olympians: The Lightning Thief",
+      "genres": [
+        "Adventure",
+        "Family",
+        "Fantasy"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "platforms": []
+    },
+    {
+      "title": "Star Wars: Episode IV - A New Hope",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "platforms": []
+    },
     {
       "title": "Inception",
       "genres": [
@@ -137,170 +579,13 @@
         "Sci-Fi"
       ],
       "platforms": []
-    },
-    {
-      "title": "The Dark Knight",
-      "genres": [
-        "Action",
-        "Crime",
-        "Drama"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "John Wick",
-      "genres": [
-        "Action",
-        "Crime",
-        "Thriller"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "Parasite",
-      "genres": [
-        "Drama",
-        "Thriller"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "Squid Game",
-      "genres": [
-        "Action",
-        "Crime",
-        "Drama"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "The Notebook",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "Zindagi Na Milegi Dobara",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Musical"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "Gangs of Wasseypur",
-      "genres": [
-        "Action",
-        "Comedy",
-        "Crime"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "Mirzapur",
-      "genres": [
-        "Action",
-        "Crime",
-        "Thriller"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "Knives Out",
-      "genres": [
-        "Comedy",
-        "Crime",
-        "Drama"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "The Grand Budapest Hotel",
-      "genres": [
-        "Comedy",
-        "Drama"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "3 Idiots",
-      "genres": [
-        "Comedy",
-        "Drama"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "Andhadhun",
-      "genres": [
-        "Crime",
-        "Mystery",
-        "Thriller"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "Extraction",
-      "genres": [
-        "Action",
-        "Crime",
-        "Thriller"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "The Conjuring",
-      "genres": [
-        "Horror",
-        "Mystery",
-        "Thriller"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "La La Land",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Music"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "Whiplash",
-      "genres": [
-        "Drama",
-        "Music"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "Train to Busan",
-      "genres": [
-        "Action",
-        "Horror",
-        "Thriller"
-      ],
-      "platforms": []
-    },
-    {
-      "title": "Decision to Leave",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
-      "platforms": []
     }
   ],
   "attempt1": {
     "skipPlatformCheck": false,
     "perMovie": [
       {
-        "title": "Inception",
+        "title": "Dune",
         "genres": [
           "Action",
           "Adventure",
@@ -347,10 +632,55 @@
         ]
       },
       {
-        "title": "Interstellar",
+        "title": "The Odyssey",
         "genres": [
+          "Action",
           "Adventure",
-          "Drama",
+          "Fantasy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Avengers",
+        "genres": [
+          "Action",
           "Sci-Fi"
         ],
         "survived": false,
@@ -394,11 +724,10 @@
         ]
       },
       {
-        "title": "The Dark Knight",
+        "title": "Scream",
         "genres": [
-          "Action",
-          "Crime",
-          "Drama"
+          "Horror",
+          "Mystery"
         ],
         "survived": false,
         "personaVetoes": [
@@ -406,6 +735,7 @@
             "persona": "Ira",
             "vetoed": true,
             "reasons": [
+              "dislikes genre \"Horror\"",
               "not available on any platform this persona has"
             ]
           },
@@ -420,6 +750,7 @@
             "persona": "Avani",
             "vetoed": true,
             "reasons": [
+              "dislikes genre \"Horror\"",
               "not available on any platform this persona has"
             ]
           },
@@ -440,144 +771,7 @@
         ]
       },
       {
-        "title": "John Wick",
-        "genres": [
-          "Action",
-          "Crime",
-          "Thriller"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Parasite",
-        "genres": [
-          "Drama",
-          "Thriller"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Squid Game",
-        "genres": [
-          "Action",
-          "Crime",
-          "Drama"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "The Notebook",
+        "title": "Good Will Hunting",
         "genres": [
           "Drama",
           "Romance"
@@ -623,9 +817,563 @@
         ]
       },
       {
-        "title": "Zindagi Na Milegi Dobara",
+        "title": "Tangled",
+        "genres": [
+          "Animation",
+          "Adventure",
+          "Comedy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Jurassic Park",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Karate Kid",
+        "genres": [
+          "Action",
+          "Drama",
+          "Family"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Top Gun",
+        "genres": [
+          "Action",
+          "Drama"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Finding Nemo",
+        "genres": [
+          "Animation",
+          "Adventure",
+          "Comedy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Barbie",
+        "genres": [
+          "Adventure",
+          "Comedy",
+          "Fantasy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Dead Poets Society",
         "genres": [
           "Comedy",
+          "Drama"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Maze Runner",
+        "genres": [
+          "Action",
+          "Mystery",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Divergent",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Drama"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Hunger Games",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Spider-Man",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Sound of Music",
+        "genres": [
+          "Biography",
+          "Drama",
+          "Family"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Greatest Showman",
+        "genres": [
+          "Biography",
           "Drama",
           "Musical"
         ],
@@ -669,103 +1417,11 @@
         ]
       },
       {
-        "title": "Gangs of Wasseypur",
-        "genres": [
-          "Action",
-          "Comedy",
-          "Crime"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Mirzapur",
-        "genres": [
-          "Action",
-          "Crime",
-          "Thriller"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Knives Out",
+        "title": "Mamma Mia!",
         "genres": [
           "Comedy",
-          "Crime",
-          "Drama"
+          "Musical",
+          "Romance"
         ],
         "survived": false,
         "personaVetoes": [
@@ -794,6 +1450,7 @@
             "persona": "Neela",
             "vetoed": true,
             "reasons": [
+              "dislikes genre \"Romance\"",
               "not available on any platform this persona has"
             ]
           },
@@ -807,10 +1464,11 @@
         ]
       },
       {
-        "title": "The Grand Budapest Hotel",
+        "title": "Coraline",
         "genres": [
-          "Comedy",
-          "Drama"
+          "Animation",
+          "Drama",
+          "Family"
         ],
         "survived": false,
         "personaVetoes": [
@@ -832,191 +1490,6 @@
             "persona": "Avani",
             "vetoed": true,
             "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "3 Idiots",
-        "genres": [
-          "Comedy",
-          "Drama"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Andhadhun",
-        "genres": [
-          "Crime",
-          "Mystery",
-          "Thriller"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Extraction",
-        "genres": [
-          "Action",
-          "Crime",
-          "Thriller"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "The Conjuring",
-        "genres": [
-          "Horror",
-          "Mystery",
-          "Thriller"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Horror\"",
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Horror\"",
               "not available on any platform this persona has"
             ]
           },
@@ -1083,10 +1556,103 @@
         ]
       },
       {
-        "title": "Whiplash",
+        "title": "Legally Blonde",
         "genres": [
-          "Drama",
-          "Music"
+          "Comedy",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Set It Up",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Monte Carlo",
+        "genres": [
+          "Adventure",
+          "Comedy",
+          "Family"
         ],
         "survived": false,
         "personaVetoes": [
@@ -1128,11 +1694,608 @@
         ]
       },
       {
-        "title": "Train to Busan",
+        "title": "27 Dresses",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "13 Going on 30",
+        "genres": [
+          "Comedy",
+          "Fantasy",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "How to Lose a Guy in 10 Days",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "10 Things I Hate About You",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Clueless",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Marty Supreme",
+        "genres": [
+          "Drama",
+          "Sport"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "M.S. Dhoni: The Untold Story",
+        "genres": [
+          "Biography",
+          "Drama",
+          "Sport"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "A Star Is Born",
+        "genres": [
+          "Drama",
+          "Music",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Tony",
+        "genres": [
+          "Biography",
+          "Comedy",
+          "Drama"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Lion",
+        "genres": [
+          "Biography",
+          "Drama"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Michael",
+        "genres": [
+          "Biography",
+          "Drama",
+          "History"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Oppenheimer",
+        "genres": [
+          "Biography",
+          "Drama",
+          "History"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Hangover",
+        "genres": [
+          "Comedy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "21 Jump Street",
         "genres": [
           "Action",
-          "Horror",
-          "Thriller"
+          "Comedy",
+          "Crime"
         ],
         "survived": false,
         "personaVetoes": [
@@ -1140,7 +2303,6 @@
             "persona": "Ira",
             "vetoed": true,
             "reasons": [
-              "dislikes genre \"Horror\"",
               "not available on any platform this persona has"
             ]
           },
@@ -1155,7 +2317,6 @@
             "persona": "Avani",
             "vetoed": true,
             "reasons": [
-              "dislikes genre \"Horror\"",
               "not available on any platform this persona has"
             ]
           },
@@ -1176,11 +2337,10 @@
         ]
       },
       {
-        "title": "Decision to Leave",
+        "title": "The Social Network",
         "genres": [
-          "Crime",
-          "Drama",
-          "Mystery"
+          "Biography",
+          "Drama"
         ],
         "survived": false,
         "personaVetoes": [
@@ -1195,6 +2355,511 @@
             "persona": "Richa",
             "vetoed": true,
             "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "17 Again",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Fantasy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ted",
+        "genres": [
+          "Comedy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Crazy, Stupid, Love.",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Superbad",
+        "genres": [
+          "Comedy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "No Hard Feelings",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "genres": [
+          "Adventure",
+          "Family",
+          "Fantasy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Percy Jackson & the Olympians: The Lightning Thief",
+        "genres": [
+          "Adventure",
+          "Family",
+          "Fantasy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "genres": [
+          "Adventure",
+          "Drama",
+          "Fantasy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Star Wars: Episode IV - A New Hope",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Inception",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Interstellar",
+        "genres": [
+          "Adventure",
+          "Drama",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\"",
               "not available on any platform this persona has"
             ]
           },
@@ -1229,6 +2894,1754 @@
   "attempt2": {
     "skipPlatformCheck": true,
     "perMovie": [
+      {
+        "title": "Dune",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\""
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Odyssey",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Avengers",
+        "genres": [
+          "Action",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\""
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Scream",
+        "genres": [
+          "Horror",
+          "Mystery"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\""
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\""
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Good Will Hunting",
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Tangled",
+        "genres": [
+          "Animation",
+          "Adventure",
+          "Comedy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Jurassic Park",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\""
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Karate Kid",
+        "genres": [
+          "Action",
+          "Drama",
+          "Family"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Top Gun",
+        "genres": [
+          "Action",
+          "Drama"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Finding Nemo",
+        "genres": [
+          "Animation",
+          "Adventure",
+          "Comedy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Barbie",
+        "genres": [
+          "Adventure",
+          "Comedy",
+          "Fantasy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Dead Poets Society",
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Maze Runner",
+        "genres": [
+          "Action",
+          "Mystery",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\""
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Divergent",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Drama"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Hunger Games",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\""
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Spider-Man",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\""
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Sound of Music",
+        "genres": [
+          "Biography",
+          "Drama",
+          "Family"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Greatest Showman",
+        "genres": [
+          "Biography",
+          "Drama",
+          "Musical"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Mamma Mia!",
+        "genres": [
+          "Comedy",
+          "Musical",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Coraline",
+        "genres": [
+          "Animation",
+          "Drama",
+          "Family"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "La La Land",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Music"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Legally Blonde",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Set It Up",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Monte Carlo",
+        "genres": [
+          "Adventure",
+          "Comedy",
+          "Family"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "27 Dresses",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "13 Going on 30",
+        "genres": [
+          "Comedy",
+          "Fantasy",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "How to Lose a Guy in 10 Days",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "10 Things I Hate About You",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Clueless",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Marty Supreme",
+        "genres": [
+          "Drama",
+          "Sport"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "M.S. Dhoni: The Untold Story",
+        "genres": [
+          "Biography",
+          "Drama",
+          "Sport"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "A Star Is Born",
+        "genres": [
+          "Drama",
+          "Music",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Tony",
+        "genres": [
+          "Biography",
+          "Comedy",
+          "Drama"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Lion",
+        "genres": [
+          "Biography",
+          "Drama"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Michael",
+        "genres": [
+          "Biography",
+          "Drama",
+          "History"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Oppenheimer",
+        "genres": [
+          "Biography",
+          "Drama",
+          "History"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Hangover",
+        "genres": [
+          "Comedy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "21 Jump Street",
+        "genres": [
+          "Action",
+          "Comedy",
+          "Crime"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Social Network",
+        "genres": [
+          "Biography",
+          "Drama"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "17 Again",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Fantasy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Ted",
+        "genres": [
+          "Comedy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Crazy, Stupid, Love.",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Superbad",
+        "genres": [
+          "Comedy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "No Hard Feelings",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "genres": [
+          "Adventure",
+          "Family",
+          "Fantasy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Percy Jackson & the Olympians: The Lightning Thief",
+        "genres": [
+          "Adventure",
+          "Family",
+          "Fantasy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "genres": [
+          "Adventure",
+          "Drama",
+          "Fantasy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Star Wars: Episode IV - A New Hope",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
       {
         "title": "Inception",
         "genres": [
@@ -1304,707 +4717,48 @@
             "reasons": []
           }
         ]
-      },
-      {
-        "title": "The Dark Knight",
-        "genres": [
-          "Action",
-          "Crime",
-          "Drama"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "John Wick",
-        "genres": [
-          "Action",
-          "Crime",
-          "Thriller"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Parasite",
-        "genres": [
-          "Drama",
-          "Thriller"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Squid Game",
-        "genres": [
-          "Action",
-          "Crime",
-          "Drama"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "The Notebook",
-        "genres": [
-          "Drama",
-          "Romance"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Romance\""
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Zindagi Na Milegi Dobara",
-        "genres": [
-          "Comedy",
-          "Drama",
-          "Musical"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Gangs of Wasseypur",
-        "genres": [
-          "Action",
-          "Comedy",
-          "Crime"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Mirzapur",
-        "genres": [
-          "Action",
-          "Crime",
-          "Thriller"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Knives Out",
-        "genres": [
-          "Comedy",
-          "Crime",
-          "Drama"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "The Grand Budapest Hotel",
-        "genres": [
-          "Comedy",
-          "Drama"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "3 Idiots",
-        "genres": [
-          "Comedy",
-          "Drama"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Andhadhun",
-        "genres": [
-          "Crime",
-          "Mystery",
-          "Thriller"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Extraction",
-        "genres": [
-          "Action",
-          "Crime",
-          "Thriller"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "The Conjuring",
-        "genres": [
-          "Horror",
-          "Mystery",
-          "Thriller"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Horror\""
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Horror\""
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "La La Land",
-        "genres": [
-          "Comedy",
-          "Drama",
-          "Music"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Whiplash",
-        "genres": [
-          "Drama",
-          "Music"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Train to Busan",
-        "genres": [
-          "Action",
-          "Horror",
-          "Thriller"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Horror\""
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Horror\""
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Decision to Leave",
-        "genres": [
-          "Crime",
-          "Drama",
-          "Mystery"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
       }
     ],
-    "survivorsCount": 15,
+    "survivorsCount": 29,
     "scored": [
       {
-        "title": "Parasite",
-        "genres": [
-          "Drama",
-          "Thriller"
-        ],
-        "platforms": [],
-        "groupScore": 0.52
-      },
-      {
-        "title": "John Wick",
+        "title": "Top Gun",
         "genres": [
           "Action",
-          "Crime",
-          "Thriller"
+          "Drama"
         ],
         "platforms": [],
-        "groupScore": 0.4133333333333333
+        "groupScore": 0.4
       },
       {
-        "title": "Mirzapur",
-        "genres": [
-          "Action",
-          "Crime",
-          "Thriller"
-        ],
-        "platforms": [],
-        "groupScore": 0.4133333333333333
-      },
-      {
-        "title": "Extraction",
-        "genres": [
-          "Action",
-          "Crime",
-          "Thriller"
-        ],
-        "platforms": [],
-        "groupScore": 0.37333333333333335
-      },
-      {
-        "title": "The Grand Budapest Hotel",
+        "title": "Dead Poets Society",
         "genres": [
           "Comedy",
           "Drama"
+        ],
+        "platforms": [],
+        "groupScore": 0.32
+      },
+      {
+        "title": "The Hangover",
+        "genres": [
+          "Comedy"
+        ],
+        "platforms": [],
+        "groupScore": 0.32
+      },
+      {
+        "title": "Ted",
+        "genres": [
+          "Comedy"
+        ],
+        "platforms": [],
+        "groupScore": 0.32
+      },
+      {
+        "title": "Superbad",
+        "genres": [
+          "Comedy"
         ],
         "platforms": [],
         "groupScore": 0.32
@@ -2013,49 +4767,43 @@
   },
   "finalResults": [
     {
-      "title": "Parasite",
-      "genres": [
-        "Drama",
-        "Thriller"
-      ],
-      "platforms": [],
-      "groupScore": 0.52
-    },
-    {
-      "title": "John Wick",
+      "title": "Top Gun",
       "genres": [
         "Action",
-        "Crime",
-        "Thriller"
+        "Drama"
       ],
       "platforms": [],
-      "groupScore": 0.4133333333333333
+      "groupScore": 0.4
     },
     {
-      "title": "Mirzapur",
-      "genres": [
-        "Action",
-        "Crime",
-        "Thriller"
-      ],
-      "platforms": [],
-      "groupScore": 0.4133333333333333
-    },
-    {
-      "title": "Extraction",
-      "genres": [
-        "Action",
-        "Crime",
-        "Thriller"
-      ],
-      "platforms": [],
-      "groupScore": 0.37333333333333335
-    },
-    {
-      "title": "The Grand Budapest Hotel",
+      "title": "Dead Poets Society",
       "genres": [
         "Comedy",
         "Drama"
+      ],
+      "platforms": [],
+      "groupScore": 0.32
+    },
+    {
+      "title": "The Hangover",
+      "genres": [
+        "Comedy"
+      ],
+      "platforms": [],
+      "groupScore": 0.32
+    },
+    {
+      "title": "Ted",
+      "genres": [
+        "Comedy"
+      ],
+      "platforms": [],
+      "groupScore": 0.32
+    },
+    {
+      "title": "Superbad",
+      "genres": [
+        "Comedy"
       ],
       "platforms": [],
       "groupScore": 0.32

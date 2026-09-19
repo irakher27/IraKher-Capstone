@@ -38,12 +38,19 @@ async function loadPersonas() {
 }
 
 /**
- * The full agent loop.
+ * The full agent loop. Pass an array of personas (same shape as the
+ * persona JSON files) to skip the personas/ folder entirely — that's
+ * how the live onboarding server (server/onboardingServer.js) feeds
+ * it real, just-collected people instead of the static test personas.
  */
-async function runWorkflow() {
+async function runWorkflow(personas) {
   // --- PERCEIVE ---
-  console.log("Perceiving: loading persona profiles...");
-  const personas = await loadPersonas();
+  if (!personas) {
+    console.log("Perceiving: loading persona profiles from personas/ folder...");
+    personas = await loadPersonas();
+  } else {
+    console.log(`Perceiving: using ${personas.length} personas passed in directly (skipping personas/ folder).`);
+  }
   console.log(`Loaded ${personas.length} personas.`);
 
   // --- ACT ---
@@ -79,8 +86,14 @@ async function runWorkflow() {
   return results;
 }
 
-runWorkflow()
-  .catch((err) => {
-    console.error("Workflow failed:", err);
-  })
-  .finally(() => fsClient.close());
+module.exports = { runWorkflow };
+
+// Only auto-run when invoked directly (`node agent/runWorkflow.js`) —
+// not when required as a module by the onboarding server.
+if (require.main === module) {
+  runWorkflow()
+    .catch((err) => {
+      console.error("Workflow failed:", err);
+    })
+    .finally(() => fsClient.close());
+}
