@@ -1,0 +1,8 @@
+{
+  "name": "Neela",
+  "liked_genres": ["Korean Drama", "Thriller", "Mystery"],
+  "liked_titles": ["Parasite", "Squid Game"],
+  "disliked_genres": ["Romance"],
+  "disliked_titles": [],
+  "platforms": ["Netflix"]
+}

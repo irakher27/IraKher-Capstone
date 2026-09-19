@@ -1,0 +1,8 @@
+{
+  "name": "Avani",
+  "liked_genres": ["Drama", "Thriller", "Comedy", "Action"],
+  "liked_titles": ["Gangs of Wasseypur"],
+  "disliked_genres": ["Horror"],
+  "disliked_titles": [],
+  "platforms": ["Prime Video"]
+}

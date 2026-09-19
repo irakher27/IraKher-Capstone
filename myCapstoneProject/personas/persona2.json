@@ -1,0 +1,8 @@
+{
+  "name": "Richa",
+  "liked_genres": ["Romance", "Drama", "Comedy"],
+  "liked_titles": ["The Notebook", "Zindagi Na Milegi Dobara"],
+  "disliked_genres": ["Sci-Fi"],
+  "disliked_titles": [],
+  "platforms": ["Netflix", "Disney+ Hotstar"]
+}
