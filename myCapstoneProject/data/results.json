@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Into the Wild",
+    "genres": [
+      "Adventure",
+      "Biography",
+      "Drama"
+    ],
+    "platforms": [],
+    "groupScore": 0.5333333333333333
+  },
+  {
+    "title": "Lion",
+    "genres": [
+      "Biography",
+      "Drama"
+    ],
+    "platforms": [],
+    "groupScore": 0.4
+  },
+  {
+    "title": "The Social Network",
+    "genres": [
+      "Biography",
+      "Drama"
+    ],
+    "platforms": [],
+    "groupScore": 0.4
+  },
+  {
+    "title": "Steve Jobs",
+    "genres": [
+      "Biography",
+      "Drama"
+    ],
+    "platforms": [],
+    "groupScore": 0.4
+  },
+  {
+    "title": "The Pursuit of Happyness",
+    "genres": [
+      "Biography",
+      "Drama"
+    ],
+    "platforms": [],
+    "groupScore": 0.4
+  }
+]

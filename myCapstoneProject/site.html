@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Movie Night — Find Our Movie</title>
+<style>
+  :root {
+    --bg: #14141a; --panel: #1f1f28; --border: #2c2c38;
+    --text: #f0f0f2; --muted: #9a9aa5;
+    --accent: #6c5ce7; --accent2: #a29bfe; --good: #34c77b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--bg); color: var(--text);
+    margin: 0; min-height: 100vh;
+    display: flex; align-items: flex-start; justify-content: center;
+    padding: 48px 20px;
+  }
+  .screen { width: 100%; max-width: 640px; display: none; }
+  .screen.active { display: block; }
+
+  h1 { text-align: center; font-size: 1.9rem; margin: 0 0 6px; }
+  .subtitle { text-align: center; color: var(--muted); margin-bottom: 32px; }
+
+  .persona-list { display: grid; gap: 10px; margin-bottom: 28px; }
+  .persona-option {
+    display: flex; align-items: center; gap: 12px;
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 12px; padding: 14px 16px; cursor: pointer;
+  }
+  .persona-option input { width: 18px; height: 18px; accent-color: var(--accent); }
+  .persona-option-name { font-weight: 600; }
+  .persona-option-likes { color: var(--muted); font-size: 0.85rem; }
+
+  .primary-btn {
+    display: block; width: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    color: white; border: none; border-radius: 12px;
+    padding: 16px; font-size: 1.05rem; font-weight: 600;
+    cursor: pointer;
+  }
+  .primary-btn:disabled { opacity: 0.4; cursor: default; }
+  .ghost-btn {
+    display: block; width: 100%; margin-top: 14px;
+    background: transparent; color: var(--muted);
+    border: 1px solid var(--border); border-radius: 12px;
+    padding: 12px; font-size: 0.9rem; cursor: pointer;
+  }
+  .hint { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: -18px; margin-bottom: 20px; }
+
+  .loading-wrap { text-align: center; padding: 60px 0; }
+  .spinner {
+    width: 48px; height: 48px; margin: 0 auto 28px;
+    border: 4px solid var(--border); border-top-color: var(--accent);
+    border-radius: 50%; animation: spin 0.9s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loading-steps { display: grid; gap: 10px; max-width: 380px; margin: 0 auto; text-align: left; }
+  .loading-step {
+    display: flex; align-items: center; gap: 10px;
+    color: var(--muted); font-size: 0.92rem; opacity: 0.4;
+    transition: opacity 0.25s;
+  }
+  .loading-step.active { opacity: 1; color: var(--text); }
+  .loading-step.done { opacity: 0.7; color: var(--good); }
+  .step-mark { width: 16px; text-align: center; }
+
+  .grid { display: grid; gap: 14px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 12px; padding: 18px 20px; position: relative;
+    opacity: 0; animation: fadeUp 0.4s ease forwards;
+  }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .rank { position: absolute; top: 14px; right: 18px; color: #5b5b68; font-weight: 700; font-size: 0.9rem; }
+  .final-card h2 { margin: 0 0 6px; font-size: 1.2rem; }
+  .genres { color: var(--muted); font-size: 0.9rem; margin-bottom: 12px; }
+  .score-row { display: flex; align-items: center; gap: 10px; }
+  .score-bar { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+  .score-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2)); border-radius: 4px; }
+  .score-label { font-size: 0.85rem; color: #c7c7d1; width: 40px; text-align: right; }
+
+  .selected-note { text-align: center; color: var(--muted); font-size: 0.85rem; margin-bottom: 20px; }
+  .empty-note { text-align: center; color: var(--muted); padding: 24px 0; }
+</style>
+</head>
+<body>
+
+  <section class="screen active" id="screen-select">
+    <h1>Movie Night</h1>
+    <div class="subtitle">Who's watching tonight?</div>
+    <div class="persona-list">
+      
+    <label class="persona-option" for="p0">
+      <input type="checkbox" id="p0" data-name="Ira" checked>
+      <div class="persona-option-body">
+        <div class="persona-option-name">Ira</div>
+        <div class="persona-option-likes">Likes Thriller, Sci-Fi, Action</div>
+      </div>
+    </label>
+
+    <label class="persona-option" for="p1">
+      <input type="checkbox" id="p1" data-name="Richa" checked>
+      <div class="persona-option-body">
+        <div class="persona-option-name">Richa</div>
+        <div class="persona-option-likes">Likes Romance, Drama, Comedy</div>
+      </div>
+    </label>
+
+    <label class="persona-option" for="p2">
+      <input type="checkbox" id="p2" data-name="Avani" checked>
+      <div class="persona-option-body">
+        <div class="persona-option-name">Avani</div>
+        <div class="persona-option-likes">Likes Drama, Thriller, Comedy</div>
+      </div>
+    </label>
+
+    <label class="persona-option" for="p3">
+      <input type="checkbox" id="p3" data-name="Neela" checked>
+      <div class="persona-option-body">
+        <div class="persona-option-name">Neela</div>
+        <div class="persona-option-likes">Likes Korean Drama, Thriller, Mystery</div>
+      </div>
+    </label>
+
+    <label class="persona-option" for="p4">
+      <input type="checkbox" id="p4" data-name="Arunima" checked>
+      <div class="persona-option-body">
+        <div class="persona-option-name">Arunima</div>
+        <div class="persona-option-likes">Likes Action, Thriller</div>
+      </div>
+    </label>
+    </div>
+    <button class="primary-btn" id="findBtn">Find Our Movie</button>
+    <div class="hint" id="hint"></div>
+  </section>
+
+  <section class="screen" id="screen-loading">
+    <div class="loading-wrap">
+      <div class="spinner"></div>
+      <div class="loading-steps">
+        <div class="loading-step" data-step="0"><span class="step-mark">○</span> Checking everyone's preferences</div>
+        <div class="loading-step" data-step="1"><span class="step-mark">○</span> Searching the movie database</div>
+        <div class="loading-step" data-step="2"><span class="step-mark">○</span> Filtering out anything someone would veto</div>
+        <div class="loading-step" data-step="3"><span class="step-mark">○</span> Ranking the best group matches</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="screen-results">
+    <h1 id="resultsHeading">Tonight's Picks</h1>
+    <div class="selected-note" id="selectedNote"></div>
+    <div class="grid" id="resultsGrid"></div>
+    <button class="ghost-btn" id="restartBtn">Pick different people</button>
+  </section>
+
+<script>
+  // ---- embedded data (real, from the last actual pipeline run) ----
+  const ALL_PERSONAS = [{"name":"Ira","liked_genres":["Thriller","Sci-Fi","Action"],"liked_titles":["Inception","Mirzapur"],"disliked_genres":["Horror"],"disliked_titles":[],"platforms":["Netflix","Prime Video"]},{"name":"Richa","liked_genres":["Romance","Drama","Comedy"],"liked_titles":["The Notebook","Zindagi Na Milegi Dobara"],"disliked_genres":["Sci-Fi"],"disliked_titles":[],"platforms":["Netflix","Disney+ Hotstar"]},{"name":"Avani","liked_genres":["Drama","Thriller","Comedy","Action"],"liked_titles":["Gangs of Wasseypur"],"disliked_genres":["Horror"],"disliked_titles":[],"platforms":["Prime Video"]},{"name":"Neela","liked_genres":["Korean Drama","Thriller","Mystery"],"liked_titles":["Parasite","Squid Game"],"disliked_genres":["Romance"],"disliked_titles":[],"platforms":["Netflix"]},{"name":"Arunima","liked_genres":["Action","Thriller"],"liked_titles":["John Wick"],"disliked_genres":[],"disliked_titles":[],"platforms":["Netflix","Prime Video","Disney+ Hotstar"]}];
+  const CANDIDATES = [{"title":"Dune","genres":["Action","Adventure","Sci-Fi"],"platforms":[]},{"title":"The Odyssey","genres":["Action","Adventure","Fantasy"],"platforms":[]},{"title":"The Avengers","genres":["Action","Sci-Fi"],"platforms":[]},{"title":"Scream","genres":["Horror","Mystery"],"platforms":[]},{"title":"Good Will Hunting","genres":["Drama","Romance"],"platforms":[]},{"title":"Tangled","genres":["Animation","Adventure","Comedy"],"platforms":[]},{"title":"Jurassic Park","genres":["Action","Adventure","Sci-Fi"],"platforms":[]},{"title":"The Karate Kid","genres":["Action","Drama","Family"],"platforms":[]},{"title":"Top Gun","genres":["Action","Drama"],"platforms":[]},{"title":"Finding Nemo","genres":["Animation","Adventure","Comedy"],"platforms":[]},{"title":"Barbie","genres":["Adventure","Comedy","Fantasy"],"platforms":[]},{"title":"Dead Poets Society","genres":["Comedy","Drama"],"platforms":[]},{"title":"The Maze Runner","genres":["Action","Mystery","Sci-Fi"],"platforms":[]},{"title":"Divergent","genres":["Action","Adventure","Drama"],"platforms":[]},{"title":"The Hunger Games","genres":["Action","Adventure","Sci-Fi"],"platforms":[]},{"title":"Spider-Man","genres":["Action","Adventure","Sci-Fi"],"platforms":[]},{"title":"The Sound of Music","genres":["Biography","Drama","Family"],"platforms":[]},{"title":"The Greatest Showman","genres":["Biography","Drama","Musical"],"platforms":[]},{"title":"Mamma Mia!","genres":["Comedy","Musical","Romance"],"platforms":[]},{"title":"Coraline","genres":["Animation","Drama","Family"],"platforms":[]},{"title":"La La Land","genres":["Comedy","Drama","Music"],"platforms":[]},{"title":"Legally Blonde","genres":["Comedy","Romance"],"platforms":[]},{"title":"Set It Up","genres":["Comedy","Romance"],"platforms":[]},{"title":"Monte Carlo","genres":["Adventure","Comedy","Family"],"platforms":[]},{"title":"27 Dresses","genres":["Comedy","Romance"],"platforms":[]},{"title":"13 Going on 30","genres":["Comedy","Fantasy","Romance"],"platforms":[]},{"title":"How to Lose a Guy in 10 Days","genres":["Comedy","Romance"],"platforms":[]},{"title":"10 Things I Hate About You","genres":["Comedy","Drama","Romance"],"platforms":[]},{"title":"Clueless","genres":["Comedy","Romance"],"platforms":[]},{"title":"Marty Supreme","genres":["Drama","Sport"],"platforms":[]},{"title":"M.S. Dhoni: The Untold Story","genres":["Biography","Drama","Sport"],"platforms":[]},{"title":"A Star Is Born","genres":["Drama","Music","Romance"],"platforms":[]},{"title":"Tony","genres":["Biography","Comedy","Drama"],"platforms":[]},{"title":"Lion","genres":["Biography","Drama"],"platforms":[]},{"title":"Michael","genres":["Biography","Drama","History"],"platforms":[]},{"title":"Oppenheimer","genres":["Biography","Drama","History"],"platforms":[]},{"title":"The Hangover","genres":["Comedy"],"platforms":[]},{"title":"21 Jump Street","genres":["Action","Comedy","Crime"],"platforms":[]},{"title":"The Social Network","genres":["Biography","Drama"],"platforms":[]},{"title":"17 Again","genres":["Comedy","Drama","Fantasy"],"platforms":[]},{"title":"Ted","genres":["Comedy"],"platforms":[]},{"title":"Crazy, Stupid, Love.","genres":["Comedy","Drama","Romance"],"platforms":[]},{"title":"Superbad","genres":["Comedy"],"platforms":[]},{"title":"No Hard Feelings","genres":["Comedy","Romance"],"platforms":[]},{"title":"Harry Potter and the Sorcerer's Stone","genres":["Adventure","Family","Fantasy"],"platforms":[]},{"title":"Percy Jackson & the Olympians: The Lightning Thief","genres":["Adventure","Family","Fantasy"],"platforms":[]},{"title":"The Lord of the Rings: The Fellowship of the Ring","genres":["Adventure","Drama","Fantasy"],"platforms":[]},{"title":"Star Wars: Episode IV - A New Hope","genres":["Action","Adventure","Fantasy"],"platforms":[]},{"title":"Inception","genres":["Action","Adventure","Sci-Fi"],"platforms":[]},{"title":"Interstellar","genres":["Adventure","Drama","Sci-Fi"],"platforms":[]}];
+
+  // ---- the real skill, unmodified except for its module.exports line ----
+  /**
+ * Skill: scoreGroupMovies
+ * ------------------------
+ * ONE repeatable task: given a list of candidate movies and persona
+ * preference profiles, remove anything anyone explicitly dislikes or
+ * has already seen, then score and rank what's left.
+ *
+ * This function does NOT call any external API. It works on plain
+ * JavaScript objects, so it stays reusable no matter which movie-data
+ * API (TMDb, OMDb, etc.) you end up wiring in later — that code just
+ * needs to produce movies in the shape described below before handing
+ * them to this function.
+ *
+ * Expected movie shape (from whichever API you choose):
+ * {
+ *   title: "Inception",
+ *   genres: ["Thriller", "Sci-Fi"],
+ *   platforms: ["Netflix", "Prime Video"]   // where it's streamable
+ * }
+ *
+ * Expected persona shape (matches the persona JSON files already made):
+ * {
+ *   name: "Persona 1",
+ *   liked_genres: ["Thriller", "Sci-Fi", "Action"],
+ *   liked_titles: ["Inception", "Mirzapur"],
+ *   disliked_genres: ["Horror"],
+ *   disliked_titles: [],
+ *   platforms: ["Netflix", "Prime Video"]
+ * }
+ *
+ * Recognized genre vocabulary: Musical, Autobiography, Horror, Romance,
+ * Comedy, Thriller, Sci-Fi, Action, Adventure, Drama, Fantasy — plus
+ * whatever else personas/movie data already use. Most of these are
+ * exact matches against the genre tags OMDb returns. "Autobiography"
+ * isn't a real OMDb tag, so GENRE_ALIASES below maps it onto the OMDb
+ * genre ("Biography") that satisfies it.
+ *
+ * All genre/title comparisons are case-insensitive and whitespace-
+ * trimmed (see normalize()) — "sci-fi", " Sci-Fi ", and "SCI-FI" all
+ * match the same thing.
+ */
+
+const GENRE_ALIASES = {
+  autobiography: { allOf: ["Biography"] },
+};
+
+function normalize(value) {
+  return String(value).trim().toLowerCase();
+}
+
+function sameText(a, b) {
+  return normalize(a) === normalize(b);
+}
+
+function listIncludes(list, value) {
+  return list.some((item) => sameText(item, value));
+}
+
+/**
+ * Does `movieGenres` satisfy a persona's genre preference (liked or
+ * disliked)? Direct match first (case/whitespace-insensitive), then
+ * falls back to the alias table for synthetic categories like
+ * "Autobiography".
+ */
+function genreMatchesMovie(genrePreference, movieGenres) {
+  if (listIncludes(movieGenres, genrePreference)) return true;
+  const alias = GENRE_ALIASES[normalize(genrePreference)];
+  return !!alias && alias.allOf.every((g) => listIncludes(movieGenres, g));
+}
+
+function scoreGroupMovies(candidateMovies, personas, options = {}) {
+  const topN = options.topN || 5;
+
+  // Step 0: de-duplicate candidates by title (case/whitespace-
+  // insensitive) so the same movie can never appear twice in one
+  // result set, however it ended up duplicated upstream.
+  const seenTitles = new Set();
+  const uniqueCandidates = candidateMovies.filter((movie) => {
+    const key = normalize(movie.title);
+    if (seenTitles.has(key)) return false;
+    seenTitles.add(key);
+    return true;
+  });
+
+  // Step 1: hard exclusion.
+  // Any movie that overlaps with ANY persona's disliked genres/titles,
+  // that ANY persona has already liked (they've seen it — don't
+  // suggest it again), or isn't available on ANY persona's platforms,
+  // gets dropped entirely.
+  const survivors = uniqueCandidates.filter((movie) => {
+    for (const persona of personas) {
+      const hasDislikedGenre = persona.disliked_genres.some((g) =>
+        genreMatchesMovie(g, movie.genres)
+      );
+      const isDislikedTitle = listIncludes(persona.disliked_titles, movie.title);
+      const alreadyLiked = listIncludes(persona.liked_titles, movie.title);
+
+      // options.skipPlatformCheck lets the agent loop temporarily ignore
+      // platform matching — useful early in the pipeline, before the
+      // web-search MCP step has filled in real platform data.
+      const noPlatformOverlap =
+        !options.skipPlatformCheck &&
+        !movie.platforms.some((p) => persona.platforms.includes(p));
+
+      if (hasDislikedGenre || isDislikedTitle || alreadyLiked || noPlatformOverlap) {
+        return false; // excluded — one veto is enough
+      }
+    }
+    return true;
+  });
+
+  // Step 2: soft scoring on whatever survived exclusion.
+  // Each persona scores a movie based on genre overlap and liked-title match,
+  // then we average across the group.
+  function scoreForPersona(movie, persona) {
+    const genreMatches = persona.liked_genres.filter((g) =>
+      genreMatchesMovie(g, movie.genres)
+    ).length;
+    const genreScore = genreMatches / Math.max(movie.genres.length, 1);
+
+    // In practice this is always 0 now: a movie in ANYONE's liked_titles
+    // is excluded in Step 1 before it ever reaches scoring. Left in place
+    // (harmless) in case liked_titles ever includes movies outside the
+    // candidate pool.
+    const titleBonus = listIncludes(persona.liked_titles, movie.title) ? 1 : 0;
+
+    // weighted: genre match matters most, exact liked-title is a bonus
+    return genreScore * 0.8 + titleBonus * 0.2;
+  }
+
+  const scored = survivors.map((movie) => {
+    const personaScores = personas.map((p) => scoreForPersona(movie, p));
+    const groupScore =
+      personaScores.reduce((sum, s) => sum + s, 0) / personas.length;
+
+    return { ...movie, groupScore };
+  });
+
+  // Step 3: rank and return the top N.
+  scored.sort((a, b) => b.groupScore - a.groupScore);
+
+  return scored.slice(0, topN);
+}
+
+
+
+</script>
+<script>
+  const screens = {
+    select: document.getElementById('screen-select'),
+    loading: document.getElementById('screen-loading'),
+    results: document.getElementById('screen-results'),
+  };
+  function showScreen(name) {
+    Object.values(screens).forEach((s) => s.classList.remove('active'));
+    screens[name].classList.add('active');
+  }
+
+  const findBtn = document.getElementById('findBtn');
+  const hint = document.getElementById('hint');
+
+  function getSelectedPersonas() {
+    const checkedNames = Array.from(document.querySelectorAll('.persona-option input'))
+      .filter((cb) => cb.checked)
+      .map((cb) => cb.dataset.name);
+    return ALL_PERSONAS.filter((p) => checkedNames.includes(p.name));
+  }
+
+  function updateFindButtonState() {
+    const none = getSelectedPersonas().length === 0;
+    findBtn.disabled = none;
+    hint.textContent = none ? 'Pick at least one person first.' : '';
+  }
+  document.querySelectorAll('.persona-option input').forEach((cb) =>
+    cb.addEventListener('change', updateFindButtonState)
+  );
+  updateFindButtonState();
+
+  function computeResults(selectedPersonas) {
+    // Same fallback the real agent loop uses: try with the platform
+    // check enforced, retry without it if too few survive.
+    let results = scoreGroupMovies(CANDIDATES, selectedPersonas, { topN: 5 });
+    if (results.length < 5) {
+      results = scoreGroupMovies(CANDIDATES, selectedPersonas, {
+        topN: 5,
+        skipPlatformCheck: true,
+      });
+    }
+    return results;
+  }
+
+  function renderResults(selectedPersonas) {
+    const results = computeResults(selectedPersonas);
+    const solo = selectedPersonas.length === 1;
+
+    document.getElementById('resultsHeading').textContent = solo ? 'Recommended For You' : "Tonight's Picks";
+    document.getElementById('selectedNote').textContent = solo
+      ? 'Personal picks for ' + selectedPersonas[0].name + '.'
+      : 'What your group should watch — picked for ' + selectedPersonas.map((p) => p.name).join(', ') + '.';
+
+    const grid = document.getElementById('resultsGrid');
+    grid.innerHTML = '';
+
+    if (results.length === 0) {
+      grid.innerHTML = solo
+        ? '<div class="empty-note">Nothing left that you haven't already seen or would veto.</div>'
+        : '<div class="empty-note">Nobody in this group agrees on anything tonight.</div>';
+      return;
+    }
+
+    results.forEach((movie, i) => {
+      const card = document.createElement('div');
+      card.className = 'card final-card';
+      card.style.animationDelay = (i * 90) + 'ms';
+      const pct = Math.round(movie.groupScore * 100);
+      card.innerHTML =
+        '<div class="rank">#' + (i + 1) + '</div>' +
+        '<h2></h2>' +
+        '<div class="genres"></div>' +
+        '<div class="score-row">' +
+          '<div class="score-bar"><div class="score-fill" style="width:' + pct + '%"></div></div>' +
+          '<span class="score-label">' + pct + '%</span>' +
+        '</div>';
+      card.querySelector('h2').textContent = movie.title;
+      card.querySelector('.genres').textContent = movie.genres.join(' · ');
+      grid.appendChild(card);
+    });
+  }
+
+  findBtn.addEventListener('click', () => {
+    const selectedPersonas = getSelectedPersonas();
+    if (selectedPersonas.length === 0) return;
+
+    showScreen('loading');
+
+    const stepEls = document.querySelectorAll('.loading-step');
+    stepEls.forEach((el) => { el.classList.remove('active', 'done'); el.querySelector('.step-mark').textContent = '○'; });
+
+    let i = 0;
+    function tick() {
+      if (i > 0) {
+        stepEls[i - 1].classList.remove('active');
+        stepEls[i - 1].classList.add('done');
+        stepEls[i - 1].querySelector('.step-mark').textContent = '✓';
+      }
+      if (i < stepEls.length) {
+        stepEls[i].classList.add('active');
+        i++;
+        setTimeout(tick, 550);
+      } else {
+        setTimeout(() => {
+          renderResults(selectedPersonas);
+          showScreen('results');
+        }, 400);
+      }
+    }
+    tick();
+  });
+
+  document.getElementById('restartBtn').addEventListener('click', () => showScreen('select'));
+</script>
+</body>
+</html>
