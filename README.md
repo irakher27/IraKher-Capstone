@@ -7,7 +7,7 @@ filters out anything anyone would veto, scores what's left against everyone's
 taste at once, and hands back a ranked shortlist — a personal list if it's
 just you, a negotiated group list if it's several people.
 
-Live app: **[TODO: paste your Railway deployment URL here]**
+Live app: **https://irakher-capstone-production.up.railway.app**
 
 ---
 
