@@ -24,12 +24,20 @@ const { runWorkflow } = require("../agent/runWorkflow");
 const googleAuth = require("./googleAuth");
 const profileStore = require("./profileStore");
 
-const PORT = process.env.ONBOARDING_PORT || 4310;
+// Railway (and most hosts) inject PORT — that takes priority over the
+// local-dev-only ONBOARDING_PORT.
+const PORT = process.env.PORT || process.env.ONBOARDING_PORT || 4310;
 const PUBLIC_HTML_PATH = path.join(__dirname, "onboarding.html");
+
+// Set PUBLIC_BASE_URL to your Railway domain (e.g.
+// https://your-app.up.railway.app, no trailing slash) once deployed.
+// Falls back to localhost for local dev.
+const PUBLIC_BASE_URL = (process.env.PUBLIC_BASE_URL || `http://localhost:${PORT}`).replace(/\/$/, "");
+const IS_HTTPS = PUBLIC_BASE_URL.startsWith("https://");
 
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
 const GOOGLE_SECRET = process.env.GOOGLE_SECRET;
-const REDIRECT_URI = `http://localhost:${PORT}/auth/google/callback`;
+const REDIRECT_URI = `${PUBLIC_BASE_URL}/auth/google/callback`;
 if (!GOOGLE_CLIENT_ID || !GOOGLE_SECRET) {
   console.warn(
     "GOOGLE_CLIENT_ID / GOOGLE_SECRET missing from .env — Google sign-in will fail until both are set."
@@ -53,15 +61,15 @@ function parseCookies(req) {
 
 function setCookie(res, name, value, opts = {}) {
   const parts = [`${name}=${encodeURIComponent(value)}`, "Path=/", "HttpOnly", "SameSite=Lax"];
+  if (IS_HTTPS) parts.push("Secure");
   if (opts.maxAge) parts.push(`Max-Age=${opts.maxAge}`);
   res.setHeader("Set-Cookie", [...(res.getHeader("Set-Cookie") || []), parts.join("; ")]);
 }
 
 function clearCookie(res, name) {
-  res.setHeader("Set-Cookie", [
-    ...(res.getHeader("Set-Cookie") || []),
-    `${name}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0`,
-  ]);
+  const parts = [`${name}=`, "Path=/", "HttpOnly", "SameSite=Lax", "Max-Age=0"];
+  if (IS_HTTPS) parts.push("Secure");
+  res.setHeader("Set-Cookie", [...(res.getHeader("Set-Cookie") || []), parts.join("; ")]);
 }
 
 function currentUser(req) {
@@ -91,10 +99,12 @@ function canonicalizeGenres(selected) {
     .filter(Boolean);
 }
 
-// In-memory group for the current onboarding round. One process =
+// In-memory group for the current onboarding round, keyed by the
+// submitter's Google email so editing and re-saving your profile
+// updates your one entry instead of adding a duplicate. One process =
 // one group at a time, which matches "one person at a time answers,
 // hand off to the next person."
-let personas = [];
+const personasByEmail = new Map();
 
 function sendJson(res, status, data) {
   res.writeHead(status, { "Content-Type": "application/json" });
@@ -121,6 +131,7 @@ function readJsonBody(req) {
 }
 
 function stateSnapshot() {
+  const personas = [...personasByEmail.values()];
   return {
     count: personas.length,
     names: personas.map((p) => p.name),
@@ -256,8 +267,12 @@ const server = http.createServer(async (req, res) => {
       const { persona, error } = buildPersona(body);
       if (error) return sendJson(res, 400, { ok: false, error });
 
-      personas.push(persona);
-      console.log(`Added persona "${persona.name}" (${personas.length} in the group so far).`);
+      const alreadyInRound = personasByEmail.has(user.email);
+      personasByEmail.set(user.email, persona); // upsert — editing never duplicates
+      console.log(
+        `${alreadyInRound ? "Updated" : "Added"} persona "${persona.name}" ` +
+        `(${personasByEmail.size} in the group so far).`
+      );
 
       await profileStore.saveProfile(user.email, persona);
       console.log(`Saved preferences for ${user.email} for next time.`);
@@ -266,19 +281,20 @@ const server = http.createServer(async (req, res) => {
     }
 
     if (req.method === "POST" && pathname === "/api/generate") {
-      if (personas.length < 1) {
+      if (personasByEmail.size < 1) {
         return sendJson(res, 400, {
           ok: false,
           error: "Add at least 1 person before generating recommendations.",
         });
       }
+      const personas = [...personasByEmail.values()];
       console.log(`\n=== Running agent loop for ${personas.length} live-onboarded personas ===`);
       const results = await runWorkflow(personas.map((p) => ({ ...p })));
       return sendJson(res, 200, { ok: true, results, personaNames: personas.map((p) => p.name) });
     }
 
     if (req.method === "POST" && pathname === "/api/reset") {
-      personas = [];
+      personasByEmail.clear();
       console.log("Group reset — ready for a new round.");
       return sendJson(res, 200, { ok: true });
     }
@@ -292,5 +308,5 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`Onboarding server running at http://localhost:${PORT}`);
+  console.log(`Onboarding server running at ${PUBLIC_BASE_URL} (listening on port ${PORT})`);
 });

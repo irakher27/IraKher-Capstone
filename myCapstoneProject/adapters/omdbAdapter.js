@@ -16,9 +16,13 @@
  * CACHING: OMDb's free tier caps out at 1,000 requests/day, and every
  * run was re-fetching the entire candidate list from scratch — easy
  * to blow through in a single day of testing. Results are cached to
- * data/omdbCache.json (keyed by lowercased/trimmed title) so a title
- * is only ever fetched from the network once. Delete that file if you
+ * omdbCache.json (keyed by lowercased/trimmed title) so a title is
+ * only ever fetched from the network once. Delete that file if you
  * want to force a refetch (e.g. OMDb's data changed).
+ *
+ * DATA_DIR lets this survive redeploys on hosts with an ephemeral
+ * filesystem (e.g. Railway): set DATA_DIR to a mounted persistent
+ * volume's path in production. Defaults to the repo's data/ folder.
  */
 
 require("dotenv").config(); // loads variables from your .env file
@@ -28,7 +32,8 @@ const path = require("path");
 
 const OMDB_API_KEY = process.env.OMDB_API_KEY;
 const OMDB_BASE_URL = "http://www.omdbapi.com/";
-const CACHE_PATH = path.join(__dirname, "..", "data", "omdbCache.json");
+const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, "..", "data");
+const CACHE_PATH = path.join(DATA_DIR, "omdbCache.json");
 
 function cacheKey(title) {
   return String(title).trim().toLowerCase();
@@ -43,6 +48,7 @@ function loadCache() {
 }
 
 function saveCache(cache) {
+  fs.mkdirSync(DATA_DIR, { recursive: true }); // no-op if it already exists
   fs.writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
 }
 

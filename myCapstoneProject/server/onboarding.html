@@ -114,9 +114,45 @@
     font-size: 0.82rem; text-decoration: underline; padding: 0;
   }
   .primary-btn { text-align: center; text-decoration: none; }
+
+  .profile-badge {
+    position: fixed; top: 16px; right: 16px; z-index: 60;
+    display: none; align-items: center; gap: 8px;
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 999px; padding: 6px 14px 6px 6px; color: var(--text);
+    cursor: pointer; font-size: 0.85rem;
+  }
+  .profile-badge-avatar {
+    width: 26px; height: 26px; border-radius: 50%; overflow: hidden;
+    background: var(--accent); display: flex; align-items: center;
+    justify-content: center; font-size: 0.8rem; font-weight: 700;
+  }
+  .profile-badge-avatar img { width: 100%; height: 100%; border-radius: 50%; }
+
+  .modal-backdrop {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.6); z-index: 90;
+  }
+  .screen.as-modal {
+    position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    z-index: 100; background: var(--bg); border: 1px solid var(--border);
+    border-radius: 16px; padding: 32px 28px; max-height: 86vh; overflow-y: auto;
+    box-shadow: 0 24px 70px rgba(0,0,0,0.55); width: min(640px, calc(100vw - 40px));
+  }
+  .modal-close {
+    display: none; position: absolute; top: 14px; right: 16px;
+    background: none; border: none; color: var(--muted);
+    font-size: 1.2rem; cursor: pointer; line-height: 1;
+  }
 </style>
 </head>
 <body>
+
+  <button class="profile-badge" id="profileBadge">
+    <span class="profile-badge-avatar" id="profileBadgeAvatar"></span>
+    <span id="profileBadgeName"></span>
+  </button>
+  <div class="modal-backdrop" id="modalBackdrop"></div>
 
   <section class="screen active" id="screen-login">
     <h1>Movie Night</h1>
@@ -124,9 +160,10 @@
     <a class="primary-btn" href="/auth/google">Sign in with Google</a>
   </section>
 
-  <section class="screen" id="screen-form">
+  <section class="screen" id="screen-form" style="position: relative;">
+    <button class="modal-close" id="closeProfileBtn">✕</button>
     <h1>Movie Night</h1>
-    <div class="subtitle" id="formSubtitle">Your turn — these answers become your profile.</div>
+    <div class="subtitle" id="formSubtitle">This is your saved profile — edit anything and save again to update it.</div>
 
     <div class="auth-bar" id="authBar"></div>
 
@@ -158,7 +195,8 @@
     </div>
 
     <div class="error-note" id="formError"></div>
-    <button class="primary-btn" id="submitBtn">Add me to the group</button>
+    <button class="primary-btn" id="submitBtn">Save my preferences</button>
+    <button class="ghost-btn" id="viewGroupBtn" style="display:none;">View current group</button>
   </section>
 
   <section class="screen" id="screen-waiting">
@@ -198,10 +236,60 @@
     loading: document.getElementById('screen-loading'),
     results: document.getElementById('screen-results'),
   };
+  let currentScreenName = null;
   function showScreen(name) {
+    currentScreenName = name;
     Object.values(screens).forEach((s) => s.classList.remove('active'));
     screens[name].classList.add('active');
   }
+
+  // The floating badge (top-right, visible on every screen once
+  // logged in) pops the profile form open as a modal on top of
+  // whatever screen you're currently on, so you're never stuck
+  // without a way back to your own saved preferences.
+  let screenBeforeModal = null;
+
+  function renderProfileBadge(user) {
+    const badge = document.getElementById('profileBadge');
+    if (!user || !user.loggedIn) {
+      badge.style.display = 'none';
+      return;
+    }
+    badge.style.display = 'flex';
+    document.getElementById('profileBadgeName').textContent = user.name;
+    document.getElementById('profileBadgeAvatar').innerHTML = user.picture
+      ? '<img src="' + user.picture + '">'
+      : (user.name || '?').charAt(0).toUpperCase();
+  }
+
+  function exitProfileModal(targetScreen) {
+    document.getElementById('closeProfileBtn').style.display = 'none';
+    document.getElementById('modalBackdrop').style.display = 'none';
+    screens.form.classList.remove('as-modal');
+    showScreen(targetScreen);
+  }
+
+  document.getElementById('profileBadge').addEventListener('click', async () => {
+    screenBeforeModal = currentScreenName;
+    const [me, profRes] = await Promise.all([
+      fetch('/api/me').then((r) => r.json()),
+      fetch('/api/profile'),
+    ]);
+    const profData = await profRes.json();
+    if (profData.ok) applyProfile(profData.profile, me.name);
+
+    document.getElementById('closeProfileBtn').style.display = 'block';
+    document.getElementById('modalBackdrop').style.display = 'block';
+    screens.form.classList.add('as-modal');
+    showScreen('form');
+  });
+
+  document.getElementById('closeProfileBtn').addEventListener('click', () => {
+    exitProfileModal(screenBeforeModal || 'waiting');
+  });
+  document.getElementById('modalBackdrop').addEventListener('click', () => {
+    exitProfileModal(screenBeforeModal || 'waiting');
+  });
 
   function buildChipGrid(container, options, kind) {
     container.innerHTML = '';
@@ -306,7 +394,18 @@
           ? 'Flying solo? Get your own recommendation now, or add another person first.'
           : 'Add another person, or get recommendations for this group now.')
       : 'Add at least 1 person before you can generate recommendations.';
+
+    const viewGroupBtn = document.getElementById('viewGroupBtn');
+    if (viewGroupBtn) {
+      viewGroupBtn.style.display = state.count > 0 ? 'block' : 'none';
+      viewGroupBtn.textContent = 'View current group (' + state.count + ')';
+    }
   }
+
+  document.getElementById('viewGroupBtn').addEventListener('click', async () => {
+    const state = await refreshRoster();
+    showScreen('waiting');
+  });
 
   document.getElementById('submitBtn').addEventListener('click', async () => {
     const errorEl = document.getElementById('formError');
@@ -338,7 +437,7 @@
 
     resetForm();
     renderRoster(data);
-    showScreen('waiting');
+    exitProfileModal('waiting');
   });
 
   document.getElementById('addAnotherBtn').addEventListener('click', async () => {
@@ -346,8 +445,9 @@
     // current one out so they can't accidentally submit as someone else.
     await fetch('/auth/logout', { method: 'POST' });
     resetForm();
+    renderProfileBadge(null);
     document.getElementById('loginSubtitle').textContent = "Next person's turn — sign in to continue.";
-    showScreen('login');
+    exitProfileModal('login');
   });
 
   document.getElementById('resetFromWaitingBtn').addEventListener('click', startOver);
@@ -357,8 +457,9 @@
     await fetch('/api/reset', { method: 'POST' });
     await fetch('/auth/logout', { method: 'POST' });
     resetForm();
+    renderProfileBadge(null);
     document.getElementById('loginSubtitle').textContent = 'Sign in with Google to add your preferences.';
-    showScreen('login');
+    exitProfileModal('login');
   }
 
   const loadingMessages = [
@@ -433,9 +534,11 @@
   }
 
   // Gate on login first: show the login screen until Google sign-in
-  // succeeds, then load that account's saved profile (if any) into
-  // the form and jump straight to "waiting" if they already answered
-  // this round (e.g. a page refresh mid-round).
+  // succeeds, then always land on the profile form (pre-filled from
+  // your saved profile, if any) — never auto-skip to the group roster,
+  // even if a round is already in progress, so your own profile is
+  // always visible and editable. "View current group" gets you to the
+  // roster from there.
   async function bootstrap() {
     const me = await fetch('/api/me').then((r) => r.json());
     if (!me.loggedIn) {
@@ -444,12 +547,13 @@
     }
 
     renderAuthBar(me);
+    renderProfileBadge(me);
     const profRes = await fetch('/api/profile');
     const profData = await profRes.json();
     if (profData.ok) applyProfile(profData.profile, me.name);
 
-    const state = await refreshRoster();
-    showScreen(state.count > 0 ? 'waiting' : 'form');
+    await refreshRoster();
+    showScreen('form');
   }
   bootstrap();
 </script>
