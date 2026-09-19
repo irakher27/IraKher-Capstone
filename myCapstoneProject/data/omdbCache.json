@@ -1,0 +1,432 @@
+{
+  "dune": {
+    "title": "Dune",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "platforms": []
+  },
+  "the odyssey": {
+    "title": "The Odyssey",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "platforms": []
+  },
+  "the avengers": {
+    "title": "The Avengers",
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "platforms": []
+  },
+  "scream": {
+    "title": "Scream",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "platforms": []
+  },
+  "good will hunting": {
+    "title": "Good Will Hunting",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "platforms": []
+  },
+  "tangled": {
+    "title": "Tangled",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "platforms": []
+  },
+  "jurassic park": {
+    "title": "Jurassic Park",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "platforms": []
+  },
+  "the karate kid": {
+    "title": "The Karate Kid",
+    "genres": [
+      "Action",
+      "Drama",
+      "Family"
+    ],
+    "platforms": []
+  },
+  "top gun": {
+    "title": "Top Gun",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "platforms": []
+  },
+  "finding nemo": {
+    "title": "Finding Nemo",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "platforms": []
+  },
+  "barbie": {
+    "title": "Barbie",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Fantasy"
+    ],
+    "platforms": []
+  },
+  "dead poets society": {
+    "title": "Dead Poets Society",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "platforms": []
+  },
+  "the maze runner": {
+    "title": "The Maze Runner",
+    "genres": [
+      "Action",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "platforms": []
+  },
+  "divergent": {
+    "title": "Divergent",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "platforms": []
+  },
+  "the hunger games": {
+    "title": "The Hunger Games",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "platforms": []
+  },
+  "spider-man": {
+    "title": "Spider-Man",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "platforms": []
+  },
+  "the sound of music": {
+    "title": "The Sound of Music",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Family"
+    ],
+    "platforms": []
+  },
+  "the greatest showman": {
+    "title": "The Greatest Showman",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Musical"
+    ],
+    "platforms": []
+  },
+  "mamma mia!": {
+    "title": "Mamma Mia!",
+    "genres": [
+      "Comedy",
+      "Musical",
+      "Romance"
+    ],
+    "platforms": []
+  },
+  "coraline": {
+    "title": "Coraline",
+    "genres": [
+      "Animation",
+      "Drama",
+      "Family"
+    ],
+    "platforms": []
+  },
+  "la la land": {
+    "title": "La La Land",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Music"
+    ],
+    "platforms": []
+  },
+  "legally blonde": {
+    "title": "Legally Blonde",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "platforms": []
+  },
+  "set it up": {
+    "title": "Set It Up",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "platforms": []
+  },
+  "monte carlo": {
+    "title": "Monte Carlo",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Family"
+    ],
+    "platforms": []
+  },
+  "27 dresses": {
+    "title": "27 Dresses",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "platforms": []
+  },
+  "13 going on 30": {
+    "title": "13 Going on 30",
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Romance"
+    ],
+    "platforms": []
+  },
+  "how to lose a guy in 10 days": {
+    "title": "How to Lose a Guy in 10 Days",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "platforms": []
+  },
+  "10 things i hate about you": {
+    "title": "10 Things I Hate About You",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "platforms": []
+  },
+  "clueless": {
+    "title": "Clueless",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "platforms": []
+  },
+  "marty supreme": {
+    "title": "Marty Supreme",
+    "genres": [
+      "Drama",
+      "Sport"
+    ],
+    "platforms": []
+  },
+  "m.s. dhoni: the untold story": {
+    "title": "M.S. Dhoni: The Untold Story",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Sport"
+    ],
+    "platforms": []
+  },
+  "a star is born": {
+    "title": "A Star Is Born",
+    "genres": [
+      "Drama",
+      "Music",
+      "Romance"
+    ],
+    "platforms": []
+  },
+  "tony": {
+    "title": "Tony",
+    "genres": [
+      "Biography",
+      "Comedy",
+      "Drama"
+    ],
+    "platforms": []
+  },
+  "lion": {
+    "title": "Lion",
+    "genres": [
+      "Biography",
+      "Drama"
+    ],
+    "platforms": []
+  },
+  "michael": {
+    "title": "Michael",
+    "genres": [
+      "Biography",
+      "Drama",
+      "History"
+    ],
+    "platforms": []
+  },
+  "oppenheimer": {
+    "title": "Oppenheimer",
+    "genres": [
+      "Biography",
+      "Drama",
+      "History"
+    ],
+    "platforms": []
+  },
+  "the hangover": {
+    "title": "The Hangover",
+    "genres": [
+      "Comedy"
+    ],
+    "platforms": []
+  },
+  "21 jump street": {
+    "title": "21 Jump Street",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Crime"
+    ],
+    "platforms": []
+  },
+  "the social network": {
+    "title": "The Social Network",
+    "genres": [
+      "Biography",
+      "Drama"
+    ],
+    "platforms": []
+  },
+  "17 again": {
+    "title": "17 Again",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Fantasy"
+    ],
+    "platforms": []
+  },
+  "ted": {
+    "title": "Ted",
+    "genres": [
+      "Comedy"
+    ],
+    "platforms": []
+  },
+  "crazy, stupid, love.": {
+    "title": "Crazy, Stupid, Love.",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "platforms": []
+  },
+  "superbad": {
+    "title": "Superbad",
+    "genres": [
+      "Comedy"
+    ],
+    "platforms": []
+  },
+  "no hard feelings": {
+    "title": "No Hard Feelings",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "platforms": []
+  },
+  "harry potter and the sorcerer's stone": {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
+    ],
+    "platforms": []
+  },
+  "percy jackson & the olympians: the lightning thief": {
+    "title": "Percy Jackson & the Olympians: The Lightning Thief",
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
+    ],
+    "platforms": []
+  },
+  "the lord of the rings: the fellowship of the ring": {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "platforms": []
+  },
+  "star wars: episode iv - a new hope": {
+    "title": "Star Wars: Episode IV - A New Hope",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "platforms": []
+  },
+  "inception": {
+    "title": "Inception",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "platforms": []
+  },
+  "interstellar": {
+    "title": "Interstellar",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "platforms": []
+  }
+}
