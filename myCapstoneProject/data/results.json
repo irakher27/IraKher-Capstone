@@ -1,51 +1,48 @@
 [
   {
-    "title": "Dreamgirls",
+    "title": "Into the Wild",
     "genres": [
-      "Drama",
-      "Musical"
+      "Adventure",
+      "Biography",
+      "Drama"
+    ],
+    "platforms": [],
+    "groupScore": 0.5333333333333333
+  },
+  {
+    "title": "Lion",
+    "genres": [
+      "Biography",
+      "Drama"
     ],
     "platforms": [],
     "groupScore": 0.4
   },
   {
-    "title": "Grease",
+    "title": "The Social Network",
     "genres": [
-      "Comedy",
-      "Musical",
-      "Romance"
+      "Biography",
+      "Drama"
     ],
     "platforms": [],
-    "groupScore": 0.26666666666666666
+    "groupScore": 0.4
   },
   {
-    "title": "Chicago",
+    "title": "Steve Jobs",
     "genres": [
-      "Comedy",
-      "Crime",
-      "Musical"
+      "Biography",
+      "Drama"
     ],
     "platforms": [],
-    "groupScore": 0.26666666666666666
+    "groupScore": 0.4
   },
   {
-    "title": "Moulin Rouge!",
+    "title": "The Pursuit of Happyness",
     "genres": [
-      "Drama",
-      "Musical",
-      "Romance"
+      "Biography",
+      "Drama"
     ],
     "platforms": [],
-    "groupScore": 0.26666666666666666
-  },
-  {
-    "title": "Hairspray",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Musical"
-    ],
-    "platforms": [],
-    "groupScore": 0.26666666666666666
+    "groupScore": 0.4
   }
 ]
