@@ -2,10 +2,12 @@
  * onboardingServer.js
  * ---------------------
  * Replaces the static personas/*.json test files with a real,
- * multi-user onboarding flow: people answer a short form one at a
- * time, and once at least 1 has answered, "Get recommendations"
- * runs the real agent loop (agent/runWorkflow.js) against exactly
- * the people who just answered — no static persona files involved.
+ * multi-user onboarding flow: each person signs in with Google first
+ * (their account IS their profile — no anonymous/guest entry), then
+ * answers a short form, one at a time, handing the device to the next
+ * person. Once at least 1 has answered, "Get recommendations" runs
+ * the real agent loop (agent/runWorkflow.js) against exactly the
+ * people who just answered — no static persona files involved.
  * Works solo (personal picks) or as a group (negotiated picks).
  *
  * Plain Node `http`, no framework — this app is small enough not to
@@ -14,13 +16,58 @@
 
 require("dotenv").config();
 const http = require("http");
+const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
 
 const { runWorkflow } = require("../agent/runWorkflow");
+const googleAuth = require("./googleAuth");
+const profileStore = require("./profileStore");
 
 const PORT = process.env.ONBOARDING_PORT || 4310;
 const PUBLIC_HTML_PATH = path.join(__dirname, "onboarding.html");
+
+const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
+const GOOGLE_SECRET = process.env.GOOGLE_SECRET;
+const REDIRECT_URI = `http://localhost:${PORT}/auth/google/callback`;
+if (!GOOGLE_CLIENT_ID || !GOOGLE_SECRET) {
+  console.warn(
+    "GOOGLE_CLIENT_ID / GOOGLE_SECRET missing from .env — Google sign-in will fail until both are set."
+  );
+}
+
+// sessionId -> { email, name, picture }. In-memory on purpose: this is
+// a local single-process dev tool, not a deployed multi-instance app.
+const sessions = new Map();
+
+function parseCookies(req) {
+  const header = req.headers.cookie || "";
+  const cookies = {};
+  header.split(";").forEach((pair) => {
+    const idx = pair.indexOf("=");
+    if (idx === -1) return;
+    cookies[pair.slice(0, idx).trim()] = decodeURIComponent(pair.slice(idx + 1).trim());
+  });
+  return cookies;
+}
+
+function setCookie(res, name, value, opts = {}) {
+  const parts = [`${name}=${encodeURIComponent(value)}`, "Path=/", "HttpOnly", "SameSite=Lax"];
+  if (opts.maxAge) parts.push(`Max-Age=${opts.maxAge}`);
+  res.setHeader("Set-Cookie", [...(res.getHeader("Set-Cookie") || []), parts.join("; ")]);
+}
+
+function clearCookie(res, name) {
+  res.setHeader("Set-Cookie", [
+    ...(res.getHeader("Set-Cookie") || []),
+    `${name}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0`,
+  ]);
+}
+
+function currentUser(req) {
+  const { session } = parseCookies(req);
+  return session && sessions.has(session) ? sessions.get(session) : null;
+}
 
 // Same genre vocabulary the Skill recognizes (see skill/scoreGroupMovies.js).
 // RomCom / Raunchy Comedy were removed — both are just Romance and/or
@@ -118,7 +165,10 @@ function buildPersona(body) {
 
 const server = http.createServer(async (req, res) => {
   try {
-    if (req.method === "GET" && req.url === "/") {
+    const parsedUrl = new URL(req.url, `http://localhost:${PORT}`);
+    const pathname = parsedUrl.pathname;
+
+    if (req.method === "GET" && pathname === "/") {
       const html = fs
         .readFileSync(PUBLIC_HTML_PATH, "utf-8")
         .replace("__ONBOARDING_CONFIG__", JSON.stringify({ genres: GENRES, platforms: PLATFORMS }));
@@ -127,21 +177,95 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    if (req.method === "GET" && req.url === "/api/state") {
+    if (req.method === "GET" && pathname === "/api/state") {
       return sendJson(res, 200, stateSnapshot());
     }
 
-    if (req.method === "POST" && req.url === "/api/personas") {
+    if (req.method === "GET" && pathname === "/api/me") {
+      const user = currentUser(req);
+      return sendJson(res, 200, user ? { loggedIn: true, ...user } : { loggedIn: false });
+    }
+
+    if (req.method === "GET" && pathname === "/api/profile") {
+      const user = currentUser(req);
+      if (!user) return sendJson(res, 401, { ok: false, error: "Not signed in." });
+      const profile = await profileStore.getProfile(user.email);
+      return sendJson(res, 200, { ok: true, profile });
+    }
+
+    if (req.method === "GET" && pathname === "/auth/google") {
+      if (!GOOGLE_CLIENT_ID || !GOOGLE_SECRET) {
+        res.writeHead(500, { "Content-Type": "text/plain" });
+        return res.end("Google sign-in isn't configured (missing GOOGLE_CLIENT_ID/GOOGLE_SECRET).");
+      }
+      const state = crypto.randomBytes(16).toString("hex");
+      setCookie(res, "oauth_state", state, { maxAge: 300 });
+      const authUrl = googleAuth.buildAuthUrl({
+        clientId: GOOGLE_CLIENT_ID,
+        redirectUri: REDIRECT_URI,
+        state,
+      });
+      res.writeHead(302, { Location: authUrl });
+      return res.end();
+    }
+
+    if (req.method === "GET" && pathname === "/auth/google/callback") {
+      const { oauth_state } = parseCookies(req);
+      const code = parsedUrl.searchParams.get("code");
+      const state = parsedUrl.searchParams.get("state");
+
+      if (!code || !state || state !== oauth_state) {
+        res.writeHead(400, { "Content-Type": "text/plain" });
+        return res.end("Google sign-in failed: invalid or expired state. Go back and try again.");
+      }
+
+      const tokens = await googleAuth.exchangeCodeForTokens({
+        code,
+        clientId: GOOGLE_CLIENT_ID,
+        clientSecret: GOOGLE_SECRET,
+        redirectUri: REDIRECT_URI,
+      });
+      const userInfo = await googleAuth.fetchUserInfo(tokens.access_token);
+
+      const sessionId = crypto.randomBytes(24).toString("hex");
+      sessions.set(sessionId, {
+        email: userInfo.email,
+        name: userInfo.name || userInfo.email,
+        picture: userInfo.picture || null,
+      });
+      clearCookie(res, "oauth_state");
+      setCookie(res, "session", sessionId, { maxAge: 60 * 60 * 24 * 7 });
+      console.log(`Signed in via Google: ${userInfo.email}`);
+
+      res.writeHead(302, { Location: "/" });
+      return res.end();
+    }
+
+    if (req.method === "POST" && pathname === "/auth/logout") {
+      const { session } = parseCookies(req);
+      if (session) sessions.delete(session);
+      clearCookie(res, "session");
+      return sendJson(res, 200, { ok: true });
+    }
+
+    if (req.method === "POST" && pathname === "/api/personas") {
+      const user = currentUser(req);
+      if (!user) return sendJson(res, 401, { ok: false, error: "Sign in with Google first." });
+
       const body = await readJsonBody(req);
       const { persona, error } = buildPersona(body);
       if (error) return sendJson(res, 400, { ok: false, error });
 
       personas.push(persona);
       console.log(`Added persona "${persona.name}" (${personas.length} in the group so far).`);
+
+      await profileStore.saveProfile(user.email, persona);
+      console.log(`Saved preferences for ${user.email} for next time.`);
+
       return sendJson(res, 200, { ok: true, ...stateSnapshot() });
     }
 
-    if (req.method === "POST" && req.url === "/api/generate") {
+    if (req.method === "POST" && pathname === "/api/generate") {
       if (personas.length < 1) {
         return sendJson(res, 400, {
           ok: false,
@@ -153,7 +277,7 @@ const server = http.createServer(async (req, res) => {
       return sendJson(res, 200, { ok: true, results, personaNames: personas.map((p) => p.name) });
     }
 
-    if (req.method === "POST" && req.url === "/api/reset") {
+    if (req.method === "POST" && pathname === "/api/reset") {
       personas = [];
       console.log("Group reset — ready for a new round.");
       return sendJson(res, 200, { ok: true });

@@ -96,13 +96,39 @@
   .score-label { font-size: 0.85rem; color: #c7c7d1; width: 40px; text-align: right; }
   .selected-note { text-align: center; color: var(--muted); font-size: 0.85rem; margin-bottom: 20px; }
   .empty-note { text-align: center; color: var(--muted); padding: 24px 0; }
+
+  .auth-bar {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 10px; background: var(--panel); border: 1px solid var(--border);
+    border-radius: 12px; padding: 12px 16px; margin-bottom: 24px; font-size: 0.85rem;
+  }
+  .auth-user { display: flex; align-items: center; gap: 8px; }
+  .auth-user img { width: 24px; height: 24px; border-radius: 50%; }
+  .google-btn {
+    display: inline-flex; align-items: center;
+    background: white; color: #1f1f28; text-decoration: none;
+    padding: 8px 14px; border-radius: 8px; font-weight: 600; font-size: 0.82rem;
+  }
+  .logout-link {
+    color: var(--muted); background: none; border: none; cursor: pointer;
+    font-size: 0.82rem; text-decoration: underline; padding: 0;
+  }
+  .primary-btn { text-align: center; text-decoration: none; }
 </style>
 </head>
 <body>
 
-  <section class="screen active" id="screen-form">
+  <section class="screen active" id="screen-login">
     <h1>Movie Night</h1>
-    <div class="subtitle" id="formSubtitle">Who's up first? Answer for yourself, then hand it off.</div>
+    <div class="subtitle" id="loginSubtitle">Sign in with Google to add your preferences.</div>
+    <a class="primary-btn" href="/auth/google">Sign in with Google</a>
+  </section>
+
+  <section class="screen" id="screen-form">
+    <h1>Movie Night</h1>
+    <div class="subtitle" id="formSubtitle">Your turn — these answers become your profile.</div>
+
+    <div class="auth-bar" id="authBar"></div>
 
     <div class="field">
       <label class="field-label" for="nameInput">Your name</label>
@@ -166,6 +192,7 @@
   const CONFIG = __ONBOARDING_CONFIG__;
 
   const screens = {
+    login: document.getElementById('screen-login'),
     form: document.getElementById('screen-form'),
     waiting: document.getElementById('screen-waiting'),
     loading: document.getElementById('screen-loading'),
@@ -209,6 +236,48 @@
       el.closest('.chip-option').classList.remove('checked-like', 'checked-dislike');
     });
     document.getElementById('formError').textContent = '';
+  }
+
+  function renderAuthBar(user) {
+    const bar = document.getElementById('authBar');
+    if (user && user.loggedIn) {
+      bar.innerHTML =
+        '<div class="auth-user">' +
+          (user.picture ? '<img src="' + user.picture + '">' : '') +
+          '<span>Signed in as ' + user.name + '</span>' +
+        '</div>' +
+        '<button class="logout-link" id="logoutBtn">Log out</button>';
+      document.getElementById('logoutBtn').addEventListener('click', async () => {
+        await fetch('/auth/logout', { method: 'POST' });
+        window.location.reload();
+      });
+    } else {
+      bar.innerHTML =
+        '<span>Sign in to save your preferences for next time.</span>' +
+        '<a class="google-btn" href="/auth/google">Sign in with Google</a>';
+    }
+  }
+
+  function applyProfile(profile, fallbackName) {
+    document.getElementById('nameInput').value = (profile && profile.name) || fallbackName || '';
+    if (!profile) return;
+
+    document.querySelectorAll('#likedGenresGrid input').forEach((el) => {
+      el.checked = profile.liked_genres.includes(el.value);
+      el.closest('.chip-option').classList.toggle('checked-like', el.checked);
+    });
+    document.querySelectorAll('#dislikedGenresGrid input').forEach((el) => {
+      el.checked = profile.disliked_genres.includes(el.value);
+      el.closest('.chip-option').classList.toggle('checked-dislike', el.checked);
+    });
+    document.querySelectorAll('#platformsGrid input').forEach((el) => {
+      el.checked = profile.platforms.includes(el.value);
+    });
+
+    const titles = profile.liked_titles || [];
+    document.getElementById('title1').value = titles[0] || '';
+    document.getElementById('title2').value = titles[1] || '';
+    document.getElementById('title3').value = titles[2] || '';
   }
 
   async function refreshRoster() {
@@ -272,9 +341,13 @@
     showScreen('waiting');
   });
 
-  document.getElementById('addAnotherBtn').addEventListener('click', () => {
-    document.getElementById('formSubtitle').textContent = "Next person's turn.";
-    showScreen('form');
+  document.getElementById('addAnotherBtn').addEventListener('click', async () => {
+    // The next person is a different Google account — sign the
+    // current one out so they can't accidentally submit as someone else.
+    await fetch('/auth/logout', { method: 'POST' });
+    resetForm();
+    document.getElementById('loginSubtitle').textContent = "Next person's turn — sign in to continue.";
+    showScreen('login');
   });
 
   document.getElementById('resetFromWaitingBtn').addEventListener('click', startOver);
@@ -282,9 +355,10 @@
 
   async function startOver() {
     await fetch('/api/reset', { method: 'POST' });
+    await fetch('/auth/logout', { method: 'POST' });
     resetForm();
-    document.getElementById('formSubtitle').textContent = "Who's up first? Answer for yourself, then hand it off.";
-    showScreen('form');
+    document.getElementById('loginSubtitle').textContent = 'Sign in with Google to add your preferences.';
+    showScreen('login');
   }
 
   const loadingMessages = [
@@ -358,10 +432,26 @@
     });
   }
 
-  // Restore state on load (e.g. page refresh mid-round).
-  refreshRoster().then((state) => {
-    if (state.count > 0) showScreen('waiting');
-  });
+  // Gate on login first: show the login screen until Google sign-in
+  // succeeds, then load that account's saved profile (if any) into
+  // the form and jump straight to "waiting" if they already answered
+  // this round (e.g. a page refresh mid-round).
+  async function bootstrap() {
+    const me = await fetch('/api/me').then((r) => r.json());
+    if (!me.loggedIn) {
+      showScreen('login');
+      return;
+    }
+
+    renderAuthBar(me);
+    const profRes = await fetch('/api/profile');
+    const profData = await profRes.json();
+    if (profData.ok) applyProfile(profData.profile, me.name);
+
+    const state = await refreshRoster();
+    showScreen(state.count > 0 ? 'waiting' : 'form');
+  }
+  bootstrap();
 </script>
 </body>
 </html>
