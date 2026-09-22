@@ -3,11 +3,18 @@
  * ---------------
  * ONE job: call the OMDb API and reshape its response into the
  * exact shape your Skill (scoreGroupMovies) expects:
- *   { title, genres, platforms }
+ *   { title, genres, platforms, year, poster, plot, director, actors, imdbRating }
  *
  * This file does NOT score or filter anything. It only fetches
  * and reshapes data. Keeping it separate means your Skill never
  * needs to know or care which movie API you're using.
+ *
+ * The metadata fields (year/poster/plot/director/actors/imdbRating)
+ * exist purely for display — nothing in the Skill's scoring logic
+ * reads them. `poster`/`plot`/`imdbRating` come back as `null` when
+ * OMDb has nothing for that title (it returns the literal string
+ * "N/A"), so the UI can show a fallback instead of a broken image or
+ * the word "N/A" printed on a movie card.
  *
  * NOTE: OMDb has no streaming-platform data at all, so `platforms`
  * is left as an empty array here. That gap gets filled in later
@@ -75,14 +82,26 @@ async function fetchMovieByTitle(title) {
     return null; // genuinely not found — fine to cache as such
   }
 
+  // OMDb uses the literal string "N/A" for any field it has nothing
+  // for, instead of omitting the field — normalize that to null so
+  // downstream code can just check truthiness.
+  const naToNull = (value) => (value && value !== "N/A" ? value : null);
+
   return {
     title: data.Title,
-    // OMDb returns genres as a comma-separated string, e.g. "Action, Sci-Fi"
-    // your Skill expects an array, so we split and clean it up here
+    // OMDb returns genres/actors as comma-separated strings, e.g.
+    // "Action, Sci-Fi" — your Skill expects an array, so split + clean.
     genres: data.Genre.split(",").map((g) => g.trim()),
     // OMDb has no platform/streaming data — left empty on purpose.
     // This gets filled in later by the web-search MCP step.
     platforms: [],
+    year: naToNull(data.Year),
+    poster: naToNull(data.Poster),
+    plot: naToNull(data.Plot),
+    director: naToNull(data.Director),
+    actors: data.Actors && data.Actors !== "N/A" ? data.Actors.split(",").map((a) => a.trim()) : [],
+    imdbRating: naToNull(data.imdbRating),
+    language: naToNull(data.Language),
   };
 }
 

@@ -4,11 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Movie Night — Who's Watching?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #14141a; --panel: #1f1f28; --border: #2c2c38;
     --text: #f0f0f2; --muted: #9a9aa5;
     --accent: #6c5ce7; --accent2: #a29bfe; --good: #34c77b; --bad: #e6604a;
+
+    /* ticket/cinema theme — landing page only */
+    --tk-cream: #fff3d6;
+    --tk-paper: #fbe6b8;
+    --tk-yellow: #ffc93d;
+    --tk-yellow-deep: #f5a300;
+    --tk-red: #e2273b;
+    --tk-red-deep: #a3172a;
+    --tk-dark: #241206;
   }
   * { box-sizing: border-box; }
   body {
@@ -27,7 +39,7 @@
   .field { margin-bottom: 22px; }
   .field label.field-label {
     display: block; font-size: 0.8rem; text-transform: uppercase;
-    letter-spacing: 0.04em; color: var(--muted); margin-bottom: 8px;
+    letter-spacing: 0.04em; color: var(--muted); margin-bottom: 10px;
   }
   input[type="text"] {
     width: 100%; background: var(--panel); border: 1px solid var(--border);
@@ -36,22 +48,31 @@
   }
   input[type="text"]:focus { outline: none; border-color: var(--accent); }
 
-  .chip-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  /* ---- OTT-platform style selection pills (genres/platforms) ---- */
+  .chip-grid { display: flex; flex-wrap: wrap; gap: 10px; }
   .chip-option {
     display: inline-flex; align-items: center; gap: 6px;
-    background: var(--panel); border: 1px solid var(--border);
-    border-radius: 999px; padding: 8px 14px; cursor: pointer;
-    font-size: 0.88rem; user-select: none;
+    background: var(--panel); border: 2px solid var(--border);
+    border-radius: 999px; padding: 10px 18px; cursor: pointer;
+    font-size: 0.92rem; font-weight: 500; user-select: none;
+    transition: transform 0.1s ease, border-color 0.15s ease, background 0.15s ease;
   }
-  .chip-option input { accent-color: var(--accent); }
-  .chip-option.checked-like { border-color: var(--good); }
-  .chip-option.checked-dislike { border-color: var(--bad); }
+  .chip-option:hover { border-color: #454556; transform: translateY(-1px); }
+  .chip-option input { display: none; }
+  .chip-option.checked-like { background: rgba(52,199,123,0.16); border-color: var(--good); color: #b7f3d3; font-weight: 700; }
+  .chip-option.checked-dislike { background: rgba(230,96,74,0.16); border-color: var(--bad); color: #ffc2b3; font-weight: 700; }
+  #platformsGrid .chip-option.checked-like,
+  #platformsGrid .chip-option { }
+  .chip-option[for^="platform-"] { border-color: var(--border); }
+  .chip-option[for^="platform-"] input:checked ~ * {}
+  .chip-option.checked-platform { background: rgba(108,92,231,0.18); border-color: var(--accent); color: var(--accent2); font-weight: 700; }
 
   .primary-btn {
     display: block; width: 100%;
     background: linear-gradient(90deg, var(--accent), var(--accent2));
     color: white; border: none; border-radius: 12px;
     padding: 16px; font-size: 1.05rem; font-weight: 600; cursor: pointer;
+    text-align: center; text-decoration: none;
   }
   .primary-btn:disabled { opacity: 0.4; cursor: default; }
   .ghost-btn {
@@ -80,20 +101,6 @@
   @keyframes spin { to { transform: rotate(360deg); } }
   #loadingText { color: var(--muted); }
 
-  .grid { display: grid; gap: 14px; }
-  .card {
-    background: var(--panel); border: 1px solid var(--border);
-    border-radius: 12px; padding: 18px 20px; position: relative;
-    opacity: 0; animation: fadeUp 0.4s ease forwards;
-  }
-  @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-  .rank { position: absolute; top: 14px; right: 18px; color: #5b5b68; font-weight: 700; font-size: 0.9rem; }
-  .card h2 { margin: 0 0 6px; font-size: 1.2rem; }
-  .genres { color: var(--muted); font-size: 0.9rem; margin-bottom: 12px; }
-  .score-row { display: flex; align-items: center; gap: 10px; }
-  .score-bar { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
-  .score-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2)); border-radius: 4px; }
-  .score-label { font-size: 0.85rem; color: #c7c7d1; width: 40px; text-align: right; }
   .selected-note { text-align: center; color: var(--muted); font-size: 0.85rem; margin-bottom: 20px; }
   .empty-note { text-align: center; color: var(--muted); padding: 24px 0; }
 
@@ -113,7 +120,6 @@
     color: var(--muted); background: none; border: none; cursor: pointer;
     font-size: 0.82rem; text-decoration: underline; padding: 0;
   }
-  .primary-btn { text-align: center; text-decoration: none; }
 
   .profile-badge {
     position: fixed; top: 16px; right: 16px; z-index: 60;
@@ -144,6 +150,155 @@
     background: none; border: none; color: var(--muted);
     font-size: 1.2rem; cursor: pointer; line-height: 1;
   }
+
+  /* ================= LANDING / LOGIN — ticket/cinema theme ================= */
+  #screen-login {
+    max-width: 100%;
+    background:
+      radial-gradient(circle at 12% 8%, rgba(255,255,255,0.25), transparent 40%),
+      radial-gradient(circle at 90% 95%, rgba(163,23,42,0.12), transparent 45%),
+      linear-gradient(160deg, var(--tk-yellow), var(--tk-yellow-deep) 90%);
+    margin: -48px -20px; padding: 56px 20px 64px;
+    min-height: calc(100vh);
+  }
+  .landing-inner { max-width: 640px; margin: 0 auto; }
+  .stacked-text {
+    display: flex; flex-direction: column; align-items: center;
+    line-height: 0.82; margin-bottom: 20px; overflow: hidden;
+  }
+  .stacked-text span {
+    font-family: 'Anton', system-ui, sans-serif;
+    font-size: clamp(3rem, 15vw, 6.2rem);
+    letter-spacing: 0.01em;
+    -webkit-text-stroke: 2px var(--tk-dark);
+    text-shadow: 3px 3px 0 var(--tk-dark);
+  }
+  .stacked-text span { color: var(--tk-red); }
+
+  .ticket-title {
+    display: flex; max-width: 400px; margin: 34px auto 26px;
+    background: var(--tk-paper); border-radius: 10px;
+    box-shadow: 0 16px 30px rgba(0,0,0,0.5);
+    position: relative;
+    transform: rotate(-4deg);
+  }
+  .ticket-title-main {
+    flex: 1; padding: 20px 18px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 4px;
+  }
+  .ticket-title-eyebrow {
+    font-size: 0.65rem; letter-spacing: 0.25em; color: var(--tk-red-deep);
+    font-weight: 700; text-transform: uppercase;
+  }
+  .ticket-title-text {
+    font-family: 'Bebas Neue', system-ui, sans-serif;
+    font-size: 2rem; letter-spacing: 0.06em; color: var(--tk-red-deep);
+  }
+  .ticket-barcode-side {
+    width: 48px; flex-shrink: 0; border-radius: 0 12px 12px 0;
+    background-image: repeating-linear-gradient(
+      90deg, #1a1a1a 0 2px, transparent 2px 5px, #1a1a1a 5px 6px,
+      transparent 6px 10px, #1a1a1a 10px 13px, transparent 13px 15px,
+      #1a1a1a 15px 16px, transparent 16px 20px, #1a1a1a 20px 22px, transparent 22px 26px
+    );
+  }
+  .ticket-title::before, .ticket-title::after {
+    content: ''; position: absolute; width: 22px; height: 22px; border-radius: 50%;
+    background: var(--tk-dark); left: calc(100% - 48px - 11px);
+  }
+  .ticket-title::before { top: -11px; }
+  .ticket-title::after { bottom: -11px; }
+  .ticket-title-divider {
+    position: absolute; left: calc(100% - 48px); top: 14px; bottom: 14px;
+    border-left: 2px dashed rgba(0,0,0,0.35);
+  }
+
+  .landing-login-panel {
+    max-width: 380px; margin: 0 auto; text-align: center;
+    background: linear-gradient(160deg, var(--tk-red), var(--tk-red-deep));
+    border: 2px solid var(--tk-yellow);
+    border-radius: 16px; padding: 24px 22px;
+    box-shadow: 0 14px 34px rgba(0,0,0,0.4);
+  }
+  .landing-login-panel .subtitle { color: var(--tk-cream); margin-bottom: 18px; font-size: 0.92rem; }
+  .landing-login-btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    width: 100%; background: var(--tk-cream); color: var(--tk-dark);
+    text-decoration: none; font-weight: 700; font-size: 1rem;
+    padding: 14px 18px; border-radius: 999px;
+    box-shadow: 0 6px 0 var(--tk-yellow-deep);
+    transition: transform 0.1s ease;
+  }
+  .landing-login-btn:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--tk-yellow-deep); }
+  .landing-login-btn svg { flex-shrink: 0; }
+
+  /* ================= MOVIE TICKETS — results & detail ================= */
+  .grid { display: grid; gap: 16px; }
+  .movie-ticket {
+    display: flex; align-items: stretch;
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 14px; overflow: hidden; position: relative;
+    opacity: 0; animation: fadeUp 0.4s ease forwards;
+    --tk-accent-rgb: 108,92,231;
+  }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  a.movie-ticket, button.movie-ticket, .movie-ticket.clickable { cursor: pointer; text-align: left; width: 100%; }
+  .movie-ticket.clickable:hover { border-color: rgba(var(--tk-accent-rgb), 0.6); }
+
+  .ticket-poster { width: 94px; flex-shrink: 0; background: var(--border); position: relative; }
+  .ticket-poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .ticket-poster-placeholder {
+    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+    font-size: 1.8rem; background: var(--border);
+  }
+  .ticket-notch {
+    position: absolute; width: 18px; height: 18px; border-radius: 50%;
+    background: var(--bg); left: 94px; margin-left: -9px; z-index: 2;
+  }
+  .ticket-notch-top { top: -9px; }
+  .ticket-notch-bottom { bottom: -9px; }
+
+  .ticket-body {
+    flex: 1; min-width: 0; padding: 14px 16px 14px 22px; position: relative;
+    background: linear-gradient(135deg, rgba(var(--tk-accent-rgb), 0.20), transparent 65%);
+    border-left: 2px dashed rgba(var(--tk-accent-rgb), 0.5);
+  }
+  .ticket-rank {
+    position: absolute; top: 12px; right: 14px; font-weight: 800;
+    color: rgb(var(--tk-accent-rgb)); font-size: 0.82rem;
+  }
+  .ticket-body h3 { margin: 0 26px 6px 0; font-size: 1.05rem; }
+  .ticket-genres { color: var(--muted); font-size: 0.8rem; margin-bottom: 10px; }
+  .ticket-stats { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .ticket-match {
+    background: rgb(var(--tk-accent-rgb)); color: #0a0a0d; font-weight: 700;
+    padding: 3px 11px; border-radius: 999px; font-size: 0.76rem;
+  }
+  .ticket-rating { color: var(--muted); font-size: 0.83rem; }
+
+  /* ================= DETAIL SCREEN ================= */
+  .detail-back-btn {
+    background: none; border: none; color: var(--muted); cursor: pointer;
+    font-size: 0.9rem; margin-bottom: 18px; padding: 0;
+  }
+  .detail-back-btn:hover { color: var(--text); }
+  .detail-info h1 { text-align: left; font-size: 1.6rem; margin-bottom: 6px; }
+  .detail-meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 14px; }
+  .detail-plot { font-size: 0.98rem; line-height: 1.6; color: #d6d6dc; margin-bottom: 16px; }
+  .detail-row { font-size: 0.88rem; color: var(--muted); margin-bottom: 6px; }
+  .detail-row strong { color: var(--text); font-weight: 600; }
+
+  .detail-ticket-wrap { margin: 26px 0 22px; }
+  .detail-ticket-wrap .movie-ticket { max-width: 420px; margin: 0 auto; }
+  .detail-ticket-wrap .ticket-body { display: flex; align-items: center; }
+  .detail-ticket-wrap .ticket-body h3 { margin: 0; }
+
+  .detail-actions { display: grid; gap: 10px; }
+  .detail-actions button {
+    background: var(--panel); border: 1px solid var(--border); color: var(--text);
+    padding: 12px; border-radius: 10px; font-size: 0.92rem; cursor: pointer;
+  }
+  .detail-actions button:hover { border-color: var(--accent); }
 </style>
 </head>
 <body>
@@ -154,12 +309,33 @@
   </button>
   <div class="modal-backdrop" id="modalBackdrop"></div>
 
+  <!-- ============ LANDING / LOGIN ============ -->
   <section class="screen active" id="screen-login">
-    <h1>Movie Night</h1>
-    <div class="subtitle" id="loginSubtitle">Sign in with Google to add your preferences.</div>
-    <a class="primary-btn" href="/auth/google">Sign in with Google</a>
+    <div class="landing-inner">
+      <div class="stacked-text" aria-hidden="true">
+        <span>MOVIE</span><span>MOVIE</span><span>MOVIE</span>
+      </div>
+
+      <div class="ticket-title">
+        <div class="ticket-title-main">
+          <span class="ticket-title-eyebrow">Admit Group</span>
+          <span class="ticket-title-text">MOVIE PICKER</span>
+        </div>
+        <div class="ticket-title-divider"></div>
+        <div class="ticket-barcode-side"></div>
+      </div>
+
+      <div class="landing-login-panel">
+        <div class="subtitle" id="loginSubtitle">Sign in with Google to add your preferences.</div>
+        <a class="landing-login-btn" href="/auth/google">
+          <svg width="18" height="18" viewBox="0 0 18 18"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84c-.21 1.13-.84 2.09-1.8 2.73v2.27h2.92c1.7-1.57 2.68-3.88 2.68-6.64z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.17l-2.92-2.27c-.8.54-1.83.86-3.04.86-2.34 0-4.32-1.58-5.03-3.7H.96v2.34C2.44 15.98 5.48 18 9 18z"/><path fill="#FBBC05" d="M3.97 10.72A5.4 5.4 0 013.68 9c0-.6.1-1.18.29-1.72V4.94H.96A9 9 0 000 9c0 1.45.35 2.83.96 4.06l3.01-2.34z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.51.45 3.44 1.35l2.59-2.59C13.46.89 11.43 0 9 0 5.48 0 2.44 2.02.96 4.94l3.01 2.34C4.68 5.16 6.66 3.58 9 3.58z"/></svg>
+          Sign in with Google
+        </a>
+      </div>
+    </div>
   </section>
 
+  <!-- ============ PREFERENCES ============ -->
   <section class="screen" id="screen-form" style="position: relative;">
     <button class="modal-close" id="closeProfileBtn">✕</button>
     <h1>Movie Night</h1>
@@ -199,6 +375,7 @@
     <button class="ghost-btn" id="viewGroupBtn" style="display:none;">View current group</button>
   </section>
 
+  <!-- ============ WAITING / ROSTER ============ -->
   <section class="screen" id="screen-waiting">
     <h1>Got it!</h1>
     <div class="subtitle">Add another person, or get recommendations now.</div>
@@ -212,6 +389,7 @@
     <button class="ghost-btn" id="resetFromWaitingBtn">Start a new group</button>
   </section>
 
+  <!-- ============ LOADING ============ -->
   <section class="screen" id="screen-loading">
     <div class="loading-wrap">
       <div class="spinner"></div>
@@ -219,11 +397,31 @@
     </div>
   </section>
 
+  <!-- ============ RESULTS (movie tickets) ============ -->
   <section class="screen" id="screen-results">
     <h1 id="resultsHeading">Tonight's Picks</h1>
     <div class="selected-note" id="resultsNote"></div>
     <div class="grid" id="resultsGrid"></div>
     <button class="ghost-btn" id="startOverBtn">Start a new group</button>
+  </section>
+
+  <!-- ============ DETAIL ============ -->
+  <section class="screen" id="screen-detail">
+    <button class="detail-back-btn" id="detailBackBtn">← Back to results</button>
+    <div class="detail-info">
+      <h1 id="detailHeading"></h1>
+      <div class="detail-meta" id="detailMeta"></div>
+      <p class="detail-plot" id="detailPlot"></p>
+      <div class="detail-row" id="detailActorsRow"><strong>Starring:</strong> <span id="detailActors"></span></div>
+      <div class="detail-row" id="detailDirectorRow"><strong>Director:</strong> <span id="detailDirector"></span></div>
+      <div class="detail-row" id="detailLanguageRow"><strong>Language:</strong> <span id="detailLanguage"></span></div>
+    </div>
+    <div class="detail-ticket-wrap" id="detailTicketWrap"></div>
+    <div class="detail-actions">
+      <button id="redoBtn">🔁 Get new recommendations</button>
+      <button id="changePrefsBtn">✏️ Change preferences</button>
+      <button id="changeGroupBtn">👥 Change group</button>
+    </div>
   </section>
 
 <script>
@@ -235,18 +433,17 @@
     waiting: document.getElementById('screen-waiting'),
     loading: document.getElementById('screen-loading'),
     results: document.getElementById('screen-results'),
+    detail: document.getElementById('screen-detail'),
   };
   let currentScreenName = null;
   function showScreen(name) {
     currentScreenName = name;
     Object.values(screens).forEach((s) => s.classList.remove('active'));
     screens[name].classList.add('active');
+    window.scrollTo(0, 0);
   }
 
-  // The floating badge (top-right, visible on every screen once
-  // logged in) pops the profile form open as a modal on top of
-  // whatever screen you're currently on, so you're never stuck
-  // without a way back to your own saved preferences.
+  // ---------------- profile badge / modal ----------------
   let screenBeforeModal = null;
 
   function renderProfileBadge(user) {
@@ -269,7 +466,7 @@
     showScreen(targetScreen);
   }
 
-  document.getElementById('profileBadge').addEventListener('click', async () => {
+  async function openProfileModal() {
     screenBeforeModal = currentScreenName;
     const [me, profRes] = await Promise.all([
       fetch('/api/me').then((r) => r.json()),
@@ -282,8 +479,9 @@
     document.getElementById('modalBackdrop').style.display = 'block';
     screens.form.classList.add('as-modal');
     showScreen('form');
-  });
+  }
 
+  document.getElementById('profileBadge').addEventListener('click', openProfileModal);
   document.getElementById('closeProfileBtn').addEventListener('click', () => {
     exitProfileModal(screenBeforeModal || 'waiting');
   });
@@ -291,6 +489,7 @@
     exitProfileModal(screenBeforeModal || 'waiting');
   });
 
+  // ---------------- preferences chip grids ----------------
   function buildChipGrid(container, options, kind) {
     container.innerHTML = '';
     options.forEach((opt, i) => {
@@ -301,7 +500,8 @@
       label.innerHTML = '<input type="checkbox" id="' + id + '" value="' + opt + '"> ' + opt;
       const input = label.querySelector('input');
       input.addEventListener('change', () => {
-        label.classList.toggle(kind === 'liked' ? 'checked-like' : kind === 'disliked' ? 'checked-dislike' : '', input.checked);
+        const cls = kind === 'liked' ? 'checked-like' : kind === 'disliked' ? 'checked-dislike' : 'checked-platform';
+        label.classList.toggle(cls, input.checked);
       });
       container.appendChild(label);
     });
@@ -321,7 +521,7 @@
     document.getElementById('title3').value = '';
     document.querySelectorAll('.chip-option input').forEach((el) => {
       el.checked = false;
-      el.closest('.chip-option').classList.remove('checked-like', 'checked-dislike');
+      el.closest('.chip-option').classList.remove('checked-like', 'checked-dislike', 'checked-platform');
     });
     document.getElementById('formError').textContent = '';
   }
@@ -360,6 +560,7 @@
     });
     document.querySelectorAll('#platformsGrid input').forEach((el) => {
       el.checked = profile.platforms.includes(el.value);
+      el.closest('.chip-option').classList.toggle('checked-platform', el.checked);
     });
 
     const titles = profile.liked_titles || [];
@@ -368,6 +569,7 @@
     document.getElementById('title3').value = titles[2] || '';
   }
 
+  // ---------------- roster ----------------
   async function refreshRoster() {
     const res = await fetch('/api/state');
     const state = await res.json();
@@ -403,7 +605,7 @@
   }
 
   document.getElementById('viewGroupBtn').addEventListener('click', async () => {
-    const state = await refreshRoster();
+    await refreshRoster();
     showScreen('waiting');
   });
 
@@ -441,8 +643,6 @@
   });
 
   document.getElementById('addAnotherBtn').addEventListener('click', async () => {
-    // The next person is a different Google account — sign the
-    // current one out so they can't accidentally submit as someone else.
     await fetch('/auth/logout', { method: 'POST' });
     resetForm();
     renderProfileBadge(null);
@@ -452,6 +652,7 @@
 
   document.getElementById('resetFromWaitingBtn').addEventListener('click', startOver);
   document.getElementById('startOverBtn').addEventListener('click', startOver);
+  document.getElementById('changeGroupBtn').addEventListener('click', startOver);
 
   async function startOver() {
     await fetch('/api/reset', { method: 'POST' });
@@ -462,6 +663,9 @@
     exitProfileModal('login');
   }
 
+  document.getElementById('changePrefsBtn').addEventListener('click', openProfileModal);
+
+  // ---------------- generate ----------------
   const loadingMessages = [
     "Checking everyone's preferences…",
     'Searching the movie database…',
@@ -469,7 +673,7 @@
     'Ranking the best group matches…',
   ];
 
-  document.getElementById('generateBtn').addEventListener('click', async () => {
+  async function runGenerate() {
     showScreen('loading');
     let i = 0;
     const loadingText = document.getElementById('loadingText');
@@ -497,14 +701,111 @@
       alert('Something went wrong generating recommendations: ' + err.message);
       showScreen('waiting');
     }
-  });
+  }
+
+  document.getElementById('generateBtn').addEventListener('click', runGenerate);
+  document.getElementById('redoBtn').addEventListener('click', runGenerate);
+
+  // ---------------- poster dominant-color extraction ----------------
+  function hslToRgb(h, s, l) {
+    let r, g, b;
+    if (s === 0) { r = g = b = l; }
+    else {
+      const hue2rgb = (p, q, t) => {
+        if (t < 0) t += 1;
+        if (t > 1) t -= 1;
+        if (t < 1 / 6) return p + (q - p) * 6 * t;
+        if (t < 1 / 2) return q;
+        if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+        return p;
+      };
+      const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+      const p = 2 * l - q;
+      r = hue2rgb(p, q, h + 1 / 3);
+      g = hue2rgb(p, q, h);
+      b = hue2rgb(p, q, h - 1 / 3);
+    }
+    return { r: Math.round(r * 255), g: Math.round(g * 255), b: Math.round(b * 255) };
+  }
+
+  // Every movie gets a distinct, consistent color even without a
+  // poster (or if extraction fails) — hashed from its title.
+  function hashFallbackColor(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) hash = str.charCodeAt(i) + ((hash << 5) - hash);
+    const hue = (Math.abs(hash) % 360) / 360;
+    return hslToRgb(hue, 0.58, 0.46);
+  }
+
+  // OMDb's poster CDN sends Access-Control-Allow-Origin: *, so this
+  // canvas read works — falls back to the title hash if it doesn't
+  // (private network, ad blocker, etc.), never throws.
+  function extractDominantColor(imgEl, title, callback) {
+    try {
+      const canvas = document.createElement('canvas');
+      canvas.width = 24;
+      canvas.height = 36;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(imgEl, 0, 0, 24, 36);
+      const data = ctx.getImageData(0, 0, 24, 36).data;
+      let r = 0, g = 0, b = 0, n = 0;
+      for (let i = 0; i < data.length; i += 4) {
+        r += data[i]; g += data[i + 1]; b += data[i + 2]; n++;
+      }
+      callback({ r: Math.round(r / n), g: Math.round(g / n), b: Math.round(b / n) });
+    } catch (e) {
+      callback(hashFallbackColor(title));
+    }
+  }
+
+  function applyTicketColor(ticketEl, rgb) {
+    ticketEl.style.setProperty('--tk-accent-rgb', rgb.r + ',' + rgb.g + ',' + rgb.b);
+  }
+
+  function makePosterEl(posterUrl, title, ticketEl) {
+    function placeholder() {
+      const div = document.createElement('div');
+      div.className = 'ticket-poster-placeholder';
+      div.textContent = '🎬';
+      return div;
+    }
+    const wrap = document.createElement('div');
+    wrap.className = 'ticket-poster';
+
+    if (!posterUrl || !posterUrl.startsWith('http')) {
+      wrap.appendChild(placeholder());
+      applyTicketColor(ticketEl, hashFallbackColor(title));
+      return wrap;
+    }
+
+    const img = document.createElement('img');
+    img.src = posterUrl;
+    img.alt = '';
+    img.crossOrigin = 'anonymous';
+    img.loading = 'lazy';
+    img.addEventListener('load', () => extractDominantColor(img, title, (rgb) => applyTicketColor(ticketEl, rgb)));
+    img.addEventListener('error', function () {
+      this.replaceWith(placeholder());
+      applyTicketColor(ticketEl, hashFallbackColor(title));
+    });
+    wrap.appendChild(img);
+    return wrap;
+  }
+
+  // ---------------- results (movie tickets) ----------------
+  let lastResults = [];
+  let lastPersonaNames = [];
 
   function renderResults(data) {
+    lastResults = data.results;
+    lastPersonaNames = data.personaNames;
+
     const solo = data.personaNames.length === 1;
     document.getElementById('resultsHeading').textContent = solo ? 'Recommended For You' : "Tonight's Picks";
     document.getElementById('resultsNote').textContent = solo
       ? 'Personal picks for ' + data.personaNames[0] + '.'
       : 'What your group should watch — picked for ' + data.personaNames.join(', ') + '.';
+
     const grid = document.getElementById('resultsGrid');
     grid.innerHTML = '';
 
@@ -516,29 +817,87 @@
     }
 
     data.results.forEach((movie, idx) => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.style.animationDelay = (idx * 90) + 'ms';
-      const pct = Math.round(movie.groupScore * 100);
-      card.innerHTML =
-        '<div class="rank">#' + (idx + 1) + '</div>' +
-        '<h2></h2><div class="genres"></div>' +
-        '<div class="score-row">' +
-          '<div class="score-bar"><div class="score-fill" style="width:' + pct + '%"></div></div>' +
-          '<span class="score-label">' + pct + '%</span>' +
-        '</div>';
-      card.querySelector('h2').textContent = movie.title;
-      card.querySelector('.genres').textContent = movie.genres.join(' · ');
-      grid.appendChild(card);
+      grid.appendChild(buildTicket(movie, idx, true));
     });
   }
 
-  // Gate on login first: show the login screen until Google sign-in
-  // succeeds, then always land on the profile form (pre-filled from
-  // your saved profile, if any) — never auto-skip to the group roster,
-  // even if a round is already in progress, so your own profile is
-  // always visible and editable. "View current group" gets you to the
-  // roster from there.
+  function buildTicket(movie, idx, clickable) {
+    const ticket = document.createElement('div');
+    ticket.className = 'movie-ticket' + (clickable ? ' clickable' : '');
+    ticket.style.animationDelay = (idx * 90) + 'ms';
+    if (clickable) {
+      ticket.setAttribute('role', 'button');
+      ticket.setAttribute('tabindex', '0');
+      ticket.addEventListener('click', () => openDetail(idx));
+      ticket.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') openDetail(idx);
+      });
+    }
+
+    ticket.appendChild(makePosterEl(movie.poster, movie.title, ticket));
+    ticket.appendChild(document.createElement('div')).className = 'ticket-notch ticket-notch-top';
+    ticket.appendChild(document.createElement('div')).className = 'ticket-notch ticket-notch-bottom';
+
+    const body = document.createElement('div');
+    body.className = 'ticket-body';
+    const pct = Math.round(movie.groupScore * 100);
+    body.innerHTML =
+      '<div class="ticket-rank">#' + (idx + 1) + '</div>' +
+      '<h3></h3>' +
+      '<div class="ticket-genres"></div>' +
+      '<div class="ticket-stats">' +
+        '<span class="ticket-match">' + pct + '% match</span>' +
+        (movie.imdbRating ? '<span class="ticket-rating">⭐ ' + movie.imdbRating + '</span>' : '') +
+      '</div>';
+
+    const titleEl = body.querySelector('h3');
+    titleEl.textContent = movie.title + (movie.year ? ' (' + movie.year + ')' : '');
+    body.querySelector('.ticket-genres').textContent = movie.genres.join(' · ');
+
+    ticket.appendChild(body);
+    return ticket;
+  }
+
+  // ---------------- detail screen ----------------
+  function openDetail(idx) {
+    const movie = lastResults[idx];
+    if (!movie) return;
+
+    document.getElementById('detailHeading').textContent = movie.title + (movie.year ? ' (' + movie.year + ')' : '');
+    const pct = Math.round(movie.groupScore * 100);
+    document.getElementById('detailMeta').textContent =
+      movie.genres.join(' · ') + '  ·  ' + pct + '% match' + (movie.imdbRating ? '  ·  ⭐ ' + movie.imdbRating : '');
+    document.getElementById('detailPlot').textContent = movie.plot || 'No description available for this title.';
+
+    setDetailRow('detailActorsRow', 'detailActors', movie.actors && movie.actors.length ? movie.actors.join(', ') : null);
+    setDetailRow('detailDirectorRow', 'detailDirector', movie.director);
+    setDetailRow('detailLanguageRow', 'detailLanguage', movie.language);
+
+    const ticketWrap = document.getElementById('detailTicketWrap');
+    ticketWrap.innerHTML = '';
+    const ticket = buildTicket(movie, idx, false);
+    // Detail ticket only needs the poster + title, not rank/genres/stats.
+    ticket.querySelector('.ticket-rank').remove();
+    ticket.querySelector('.ticket-genres').remove();
+    ticket.querySelector('.ticket-stats').remove();
+    ticketWrap.appendChild(ticket);
+
+    showScreen('detail');
+  }
+
+  function setDetailRow(rowId, spanId, value) {
+    const row = document.getElementById(rowId);
+    if (value) {
+      document.getElementById(spanId).textContent = value;
+      row.style.display = 'block';
+    } else {
+      row.style.display = 'none';
+    }
+  }
+
+  document.getElementById('detailBackBtn').addEventListener('click', () => showScreen('results'));
+
+  // ---------------- bootstrap ----------------
   async function bootstrap() {
     const me = await fetch('/api/me').then((r) => r.json());
     if (!me.loggedIn) {

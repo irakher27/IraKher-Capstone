@@ -15,7 +15,16 @@
  * {
  *   title: "Inception",
  *   genres: ["Thriller", "Sci-Fi"],
- *   platforms: ["Netflix", "Prime Video"]   // where it's streamable
+ *   platforms: ["Netflix", "Prime Video"],  // where it's streamable
+ *   // Everything below is optional display metadata — this function
+ *   // never reads it, only carries it through untouched (via the
+ *   // { ...movie, groupScore } spread below) so the UI can show it.
+ *   year: "2010",
+ *   poster: "https://...jpg",   // or null if unavailable
+ *   plot: "A thief who steals corporate secrets...",
+ *   director: "Christopher Nolan",
+ *   actors: ["Leonardo DiCaprio", "Joseph Gordon-Levitt"],
+ *   imdbRating: "8.8"
  * }
  *
  * Expected persona shape (matches the persona JSON files already made):

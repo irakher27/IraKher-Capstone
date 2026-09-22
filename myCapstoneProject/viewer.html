@@ -31,25 +31,62 @@
     background: #1f1f28;
     border: 1px solid #2c2c38;
     border-radius: 12px;
-    padding: 18px 20px;
+    padding: 16px 18px;
+    display: flex;
+    gap: 14px;
+  }
+  .poster, .poster-placeholder {
+    width: 84px;
+    height: 126px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background: #2c2c38;
+    object-fit: cover;
+  }
+  .poster-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+  }
+  .card-body {
+    flex: 1;
+    min-width: 0;
     position: relative;
+    padding-right: 28px;
   }
   .rank {
     position: absolute;
-    top: 14px;
-    right: 18px;
+    top: 0;
+    right: 0;
     color: #5b5b68;
     font-weight: 700;
     font-size: 0.9rem;
   }
   h2 {
     margin: 0 0 6px;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+  }
+  h2 .year {
+    color: #9a9aa5;
+    font-weight: 400;
+    font-size: 0.9rem;
   }
   .genres {
     color: #9a9aa5;
-    font-size: 0.9rem;
-    margin-bottom: 12px;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+  .plot {
+    font-size: 0.85rem;
+    color: #c7c7d1;
+    line-height: 1.45;
+    margin-bottom: 8px;
+  }
+  .credits {
+    font-size: 0.78rem;
+    color: #9a9aa5;
+    margin-bottom: 10px;
   }
   .score-row {
     display: flex;
@@ -82,52 +119,77 @@
   <div class="grid">
     
       <div class="card">
-        <div class="rank">#1</div>
-        <h2>Top Gun</h2>
-        <div class="genres">Action · Drama</div>
-        <div class="score-row">
-          <div class="score-bar"><div class="score-fill" style="width:40%"></div></div>
-          <span class="score-label">40%</span>
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BMGNlYmM1NmQtYWExMS00NmRjLTg5ZmEtMmYyYzJkMzljYWMxXkEyXkFqcGc@._V1_SX300.jpg" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'poster-placeholder',textContent:'🎬'}))">
+        <div class="card-body">
+          <div class="rank">#1</div>
+          <h2>Die Hard <span class="year">(1988)</span></h2>
+          <div class="genres">Action · Thriller  ·  ⭐ 8.2</div>
+          <div class="plot">A New York City cop, John McClane, tries to save his estranged wife and several others taken hostage by terrorists during a Christmas Eve party at the Nakatomi Plaza Skyscraper in Los Angeles, California.</div>
+          <div class="credits">Director: John McTiernan   Starring: Bruce Willis, Alan Rickman, Bonnie Bedelia</div>
+          <div class="score-row">
+            <div class="score-bar"><div class="score-fill" style="width:56%"></div></div>
+            <span class="score-label">56%</span>
+          </div>
         </div>
       </div>
 
       <div class="card">
-        <div class="rank">#2</div>
-        <h2>Dead Poets Society</h2>
-        <div class="genres">Comedy · Drama</div>
-        <div class="score-row">
-          <div class="score-bar"><div class="score-fill" style="width:32%"></div></div>
-          <span class="score-label">32%</span>
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BNWUwOGU2MDYtYzc2Ni00ZGM5LTk1MmItZGNmOWViNjgzNTkyXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'poster-placeholder',textContent:'🎬'}))">
+        <div class="card-body">
+          <div class="rank">#2</div>
+          <h2>Odyssey <span class="year">(2026)</span></h2>
+          <div class="genres">Drama · Thriller  ·  ⭐ 5.4</div>
+          <div class="plot">A woman is dragged into London's underworld when she is offered money to hide a kidnapped agent.</div>
+          <div class="credits">Director: Gerard Johnson   Starring: Polly Maberly, Guy Burnet, Kellie Shirley</div>
+          <div class="score-row">
+            <div class="score-bar"><div class="score-fill" style="width:48%"></div></div>
+            <span class="score-label">48%</span>
+          </div>
         </div>
       </div>
 
       <div class="card">
-        <div class="rank">#3</div>
-        <h2>The Hangover</h2>
-        <div class="genres">Comedy</div>
-        <div class="score-row">
-          <div class="score-bar"><div class="score-fill" style="width:32%"></div></div>
-          <span class="score-label">32%</span>
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BYTk1ZTcyMWMtMWUxYS00MmEzLTlmODYtOTk1MGRjOTg1ZjlmXkEyXkFqcGc@._V1_SX300.jpg" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'poster-placeholder',textContent:'🎬'}))">
+        <div class="card-body">
+          <div class="rank">#3</div>
+          <h2>The Bourne Identity <span class="year">(2002)</span></h2>
+          <div class="genres">Action · Mystery · Thriller  ·  ⭐ 7.8</div>
+          <div class="plot">A man is picked up by a fishing boat, bullet-riddled and suffering from amnesia, before racing to elude assassins and attempting to regain his memory.</div>
+          <div class="credits">Director: Doug Liman   Starring: Franka Potente, Matt Damon, Chris Cooper</div>
+          <div class="score-row">
+            <div class="score-bar"><div class="score-fill" style="width:43%"></div></div>
+            <span class="score-label">43%</span>
+          </div>
         </div>
       </div>
 
       <div class="card">
-        <div class="rank">#4</div>
-        <h2>Ted</h2>
-        <div class="genres">Comedy</div>
-        <div class="score-row">
-          <div class="score-bar"><div class="score-fill" style="width:32%"></div></div>
-          <span class="score-label">32%</span>
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BZmVjNzQ3MjYtYTZiNC00Y2YzLWExZTEtMTM2ZDllNDI0MzgyXkEyXkFqcGc@._V1_QL75_UX380_CR0,12,380,562_.jpg" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'poster-placeholder',textContent:'🎬'}))">
+        <div class="card-body">
+          <div class="rank">#4</div>
+          <h2>Top Gun <span class="year">(1986)</span></h2>
+          <div class="genres">Action · Drama  ·  ⭐ 7.0</div>
+          <div class="plot">The Top Gun Naval Fighter Weapons School is where the best of the best train to refine their elite flying skills. When hotshot fighter pilot Maverick is sent to the school, his reckless attitude and cocky demeanor put him at odds ...</div>
+          <div class="credits">Director: Tony Scott   Starring: Tom Cruise, Tim Robbins, Kelly McGillis</div>
+          <div class="score-row">
+            <div class="score-bar"><div class="score-fill" style="width:40%"></div></div>
+            <span class="score-label">40%</span>
+          </div>
         </div>
       </div>
 
       <div class="card">
-        <div class="rank">#5</div>
-        <h2>Superbad</h2>
-        <div class="genres">Comedy</div>
-        <div class="score-row">
-          <div class="score-bar"><div class="score-fill" style="width:32%"></div></div>
-          <span class="score-label">32%</span>
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BMDBkZDNjMWEtOTdmMi00NmExLTg5MmMtNTFlYTJlNWY5YTdmXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'poster-placeholder',textContent:'🎬'}))">
+        <div class="card-body">
+          <div class="rank">#5</div>
+          <h2>Top Gun: Maverick <span class="year">(2022)</span></h2>
+          <div class="genres">Action · Drama  ·  ⭐ 8.2</div>
+          <div class="plot">The story involves Maverick confronting his past while training a group of younger Top Gun graduates, including the son of his deceased best friend, for a dangerous mission.</div>
+          <div class="credits">Director: Joseph Kosinski   Starring: Tom Cruise, Jennifer Connelly, Miles Teller</div>
+          <div class="score-row">
+            <div class="score-bar"><div class="score-fill" style="width:40%"></div></div>
+            <span class="score-label">40%</span>
+          </div>
         </div>
       </div>
   </div>

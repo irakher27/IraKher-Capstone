@@ -1,1 +1,103 @@
-[]
+[
+  {
+    "title": "Die Hard",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "platforms": [],
+    "year": "1988",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGNlYmM1NmQtYWExMS00NmRjLTg5ZmEtMmYyYzJkMzljYWMxXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A New York City cop, John McClane, tries to save his estranged wife and several others taken hostage by terrorists during a Christmas Eve party at the Nakatomi Plaza Skyscraper in Los Angeles, California.",
+    "director": "John McTiernan",
+    "actors": [
+      "Bruce Willis",
+      "Alan Rickman",
+      "Bonnie Bedelia"
+    ],
+    "imdbRating": "8.2",
+    "language": "English, German, Italian, Japanese",
+    "groupScore": 0.5599999999999999
+  },
+  {
+    "title": "Odyssey",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "platforms": [],
+    "year": "2026",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWUwOGU2MDYtYzc2Ni00ZGM5LTk1MmItZGNmOWViNjgzNTkyXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "plot": "A woman is dragged into London's underworld when she is offered money to hide a kidnapped agent.",
+    "director": "Gerard Johnson",
+    "actors": [
+      "Polly Maberly",
+      "Guy Burnet",
+      "Kellie Shirley"
+    ],
+    "imdbRating": "5.4",
+    "language": "English, Swedish",
+    "groupScore": 0.48
+  },
+  {
+    "title": "The Bourne Identity",
+    "genres": [
+      "Action",
+      "Mystery",
+      "Thriller"
+    ],
+    "platforms": [],
+    "year": "2002",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTk1ZTcyMWMtMWUxYS00MmEzLTlmODYtOTk1MGRjOTg1ZjlmXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A man is picked up by a fishing boat, bullet-riddled and suffering from amnesia, before racing to elude assassins and attempting to regain his memory.",
+    "director": "Doug Liman",
+    "actors": [
+      "Franka Potente",
+      "Matt Damon",
+      "Chris Cooper"
+    ],
+    "imdbRating": "7.8",
+    "language": "English, French, German, Dutch, Italian, Yoruba",
+    "groupScore": 0.42666666666666664
+  },
+  {
+    "title": "Top Gun",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "platforms": [],
+    "year": "1986",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmVjNzQ3MjYtYTZiNC00Y2YzLWExZTEtMTM2ZDllNDI0MzgyXkEyXkFqcGc@._V1_QL75_UX380_CR0,12,380,562_.jpg",
+    "plot": "The Top Gun Naval Fighter Weapons School is where the best of the best train to refine their elite flying skills. When hotshot fighter pilot Maverick is sent to the school, his reckless attitude and cocky demeanor put him at odds ...",
+    "director": "Tony Scott",
+    "actors": [
+      "Tom Cruise",
+      "Tim Robbins",
+      "Kelly McGillis"
+    ],
+    "imdbRating": "7.0",
+    "language": "English",
+    "groupScore": 0.4
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "platforms": [],
+    "year": "2022",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDBkZDNjMWEtOTdmMi00NmExLTg5MmMtNTFlYTJlNWY5YTdmXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "plot": "The story involves Maverick confronting his past while training a group of younger Top Gun graduates, including the son of his deceased best friend, for a dangerous mission.",
+    "director": "Joseph Kosinski",
+    "actors": [
+      "Tom Cruise",
+      "Jennifer Connelly",
+      "Miles Teller"
+    ],
+    "imdbRating": "8.2",
+    "language": "English",
+    "groupScore": 0.4
+  }
+]

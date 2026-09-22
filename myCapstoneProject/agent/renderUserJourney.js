@@ -124,13 +124,23 @@ const html = `<!DOCTYPE html>
   .grid { display: grid; gap: 14px; }
   .card {
     background: var(--panel); border: 1px solid var(--border);
-    border-radius: 12px; padding: 18px 20px; position: relative;
+    border-radius: 12px; padding: 16px 18px; position: relative;
+    display: flex; gap: 14px;
     opacity: 0; animation: fadeUp 0.4s ease forwards;
   }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
   .rank { position: absolute; top: 14px; right: 18px; color: #5b5b68; font-weight: 700; font-size: 0.9rem; }
-  .final-card h2 { margin: 0 0 6px; font-size: 1.2rem; }
-  .genres { color: var(--muted); font-size: 0.9rem; margin-bottom: 12px; }
+  .poster, .poster-placeholder {
+    width: 84px; height: 126px; border-radius: 8px; flex-shrink: 0;
+    background: var(--border); object-fit: cover;
+  }
+  .poster-placeholder { display: flex; align-items: center; justify-content: center; font-size: 1.8rem; }
+  .card-body { flex: 1; min-width: 0; padding-right: 28px; }
+  .final-card h2 { margin: 0 0 6px; font-size: 1.15rem; }
+  .final-card h2 .year { color: var(--muted); font-weight: 400; font-size: 0.9rem; }
+  .genres { color: var(--muted); font-size: 0.85rem; margin-bottom: 8px; }
+  .plot { font-size: 0.85rem; color: #c7c7d1; line-height: 1.45; margin-bottom: 8px; }
+  .credits { font-size: 0.78rem; color: var(--muted); margin-bottom: 10px; }
   .score-row { display: flex; align-items: center; gap: 10px; }
   .score-bar { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
   .score-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2)); border-radius: 4px; }
@@ -247,18 +257,65 @@ const html = `<!DOCTYPE html>
       card.className = 'card final-card';
       card.style.animationDelay = (i * 90) + 'ms';
       const pct = Math.round(movie.groupScore * 100);
-      card.innerHTML =
-        '<div class="rank">#' + (i + 1) + '</div>' +
+
+      card.appendChild(makePosterEl(movie.poster));
+
+      const body = document.createElement('div');
+      body.className = 'card-body';
+      body.innerHTML =
         '<h2></h2>' +
         '<div class="genres"></div>' +
+        '<div class="plot"></div>' +
+        '<div class="credits"></div>' +
         '<div class="score-row">' +
           '<div class="score-bar"><div class="score-fill" style="width:' + pct + '%"></div></div>' +
           '<span class="score-label">' + pct + '%</span>' +
         '</div>';
-      card.querySelector('h2').textContent = movie.title;
-      card.querySelector('.genres').textContent = movie.genres.join(' · ');
+
+      const titleEl = body.querySelector('h2');
+      titleEl.textContent = movie.title;
+      if (movie.year) {
+        const yearSpan = document.createElement('span');
+        yearSpan.className = 'year';
+        yearSpan.textContent = ' (' + movie.year + ')';
+        titleEl.appendChild(yearSpan);
+      }
+
+      body.querySelector('.genres').textContent =
+        movie.genres.join(' · ') + (movie.imdbRating ? '  ·  ⭐ ' + movie.imdbRating : '');
+
+      const plotEl = body.querySelector('.plot');
+      if (movie.plot) plotEl.textContent = movie.plot;
+      else plotEl.remove();
+
+      const creditsParts = [];
+      if (movie.director) creditsParts.push('Director: ' + movie.director);
+      if (movie.actors && movie.actors.length) creditsParts.push('Starring: ' + movie.actors.slice(0, 3).join(', '));
+      const creditsEl = body.querySelector('.credits');
+      if (creditsParts.length) creditsEl.textContent = creditsParts.join('   ');
+      else creditsEl.remove();
+
+      card.appendChild(body);
       grid.appendChild(card);
     });
+  }
+
+  function makePosterEl(posterUrl) {
+    function placeholder() {
+      const div = document.createElement('div');
+      div.className = 'poster-placeholder';
+      div.textContent = '🎬';
+      return div;
+    }
+    if (!posterUrl || !posterUrl.startsWith('http')) return placeholder();
+
+    const img = document.createElement('img');
+    img.className = 'poster';
+    img.src = posterUrl;
+    img.alt = '';
+    img.loading = 'lazy';
+    img.onerror = function () { this.replaceWith(placeholder()); };
+    return img;
   }
 
   findBtn.addEventListener('click', () => {

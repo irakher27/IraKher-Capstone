@@ -14,21 +14,42 @@ const OUTPUT_PATH = path.join(__dirname, "..", "viewer.html");
 
 const results = JSON.parse(fs.readFileSync(RESULTS_PATH, "utf-8"));
 
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
 const cards = results
-  .map(
-    (movie, i) => `
+  .map((movie, i) => {
+    const poster =
+      movie.poster && movie.poster.startsWith("http")
+        ? `<img class="poster" src="${esc(movie.poster)}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'poster-placeholder',textContent:'🎬'}))">`
+        : `<div class="poster-placeholder">🎬</div>`;
+
+    const credits = [
+      movie.director ? `Director: ${esc(movie.director)}` : null,
+      movie.actors && movie.actors.length ? `Starring: ${movie.actors.slice(0, 3).map(esc).join(", ")}` : null,
+    ]
+      .filter(Boolean)
+      .join("   ");
+
+    return `
       <div class="card">
-        <div class="rank">#${i + 1}</div>
-        <h2>${movie.title}</h2>
-        <div class="genres">${movie.genres.join(" · ")}</div>
-        <div class="score-row">
-          <div class="score-bar"><div class="score-fill" style="width:${(
-            movie.groupScore * 100
-          ).toFixed(0)}%"></div></div>
-          <span class="score-label">${(movie.groupScore * 100).toFixed(0)}%</span>
+        ${poster}
+        <div class="card-body">
+          <div class="rank">#${i + 1}</div>
+          <h2>${esc(movie.title)}${movie.year ? ` <span class="year">(${esc(movie.year)})</span>` : ""}</h2>
+          <div class="genres">${movie.genres.join(" · ")}${movie.imdbRating ? `  ·  ⭐ ${esc(movie.imdbRating)}` : ""}</div>
+          ${movie.plot ? `<div class="plot">${esc(movie.plot)}</div>` : ""}
+          ${credits ? `<div class="credits">${credits}</div>` : ""}
+          <div class="score-row">
+            <div class="score-bar"><div class="score-fill" style="width:${(
+              movie.groupScore * 100
+            ).toFixed(0)}%"></div></div>
+            <span class="score-label">${(movie.groupScore * 100).toFixed(0)}%</span>
+          </div>
         </div>
-      </div>`
-  )
+      </div>`;
+  })
   .join("\n");
 
 const html = `<!DOCTYPE html>
@@ -64,25 +85,62 @@ const html = `<!DOCTYPE html>
     background: #1f1f28;
     border: 1px solid #2c2c38;
     border-radius: 12px;
-    padding: 18px 20px;
+    padding: 16px 18px;
+    display: flex;
+    gap: 14px;
+  }
+  .poster, .poster-placeholder {
+    width: 84px;
+    height: 126px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background: #2c2c38;
+    object-fit: cover;
+  }
+  .poster-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+  }
+  .card-body {
+    flex: 1;
+    min-width: 0;
     position: relative;
+    padding-right: 28px;
   }
   .rank {
     position: absolute;
-    top: 14px;
-    right: 18px;
+    top: 0;
+    right: 0;
     color: #5b5b68;
     font-weight: 700;
     font-size: 0.9rem;
   }
   h2 {
     margin: 0 0 6px;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+  }
+  h2 .year {
+    color: #9a9aa5;
+    font-weight: 400;
+    font-size: 0.9rem;
   }
   .genres {
     color: #9a9aa5;
-    font-size: 0.9rem;
-    margin-bottom: 12px;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+  .plot {
+    font-size: 0.85rem;
+    color: #c7c7d1;
+    line-height: 1.45;
+    margin-bottom: 8px;
+  }
+  .credits {
+    font-size: 0.78rem;
+    color: #9a9aa5;
+    margin-bottom: 10px;
   }
   .score-row {
     display: flex;
