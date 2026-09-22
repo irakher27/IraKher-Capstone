@@ -254,7 +254,7 @@
   }
 
   .ticket-poster {
-    width: 92px; flex-shrink: 0; margin-left: 6px; position: relative;
+    width: 76px; flex-shrink: 0; margin-left: 6px; position: relative;
     background: rgba(36,18,6,0.12); overflow: hidden;
   }
   .ticket-poster img {
@@ -263,55 +263,58 @@
   }
   .ticket-poster-placeholder {
     width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
-    font-size: 1.8rem; background: rgba(36,18,6,0.12);
+    font-size: 1.5rem; background: rgba(36,18,6,0.12);
   }
 
   /* full scalloped perforation, generated as repeated notch elements in JS */
   .ticket-notch {
-    position: absolute; width: 16px; height: 16px; border-radius: 50%;
-    background: var(--bg); left: 98px; margin-left: -8px; z-index: 2;
+    position: absolute; width: 14px; height: 14px; border-radius: 50%;
+    background: var(--bg); left: 82px; margin-left: -7px; z-index: 2;
   }
 
   .ticket-divider {
-    position: absolute; left: 98px; top: 8px; bottom: 8px;
+    position: absolute; left: 82px; top: 6px; bottom: 6px;
     border-left: 2px dashed rgba(36,18,6,0.4); z-index: 1;
   }
 
+  /* Real ticket proportions are short and wide, not tall — keep this
+     compact: title, one meta line, one bottom stub line, nothing more. */
   .ticket-body {
-    flex: 1; min-width: 0; padding: 12px 16px 10px 20px; position: relative;
+    flex: 1; min-width: 0; padding: 9px 12px 7px 16px; position: relative;
     color: var(--tk-dark);
-    display: flex; flex-direction: column;
-  }
-  .ticket-eyebrow {
-    font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase;
-    color: rgba(36,18,6,0.55); font-weight: 700; margin-bottom: 3px;
+    display: flex; flex-direction: column; justify-content: center;
   }
   .ticket-rank {
-    position: absolute; top: 10px; right: 12px;
-    width: 26px; height: 26px; border-radius: 50%;
+    position: absolute; top: 8px; right: 10px;
+    width: 22px; height: 22px; border-radius: 50%;
     border: 2px dashed rgba(36,18,6,0.5);
     display: flex; align-items: center; justify-content: center;
     font-family: 'Bebas Neue', system-ui, sans-serif;
-    font-size: 0.85rem; color: rgba(36,18,6,0.75); transform: rotate(-8deg);
+    font-size: 0.78rem; color: rgba(36,18,6,0.75); transform: rotate(-8deg);
   }
   .ticket-body h3 {
-    margin: 0 34px 4px 0; font-size: 1.3rem; line-height: 1.05;
+    margin: 0 30px 3px 0; font-size: 1.1rem; line-height: 1.1;
     font-family: 'Bebas Neue', system-ui, sans-serif; letter-spacing: 0.02em;
     color: var(--tk-dark);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
-  .ticket-genres { color: rgba(36,18,6,0.65); font-size: 0.78rem; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.03em; }
-  .ticket-stats { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+  .ticket-genres {
+    color: rgba(36,18,6,0.65); font-size: 0.72rem; margin-bottom: 6px;
+    text-transform: uppercase; letter-spacing: 0.03em;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .ticket-stats { display: none; } /* folded into .ticket-stub-line to save height */
   .ticket-match {
     background: rgb(var(--tk-accent-rgb)); color: #fff; font-weight: 700;
-    padding: 3px 11px; border-radius: 999px; font-size: 0.76rem;
+    padding: 2px 9px; border-radius: 999px; font-size: 0.7rem;
     text-shadow: 0 1px 1px rgba(0,0,0,0.25);
   }
-  .ticket-rating { color: rgba(36,18,6,0.7); font-size: 0.83rem; }
+  .ticket-rating { color: rgba(36,18,6,0.7); font-size: 0.74rem; }
   .ticket-stub-line {
-    margin-top: auto; padding-top: 8px; border-top: 1px dotted rgba(36,18,6,0.35);
-    display: flex; justify-content: space-between; align-items: center;
-    font-family: 'Bebas Neue', system-ui, sans-serif; letter-spacing: 0.08em;
-    font-size: 0.7rem; color: rgba(36,18,6,0.5);
+    padding-top: 6px; border-top: 1px dotted rgba(36,18,6,0.35);
+    display: flex; justify-content: space-between; align-items: center; gap: 8px;
+    font-family: 'Bebas Neue', system-ui, sans-serif; letter-spacing: 0.06em;
+    font-size: 0.65rem; color: rgba(36,18,6,0.5);
   }
 
   /* ================= DETAIL SCREEN ================= */
@@ -875,9 +878,10 @@
     ticket.appendChild(makePosterEl(movie.poster, movie.title, ticket));
 
     // Full scalloped perforation — a real torn-ticket edge, not just
-    // two dots at the top/bottom of the divider.
+    // two dots at the top/bottom of the divider. Fewer notches now
+    // that the ticket itself is shorter.
     ticket.appendChild(document.createElement('div')).className = 'ticket-divider';
-    const NOTCH_COUNT = 6;
+    const NOTCH_COUNT = 4;
     for (let n = 0; n < NOTCH_COUNT; n++) {
       const notch = document.createElement('div');
       notch.className = 'ticket-notch';
@@ -890,16 +894,18 @@
     body.className = 'ticket-body';
     const pct = Math.round(movie.groupScore * 100);
     const serial = 'NO. ' + String(idx + 1).padStart(3, '0') + '-MN';
+    // Stats folded into the bottom stub line (instead of their own
+    // row) and the eyebrow line dropped entirely — a real ticket is
+    // short and wide, not a tall stack of rows.
     body.innerHTML =
-      '<div class="ticket-eyebrow">Admit One · Group Pick</div>' +
       '<div class="ticket-rank">#' + (idx + 1) + '</div>' +
       '<h3></h3>' +
       '<div class="ticket-genres"></div>' +
-      '<div class="ticket-stats">' +
+      '<div class="ticket-stub-line">' +
         '<span class="ticket-match">' + pct + '% match</span>' +
-        (movie.imdbRating ? '<span class="ticket-rating">⭐ ' + movie.imdbRating + '</span>' : '') +
-      '</div>' +
-      '<div class="ticket-stub-line"><span>' + serial + '</span><span>MOVIE NIGHT</span></div>';
+        (movie.imdbRating ? '<span class="ticket-rating">⭐ ' + movie.imdbRating + '</span>' : '<span></span>') +
+        '<span>' + serial + '</span>' +
+      '</div>';
 
     const titleEl = body.querySelector('h3');
     titleEl.textContent = movie.title + (movie.year ? ' (' + movie.year + ')' : '');
@@ -927,10 +933,11 @@
     const ticketWrap = document.getElementById('detailTicketWrap');
     ticketWrap.innerHTML = '';
     const ticket = buildTicket(movie, idx, false);
-    // Detail ticket only needs the poster + title, not rank/genres/stats.
+    // Detail ticket only needs the poster + title, not rank/genres/stub line
+    // (that info already lives in the paragraph block above).
     ticket.querySelector('.ticket-rank').remove();
     ticket.querySelector('.ticket-genres').remove();
-    ticket.querySelector('.ticket-stats').remove();
+    ticket.querySelector('.ticket-stub-line').remove();
     ticketWrap.appendChild(ticket);
 
     showScreen('detail');
