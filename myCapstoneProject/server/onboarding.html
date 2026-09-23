@@ -241,7 +241,13 @@
     opacity: 0; animation: fadeUp 0.4s ease forwards;
     box-shadow: 0 8px 0 rgba(0,0,0,0.28), 0 10px 18px rgba(0,0,0,0.35);
     --tk-accent-rgb: 108,92,231;
+    /* A fixed width AND height (not just a max-width cap) so all 5
+       result tickets are pixel-identical regardless of how long a
+       title/genre list is — longer text truncates (see
+       .ticket-body h3 / .ticket-genres) instead of growing the card. */
+    width: 100%;
     max-width: 440px;
+    height: 132px;
     margin: 0 auto;
   }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
@@ -280,7 +286,7 @@
 
   .ticket-body {
     flex: 1; min-width: 0; padding: 16px 18px 14px 22px; position: relative;
-    color: var(--tk-dark);
+    color: var(--tk-dark); overflow: hidden;
     display: flex; flex-direction: column; justify-content: center;
   }
   .ticket-rank {
@@ -323,15 +329,20 @@
   }
   .detail-back-btn:hover { color: var(--text); }
   .detail-info h1 { text-align: left; font-size: 1.6rem; margin-bottom: 6px; }
-  .detail-meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 14px; }
   .detail-plot { font-size: 0.98rem; line-height: 1.6; color: #d6d6dc; margin-bottom: 16px; }
   .detail-row { font-size: 0.88rem; color: var(--muted); margin-bottom: 6px; }
   .detail-row strong { color: var(--text); font-weight: 600; }
 
   .detail-ticket-wrap { margin: 26px 0 22px; }
-  .detail-ticket-wrap .movie-ticket { max-width: 420px; margin: 0 auto; }
-  .detail-ticket-wrap .ticket-body { justify-content: center; }
-  .detail-ticket-wrap .ticket-body h3 { margin: 0 0 4px; font-size: 1.7rem; }
+  /* Unlike the fixed-size grid tickets, this one holds extra info
+     (genre/match/rating now live on the ticket itself, see below) so
+     it needs to grow with its content instead of a fixed height. */
+  .detail-ticket-wrap .movie-ticket { max-width: 420px; margin: 0 auto; height: auto; min-height: 132px; }
+  /* Title sits near the top (was vertically centered) to make room
+     for the genre/match/rating info stacked directly beneath it. */
+  .detail-ticket-wrap .ticket-body { justify-content: flex-start; padding-top: 14px; }
+  .detail-ticket-wrap .ticket-body h3 { margin: 0 0 8px; font-size: 1.7rem; }
+  .detail-ticket-wrap .ticket-stub-line { border-top: none; padding-top: 0; }
 
   .result-actions { display: grid; gap: 10px; }
   .result-actions button {
@@ -470,7 +481,6 @@
     <button class="detail-back-btn" id="detailBackBtn">Back to results</button>
     <div class="detail-info">
       <h1 id="detailHeading"></h1>
-      <div class="detail-meta" id="detailMeta"></div>
       <p class="detail-plot" id="detailPlot"></p>
       <div class="detail-row" id="detailActorsRow"><strong>Starring:</strong> <span id="detailActors"></span></div>
       <div class="detail-row" id="detailDirectorRow"><strong>Director:</strong> <span id="detailDirector"></span></div>
@@ -937,9 +947,6 @@
     if (!movie) return;
 
     document.getElementById('detailHeading').textContent = movie.title + (movie.year ? ' (' + movie.year + ')' : '');
-    const pct = Math.round(movie.groupScore * 100);
-    document.getElementById('detailMeta').textContent =
-      movie.genres.join(' · ') + '  ·  ' + pct + '% match' + (movie.imdbRating ? '  ·  ⭐ ' + movie.imdbRating : '');
     document.getElementById('detailPlot').textContent = movie.plot || 'No description available for this title.';
 
     setDetailRow('detailActorsRow', 'detailActors', movie.actors && movie.actors.length ? movie.actors.join(', ') : null);
@@ -951,11 +958,13 @@
     // includeYear=false: the year stays in the description block above
     // (detailHeading already has it) but must not repeat on the ticket.
     const ticket = buildTicket(movie, idx, false, false);
-    // Detail ticket only needs the poster + title, not rank/genres/stub line
-    // (that info already lives in the paragraph block above).
+    // Detail ticket: genre/match/rating live directly on the ticket
+    // (under the title) instead of a separate info bar above it. Only
+    // the rank badge and the per-ticket serial number are dropped —
+    // neither means anything once there's no grid of tickets to tell
+    // apart.
     ticket.querySelector('.ticket-rank').remove();
-    ticket.querySelector('.ticket-genres').remove();
-    ticket.querySelector('.ticket-stub-line').remove();
+    ticket.querySelector('.ticket-stub-line').lastElementChild.remove();
     ticketWrap.appendChild(ticket);
 
     showScreen('detail');
