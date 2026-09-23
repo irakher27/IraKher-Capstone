@@ -183,7 +183,14 @@ const server = http.createServer(async (req, res) => {
       const html = fs
         .readFileSync(PUBLIC_HTML_PATH, "utf-8")
         .replace("__ONBOARDING_CONFIG__", JSON.stringify({ genres: GENRES, platforms: PLATFORMS }));
-      res.writeHead(200, { "Content-Type": "text/html" });
+      // No caching on the app shell — without this, a browser (or an
+      // intermediate proxy) can keep serving an old cached copy of this
+      // page after a redeploy, making a real fix look like it never
+      // shipped even though the server has the new code.
+      res.writeHead(200, {
+        "Content-Type": "text/html",
+        "Cache-Control": "no-store, no-cache, must-revalidate",
+      });
       res.end(html);
       return;
     }

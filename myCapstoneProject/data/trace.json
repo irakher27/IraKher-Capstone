@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T20:45:59.470Z",
+  "generatedAt": "2026-09-23T21:05:42.981Z",
   "personas": [
     {
       "name": "Ira",
@@ -138,7 +138,7 @@
     "The Social Network",
     "17 Again",
     "Ted",
-    "Crazy Stupid Love",
+    "Crazy, Stupid, Love.",
     "Superbad",
     "No Hard Feelings",
     "Harry Potter and the Sorcerer's Stone",
@@ -1098,24 +1098,24 @@
       "language": "English, Japanese, Ukrainian"
     },
     {
-      "title": "Crazy, Stupid, Love",
+      "title": "Crazy, Stupid, Love.",
       "genres": [
         "Comedy",
         "Drama",
         "Romance"
       ],
       "platforms": [],
-      "year": "2022",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNzI1OGZhM2ItMmFhNS00YWViLTljMzUtYmU1Y2ZiNWFhOTUwXkEyXkFqcGc@._V1_QL75_UY562_CR35,0,380,562_.jpg",
-      "plot": "Surya goes to Yogyakarta by night bus and sits next to Asti, whom he saves from pranksters. Unexpectedly, the meeting with Asti changes Surya's life, both in love and in his relationship with his parents.",
-      "director": "Ainun Ridho",
+      "year": "2011",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTg2MjkwMTM0NF5BMl5BanBnXkFtZTcwMzc4NDg2NQ@@._V1_SX300.jpg",
+      "plot": "A middle-aged husband's life changes dramatically when his wife asks him for a divorce. He seeks to rediscover his manhood with the help of a newfound friend, Jacob, learning to pick up girls at bars.",
+      "director": "Glenn Ficarra, John Requa",
       "actors": [
-        "Dimas Anggara",
-        "Susan Sameh",
-        "Chicco Kurniawan"
+        "Steve Carell",
+        "Ryan Gosling",
+        "Julianne Moore"
       ],
-      "imdbRating": "7.3",
-      "language": "Indonesian"
+      "imdbRating": "7.4",
+      "language": "English"
     },
     {
       "title": "Superbad",
@@ -6405,7 +6405,7 @@
         ]
       },
       {
-        "title": "Crazy, Stupid, Love",
+        "title": "Crazy, Stupid, Love.",
         "genres": [
           "Comedy",
           "Drama",
@@ -15997,7 +15997,7 @@
         ]
       },
       {
-        "title": "Crazy, Stupid, Love",
+        "title": "Crazy, Stupid, Love.",
         "genres": [
           "Comedy",
           "Drama",
