@@ -20,7 +20,7 @@ const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
 
-const { runWorkflow } = require("../agent/runWorkflow");
+const { runWorkflow, runRedoWorkflow } = require("../agent/runWorkflow");
 const googleAuth = require("./googleAuth");
 const profileStore = require("./profileStore");
 
@@ -300,6 +300,30 @@ const server = http.createServer(async (req, res) => {
       const personas = [...personasByEmail.values()];
       console.log(`\n=== Running agent loop for ${personas.length} live-onboarded personas ===`);
       const results = await runWorkflow(personas.map((p) => ({ ...p })));
+      return sendJson(res, 200, { ok: true, results, personaNames: personas.map((p) => p.name) });
+    }
+
+    if (req.method === "POST" && pathname === "/api/redo") {
+      if (personasByEmail.size < 1) {
+        return sendJson(res, 400, {
+          ok: false,
+          error: "Add at least 1 person before generating recommendations.",
+        });
+      }
+      const body = await readJsonBody(req);
+      const shownTitles = Array.isArray(body.shownTitles) ? body.shownTitles.map(String) : [];
+      const personas = [...personasByEmail.values()];
+      console.log(
+        `\n=== Running getFreshRecommendations for ${personas.length} live-onboarded personas, ` +
+        `excluding ${shownTitles.length} already-shown titles ===`
+      );
+      const results = await runRedoWorkflow(personas.map((p) => ({ ...p })), shownTitles);
+      // Fewer than 5 means the remaining pool genuinely doesn't have 5
+      // more matches left for this group — the client shows a clear
+      // "no more matches" message instead of a partial/broken-looking grid.
+      if (results.length < 5) {
+        return sendJson(res, 200, { ok: true, insufficientMatches: true, personaNames: personas.map((p) => p.name) });
+      }
       return sendJson(res, 200, { ok: true, results, personaNames: personas.map((p) => p.name) });
     }
 

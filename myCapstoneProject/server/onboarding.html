@@ -770,7 +770,65 @@
   }
 
   document.getElementById('generateBtn').addEventListener('click', runGenerate);
-  document.getElementById('redoBtn').addEventListener('click', runGenerate);
+
+  // "Get new recommendations": NOT the same as runGenerate() above.
+  // Re-running the original recommendation is fully deterministic
+  // (same personas + candidate pool -> same scores -> same top 5), so
+  // wiring this button to runGenerate() just redrew the identical
+  // list every time — it looked like the button did nothing. This
+  // calls /api/redo instead, which runs the dedicated
+  // getFreshRecommendations skill: same stored preferences, same
+  // scoring rules, but with everything already shown this session
+  // excluded from the pool first.
+  async function runRedo() {
+    showScreen('loading');
+    let i = 0;
+    const loadingText = document.getElementById('loadingText');
+    loadingText.textContent = loadingMessages[0];
+    const rotator = setInterval(() => {
+      i = (i + 1) % loadingMessages.length;
+      loadingText.textContent = loadingMessages[i];
+    }, 1200);
+
+    try {
+      const shownTitles = lastResults.map((m) => m.title);
+      const res = await fetch('/api/redo', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ shownTitles }),
+      });
+      const data = await res.json();
+      clearInterval(rotator);
+
+      if (!data.ok) {
+        alert(data.error);
+        showScreen('results');
+        return;
+      }
+
+      if (data.insufficientMatches) {
+        renderNoMoreMatches();
+        showScreen('results');
+        return;
+      }
+
+      renderResults(data);
+      showScreen('results');
+    } catch (err) {
+      clearInterval(rotator);
+      alert('Something went wrong getting new recommendations: ' + err.message);
+      showScreen('results');
+    }
+  }
+
+  function renderNoMoreMatches() {
+    document.getElementById('resultsHeading').textContent = 'No More New Matches';
+    document.getElementById('resultsNote').textContent = '';
+    document.getElementById('resultsGrid').innerHTML =
+      '<div class="empty-note">No more matches found — try adjusting your preferences.</div>';
+  }
+
+  document.getElementById('redoBtn').addEventListener('click', runRedo);
 
   // ---------------- poster dominant-color extraction ----------------
   function hslToRgb(h, s, l) {
