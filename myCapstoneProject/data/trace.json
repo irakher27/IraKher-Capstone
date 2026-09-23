@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T12:21:22.821Z",
+  "generatedAt": "2026-09-23T20:45:59.470Z",
   "personas": [
     {
       "name": "Ira",
@@ -293,7 +293,28 @@
     "Inside Out",
     "Toy Story",
     "Frozen",
-    "Zootopia"
+    "Zootopia",
+    "The Wizard of Oz",
+    "Mary Poppins",
+    "Beauty and the Beast",
+    "Cabaret",
+    "The Rocky Horror Picture Show",
+    "Fiddler on the Roof",
+    "Annie",
+    "Sweeney Todd: The Demon Barber of Fleet Street",
+    "Moana",
+    "Les Misérables",
+    "Pitch Perfect",
+    "Encanto",
+    "Once",
+    "Mamma Mia! Here We Go Again",
+    "Joseph and the Amazing Technicolor Dreamcoat",
+    "Nine",
+    "The Music Man",
+    "Oliver!",
+    "My Fair Lady",
+    "The Phantom of the Opera",
+    "In the Heights"
   ],
   "candidates": [
     {
@@ -313,7 +334,8 @@
         "Virginia Madsen",
         "Francesca Annis"
       ],
-      "imdbRating": "6.3"
+      "imdbRating": "6.3",
+      "language": "English"
     },
     {
       "title": "Odyssey",
@@ -331,7 +353,8 @@
         "Guy Burnet",
         "Kellie Shirley"
       ],
-      "imdbRating": "5.4"
+      "imdbRating": "5.4",
+      "language": "English, Swedish"
     },
     {
       "title": "The Avengers",
@@ -349,7 +372,8 @@
         "Chris Evans",
         "Scarlett Johansson"
       ],
-      "imdbRating": "8.0"
+      "imdbRating": "8.0",
+      "language": "English, Russian"
     },
     {
       "title": "Scream",
@@ -367,7 +391,8 @@
         "Courteney Cox",
         "David Arquette"
       ],
-      "imdbRating": "7.4"
+      "imdbRating": "7.4",
+      "language": "English"
     },
     {
       "title": "Good Will Hunting",
@@ -385,7 +410,8 @@
         "Matt Damon",
         "Ben Affleck"
       ],
-      "imdbRating": "8.4"
+      "imdbRating": "8.4",
+      "language": "English"
     },
     {
       "title": "Tangled",
@@ -404,7 +430,8 @@
         "Zachary Levi",
         "Donna Murphy"
       ],
-      "imdbRating": "7.7"
+      "imdbRating": "7.7",
+      "language": "English, German"
     },
     {
       "title": "Jurassic Park",
@@ -423,7 +450,8 @@
         "Laura Dern",
         "Jeff Goldblum"
       ],
-      "imdbRating": "8.2"
+      "imdbRating": "8.2",
+      "language": "English, Spanish"
     },
     {
       "title": "Karate Kid",
@@ -441,7 +469,8 @@
         "Bernard Belleza",
         "Vilma Valera"
       ],
-      "imdbRating": "6.4"
+      "imdbRating": "6.4",
+      "language": "Tagalog, Filipino"
     },
     {
       "title": "Top Gun",
@@ -459,7 +488,8 @@
         "Tim Robbins",
         "Kelly McGillis"
       ],
-      "imdbRating": "7.0"
+      "imdbRating": "7.0",
+      "language": "English"
     },
     {
       "title": "Finding Nemo",
@@ -478,7 +508,8 @@
         "Ellen DeGeneres",
         "Alexander Gould"
       ],
-      "imdbRating": "8.2"
+      "imdbRating": "8.2",
+      "language": "English, Japanese, Russian"
     },
     {
       "title": "Barbie",
@@ -497,7 +528,8 @@
         "Ryan Gosling",
         "Issa Rae"
       ],
-      "imdbRating": "6.8"
+      "imdbRating": "6.8",
+      "language": "English, Spanish"
     },
     {
       "title": "Dead Poets Society",
@@ -515,7 +547,8 @@
         "Robert Sean Leonard",
         "Ethan Hawke"
       ],
-      "imdbRating": "8.1"
+      "imdbRating": "8.1",
+      "language": "English, Latin, French"
     },
     {
       "title": "The Maze Runner",
@@ -534,7 +567,8 @@
         "Kaya Scodelario",
         "Will Poulter"
       ],
-      "imdbRating": "6.8"
+      "imdbRating": "6.8",
+      "language": "English"
     },
     {
       "title": "Divergent",
@@ -553,7 +587,8 @@
         "Theo James",
         "Kate Winslet"
       ],
-      "imdbRating": "6.6"
+      "imdbRating": "6.6",
+      "language": "English, Spanish"
     },
     {
       "title": "The Hunger Games",
@@ -572,7 +607,8 @@
         "Josh Hutcherson",
         "Liam Hemsworth"
       ],
-      "imdbRating": "7.2"
+      "imdbRating": "7.2",
+      "language": "English"
     },
     {
       "title": "Spider-Man",
@@ -591,7 +627,8 @@
         "Kirsten Dunst",
         "Willem Dafoe"
       ],
-      "imdbRating": "7.4"
+      "imdbRating": "7.4",
+      "language": "English"
     },
     {
       "title": "Sound of Music",
@@ -609,7 +646,8 @@
         "Bobby Limb",
         "Tony Martin"
       ],
-      "imdbRating": "7.8"
+      "imdbRating": "7.8",
+      "language": "English"
     },
     {
       "title": "The Greatest Showman",
@@ -628,7 +666,8 @@
         "Michelle Williams",
         "Zac Efron"
       ],
-      "imdbRating": "7.5"
+      "imdbRating": "7.5",
+      "language": "English"
     },
     {
       "title": "Mamma mia",
@@ -646,7 +685,8 @@
         "Eugenio Del Prete",
         "Daniela Mangiasciutto"
       ],
-      "imdbRating": "6.0"
+      "imdbRating": "6.0",
+      "language": "Italian"
     },
     {
       "title": "Coraline",
@@ -665,7 +705,8 @@
         "Teri Hatcher",
         "John Hodgman"
       ],
-      "imdbRating": "7.8"
+      "imdbRating": "7.8",
+      "language": "English, Russian"
     },
     {
       "title": "La La Land",
@@ -684,7 +725,8 @@
         "Emma Stone",
         "Rosemarie DeWitt"
       ],
-      "imdbRating": "8.0"
+      "imdbRating": "8.0",
+      "language": "English, Cantonese"
     },
     {
       "title": "Set It Up",
@@ -702,7 +744,8 @@
         "Glen Powell",
         "Lucy Liu"
       ],
-      "imdbRating": "6.5"
+      "imdbRating": "6.5",
+      "language": "English"
     },
     {
       "title": "Monte Carlo",
@@ -721,7 +764,8 @@
         "Leighton Meester",
         "Katie Cassidy"
       ],
-      "imdbRating": "5.8"
+      "imdbRating": "5.8",
+      "language": "English"
     },
     {
       "title": "27 Dresses",
@@ -739,7 +783,8 @@
         "James Marsden",
         "Malin Akerman"
       ],
-      "imdbRating": "6.1"
+      "imdbRating": "6.1",
+      "language": "English"
     },
     {
       "title": "13 Going on 30",
@@ -758,7 +803,8 @@
         "Mark Ruffalo",
         "Judy Greer"
       ],
-      "imdbRating": "6.3"
+      "imdbRating": "6.3",
+      "language": "English, Portuguese"
     },
     {
       "title": "How to Lose a Guy in 10 Days",
@@ -776,7 +822,8 @@
         "Matthew McConaughey",
         "Adam Goldberg"
       ],
-      "imdbRating": "6.5"
+      "imdbRating": "6.5",
+      "language": "English"
     },
     {
       "title": "10 Things I Hate About You",
@@ -795,7 +842,8 @@
         "Julia Stiles",
         "Joseph Gordon-Levitt"
       ],
-      "imdbRating": "7.4"
+      "imdbRating": "7.4",
+      "language": "English, French"
     },
     {
       "title": "Clueless",
@@ -813,7 +861,8 @@
         "Stacey Dash",
         "Brittany Murphy"
       ],
-      "imdbRating": "6.9"
+      "imdbRating": "6.9",
+      "language": "English, Spanish"
     },
     {
       "title": "Marty Supreme",
@@ -831,7 +880,8 @@
         "Gwyneth Paltrow",
         "Odessa A&apos;zion"
       ],
-      "imdbRating": "7.7"
+      "imdbRating": "7.7",
+      "language": "English, Japanese, French, Bosnian"
     },
     {
       "title": "A Complete Unknown",
@@ -850,7 +900,8 @@
         "Edward Norton",
         "Elle Fanning"
       ],
-      "imdbRating": "7.3"
+      "imdbRating": "7.3",
+      "language": "English"
     },
     {
       "title": "M.S. Dhoni: The Untold Story",
@@ -869,7 +920,8 @@
         "Kiara Advani",
         "Disha Patani"
       ],
-      "imdbRating": "8.0"
+      "imdbRating": "8.0",
+      "language": "Hindi"
     },
     {
       "title": "A Star Is Born",
@@ -888,7 +940,8 @@
         "Bradley Cooper",
         "Sam Elliott"
       ],
-      "imdbRating": "7.6"
+      "imdbRating": "7.6",
+      "language": "English, French"
     },
     {
       "title": "Lion",
@@ -906,7 +959,8 @@
         "Nicole Kidman",
         "Rooney Mara"
       ],
-      "imdbRating": "8.0"
+      "imdbRating": "8.0",
+      "language": "English, Hindi, Bengali"
     },
     {
       "title": "Michael",
@@ -925,7 +979,8 @@
         "Nia Long",
         "Colman Domingo"
       ],
-      "imdbRating": "7.4"
+      "imdbRating": "7.4",
+      "language": "English"
     },
     {
       "title": "Oppenheimer",
@@ -944,7 +999,8 @@
         "Emily Blunt",
         "Matt Damon"
       ],
-      "imdbRating": "8.2"
+      "imdbRating": "8.2",
+      "language": "English, German, Italian, Dutch"
     },
     {
       "title": "The Hangover",
@@ -961,7 +1017,8 @@
         "Bradley Cooper",
         "Justin Bartha"
       ],
-      "imdbRating": "7.7"
+      "imdbRating": "7.7",
+      "language": "English"
     },
     {
       "title": "21 Jump Street",
@@ -980,7 +1037,8 @@
         "Channing Tatum",
         "Ice Cube"
       ],
-      "imdbRating": "7.2"
+      "imdbRating": "7.2",
+      "language": "English"
     },
     {
       "title": "The Social Network",
@@ -998,7 +1056,8 @@
         "Andrew Garfield",
         "Justin Timberlake"
       ],
-      "imdbRating": "7.8"
+      "imdbRating": "7.8",
+      "language": "English, French"
     },
     {
       "title": "17 Again",
@@ -1017,7 +1076,8 @@
         "Matthew Perry",
         "Leslie Mann"
       ],
-      "imdbRating": "6.4"
+      "imdbRating": "6.4",
+      "language": "English"
     },
     {
       "title": "Ted",
@@ -1034,7 +1094,8 @@
         "Mila Kunis",
         "Seth MacFarlane"
       ],
-      "imdbRating": "6.9"
+      "imdbRating": "6.9",
+      "language": "English, Japanese, Ukrainian"
     },
     {
       "title": "Crazy, Stupid, Love",
@@ -1053,7 +1114,8 @@
         "Susan Sameh",
         "Chicco Kurniawan"
       ],
-      "imdbRating": "7.3"
+      "imdbRating": "7.3",
+      "language": "Indonesian"
     },
     {
       "title": "Superbad",
@@ -1070,7 +1132,8 @@
         "Jonah Hill",
         "Christopher Mintz-Plasse"
       ],
-      "imdbRating": "7.6"
+      "imdbRating": "7.6",
+      "language": "English"
     },
     {
       "title": "No Hard Feelings",
@@ -1088,7 +1151,8 @@
         "Andrew Barth Feldman",
         "Laura Benanti"
       ],
-      "imdbRating": "6.3"
+      "imdbRating": "6.3",
+      "language": "English"
     },
     {
       "title": "Harry Potter and the Sorcerer's Stone",
@@ -1107,7 +1171,8 @@
         "Rupert Grint",
         "Emma Watson"
       ],
-      "imdbRating": "7.7"
+      "imdbRating": "7.7",
+      "language": "English, Latin"
     },
     {
       "title": "Percy Jackson and the Olympians: The Lightning Thief Fan Film",
@@ -1124,7 +1189,8 @@
         "Samantha Considine",
         "Michael Thor Halvorson"
       ],
-      "imdbRating": "6.8"
+      "imdbRating": "6.8",
+      "language": "English"
     },
     {
       "title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -1143,7 +1209,8 @@
         "Ian McKellen",
         "Orlando Bloom"
       ],
-      "imdbRating": "8.9"
+      "imdbRating": "8.9",
+      "language": "English, Sindarin"
     },
     {
       "title": "Star Wars: Episode IV - A New Hope",
@@ -1162,7 +1229,8 @@
         "Harrison Ford",
         "Carrie Fisher"
       ],
-      "imdbRating": "8.6"
+      "imdbRating": "8.6",
+      "language": "English"
     },
     {
       "title": "Inception",
@@ -1181,7 +1249,8 @@
         "Joseph Gordon-Levitt",
         "Elliot Page"
       ],
-      "imdbRating": "8.8"
+      "imdbRating": "8.8",
+      "language": "English, Japanese, French"
     },
     {
       "title": "Interstellar",
@@ -1200,7 +1269,8 @@
         "Anne Hathaway",
         "Jessica Chastain"
       ],
-      "imdbRating": "8.7"
+      "imdbRating": "8.7",
+      "language": "English"
     },
     {
       "title": "Grease",
@@ -1219,7 +1289,8 @@
         "Olivia Newton-John",
         "Stockard Channing"
       ],
-      "imdbRating": "7.2"
+      "imdbRating": "7.2",
+      "language": "English"
     },
     {
       "title": "Chicago",
@@ -1238,7 +1309,8 @@
         "Catherine Zeta-Jones",
         "Richard Gere"
       ],
-      "imdbRating": "7.2"
+      "imdbRating": "7.2",
+      "language": "English, Hungarian"
     },
     {
       "title": "Moulin Rouge!",
@@ -1257,7 +1329,8 @@
         "Ewan McGregor",
         "John Leguizamo"
       ],
-      "imdbRating": "7.6"
+      "imdbRating": "7.6",
+      "language": "English, French, Spanish"
     },
     {
       "title": "Hairspray",
@@ -1276,7 +1349,8 @@
         "Queen Latifah",
         "Nikki Blonsky"
       ],
-      "imdbRating": "6.7"
+      "imdbRating": "6.7",
+      "language": "English"
     },
     {
       "title": "Rent",
@@ -1295,7 +1369,8 @@
         "Wilson Jermaine Heredia",
         "Rosario Dawson"
       ],
-      "imdbRating": "6.9"
+      "imdbRating": "6.9",
+      "language": "English"
     },
     {
       "title": "Into the Woods",
@@ -1314,7 +1389,8 @@
         "Meryl Streep",
         "Chris Pine"
       ],
-      "imdbRating": "5.9"
+      "imdbRating": "5.9",
+      "language": "English"
     },
     {
       "title": "Singin' in the Rain",
@@ -1333,7 +1409,8 @@
         "Donald O&apos;Connor",
         "Debbie Reynolds"
       ],
-      "imdbRating": "8.3"
+      "imdbRating": "8.3",
+      "language": "English"
     },
     {
       "title": "West Side Story",
@@ -1352,7 +1429,8 @@
         "George Chakiris",
         "Richard Beymer"
       ],
-      "imdbRating": "7.6"
+      "imdbRating": "7.6",
+      "language": "English, Spanish"
     },
     {
       "title": "Wicked",
@@ -1371,7 +1449,8 @@
         "Ariana Grande",
         "Jeff Goldblum"
       ],
-      "imdbRating": "7.4"
+      "imdbRating": "7.4",
+      "language": "English"
     },
     {
       "title": "Dreamgirls",
@@ -1389,7 +1468,8 @@
         "Jamie Foxx",
         "Eddie Murphy"
       ],
-      "imdbRating": "6.6"
+      "imdbRating": "6.6",
+      "language": "English"
     },
     {
       "title": "Bohemian Rhapsody",
@@ -1408,7 +1488,8 @@
         "Lucy Boynton",
         "Gwilym Lee"
       ],
-      "imdbRating": "7.9"
+      "imdbRating": "7.9",
+      "language": "English, British Sign "
     },
     {
       "title": "Rocketman",
@@ -1427,7 +1508,8 @@
         "Jamie Bell",
         "Richard Madden"
       ],
-      "imdbRating": "7.3"
+      "imdbRating": "7.3",
+      "language": "English"
     },
     {
       "title": "The Theory of Everything",
@@ -1446,7 +1528,8 @@
         "Felicity Jones",
         "Tom Prior"
       ],
-      "imdbRating": "7.7"
+      "imdbRating": "7.7",
+      "language": "English, French, Ukrainian"
     },
     {
       "title": "Ray",
@@ -1465,7 +1548,8 @@
         "Regina King",
         "Kerry Washington"
       ],
-      "imdbRating": "7.7"
+      "imdbRating": "7.7",
+      "language": "English"
     },
     {
       "title": "Walk the Line",
@@ -1484,7 +1568,8 @@
         "Reese Witherspoon",
         "Ginnifer Goodwin"
       ],
-      "imdbRating": "7.8"
+      "imdbRating": "7.8",
+      "language": "English, Russian"
     },
     {
       "title": "Steve Jobs",
@@ -1502,7 +1587,8 @@
         "Kate Winslet",
         "Seth Rogen"
       ],
-      "imdbRating": "7.2"
+      "imdbRating": "7.2",
+      "language": "English"
     },
     {
       "title": "The Imitation Game",
@@ -1521,7 +1607,8 @@
         "Keira Knightley",
         "Matthew Goode"
       ],
-      "imdbRating": "8.0"
+      "imdbRating": "8.0",
+      "language": "English, German"
     },
     {
       "title": "Catch Me If You Can",
@@ -1540,7 +1627,8 @@
         "Tom Hanks",
         "Christopher Walken"
       ],
-      "imdbRating": "8.1"
+      "imdbRating": "8.1",
+      "language": "English, French"
     },
     {
       "title": "Elvis",
@@ -1559,7 +1647,8 @@
         "Austin Butler",
         "Olivia DeJonge"
       ],
-      "imdbRating": "7.3"
+      "imdbRating": "7.3",
+      "language": "English"
     },
     {
       "title": "I, Tonya",
@@ -1578,7 +1667,8 @@
         "Sebastian Stan",
         "Allison Janney"
       ],
-      "imdbRating": "7.5"
+      "imdbRating": "7.5",
+      "language": "English"
     },
     {
       "title": "Get Out",
@@ -1597,7 +1687,8 @@
         "Allison Williams",
         "Bradley Whitford"
       ],
-      "imdbRating": "7.8"
+      "imdbRating": "7.8",
+      "language": "English, Swahili"
     },
     {
       "title": "Hereditary",
@@ -1616,7 +1707,8 @@
         "Milly Shapiro",
         "Gabriel Byrne"
       ],
-      "imdbRating": "7.3"
+      "imdbRating": "7.3",
+      "language": "English, Spanish"
     },
     {
       "title": "The Exorcist",
@@ -1633,7 +1725,8 @@
         "Max von Sydow",
         "Linda Blair"
       ],
-      "imdbRating": "8.1"
+      "imdbRating": "8.1",
+      "language": "English, Latin, Greek, French, German, Arabic, Kurdish"
     },
     {
       "title": "A Quiet Place",
@@ -1652,7 +1745,8 @@
         "John Krasinski",
         "Millicent Simmonds"
       ],
-      "imdbRating": "7.5"
+      "imdbRating": "7.5",
+      "language": "English, American Sign "
     },
     {
       "title": "It",
@@ -1669,7 +1763,8 @@
         "Jaeden Martell",
         "Finn Wolfhard"
       ],
-      "imdbRating": "7.3"
+      "imdbRating": "7.3",
+      "language": "English, Hebrew"
     },
     {
       "title": "Insidious",
@@ -1688,7 +1783,8 @@
         "Rose Byrne",
         "Ty Simpkins"
       ],
-      "imdbRating": "6.8"
+      "imdbRating": "6.8",
+      "language": "English"
     },
     {
       "title": "The Shining",
@@ -1706,7 +1802,8 @@
         "Shelley Duvall",
         "Danny Lloyd"
       ],
-      "imdbRating": "8.4"
+      "imdbRating": "8.4",
+      "language": "English"
     },
     {
       "title": "Sinister",
@@ -1725,7 +1822,8 @@
         "Juliet Rylance",
         "James Ransone"
       ],
-      "imdbRating": "6.8"
+      "imdbRating": "6.8",
+      "language": "English"
     },
     {
       "title": "Smile",
@@ -1744,7 +1842,8 @@
         "Jessie T. Usher",
         "Kyle Gallner"
       ],
-      "imdbRating": "6.5"
+      "imdbRating": "6.5",
+      "language": "English, Spanish"
     },
     {
       "title": "Talk to Me",
@@ -1762,7 +1861,8 @@
         "Hamish Phillips",
         "Kit Erhart-Bruce"
       ],
-      "imdbRating": "7.1"
+      "imdbRating": "7.1",
+      "language": "English, French, Greek"
     },
     {
       "title": "Pride and Prejudice",
@@ -1780,7 +1880,8 @@
         "Jennifer Ehle",
         "Susannah Harker"
       ],
-      "imdbRating": "8.8"
+      "imdbRating": "8.8",
+      "language": "English"
     },
     {
       "title": "Titanic",
@@ -1798,7 +1899,8 @@
         "Kate Winslet",
         "Billy Zane"
       ],
-      "imdbRating": "8.0"
+      "imdbRating": "8.0",
+      "language": "English, Swedish, Italian, French"
     },
     {
       "title": "Me Before You",
@@ -1816,7 +1918,8 @@
         "Sam Claflin",
         "Janet McTeer"
       ],
-      "imdbRating": "7.4"
+      "imdbRating": "7.4",
+      "language": "English, French"
     },
     {
       "title": "The Fault in Our Stars",
@@ -1834,7 +1937,8 @@
         "Ansel Elgort",
         "Nat Wolff"
       ],
-      "imdbRating": "7.6"
+      "imdbRating": "7.6",
+      "language": "English"
     },
     {
       "title": "Notting Hill",
@@ -1853,7 +1957,8 @@
         "Julia Roberts",
         "Richard McCabe"
       ],
-      "imdbRating": "7.2"
+      "imdbRating": "7.2",
+      "language": "English, Spanish, French"
     },
     {
       "title": "Before Sunrise",
@@ -1872,7 +1977,8 @@
         "Julie Delpy",
         "Andrea Eckert"
       ],
-      "imdbRating": "8.1"
+      "imdbRating": "8.1",
+      "language": "English, German, French"
     },
     {
       "title": "Love Actually",
@@ -1891,7 +1997,8 @@
         "Martine McCutcheon",
         "Liam Neeson"
       ],
-      "imdbRating": "7.5"
+      "imdbRating": "7.5",
+      "language": "English, Portuguese, French"
     },
     {
       "title": "Silver Linings Playbook",
@@ -1910,7 +2017,8 @@
         "Jennifer Lawrence",
         "Robert De Niro"
       ],
-      "imdbRating": "7.7"
+      "imdbRating": "7.7",
+      "language": "English, Hindi"
     },
     {
       "title": "About Time",
@@ -1929,7 +2037,8 @@
         "Rachel McAdams",
         "Bill Nighy"
       ],
-      "imdbRating": "7.8"
+      "imdbRating": "7.8",
+      "language": "English"
     },
     {
       "title": "The Notebook",
@@ -1947,7 +2056,8 @@
         "James Garner",
         "Rachel McAdams"
       ],
-      "imdbRating": "7.8"
+      "imdbRating": "7.8",
+      "language": "English"
     },
     {
       "title": "Bridesmaids",
@@ -1964,7 +2074,8 @@
         "Maya Rudolph",
         "Rose Byrne"
       ],
-      "imdbRating": "6.8"
+      "imdbRating": "6.8",
+      "language": "English, Thai, Spanish, French"
     },
     {
       "title": "Step Brothers",
@@ -1981,7 +2092,8 @@
         "John C. Reilly",
         "Mary Steenburgen"
       ],
-      "imdbRating": "6.9"
+      "imdbRating": "6.9",
+      "language": "English, Spanish"
     },
     {
       "title": "Anchorman",
@@ -1996,7 +2108,8 @@
       "actors": [
         "Marco Di Francisca"
       ],
-      "imdbRating": "5.8"
+      "imdbRating": "5.8",
+      "language": null
     },
     {
       "title": "Dumb and Dumber",
@@ -2013,7 +2126,8 @@
         "Jeff Daniels",
         "Lauren Holly"
       ],
-      "imdbRating": "7.3"
+      "imdbRating": "7.3",
+      "language": "English, Swedish, German"
     },
     {
       "title": "Mean Girls",
@@ -2030,7 +2144,8 @@
         "Jonathan Bennett",
         "Rachel McAdams"
       ],
-      "imdbRating": "7.1"
+      "imdbRating": "7.1",
+      "language": "English, German, Vietnamese, Swahili"
     },
     {
       "title": "Zombieland",
@@ -2049,7 +2164,8 @@
         "Emma Stone",
         "Woody Harrelson"
       ],
-      "imdbRating": "7.5"
+      "imdbRating": "7.5",
+      "language": "English, Spanish, French"
     },
     {
       "title": "Game Night",
@@ -2068,7 +2184,8 @@
         "Rachel McAdams",
         "Kyle Chandler"
       ],
-      "imdbRating": "6.9"
+      "imdbRating": "6.9",
+      "language": "English"
     },
     {
       "title": "Tropic Thunder",
@@ -2087,7 +2204,8 @@
         "Jack Black",
         "Robert Downey Jr."
       ],
-      "imdbRating": "7.1"
+      "imdbRating": "7.1",
+      "language": "English, Mandarin"
     },
     {
       "title": "Bridget Jones's Diary",
@@ -2106,7 +2224,8 @@
         "Colin Firth",
         "Hugh Grant"
       ],
-      "imdbRating": "6.8"
+      "imdbRating": "6.8",
+      "language": "English"
     },
     {
       "title": "The Other Guys",
@@ -2125,7 +2244,8 @@
         "Mark Wahlberg",
         "Derek Jeter"
       ],
-      "imdbRating": "6.7"
+      "imdbRating": "6.7",
+      "language": "English, Ukrainian"
     },
     {
       "title": "Gone Girl",
@@ -2144,7 +2264,8 @@
         "Rosamund Pike",
         "Neil Patrick Harris"
       ],
-      "imdbRating": "8.1"
+      "imdbRating": "8.1",
+      "language": "English"
     },
     {
       "title": "Se7en",
@@ -2162,7 +2283,8 @@
         "Steven Williams",
         "Vasilios Ieronymakis"
       ],
-      "imdbRating": "6.1"
+      "imdbRating": "6.1",
+      "language": null
     },
     {
       "title": "Shutter Island",
@@ -2181,7 +2303,8 @@
         "Emily Mortimer",
         "Mark Ruffalo"
       ],
-      "imdbRating": "8.2"
+      "imdbRating": "8.2",
+      "language": "English, German"
     },
     {
       "title": "Prisoners",
@@ -2200,7 +2323,8 @@
         "Jake Gyllenhaal",
         "Viola Davis"
       ],
-      "imdbRating": "8.2"
+      "imdbRating": "8.2",
+      "language": "English"
     },
     {
       "title": "Zodiac",
@@ -2219,7 +2343,8 @@
         "Robert Downey Jr.",
         "Mark Ruffalo"
       ],
-      "imdbRating": "7.7"
+      "imdbRating": "7.7",
+      "language": "English"
     },
     {
       "title": "The Silence of the Lambs",
@@ -2238,7 +2363,8 @@
         "Anthony Hopkins",
         "Scott Glenn"
       ],
-      "imdbRating": "8.6"
+      "imdbRating": "8.6",
+      "language": "English, Latin"
     },
     {
       "title": "Fight Club",
@@ -2257,7 +2383,8 @@
         "Edward Norton",
         "Meat Loaf"
       ],
-      "imdbRating": "8.8"
+      "imdbRating": "8.8",
+      "language": "English"
     },
     {
       "title": "Nightcrawler",
@@ -2276,7 +2403,8 @@
         "Rene Russo",
         "Bill Paxton"
       ],
-      "imdbRating": "7.8"
+      "imdbRating": "7.8",
+      "language": "English"
     },
     {
       "title": "No Country for Old Men",
@@ -2295,7 +2423,8 @@
         "Javier Bardem",
         "Josh Brolin"
       ],
-      "imdbRating": "8.2"
+      "imdbRating": "8.2",
+      "language": "English, Spanish"
     },
     {
       "title": "Oldboy",
@@ -2314,7 +2443,8 @@
         "Yoo Ji-tae",
         "Kang Hye-jeong"
       ],
-      "imdbRating": "8.3"
+      "imdbRating": "8.3",
+      "language": "Korean"
     },
     {
       "title": "The Matrix",
@@ -2332,7 +2462,8 @@
         "Laurence Fishburne",
         "Carrie-Anne Moss"
       ],
-      "imdbRating": "8.7"
+      "imdbRating": "8.7",
+      "language": "English"
     },
     {
       "title": "Blade Runner 2049",
@@ -2351,7 +2482,8 @@
         "Ryan Gosling",
         "Ana de Armas"
       ],
-      "imdbRating": "8.0"
+      "imdbRating": "8.0",
+      "language": "English"
     },
     {
       "title": "Arrival",
@@ -2370,7 +2502,8 @@
         "Jeremy Renner",
         "Forest Whitaker"
       ],
-      "imdbRating": "7.9"
+      "imdbRating": "7.9",
+      "language": "English, Mandarin, Russian"
     },
     {
       "title": "Ex Machina",
@@ -2389,7 +2522,8 @@
         "Domhnall Gleeson",
         "Oscar Isaac"
       ],
-      "imdbRating": "7.7"
+      "imdbRating": "7.7",
+      "language": "English"
     },
     {
       "title": "Edge of Tomorrow",
@@ -2408,7 +2542,8 @@
         "Emily Blunt",
         "Bill Paxton"
       ],
-      "imdbRating": "7.9"
+      "imdbRating": "7.9",
+      "language": "English"
     },
     {
       "title": "District 9",
@@ -2427,7 +2562,8 @@
         "David James",
         "Jason Cope"
       ],
-      "imdbRating": "7.9"
+      "imdbRating": "7.9",
+      "language": "English, Nyanja, Afrikaans, Zulu, Xhosa, Sotho"
     },
     {
       "title": "Looper",
@@ -2446,7 +2582,8 @@
         "Bruce Willis",
         "Emily Blunt"
       ],
-      "imdbRating": "7.4"
+      "imdbRating": "7.4",
+      "language": "English, French"
     },
     {
       "title": "Tenet",
@@ -2465,7 +2602,8 @@
         "Robert Pattinson",
         "Elizabeth Debicki"
       ],
-      "imdbRating": "7.3"
+      "imdbRating": "7.3",
+      "language": "English, Ukrainian, Norwegian"
     },
     {
       "title": "Minority Report",
@@ -2484,7 +2622,8 @@
         "Colin Farrell",
         "Samantha Morton"
       ],
-      "imdbRating": "7.6"
+      "imdbRating": "7.6",
+      "language": "English, Swedish"
     },
     {
       "title": "Children of Men",
@@ -2503,7 +2642,8 @@
         "Mishal Husain",
         "Rob Curling"
       ],
-      "imdbRating": "7.9"
+      "imdbRating": "7.9",
+      "language": "English, German, Italian, Romanian, Spanish, Arabic, Georgian, Hebrew, Sanskrit, Russian, Serbian"
     },
     {
       "title": "John Wick",
@@ -2522,7 +2662,8 @@
         "Michael Nyqvist",
         "Alfie Allen"
       ],
-      "imdbRating": "7.5"
+      "imdbRating": "7.5",
+      "language": "English, Russian, Hungarian"
     },
     {
       "title": "Mad Max: Fury Road",
@@ -2541,7 +2682,8 @@
         "Charlize Theron",
         "Nicholas Hoult"
       ],
-      "imdbRating": "8.1"
+      "imdbRating": "8.1",
+      "language": "English, Russian"
     },
     {
       "title": "Mission: Impossible - Fallout",
@@ -2560,7 +2702,8 @@
         "Henry Cavill",
         "Ving Rhames"
       ],
-      "imdbRating": "7.7"
+      "imdbRating": "7.7",
+      "language": "English, French"
     },
     {
       "title": "Die Hard",
@@ -2578,7 +2721,8 @@
         "Alan Rickman",
         "Bonnie Bedelia"
       ],
-      "imdbRating": "8.2"
+      "imdbRating": "8.2",
+      "language": "English, German, Italian, Japanese"
     },
     {
       "title": "The Dark Knight",
@@ -2597,7 +2741,8 @@
         "Heath Ledger",
         "Aaron Eckhart"
       ],
-      "imdbRating": "9.1"
+      "imdbRating": "9.1",
+      "language": "English, Mandarin"
     },
     {
       "title": "Gladiator",
@@ -2616,7 +2761,8 @@
         "Joaquin Phoenix",
         "Connie Nielsen"
       ],
-      "imdbRating": "8.5"
+      "imdbRating": "8.5",
+      "language": "English"
     },
     {
       "title": "Kill Bill: Vol. 1",
@@ -2635,7 +2781,8 @@
         "David Carradine",
         "Daryl Hannah"
       ],
-      "imdbRating": "8.2"
+      "imdbRating": "8.2",
+      "language": "English, Japanese, French"
     },
     {
       "title": "The Raid",
@@ -2653,7 +2800,8 @@
         "Anne Bancroft",
         "Richard Boone"
       ],
-      "imdbRating": "6.8"
+      "imdbRating": "6.8",
+      "language": "English"
     },
     {
       "title": "Speed",
@@ -2672,7 +2820,8 @@
         "Dennis Hopper",
         "Sandra Bullock"
       ],
-      "imdbRating": "7.3"
+      "imdbRating": "7.3",
+      "language": "English"
     },
     {
       "title": "The Bourne Identity",
@@ -2691,7 +2840,8 @@
         "Matt Damon",
         "Chris Cooper"
       ],
-      "imdbRating": "7.8"
+      "imdbRating": "7.8",
+      "language": "English, French, German, Dutch, Italian, Yoruba"
     },
     {
       "title": "The Goonies",
@@ -2710,7 +2860,8 @@
         "Josh Brolin",
         "Jeff Cohen"
       ],
-      "imdbRating": "7.7"
+      "imdbRating": "7.7",
+      "language": "English, Spanish, Cantonese, Italian"
     },
     {
       "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
@@ -2729,7 +2880,8 @@
         "Geoffrey Rush",
         "Orlando Bloom"
       ],
-      "imdbRating": "8.1"
+      "imdbRating": "8.1",
+      "language": "English"
     },
     {
       "title": "Life of Pi",
@@ -2748,7 +2900,8 @@
         "Irrfan Khan",
         "Ayush Tandon"
       ],
-      "imdbRating": "7.9"
+      "imdbRating": "7.9",
+      "language": "English, Hindi, Japanese, French"
     },
     {
       "title": "The Jungle Book",
@@ -2767,7 +2920,8 @@
         "Bill Murray",
         "Ben Kingsley"
       ],
-      "imdbRating": "7.3"
+      "imdbRating": "7.3",
+      "language": "English"
     },
     {
       "title": "Into the Wild",
@@ -2786,7 +2940,8 @@
         "Vince Vaughn",
         "Catherine Keener"
       ],
-      "imdbRating": "8.0"
+      "imdbRating": "8.0",
+      "language": "English, Danish"
     },
     {
       "title": "National Treasure",
@@ -2805,7 +2960,8 @@
         "Diane Kruger",
         "Justin Bartha"
       ],
-      "imdbRating": "6.9"
+      "imdbRating": "6.9",
+      "language": "English, Spanish, German"
     },
     {
       "title": "Jumanji",
@@ -2824,7 +2980,8 @@
         "Kirsten Dunst",
         "Bonnie Hunt"
       ],
-      "imdbRating": "7.1"
+      "imdbRating": "7.1",
+      "language": "English, French"
     },
     {
       "title": "The Princess Bride",
@@ -2843,7 +3000,8 @@
         "Mandy Patinkin",
         "Robin Wright"
       ],
-      "imdbRating": "8.0"
+      "imdbRating": "8.0",
+      "language": "English"
     },
     {
       "title": "Journey to the Center of the Earth",
@@ -2862,7 +3020,8 @@
         "Josh Hutcherson",
         "Aníta Briem"
       ],
-      "imdbRating": "5.8"
+      "imdbRating": "5.8",
+      "language": "English, Icelandic, Italian"
     },
     {
       "title": "The Shawshank Redemption",
@@ -2879,7 +3038,8 @@
         "Morgan Freeman",
         "Bob Gunton"
       ],
-      "imdbRating": "9.3"
+      "imdbRating": "9.3",
+      "language": "English"
     },
     {
       "title": "Forrest Gump",
@@ -2897,7 +3057,8 @@
         "Robin Wright",
         "Gary Sinise"
       ],
-      "imdbRating": "8.8"
+      "imdbRating": "8.8",
+      "language": "English"
     },
     {
       "title": "A Beautiful Mind",
@@ -2916,7 +3077,8 @@
         "Ed Harris",
         "Jennifer Connelly"
       ],
-      "imdbRating": "8.2"
+      "imdbRating": "8.2",
+      "language": "English"
     },
     {
       "title": "Manchester by the Sea",
@@ -2933,7 +3095,8 @@
         "Michelle Williams",
         "Kyle Chandler"
       ],
-      "imdbRating": "7.8"
+      "imdbRating": "7.8",
+      "language": "English"
     },
     {
       "title": "Moonlight",
@@ -2950,7 +3113,8 @@
         "Naomie Harris",
         "Trevante Rhodes"
       ],
-      "imdbRating": "7.4"
+      "imdbRating": "7.4",
+      "language": "English"
     },
     {
       "title": "The Pursuit of Happyness",
@@ -2968,7 +3132,8 @@
         "Thandiwe Newton",
         "Jaden Smith"
       ],
-      "imdbRating": "8.0"
+      "imdbRating": "8.0",
+      "language": "English, Cantonese"
     },
     {
       "title": "12 Years a Slave",
@@ -2987,7 +3152,8 @@
         "Michael Kenneth Williams",
         "Michael Fassbender"
       ],
-      "imdbRating": "8.1"
+      "imdbRating": "8.1",
+      "language": "English"
     },
     {
       "title": "Green Book",
@@ -3006,7 +3172,8 @@
         "Mahershala Ali",
         "Linda Cardellini"
       ],
-      "imdbRating": "8.2"
+      "imdbRating": "8.2",
+      "language": "English, Italian, Russian, German"
     },
     {
       "title": "Spotlight",
@@ -3025,7 +3192,8 @@
         "Michael Keaton",
         "Rachel McAdams"
       ],
-      "imdbRating": "8.1"
+      "imdbRating": "8.1",
+      "language": "English"
     },
     {
       "title": "Marriage Story",
@@ -3043,7 +3211,8 @@
         "Scarlett Johansson",
         "Julia Greer"
       ],
-      "imdbRating": "7.9"
+      "imdbRating": "7.9",
+      "language": "English, Spanish"
     },
     {
       "title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
@@ -3062,7 +3231,8 @@
         "Georgie Henley",
         "William Moseley"
       ],
-      "imdbRating": "6.9"
+      "imdbRating": "6.9",
+      "language": "English, German, Brazilian Sign "
     },
     {
       "title": "Pan's Labyrinth",
@@ -3081,7 +3251,8 @@
         "Ariadna Gil",
         "Sergi López"
       ],
-      "imdbRating": "8.2"
+      "imdbRating": "8.2",
+      "language": "Spanish"
     },
     {
       "title": "Stardust",
@@ -3100,7 +3271,8 @@
         "Claire Danes",
         "Sienna Miller"
       ],
-      "imdbRating": "7.6"
+      "imdbRating": "7.6",
+      "language": "English"
     },
     {
       "title": "The Shape of Water",
@@ -3119,7 +3291,8 @@
         "Octavia Spencer",
         "Michael Shannon"
       ],
-      "imdbRating": "7.3"
+      "imdbRating": "7.3",
+      "language": "English, American Sign , Russian, French"
     },
     {
       "title": "Edward Scissorhands",
@@ -3138,7 +3311,8 @@
         "Winona Ryder",
         "Dianne Wiest"
       ],
-      "imdbRating": "7.8"
+      "imdbRating": "7.8",
+      "language": "English"
     },
     {
       "title": "Big Fish",
@@ -3157,7 +3331,8 @@
         "Albert Finney",
         "Billy Crudup"
       ],
-      "imdbRating": "8.0"
+      "imdbRating": "8.0",
+      "language": "English, Cantonese"
     },
     {
       "title": "Spirited Away",
@@ -3176,7 +3351,8 @@
         "Rumi Hiiragi",
         "Mari Natsuki"
       ],
-      "imdbRating": "8.6"
+      "imdbRating": "8.6",
+      "language": "Japanese, English"
     },
     {
       "title": "Howl's Moving Castle",
@@ -3195,7 +3371,8 @@
         "Takuya Kimura",
         "Tatsuya Gashûin"
       ],
-      "imdbRating": "8.2"
+      "imdbRating": "8.2",
+      "language": "Japanese"
     },
     {
       "title": "Beetlejuice",
@@ -3213,7 +3390,8 @@
         "Geena Davis",
         "Michael Keaton"
       ],
-      "imdbRating": "7.4"
+      "imdbRating": "7.4",
+      "language": "English"
     },
     {
       "title": "Corpse Bride",
@@ -3232,7 +3410,8 @@
         "Helena Bonham Carter",
         "Emily Watson"
       ],
-      "imdbRating": "7.4"
+      "imdbRating": "7.4",
+      "language": "English"
     },
     {
       "title": "Everything Everywhere All at Once",
@@ -3251,7 +3430,8 @@
         "Stephanie Hsu",
         "Jamie Lee Curtis"
       ],
-      "imdbRating": "7.7"
+      "imdbRating": "7.7",
+      "language": "English, Mandarin, Cantonese"
     },
     {
       "title": "The Batman",
@@ -3270,7 +3450,8 @@
         "Zoë Kravitz",
         "Jeffrey Wright"
       ],
-      "imdbRating": "7.8"
+      "imdbRating": "7.8",
+      "language": "English, Spanish, Latin, Italian"
     },
     {
       "title": "Top Gun: Maverick",
@@ -3288,7 +3469,8 @@
         "Jennifer Connelly",
         "Miles Teller"
       ],
-      "imdbRating": "8.2"
+      "imdbRating": "8.2",
+      "language": "English"
     },
     {
       "title": "Deadpool & Wolverine",
@@ -3307,7 +3489,8 @@
         "Hugh Jackman",
         "Emma Corrin"
       ],
-      "imdbRating": "7.5"
+      "imdbRating": "7.5",
+      "language": "English, French, Spanish"
     },
     {
       "title": "Anora",
@@ -3326,7 +3509,8 @@
         "Paul Weissman",
         "Lindsey Normington"
       ],
-      "imdbRating": "7.4"
+      "imdbRating": "7.4",
+      "language": "English, Russian, Armenian"
     },
     {
       "title": "The Substance",
@@ -3345,7 +3529,8 @@
         "Margaret Qualley",
         "Dennis Quaid"
       ],
-      "imdbRating": "7.2"
+      "imdbRating": "7.2",
+      "language": "English"
     },
     {
       "title": "Poor Things",
@@ -3364,7 +3549,8 @@
         "Mark Ruffalo",
         "Willem Dafoe"
       ],
-      "imdbRating": "7.7"
+      "imdbRating": "7.7",
+      "language": "English, French, Portuguese"
     },
     {
       "title": "Barbenheimer",
@@ -3382,7 +3568,8 @@
         "Emilio Llaca",
         "William Pawson"
       ],
-      "imdbRating": null
+      "imdbRating": null,
+      "language": "English"
     },
     {
       "title": "Wonka",
@@ -3401,7 +3588,8 @@
         "Gustave Die",
         "Murray McArthur"
       ],
-      "imdbRating": "6.9"
+      "imdbRating": "6.9",
+      "language": "English, Latin, French"
     },
     {
       "title": "Dune: Part Two",
@@ -3420,7 +3608,8 @@
         "Zendaya",
         "Rebecca Ferguson"
       ],
-      "imdbRating": "8.4"
+      "imdbRating": "8.4",
+      "language": "English"
     },
     {
       "title": "A Minecraft Movie",
@@ -3439,7 +3628,8 @@
         "Jack Black",
         "Sebastian Hansen"
       ],
-      "imdbRating": "5.6"
+      "imdbRating": "5.6",
+      "language": "English, Spanish"
     },
     {
       "title": "Sinners",
@@ -3458,7 +3648,8 @@
         "Jack O&apos;Connell",
         "Hailee Steinfeld"
       ],
-      "imdbRating": "7.5"
+      "imdbRating": "7.5",
+      "language": "English, Chinese"
     },
     {
       "title": "The Conjuring: Last Rites",
@@ -3477,7 +3668,8 @@
         "Vera Farmiga",
         "Mia Tomlinson"
       ],
-      "imdbRating": "6.2"
+      "imdbRating": "6.2",
+      "language": "English, Latin"
     },
     {
       "title": "Weapons",
@@ -3495,7 +3687,8 @@
         "Josh Brolin",
         "Alden Ehrenreich"
       ],
-      "imdbRating": "7.4"
+      "imdbRating": "7.4",
+      "language": "English"
     },
     {
       "title": "One Battle After Another",
@@ -3514,7 +3707,8 @@
         "Sean Penn",
         "Benicio Del Toro"
       ],
-      "imdbRating": "7.7"
+      "imdbRating": "7.7",
+      "language": "English, Spanish"
     },
     {
       "title": "Wicked: For Good",
@@ -3533,7 +3727,8 @@
         "Ariana Grande",
         "Jeff Goldblum"
       ],
-      "imdbRating": "6.6"
+      "imdbRating": "6.6",
+      "language": "English"
     },
     {
       "title": "Avatar: The Way of Water",
@@ -3552,7 +3747,8 @@
         "Zoe Saldaña",
         "Sigourney Weaver"
       ],
-      "imdbRating": "7.5"
+      "imdbRating": "7.5",
+      "language": "English"
     },
     {
       "title": "Spider-Man: No Way Home",
@@ -3571,7 +3767,8 @@
         "Zendaya",
         "Benedict Cumberbatch"
       ],
-      "imdbRating": "8.1"
+      "imdbRating": "8.1",
+      "language": "English, Tagalog"
     },
     {
       "title": "The Godfather",
@@ -3589,7 +3786,8 @@
         "Al Pacino",
         "James Caan"
       ],
-      "imdbRating": "9.2"
+      "imdbRating": "9.2",
+      "language": "English, Italian, Latin"
     },
     {
       "title": "Pulp Fiction",
@@ -3607,7 +3805,8 @@
         "Uma Thurman",
         "Samuel L. Jackson"
       ],
-      "imdbRating": "8.8"
+      "imdbRating": "8.8",
+      "language": "English, Spanish, French"
     },
     {
       "title": "Casablanca",
@@ -3626,7 +3825,8 @@
         "Ingrid Bergman",
         "Paul Henreid"
       ],
-      "imdbRating": "8.5"
+      "imdbRating": "8.5",
+      "language": "English, French, German, Italian, Russian"
     },
     {
       "title": "Schindler's List",
@@ -3645,7 +3845,8 @@
         "Ralph Fiennes",
         "Ben Kingsley"
       ],
-      "imdbRating": "9.0"
+      "imdbRating": "9.0",
+      "language": "English, Hebrew, German, Polish, Latin"
     },
     {
       "title": "The Lion King",
@@ -3664,7 +3865,8 @@
         "Jeremy Irons",
         "James Earl Jones"
       ],
-      "imdbRating": "8.5"
+      "imdbRating": "8.5",
+      "language": "English, Swahili, Xhosa, Zulu"
     },
     {
       "title": "Jaws",
@@ -3683,7 +3885,8 @@
         "Robert Shaw",
         "Richard Dreyfuss"
       ],
-      "imdbRating": "8.1"
+      "imdbRating": "8.1",
+      "language": "English"
     },
     {
       "title": "E.T. the Extra-Terrestrial",
@@ -3702,7 +3905,8 @@
         "Drew Barrymore",
         "Peter Coyote"
       ],
-      "imdbRating": "7.9"
+      "imdbRating": "7.9",
+      "language": "English"
     },
     {
       "title": "Back to the Future",
@@ -3721,7 +3925,8 @@
         "Christopher Lloyd",
         "Lea Thompson"
       ],
-      "imdbRating": "8.5"
+      "imdbRating": "8.5",
+      "language": "English"
     },
     {
       "title": "Rocky",
@@ -3739,7 +3944,8 @@
         "Talia Shire",
         "Burt Young"
       ],
-      "imdbRating": "8.1"
+      "imdbRating": "8.1",
+      "language": "English, Spanish, Italian"
     },
     {
       "title": "The Departed",
@@ -3758,7 +3964,8 @@
         "Matt Damon",
         "Jack Nicholson"
       ],
-      "imdbRating": "8.5"
+      "imdbRating": "8.5",
+      "language": "English, Cantonese"
     },
     {
       "title": "No Time to Die",
@@ -3777,7 +3984,8 @@
         "Ana de Armas",
         "Rami Malek"
       ],
-      "imdbRating": "7.3"
+      "imdbRating": "7.3",
+      "language": "English, French, Italian, Russian, Spanish, Norwegian, German"
     },
     {
       "title": "Whiplash",
@@ -3795,7 +4003,8 @@
         "J.K. Simmons",
         "Melissa Benoist"
       ],
-      "imdbRating": "8.5"
+      "imdbRating": "8.5",
+      "language": "English"
     },
     {
       "title": "The Grand Budapest Hotel",
@@ -3813,7 +4022,8 @@
         "F. Murray Abraham",
         "Mathieu Amalric"
       ],
-      "imdbRating": "8.1"
+      "imdbRating": "8.1",
+      "language": "English, French, German"
     },
     {
       "title": "Coco",
@@ -3832,7 +4042,8 @@
         "Gael García Bernal",
         "Benjamin Bratt"
       ],
-      "imdbRating": "8.4"
+      "imdbRating": "8.4",
+      "language": "English, Spanish"
     },
     {
       "title": "Up",
@@ -3851,7 +4062,8 @@
         "Jordan Nagai",
         "John Ratzenberger"
       ],
-      "imdbRating": "8.3"
+      "imdbRating": "8.3",
+      "language": "English"
     },
     {
       "title": "Inside Out",
@@ -3870,7 +4082,8 @@
         "Bill Hader",
         "Lewis Black"
       ],
-      "imdbRating": "8.1"
+      "imdbRating": "8.1",
+      "language": "English, Portuguese, Latvian"
     },
     {
       "title": "Toy Story",
@@ -3889,7 +4102,8 @@
         "Tim Allen",
         "Don Rickles"
       ],
-      "imdbRating": "8.3"
+      "imdbRating": "8.3",
+      "language": "English"
     },
     {
       "title": "Frozen",
@@ -3908,7 +4122,8 @@
         "Idina Menzel",
         "Jonathan Groff"
       ],
-      "imdbRating": "7.4"
+      "imdbRating": "7.4",
+      "language": "English"
     },
     {
       "title": "Zootopia",
@@ -3927,7 +4142,427 @@
         "Jason Bateman",
         "Idris Elba"
       ],
-      "imdbRating": "8.0"
+      "imdbRating": "8.0",
+      "language": "English"
+    },
+    {
+      "title": "The Wizard of Oz",
+      "genres": [
+        "Adventure",
+        "Family",
+        "Fantasy"
+      ],
+      "platforms": [],
+      "year": "1939",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYWRmY2I0MGItYTQ0OC00NWZmLWIwMDktYjJlNDc0MzVhMmViXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "Young Dorothy Gale and her dog Toto are swept away by a tornado from their Kansas farm to the magical Land of Oz and embark on a quest with three new friends to see the Wizard, who can return her to her home and fulfill the others...",
+      "director": "Victor Fleming, George Cukor, Norman Taurog",
+      "actors": [
+        "Judy Garland",
+        "Frank Morgan",
+        "Ray Bolger"
+      ],
+      "imdbRating": "8.1",
+      "language": "English"
+    },
+    {
+      "title": "Mary Poppins",
+      "genres": [
+        "Comedy",
+        "Family",
+        "Fantasy"
+      ],
+      "platforms": [],
+      "year": "1964",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNThiNjgzMTYtZjUzMC00YTVlLTg4MDItMmFjMDIwYjg4ZDAwXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "In turn of the century London, a magical nanny employs music and adventure to help two neglected children become closer to their father.",
+      "director": "Robert Stevenson",
+      "actors": [
+        "Julie Andrews",
+        "Dick Van Dyke",
+        "David Tomlinson"
+      ],
+      "imdbRating": "7.8",
+      "language": "English"
+    },
+    {
+      "title": "Beauty and the Beast",
+      "genres": [
+        "Animation",
+        "Family",
+        "Fantasy"
+      ],
+      "platforms": [],
+      "year": "1991",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYTY3NDg2YzktYWFjZC00MTExLTlmZDctMGY3MWYzZTlkYTNiXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "A prince cursed to spend his days as a hideous monster sets out to regain his humanity by earning a young woman's love.",
+      "director": "Gary Trousdale, Kirk Wise",
+      "actors": [
+        "Paige O'Hara",
+        "Robby Benson",
+        "Jesse Corti"
+      ],
+      "imdbRating": "8.0",
+      "language": "English, French"
+    },
+    {
+      "title": "Cabaret",
+      "genres": [
+        "Drama",
+        "Music",
+        "Musical"
+      ],
+      "platforms": [],
+      "year": "1972",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZGExNGNlNmQtZTlmNy00MmZkLWE1MjgtZGYwODY0ZDI1YzMwXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "A female girlie club entertainer in Weimar Republic era Berlin romances two men while the Nazi Party rises to power around them.",
+      "director": "Bob Fosse",
+      "actors": [
+        "Liza Minnelli",
+        "Michael York",
+        "Helmut Griem"
+      ],
+      "imdbRating": "7.8",
+      "language": "English, German, Hebrew, French"
+    },
+    {
+      "title": "The Rocky Horror Picture Show",
+      "genres": [
+        "Comedy",
+        "Horror",
+        "Musical"
+      ],
+      "platforms": [],
+      "year": "1975",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOTg2YzY5ZGYtNDk1My00N2Q2LWFhN2YtZWU5YTkzODIyZGRmXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "A rain-soaked couple take refuge in the castle of a transvestite mad scientist from outer space who is about to unveil his greatest creation.",
+      "director": "Jim Sharman",
+      "actors": [
+        "Tim Curry",
+        "Susan Sarandon",
+        "Barry Bostwick"
+      ],
+      "imdbRating": "7.4",
+      "language": "English"
+    },
+    {
+      "title": "Fiddler on the Roof",
+      "genres": [
+        "Drama",
+        "Family",
+        "Musical"
+      ],
+      "platforms": [],
+      "year": "1971",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzYyYjJmMjctNzk3Yi00NmRhLWE5ZmQtZTNlZjU3MDMxNTBhXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "In pre-revolutionary Russia, a Jewish peasant with traditional values contends with marrying off three of his daughters with modern romantic ideals while growing anti-Semitic sentiment threatens his village.",
+      "director": "Norman Jewison",
+      "actors": [
+        "Topol",
+        "Norma Crane",
+        "Leonard Frey"
+      ],
+      "imdbRating": "8.0",
+      "language": "English, Hebrew, Russian"
+    },
+    {
+      "title": "Annie",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Family"
+      ],
+      "platforms": [],
+      "year": "1982",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZjQzOGJkNTAtYzY3NS00ZjViLWI4OTMtZTdkNzRjYWRmOTUwXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "A spunky young orphan is taken in by a rich eccentric, much to the chagrin of the cantankerous woman who runs the orphanage.",
+      "director": "John Huston",
+      "actors": [
+        "Aileen Quinn",
+        "Albert Finney",
+        "Carol Burnett"
+      ],
+      "imdbRating": "6.6",
+      "language": "English"
+    },
+    {
+      "title": "Sweeney Todd: The Demon Barber of Fleet Street",
+      "genres": [
+        "Drama",
+        "Horror",
+        "Musical"
+      ],
+      "platforms": [],
+      "year": "2007",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTg3NjUxMzM5NV5BMl5BanBnXkFtZTcwMzQ1NjQzMw@@._V1_SX300.jpg",
+      "plot": "The legendary tale of a barber who returns from wrongful imprisonment to 1840s London, bent on revenge for the rape and death of his wife, and resumes his trade while forming a sinister partnership with his fellow tenant, Mrs. Lov...",
+      "director": "Tim Burton",
+      "actors": [
+        "Johnny Depp",
+        "Helena Bonham Carter",
+        "Alan Rickman"
+      ],
+      "imdbRating": "7.3",
+      "language": "English, Italian"
+    },
+    {
+      "title": "Moana",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
+      "platforms": [],
+      "year": "2016",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjI4MzU5NTExNF5BMl5BanBnXkFtZTgwNzY1MTEwMDI@._V1_SX300.jpg",
+      "plot": "In ancient Polynesia, when a terrible curse incurred by the demigod Maui reaches Moana's island, she answers the Ocean's call to seek out Maui to set things right.",
+      "director": "Ron Clements, John Musker, Don Hall",
+      "actors": [
+        "Auli'i Cravalho",
+        "Dwayne Johnson",
+        "Rachel House"
+      ],
+      "imdbRating": "7.6",
+      "language": "English, French"
+    },
+    {
+      "title": "Les Misérables",
+      "genres": [
+        "Drama",
+        "Musical",
+        "Romance"
+      ],
+      "platforms": [],
+      "year": "2012",
+      "poster": "https://m.media-amazon.com/images/M/MV5BY2Q1YjIxZTAtZTU0YS00ZmE5LWEwODEtY2IyYWM2ZTJlOWE1XkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "In 19th-century France, Jean Valjean, who, for decades, has been hunted by the ruthless policeman Javert after breaking parole, agrees to care for a factory worker's daughter. The decision changes their lives forever.",
+      "director": "Tom Hooper",
+      "actors": [
+        "Hugh Jackman",
+        "Russell Crowe",
+        "Anne Hathaway"
+      ],
+      "imdbRating": "7.5",
+      "language": "English"
+    },
+    {
+      "title": "Pitch Perfect",
+      "genres": [
+        "Comedy",
+        "Music",
+        "Romance"
+      ],
+      "platforms": [],
+      "year": "2012",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTcyMTMzNzE5N15BMl5BanBnXkFtZTcwNzg5NjM5Nw@@._V1_SX300.jpg",
+      "plot": "Beca, a freshman at Barden University, is cajoled into joining The Bellas, her school's all-girls singing group. Injecting some much needed energy into their repertoire, The Bellas take on their male rivals in a campus competition.",
+      "director": "Jason Moore",
+      "actors": [
+        "Anna Kendrick",
+        "Brittany Snow",
+        "Rebel Wilson"
+      ],
+      "imdbRating": "7.1",
+      "language": "English, Ukrainian"
+    },
+    {
+      "title": "Encanto",
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Family"
+      ],
+      "platforms": [],
+      "year": "2021",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNGEyNzk2M2MtNjBhZS00MzYwLWI0Y2YtYjc5ZWE2MjM0YWE5XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "plot": "An extraordinary family, the Madrigals, live hidden in the mountains of Colombia, in a magical house called an Encanto. The magic of the Encanto has blessed every child in the family with a unique gift - every child except one, Mi...",
+      "director": "Jared Bush, Charise Castro Smith, Byron Howard",
+      "actors": [
+        "Stephanie Beatriz",
+        "María Cecilia Botero",
+        "John Leguizamo"
+      ],
+      "imdbRating": "7.2",
+      "language": "English, Spanish"
+    },
+    {
+      "title": "Once",
+      "genres": [
+        "Drama",
+        "Music",
+        "Musical"
+      ],
+      "platforms": [],
+      "year": "2006",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYmFmZmRkNzYtMTcyNy00NjY3LTkyNTUtNGExZjViNGFhZDdkXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "A modern-day musical about a busker and an immigrant and their eventful week in Dublin, as they write, rehearse and record songs that tell their love story.",
+      "director": "John Carney",
+      "actors": [
+        "Glen Hansard",
+        "Markéta Irglová",
+        "Hugh Walsh"
+      ],
+      "imdbRating": "7.8",
+      "language": "English, Czech"
+    },
+    {
+      "title": "Mamma Mia! Here We Go Again",
+      "genres": [
+        "Comedy",
+        "Musical",
+        "Romance"
+      ],
+      "platforms": [],
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjEwMTM3OTI1NV5BMl5BanBnXkFtZTgwNDk5NTY0NTM@._V1_SX300.jpg",
+      "plot": "Five years after the events of Mamma Mia! (2008), Sophie prepares for the grand reopening of the Hotel Bella Donna as she learns more about her mother's past.",
+      "director": "Ol Parker",
+      "actors": [
+        "Lily James",
+        "Amanda Seyfried",
+        "Meryl Streep"
+      ],
+      "imdbRating": "6.6",
+      "language": "English, French, Greek"
+    },
+    {
+      "title": "Joseph and the Amazing Technicolor Dreamcoat",
+      "genres": [
+        "Musical"
+      ],
+      "platforms": [],
+      "year": "1999",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzI5NWViZDUtNjAzYS00MzJjLWJjMTgtMzMwMmNlZDhkMDcwXkEyXkFqcGdeQXVyNjczMzgwMDg@._V1_SX300.jpg",
+      "plot": "A humorously musical retelling of the Biblical story of Joseph.",
+      "director": "David Mallet",
+      "actors": [
+        "Donny Osmond",
+        "Maria Friedman",
+        "Richard Attenborough",
+        "Ian McNeice"
+      ],
+      "imdbRating": "7.2",
+      "language": "English"
+    },
+    {
+      "title": "Nine",
+      "genres": [
+        "Drama",
+        "Musical",
+        "Romance"
+      ],
+      "platforms": [],
+      "year": "2009",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTY5ODA2MzQxMl5BMl5BanBnXkFtZTcwMTI4NTEwMw@@._V1_SX300.jpg",
+      "plot": "Famous film director Guido Contini struggles to find harmony in his professional and personal lives, as he engages in dramatic relationships with his wife, his mistress, his muse, his agent, and his mother.",
+      "director": "Rob Marshall",
+      "actors": [
+        "Daniel Day-Lewis",
+        "Marion Cotillard",
+        "Penélope Cruz"
+      ],
+      "imdbRating": "5.8",
+      "language": "English, Italian, French"
+    },
+    {
+      "title": "The Music Man",
+      "genres": [
+        "Comedy",
+        "Family",
+        "Musical"
+      ],
+      "platforms": [],
+      "year": "1962",
+      "poster": "https://m.media-amazon.com/images/M/MV5BODBmODNmNTMtY2M5ZC00MjI0LWFkYjUtOTAwMTk3MThjYmNiXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "Traveling con artist Harold Hill targets the naïve residents of a small town in 1910s Iowa by posing as a boys' band leader to raise money before he can skip town.",
+      "director": "Morton DaCosta",
+      "actors": [
+        "Robert Preston",
+        "Shirley Jones",
+        "Buddy Hackett"
+      ],
+      "imdbRating": "7.7",
+      "language": "English"
+    },
+    {
+      "title": "Oliver!",
+      "genres": [
+        "Drama",
+        "Family",
+        "Musical"
+      ],
+      "platforms": [],
+      "year": "1968",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjRhYmVlZGItYzgxMS00MzI3LTgzZjctNTcxMGRiN2E5ZGYwXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "After being sold to the mortician Sowerberry, young orphan Oliver Twist runs away and meets a group of boys trained to be pickpockets by their elderly mentor Fagin in 1830s London in this musical based on Charles Dickens' Oliver T...",
+      "director": "Carol Reed",
+      "actors": [
+        "Mark Lester",
+        "Ron Moody",
+        "Shani Wallis"
+      ],
+      "imdbRating": "7.4",
+      "language": "English"
+    },
+    {
+      "title": "My Fair Lady",
+      "genres": [
+        "Drama",
+        "Family",
+        "Musical"
+      ],
+      "platforms": [],
+      "year": "1964",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNmMxZmFjZmQtMDRiOC00MDQxLTlhNDktZTkxMmRiYWM1ZDUzXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "In 1910s London, snobbish phonetics professor Henry Higgins agrees to a wager that he can make a crude flower girl, Eliza Doolittle, presentable in high society.",
+      "director": "George Cukor",
+      "actors": [
+        "Audrey Hepburn",
+        "Rex Harrison",
+        "Stanley Holloway"
+      ],
+      "imdbRating": "7.7",
+      "language": "English"
+    },
+    {
+      "title": "The Phantom of the Opera",
+      "genres": [
+        "Drama",
+        "Musical",
+        "Romance"
+      ],
+      "platforms": [],
+      "year": "2004",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDczNzg4OTM3MV5BMl5BanBnXkFtZTcwOTQzMTEzMw@@._V1_SX300.jpg",
+      "plot": "A young soprano becomes the obsession of a disfigured and murderous musical genius who lives beneath the Paris Opéra House.",
+      "director": "Joel Schumacher",
+      "actors": [
+        "Gerard Butler",
+        "Emmy Rossum",
+        "Patrick Wilson"
+      ],
+      "imdbRating": "7.2",
+      "language": "English, Italian"
+    },
+    {
+      "title": "In the Heights",
+      "genres": [
+        "Drama",
+        "Musical",
+        "Romance"
+      ],
+      "platforms": [],
+      "year": "2021",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOGUwODk5ZmItMjUzMi00YmYyLTk3NzgtNGVmYTI3MmJhYmY1XkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "In Washington Heights, a sympathetic New York bodega owner saves every penny every day as he imagines and sings about a better life.",
+      "director": "Jon M. Chu",
+      "actors": [
+        "Anthony Ramos",
+        "Corey Hawkins",
+        "Leslie Grace"
+      ],
+      "imdbRating": "7.2",
+      "language": "English, Spanish, Hebrew"
     }
   ],
   "attempt1": {
@@ -12926,6 +13561,980 @@
             ]
           }
         ]
+      },
+      {
+        "title": "The Wizard of Oz",
+        "genres": [
+          "Adventure",
+          "Family",
+          "Fantasy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Mary Poppins",
+        "genres": [
+          "Comedy",
+          "Family",
+          "Fantasy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Beauty and the Beast",
+        "genres": [
+          "Animation",
+          "Family",
+          "Fantasy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Cabaret",
+        "genres": [
+          "Drama",
+          "Music",
+          "Musical"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Rocky Horror Picture Show",
+        "genres": [
+          "Comedy",
+          "Horror",
+          "Musical"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Fiddler on the Roof",
+        "genres": [
+          "Drama",
+          "Family",
+          "Musical"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Annie",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Family"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Sweeney Todd: The Demon Barber of Fleet Street",
+        "genres": [
+          "Drama",
+          "Horror",
+          "Musical"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Moana",
+        "genres": [
+          "Animation",
+          "Adventure",
+          "Comedy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Les Misérables",
+        "genres": [
+          "Drama",
+          "Musical",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pitch Perfect",
+        "genres": [
+          "Comedy",
+          "Music",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Encanto",
+        "genres": [
+          "Animation",
+          "Comedy",
+          "Family"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Once",
+        "genres": [
+          "Drama",
+          "Music",
+          "Musical"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Mamma Mia! Here We Go Again",
+        "genres": [
+          "Comedy",
+          "Musical",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Joseph and the Amazing Technicolor Dreamcoat",
+        "genres": [
+          "Musical"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Nine",
+        "genres": [
+          "Drama",
+          "Musical",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Music Man",
+        "genres": [
+          "Comedy",
+          "Family",
+          "Musical"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Oliver!",
+        "genres": [
+          "Drama",
+          "Family",
+          "Musical"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "My Fair Lady",
+        "genres": [
+          "Drama",
+          "Family",
+          "Musical"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Phantom of the Opera",
+        "genres": [
+          "Drama",
+          "Musical",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "In the Heights",
+        "genres": [
+          "Drama",
+          "Musical",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
       }
     ],
     "survivorsCount": 0,
@@ -20071,48 +21680,784 @@
             "reasons": []
           }
         ]
-      }
-    ],
-    "survivorsCount": 123,
-    "scored": [
-      {
-        "title": "Die Hard",
-        "genres": [
-          "Action",
-          "Thriller"
-        ],
-        "platforms": [],
-        "year": "1988",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMGNlYmM1NmQtYWExMS00NmRjLTg5ZmEtMmYyYzJkMzljYWMxXkEyXkFqcGc@._V1_SX300.jpg",
-        "plot": "A New York City cop, John McClane, tries to save his estranged wife and several others taken hostage by terrorists during a Christmas Eve party at the Nakatomi Plaza Skyscraper in Los Angeles, California.",
-        "director": "John McTiernan",
-        "actors": [
-          "Bruce Willis",
-          "Alan Rickman",
-          "Bonnie Bedelia"
-        ],
-        "imdbRating": "8.2",
-        "groupScore": 0.5599999999999999
       },
       {
-        "title": "Odyssey",
+        "title": "The Wizard of Oz",
+        "genres": [
+          "Adventure",
+          "Family",
+          "Fantasy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Mary Poppins",
+        "genres": [
+          "Comedy",
+          "Family",
+          "Fantasy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Beauty and the Beast",
+        "genres": [
+          "Animation",
+          "Family",
+          "Fantasy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Cabaret",
         "genres": [
           "Drama",
-          "Thriller"
+          "Music",
+          "Musical"
         ],
-        "platforms": [],
-        "year": "2026",
-        "poster": "https://m.media-amazon.com/images/M/MV5BNWUwOGU2MDYtYzc2Ni00ZGM5LTk1MmItZGNmOWViNjgzNTkyXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
-        "plot": "A woman is dragged into London's underworld when she is offered money to hide a kidnapped agent.",
-        "director": "Gerard Johnson",
-        "actors": [
-          "Polly Maberly",
-          "Guy Burnet",
-          "Kellie Shirley"
-        ],
-        "imdbRating": "5.4",
-        "groupScore": 0.48
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
       },
+      {
+        "title": "The Rocky Horror Picture Show",
+        "genres": [
+          "Comedy",
+          "Horror",
+          "Musical"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\""
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\""
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Fiddler on the Roof",
+        "genres": [
+          "Drama",
+          "Family",
+          "Musical"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Annie",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Family"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Sweeney Todd: The Demon Barber of Fleet Street",
+        "genres": [
+          "Drama",
+          "Horror",
+          "Musical"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\""
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\""
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Moana",
+        "genres": [
+          "Animation",
+          "Adventure",
+          "Comedy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Les Misérables",
+        "genres": [
+          "Drama",
+          "Musical",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Pitch Perfect",
+        "genres": [
+          "Comedy",
+          "Music",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Encanto",
+        "genres": [
+          "Animation",
+          "Comedy",
+          "Family"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Once",
+        "genres": [
+          "Drama",
+          "Music",
+          "Musical"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Mamma Mia! Here We Go Again",
+        "genres": [
+          "Comedy",
+          "Musical",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Joseph and the Amazing Technicolor Dreamcoat",
+        "genres": [
+          "Musical"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Nine",
+        "genres": [
+          "Drama",
+          "Musical",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Music Man",
+        "genres": [
+          "Comedy",
+          "Family",
+          "Musical"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Oliver!",
+        "genres": [
+          "Drama",
+          "Family",
+          "Musical"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "My Fair Lady",
+        "genres": [
+          "Drama",
+          "Family",
+          "Musical"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Phantom of the Opera",
+        "genres": [
+          "Drama",
+          "Musical",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "In the Heights",
+        "genres": [
+          "Drama",
+          "Musical",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      }
+    ],
+    "survivorsCount": 136,
+    "scored": [
       {
         "title": "The Bourne Identity",
         "genres": [
@@ -20131,87 +22476,95 @@
           "Chris Cooper"
         ],
         "imdbRating": "7.8",
-        "groupScore": 0.42666666666666664
+        "language": "English, French, German, Dutch, Italian, Yoruba",
+        "groupScore": 0.4533333333333333
       },
       {
-        "title": "Top Gun",
+        "title": "Mission: Impossible - Fallout",
         "genres": [
           "Action",
-          "Drama"
+          "Adventure",
+          "Thriller"
         ],
         "platforms": [],
-        "year": "1986",
-        "poster": "https://m.media-amazon.com/images/M/MV5BZmVjNzQ3MjYtYTZiNC00Y2YzLWExZTEtMTM2ZDllNDI0MzgyXkEyXkFqcGc@._V1_QL75_UX380_CR0,12,380,562_.jpg",
-        "plot": "The Top Gun Naval Fighter Weapons School is where the best of the best train to refine their elite flying skills. When hotshot fighter pilot Maverick is sent to the school, his reckless attitude and cocky demeanor put him at odds ...",
-        "director": "Tony Scott",
+        "year": "2018",
+        "poster": "https://m.media-amazon.com/images/M/MV5BZmUwZTg2YmMtMmZjOS00ZDYwLWI2ZDgtZDcyY2ZmMWMwZDdlXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+        "plot": "A group of terrorists plans to detonate three plutonium cores for a simultaneous nuclear attack on different cities. Ethan Hunt, along with his IMF team, sets out to stop the carnage.",
+        "director": "Christopher McQuarrie",
         "actors": [
           "Tom Cruise",
-          "Tim Robbins",
-          "Kelly McGillis"
+          "Henry Cavill",
+          "Ving Rhames"
         ],
-        "imdbRating": "7.0",
+        "imdbRating": "7.7",
+        "language": "English, French",
         "groupScore": 0.4
       },
       {
-        "title": "Top Gun: Maverick",
+        "title": "Die Hard",
         "genres": [
           "Action",
-          "Drama"
+          "Thriller"
         ],
         "platforms": [],
-        "year": "2022",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMDBkZDNjMWEtOTdmMi00NmExLTg5MmMtNTFlYTJlNWY5YTdmXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
-        "plot": "The story involves Maverick confronting his past while training a group of younger Top Gun graduates, including the son of his deceased best friend, for a dangerous mission.",
-        "director": "Joseph Kosinski",
+        "year": "1988",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMGNlYmM1NmQtYWExMS00NmRjLTg5ZmEtMmYyYzJkMzljYWMxXkEyXkFqcGc@._V1_SX300.jpg",
+        "plot": "A New York City cop, John McClane, tries to save his estranged wife and several others taken hostage by terrorists during a Christmas Eve party at the Nakatomi Plaza Skyscraper in Los Angeles, California.",
+        "director": "John McTiernan",
         "actors": [
-          "Tom Cruise",
-          "Jennifer Connelly",
-          "Miles Teller"
+          "Bruce Willis",
+          "Alan Rickman",
+          "Bonnie Bedelia"
         ],
         "imdbRating": "8.2",
+        "language": "English, German, Italian, Japanese",
+        "groupScore": 0.4
+      },
+      {
+        "title": "Kill Bill: Vol. 1",
+        "genres": [
+          "Action",
+          "Crime",
+          "Thriller"
+        ],
+        "platforms": [],
+        "year": "2003",
+        "poster": "https://m.media-amazon.com/images/M/MV5BZmMyYzJlZmYtY2I3NC00NjAyLTkyZWItZjdjZDI1YTYyYTEwXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+        "plot": "After waking from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.",
+        "director": "Quentin Tarantino",
+        "actors": [
+          "Uma Thurman",
+          "David Carradine",
+          "Daryl Hannah"
+        ],
+        "imdbRating": "8.2",
+        "language": "English, Japanese, French",
+        "groupScore": 0.4
+      },
+      {
+        "title": "Speed",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Thriller"
+        ],
+        "platforms": [],
+        "year": "1994",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMDc2ODI5YWQtMmM2ZS00MTdmLWEyNWEtNmRmOGE5NGZlYWMzXkEyXkFqcGc@._V1_SX300.jpg",
+        "plot": "An extortionist bomber rigs a Los Angeles city bus to explode if its speed drops below 50 mph, forcing a young cop and a female passenger to keep it moving and save everyone on board.",
+        "director": "Jan de Bont",
+        "actors": [
+          "Keanu Reeves",
+          "Dennis Hopper",
+          "Sandra Bullock"
+        ],
+        "imdbRating": "7.3",
+        "language": "English",
         "groupScore": 0.4
       }
     ]
   },
   "finalResults": [
-    {
-      "title": "Die Hard",
-      "genres": [
-        "Action",
-        "Thriller"
-      ],
-      "platforms": [],
-      "year": "1988",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMGNlYmM1NmQtYWExMS00NmRjLTg5ZmEtMmYyYzJkMzljYWMxXkEyXkFqcGc@._V1_SX300.jpg",
-      "plot": "A New York City cop, John McClane, tries to save his estranged wife and several others taken hostage by terrorists during a Christmas Eve party at the Nakatomi Plaza Skyscraper in Los Angeles, California.",
-      "director": "John McTiernan",
-      "actors": [
-        "Bruce Willis",
-        "Alan Rickman",
-        "Bonnie Bedelia"
-      ],
-      "imdbRating": "8.2",
-      "groupScore": 0.5599999999999999
-    },
-    {
-      "title": "Odyssey",
-      "genres": [
-        "Drama",
-        "Thriller"
-      ],
-      "platforms": [],
-      "year": "2026",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNWUwOGU2MDYtYzc2Ni00ZGM5LTk1MmItZGNmOWViNjgzNTkyXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
-      "plot": "A woman is dragged into London's underworld when she is offered money to hide a kidnapped agent.",
-      "director": "Gerard Johnson",
-      "actors": [
-        "Polly Maberly",
-        "Guy Burnet",
-        "Kellie Shirley"
-      ],
-      "imdbRating": "5.4",
-      "groupScore": 0.48
-    },
     {
       "title": "The Bourne Identity",
       "genres": [
@@ -20230,44 +22583,90 @@
         "Chris Cooper"
       ],
       "imdbRating": "7.8",
-      "groupScore": 0.42666666666666664
+      "language": "English, French, German, Dutch, Italian, Yoruba",
+      "groupScore": 0.4533333333333333
     },
     {
-      "title": "Top Gun",
+      "title": "Mission: Impossible - Fallout",
       "genres": [
         "Action",
-        "Drama"
+        "Adventure",
+        "Thriller"
       ],
       "platforms": [],
-      "year": "1986",
-      "poster": "https://m.media-amazon.com/images/M/MV5BZmVjNzQ3MjYtYTZiNC00Y2YzLWExZTEtMTM2ZDllNDI0MzgyXkEyXkFqcGc@._V1_QL75_UX380_CR0,12,380,562_.jpg",
-      "plot": "The Top Gun Naval Fighter Weapons School is where the best of the best train to refine their elite flying skills. When hotshot fighter pilot Maverick is sent to the school, his reckless attitude and cocky demeanor put him at odds ...",
-      "director": "Tony Scott",
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZmUwZTg2YmMtMmZjOS00ZDYwLWI2ZDgtZDcyY2ZmMWMwZDdlXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "plot": "A group of terrorists plans to detonate three plutonium cores for a simultaneous nuclear attack on different cities. Ethan Hunt, along with his IMF team, sets out to stop the carnage.",
+      "director": "Christopher McQuarrie",
       "actors": [
         "Tom Cruise",
-        "Tim Robbins",
-        "Kelly McGillis"
+        "Henry Cavill",
+        "Ving Rhames"
       ],
-      "imdbRating": "7.0",
+      "imdbRating": "7.7",
+      "language": "English, French",
       "groupScore": 0.4
     },
     {
-      "title": "Top Gun: Maverick",
+      "title": "Die Hard",
       "genres": [
         "Action",
-        "Drama"
+        "Thriller"
       ],
       "platforms": [],
-      "year": "2022",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMDBkZDNjMWEtOTdmMi00NmExLTg5MmMtNTFlYTJlNWY5YTdmXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
-      "plot": "The story involves Maverick confronting his past while training a group of younger Top Gun graduates, including the son of his deceased best friend, for a dangerous mission.",
-      "director": "Joseph Kosinski",
+      "year": "1988",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMGNlYmM1NmQtYWExMS00NmRjLTg5ZmEtMmYyYzJkMzljYWMxXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "A New York City cop, John McClane, tries to save his estranged wife and several others taken hostage by terrorists during a Christmas Eve party at the Nakatomi Plaza Skyscraper in Los Angeles, California.",
+      "director": "John McTiernan",
       "actors": [
-        "Tom Cruise",
-        "Jennifer Connelly",
-        "Miles Teller"
+        "Bruce Willis",
+        "Alan Rickman",
+        "Bonnie Bedelia"
       ],
       "imdbRating": "8.2",
+      "language": "English, German, Italian, Japanese",
+      "groupScore": 0.4
+    },
+    {
+      "title": "Kill Bill: Vol. 1",
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "platforms": [],
+      "year": "2003",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZmMyYzJlZmYtY2I3NC00NjAyLTkyZWItZjdjZDI1YTYyYTEwXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+      "plot": "After waking from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.",
+      "director": "Quentin Tarantino",
+      "actors": [
+        "Uma Thurman",
+        "David Carradine",
+        "Daryl Hannah"
+      ],
+      "imdbRating": "8.2",
+      "language": "English, Japanese, French",
+      "groupScore": 0.4
+    },
+    {
+      "title": "Speed",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "platforms": [],
+      "year": "1994",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDc2ODI5YWQtMmM2ZS00MTdmLWEyNWEtNmRmOGE5NGZlYWMzXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "An extortionist bomber rigs a Los Angeles city bus to explode if its speed drops below 50 mph, forcing a young cop and a female passenger to keep it moving and save everyone on board.",
+      "director": "Jan de Bont",
+      "actors": [
+        "Keanu Reeves",
+        "Dennis Hopper",
+        "Sandra Bullock"
+      ],
+      "imdbRating": "7.3",
+      "language": "English",
       "groupScore": 0.4
     }
   ]

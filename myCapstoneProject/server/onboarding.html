@@ -6,7 +6,7 @@
 <title>Movie Night — Who's Watching?</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Bungee&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #14141a; --panel: #1f1f28; --border: #2c2c38;
@@ -148,9 +148,11 @@
   }
   .modal-close {
     display: none; position: absolute; top: 14px; right: 16px;
-    background: none; border: none; color: var(--muted);
-    font-size: 1.2rem; cursor: pointer; line-height: 1;
+    background: none; border: 1px solid var(--border); border-radius: 8px;
+    color: var(--muted); padding: 5px 10px;
+    font-size: 0.8rem; cursor: pointer; line-height: 1;
   }
+  .modal-close:hover { color: var(--text); border-color: var(--accent); }
 
   /* ================= LANDING / LOGIN — dark theater + straight ticket stub ================= */
   #screen-login {
@@ -171,11 +173,14 @@
   }
   .landing-inner { max-width: 640px; margin: 0 auto; }
 
+  /* Short-and-wide, actual ticket-stub proportions (~2.5:1), not a
+     tall banner — scalloped notches top and bottom are the perforated
+     edge. */
   .ticket-title {
     position: relative;
-    max-width: 320px; margin: 4px auto 28px;
+    max-width: 420px; margin: 4px auto 28px;
     background: linear-gradient(165deg, var(--tk-red), var(--tk-red-deep));
-    padding: 30px 24px 26px;
+    padding: 16px 30px 14px;
     box-shadow: 0 24px 50px rgba(0,0,0,0.6);
   }
   .ticket-notch-row {
@@ -188,21 +193,17 @@
     width: 18px; height: 18px; border-radius: 50%;
     background: #050202; display: block;
   }
-  .ticket-flourish { display: block; margin: 0 auto 10px; color: var(--tk-gold); }
-  .ticket-flourish.bottom { margin: 12px auto 0; transform: scaleY(-1); }
+  .ticket-flourish { display: block; width: 32px; height: 24px; margin: 0 auto 6px; color: var(--tk-gold); }
+  .ticket-flourish.bottom { margin: 6px auto 0; transform: scaleY(-1); }
   .ticket-eyebrow-line {
-    text-align: center; font-size: 0.72rem; letter-spacing: 0.35em;
-    color: var(--tk-cream); font-weight: 700; margin-bottom: 8px;
+    text-align: center; font-size: 0.62rem; letter-spacing: 0.3em;
+    color: var(--tk-cream); font-weight: 700; margin-bottom: 2px;
   }
   .ticket-big-title {
-    font-family: 'Abril Fatface', 'Bebas Neue', serif;
+    font-family: 'Bungee', 'Bebas Neue', system-ui, sans-serif;
     text-align: center; color: var(--tk-gold);
-    font-size: clamp(2rem, 9vw, 2.7rem); line-height: 1.08; margin-bottom: 8px;
-    text-shadow: 0 3px 0 rgba(0,0,0,0.3);
-  }
-  .ticket-footer-line {
-    text-align: center; font-size: 0.72rem; letter-spacing: 0.35em;
-    color: var(--tk-cream); font-weight: 700;
+    font-size: clamp(1.2rem, 5.6vw, 1.75rem); line-height: 1.2;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.3);
   }
 
   .landing-login-panel {
@@ -225,6 +226,10 @@
   .landing-login-btn svg { flex-shrink: 0; }
 
   /* ================= MOVIE TICKETS — retro cardstock stubs ================= */
+  /* Capped at a real ticket's width-to-height ratio (~2.5-3:1) —
+     previously these had width:100% with no cap, so on anything wider
+     than a phone they stretched into a long thin banner instead of
+     reading as a ticket. */
   .grid { display: grid; gap: 20px; }
   .movie-ticket {
     display: flex; align-items: stretch;
@@ -234,9 +239,10 @@
     opacity: 0; animation: fadeUp 0.4s ease forwards;
     box-shadow: 0 8px 0 rgba(0,0,0,0.28), 0 10px 18px rgba(0,0,0,0.35);
     --tk-accent-rgb: 108,92,231;
+    max-width: 440px;
   }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-  a.movie-ticket, button.movie-ticket, .movie-ticket.clickable { cursor: pointer; text-align: left; width: 100%; }
+  a.movie-ticket, button.movie-ticket, .movie-ticket.clickable { cursor: pointer; text-align: left; }
   .movie-ticket.clickable:hover { transform: translateY(-2px); }
 
   /* colored accent stripe — this is what varies per movie, not the paper itself */
@@ -246,7 +252,7 @@
   }
 
   .ticket-poster {
-    width: 76px; flex-shrink: 0; margin-left: 6px; position: relative;
+    width: 92px; flex-shrink: 0; margin-left: 6px; position: relative;
     background: rgba(36,18,6,0.12); overflow: hidden;
   }
   .ticket-poster img {
@@ -255,58 +261,56 @@
   }
   .ticket-poster-placeholder {
     width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
-    font-size: 1.5rem; background: rgba(36,18,6,0.12);
+    font-size: 1.6rem; background: rgba(36,18,6,0.12);
   }
 
   /* full scalloped perforation, generated as repeated notch elements in JS */
   .ticket-notch {
-    position: absolute; width: 14px; height: 14px; border-radius: 50%;
-    background: var(--bg); left: 82px; margin-left: -7px; z-index: 2;
+    position: absolute; width: 16px; height: 16px; border-radius: 50%;
+    background: var(--bg); left: 98px; margin-left: -8px; z-index: 2;
   }
 
   .ticket-divider {
-    position: absolute; left: 82px; top: 6px; bottom: 6px;
+    position: absolute; left: 98px; top: 8px; bottom: 8px;
     border-left: 2px dashed rgba(36,18,6,0.4); z-index: 1;
   }
 
-  /* Real ticket proportions are short and wide, not tall — keep this
-     compact: title, one meta line, one bottom stub line, nothing more. */
   .ticket-body {
-    flex: 1; min-width: 0; padding: 9px 12px 7px 16px; position: relative;
+    flex: 1; min-width: 0; padding: 16px 18px 14px 22px; position: relative;
     color: var(--tk-dark);
     display: flex; flex-direction: column; justify-content: center;
   }
   .ticket-rank {
-    position: absolute; top: 8px; right: 10px;
-    width: 22px; height: 22px; border-radius: 50%;
+    position: absolute; top: 10px; right: 12px;
+    width: 24px; height: 24px; border-radius: 50%;
     border: 2px dashed rgba(36,18,6,0.5);
     display: flex; align-items: center; justify-content: center;
     font-family: 'Bebas Neue', system-ui, sans-serif;
-    font-size: 0.78rem; color: rgba(36,18,6,0.75); transform: rotate(-8deg);
+    font-size: 0.8rem; color: rgba(36,18,6,0.75); transform: rotate(-8deg);
   }
   .ticket-body h3 {
-    margin: 0 30px 3px 0; font-size: 1.1rem; line-height: 1.1;
+    margin: 0 32px 6px 0; font-size: 1.2rem; line-height: 1.1;
     font-family: 'Bebas Neue', system-ui, sans-serif; letter-spacing: 0.02em;
     color: var(--tk-dark);
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
   .ticket-genres {
-    color: rgba(36,18,6,0.65); font-size: 0.72rem; margin-bottom: 6px;
+    color: rgba(36,18,6,0.65); font-size: 0.8rem; margin-bottom: 10px;
     text-transform: uppercase; letter-spacing: 0.03em;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
   .ticket-stats { display: none; } /* folded into .ticket-stub-line to save height */
   .ticket-match {
     background: rgb(var(--tk-accent-rgb)); color: #fff; font-weight: 700;
-    padding: 2px 9px; border-radius: 999px; font-size: 0.7rem;
+    padding: 3px 10px; border-radius: 999px; font-size: 0.74rem;
     text-shadow: 0 1px 1px rgba(0,0,0,0.25);
   }
-  .ticket-rating { color: rgba(36,18,6,0.7); font-size: 0.74rem; }
+  .ticket-rating { color: rgba(36,18,6,0.7); font-size: 0.78rem; }
   .ticket-stub-line {
-    padding-top: 6px; border-top: 1px dotted rgba(36,18,6,0.35);
+    padding-top: 10px; border-top: 1px dotted rgba(36,18,6,0.35);
     display: flex; justify-content: space-between; align-items: center; gap: 8px;
     font-family: 'Bebas Neue', system-ui, sans-serif; letter-spacing: 0.06em;
-    font-size: 0.65rem; color: rgba(36,18,6,0.5);
+    font-size: 0.68rem; color: rgba(36,18,6,0.5);
   }
 
   /* ================= DETAIL SCREEN ================= */
@@ -326,12 +330,12 @@
   .detail-ticket-wrap .ticket-body { justify-content: center; }
   .detail-ticket-wrap .ticket-body h3 { margin: 0 0 4px; font-size: 1.7rem; }
 
-  .detail-actions { display: grid; gap: 10px; }
-  .detail-actions button {
+  .result-actions { display: grid; gap: 10px; }
+  .result-actions button {
     background: var(--panel); border: 1px solid var(--border); color: var(--text);
     padding: 12px; border-radius: 10px; font-size: 0.92rem; cursor: pointer;
   }
-  .detail-actions button:hover { border-color: var(--accent); }
+  .result-actions button:hover { border-color: var(--accent); }
 </style>
 </head>
 <body>
@@ -359,8 +363,7 @@
         </svg>
 
         <div class="ticket-eyebrow-line">Welcome To</div>
-        <div class="ticket-big-title">Book Your<br>Movie</div>
-        <div class="ticket-footer-line">Tonight</div>
+        <div class="ticket-big-title">Book Your Movie</div>
 
         <svg class="ticket-flourish bottom" width="44" height="34" viewBox="0 0 44 34" fill="none" aria-hidden="true">
           <path d="M22 34C22 20 19 8 13 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -387,7 +390,7 @@
 
   <!-- ============ PREFERENCES ============ -->
   <section class="screen" id="screen-form" style="position: relative;">
-    <button class="modal-close" id="closeProfileBtn">✕</button>
+    <button class="modal-close" id="closeProfileBtn">Close</button>
     <h1>Movie Night</h1>
     <div class="subtitle" id="formSubtitle">This is your saved profile — edit anything and save again to update it.</div>
 
@@ -452,12 +455,16 @@
     <h1 id="resultsHeading">Tonight's Picks</h1>
     <div class="selected-note" id="resultsNote"></div>
     <div class="grid" id="resultsGrid"></div>
-    <button class="ghost-btn" id="startOverBtn">Start a new group</button>
+    <div class="result-actions">
+      <button id="redoBtn">Get new recommendations</button>
+      <button id="changePrefsBtn">Change preferences</button>
+      <button id="changeGroupBtn">Change group</button>
+    </div>
   </section>
 
   <!-- ============ DETAIL ============ -->
   <section class="screen" id="screen-detail">
-    <button class="detail-back-btn" id="detailBackBtn">← Back to results</button>
+    <button class="detail-back-btn" id="detailBackBtn">Back to results</button>
     <div class="detail-info">
       <h1 id="detailHeading"></h1>
       <div class="detail-meta" id="detailMeta"></div>
@@ -467,11 +474,6 @@
       <div class="detail-row" id="detailLanguageRow"><strong>Language:</strong> <span id="detailLanguage"></span></div>
     </div>
     <div class="detail-ticket-wrap" id="detailTicketWrap"></div>
-    <div class="detail-actions">
-      <button id="redoBtn">🔁 Get new recommendations</button>
-      <button id="changePrefsBtn">✏️ Change preferences</button>
-      <button id="changeGroupBtn">👥 Change group</button>
-    </div>
   </section>
 
 <script>
@@ -701,7 +703,6 @@
   });
 
   document.getElementById('resetFromWaitingBtn').addEventListener('click', startOver);
-  document.getElementById('startOverBtn').addEventListener('click', startOver);
   document.getElementById('changeGroupBtn').addEventListener('click', startOver);
 
   async function startOver() {
@@ -871,7 +872,8 @@
     });
   }
 
-  function buildTicket(movie, idx, clickable) {
+  function buildTicket(movie, idx, clickable, includeYear) {
+    if (includeYear === undefined) includeYear = true;
     const ticket = document.createElement('div');
     ticket.className = 'movie-ticket' + (clickable ? ' clickable' : '');
     ticket.style.animationDelay = (idx * 90) + 'ms';
@@ -917,7 +919,7 @@
       '</div>';
 
     const titleEl = body.querySelector('h3');
-    titleEl.textContent = movie.title + (movie.year ? ' (' + movie.year + ')' : '');
+    titleEl.textContent = movie.title + (includeYear && movie.year ? ' (' + movie.year + ')' : '');
     body.querySelector('.ticket-genres').textContent = movie.genres.join(' · ');
 
     ticket.appendChild(body);
@@ -941,7 +943,9 @@
 
     const ticketWrap = document.getElementById('detailTicketWrap');
     ticketWrap.innerHTML = '';
-    const ticket = buildTicket(movie, idx, false);
+    // includeYear=false: the year stays in the description block above
+    // (detailHeading already has it) but must not repeat on the ticket.
+    const ticket = buildTicket(movie, idx, false, false);
     // Detail ticket only needs the poster + title, not rank/genres/stub line
     // (that info already lives in the paragraph block above).
     ticket.querySelector('.ticket-rank').remove();

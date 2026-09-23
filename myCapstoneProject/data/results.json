@@ -1,45 +1,5 @@
 [
   {
-    "title": "Die Hard",
-    "genres": [
-      "Action",
-      "Thriller"
-    ],
-    "platforms": [],
-    "year": "1988",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGNlYmM1NmQtYWExMS00NmRjLTg5ZmEtMmYyYzJkMzljYWMxXkEyXkFqcGc@._V1_SX300.jpg",
-    "plot": "A New York City cop, John McClane, tries to save his estranged wife and several others taken hostage by terrorists during a Christmas Eve party at the Nakatomi Plaza Skyscraper in Los Angeles, California.",
-    "director": "John McTiernan",
-    "actors": [
-      "Bruce Willis",
-      "Alan Rickman",
-      "Bonnie Bedelia"
-    ],
-    "imdbRating": "8.2",
-    "language": "English, German, Italian, Japanese",
-    "groupScore": 0.5599999999999999
-  },
-  {
-    "title": "Odyssey",
-    "genres": [
-      "Drama",
-      "Thriller"
-    ],
-    "platforms": [],
-    "year": "2026",
-    "poster": "https://m.media-amazon.com/images/M/MV5BNWUwOGU2MDYtYzc2Ni00ZGM5LTk1MmItZGNmOWViNjgzNTkyXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
-    "plot": "A woman is dragged into London's underworld when she is offered money to hide a kidnapped agent.",
-    "director": "Gerard Johnson",
-    "actors": [
-      "Polly Maberly",
-      "Guy Burnet",
-      "Kellie Shirley"
-    ],
-    "imdbRating": "5.4",
-    "language": "English, Swedish",
-    "groupScore": 0.48
-  },
-  {
     "title": "The Bourne Identity",
     "genres": [
       "Action",
@@ -58,45 +18,88 @@
     ],
     "imdbRating": "7.8",
     "language": "English, French, German, Dutch, Italian, Yoruba",
-    "groupScore": 0.42666666666666664
+    "groupScore": 0.4533333333333333
   },
   {
-    "title": "Top Gun",
+    "title": "Mission: Impossible - Fallout",
     "genres": [
       "Action",
-      "Drama"
+      "Adventure",
+      "Thriller"
     ],
     "platforms": [],
-    "year": "1986",
-    "poster": "https://m.media-amazon.com/images/M/MV5BZmVjNzQ3MjYtYTZiNC00Y2YzLWExZTEtMTM2ZDllNDI0MzgyXkEyXkFqcGc@._V1_QL75_UX380_CR0,12,380,562_.jpg",
-    "plot": "The Top Gun Naval Fighter Weapons School is where the best of the best train to refine their elite flying skills. When hotshot fighter pilot Maverick is sent to the school, his reckless attitude and cocky demeanor put him at odds ...",
-    "director": "Tony Scott",
+    "year": "2018",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmUwZTg2YmMtMmZjOS00ZDYwLWI2ZDgtZDcyY2ZmMWMwZDdlXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "plot": "A group of terrorists plans to detonate three plutonium cores for a simultaneous nuclear attack on different cities. Ethan Hunt, along with his IMF team, sets out to stop the carnage.",
+    "director": "Christopher McQuarrie",
     "actors": [
       "Tom Cruise",
-      "Tim Robbins",
-      "Kelly McGillis"
+      "Henry Cavill",
+      "Ving Rhames"
     ],
-    "imdbRating": "7.0",
-    "language": "English",
+    "imdbRating": "7.7",
+    "language": "English, French",
     "groupScore": 0.4
   },
   {
-    "title": "Top Gun: Maverick",
+    "title": "Die Hard",
     "genres": [
       "Action",
-      "Drama"
+      "Thriller"
     ],
     "platforms": [],
-    "year": "2022",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMDBkZDNjMWEtOTdmMi00NmExLTg5MmMtNTFlYTJlNWY5YTdmXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
-    "plot": "The story involves Maverick confronting his past while training a group of younger Top Gun graduates, including the son of his deceased best friend, for a dangerous mission.",
-    "director": "Joseph Kosinski",
+    "year": "1988",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGNlYmM1NmQtYWExMS00NmRjLTg5ZmEtMmYyYzJkMzljYWMxXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A New York City cop, John McClane, tries to save his estranged wife and several others taken hostage by terrorists during a Christmas Eve party at the Nakatomi Plaza Skyscraper in Los Angeles, California.",
+    "director": "John McTiernan",
     "actors": [
-      "Tom Cruise",
-      "Jennifer Connelly",
-      "Miles Teller"
+      "Bruce Willis",
+      "Alan Rickman",
+      "Bonnie Bedelia"
     ],
     "imdbRating": "8.2",
+    "language": "English, German, Italian, Japanese",
+    "groupScore": 0.4
+  },
+  {
+    "title": "Kill Bill: Vol. 1",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "platforms": [],
+    "year": "2003",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmMyYzJlZmYtY2I3NC00NjAyLTkyZWItZjdjZDI1YTYyYTEwXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+    "plot": "After waking from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.",
+    "director": "Quentin Tarantino",
+    "actors": [
+      "Uma Thurman",
+      "David Carradine",
+      "Daryl Hannah"
+    ],
+    "imdbRating": "8.2",
+    "language": "English, Japanese, French",
+    "groupScore": 0.4
+  },
+  {
+    "title": "Speed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "platforms": [],
+    "year": "1994",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDc2ODI5YWQtMmM2ZS00MTdmLWEyNWEtNmRmOGE5NGZlYWMzXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "An extortionist bomber rigs a Los Angeles city bus to explode if its speed drops below 50 mph, forcing a young cop and a female passenger to keep it moving and save everyone on board.",
+    "director": "Jan de Bont",
+    "actors": [
+      "Keanu Reeves",
+      "Dennis Hopper",
+      "Sandra Bullock"
+    ],
+    "imdbRating": "7.3",
     "language": "English",
     "groupScore": 0.4
   }

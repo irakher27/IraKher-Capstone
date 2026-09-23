@@ -3827,5 +3827,424 @@
     ],
     "imdbRating": "8.5",
     "language": "English"
+  },
+  "mary poppins": {
+    "title": "Mary Poppins",
+    "genres": [
+      "Comedy",
+      "Family",
+      "Fantasy"
+    ],
+    "platforms": [],
+    "year": "1964",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNThiNjgzMTYtZjUzMC00YTVlLTg4MDItMmFjMDIwYjg4ZDAwXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "In turn of the century London, a magical nanny employs music and adventure to help two neglected children become closer to their father.",
+    "director": "Robert Stevenson",
+    "actors": [
+      "Julie Andrews",
+      "Dick Van Dyke",
+      "David Tomlinson"
+    ],
+    "imdbRating": "7.8",
+    "language": "English"
+  },
+  "sweeney todd: the demon barber of fleet street": {
+    "title": "Sweeney Todd: The Demon Barber of Fleet Street",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Musical"
+    ],
+    "platforms": [],
+    "year": "2007",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTg3NjUxMzM5NV5BMl5BanBnXkFtZTcwMzQ1NjQzMw@@._V1_SX300.jpg",
+    "plot": "The legendary tale of a barber who returns from wrongful imprisonment to 1840s London, bent on revenge for the rape and death of his wife, and resumes his trade while forming a sinister partnership with his fellow tenant, Mrs. Lov...",
+    "director": "Tim Burton",
+    "actors": [
+      "Johnny Depp",
+      "Helena Bonham Carter",
+      "Alan Rickman"
+    ],
+    "imdbRating": "7.3",
+    "language": "English, Italian"
+  },
+  "beauty and the beast": {
+    "title": "Beauty and the Beast",
+    "genres": [
+      "Animation",
+      "Family",
+      "Fantasy"
+    ],
+    "platforms": [],
+    "year": "1991",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTY3NDg2YzktYWFjZC00MTExLTlmZDctMGY3MWYzZTlkYTNiXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A prince cursed to spend his days as a hideous monster sets out to regain his humanity by earning a young woman's love.",
+    "director": "Gary Trousdale, Kirk Wise",
+    "actors": [
+      "Paige O'Hara",
+      "Robby Benson",
+      "Jesse Corti"
+    ],
+    "imdbRating": "8.0",
+    "language": "English, French"
+  },
+  "annie": {
+    "title": "Annie",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Family"
+    ],
+    "platforms": [],
+    "year": "1982",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjQzOGJkNTAtYzY3NS00ZjViLWI4OTMtZTdkNzRjYWRmOTUwXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A spunky young orphan is taken in by a rich eccentric, much to the chagrin of the cantankerous woman who runs the orphanage.",
+    "director": "John Huston",
+    "actors": [
+      "Aileen Quinn",
+      "Albert Finney",
+      "Carol Burnett"
+    ],
+    "imdbRating": "6.6",
+    "language": "English"
+  },
+  "pitch perfect": {
+    "title": "Pitch Perfect",
+    "genres": [
+      "Comedy",
+      "Music",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2012",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTcyMTMzNzE5N15BMl5BanBnXkFtZTcwNzg5NjM5Nw@@._V1_SX300.jpg",
+    "plot": "Beca, a freshman at Barden University, is cajoled into joining The Bellas, her school's all-girls singing group. Injecting some much needed energy into their repertoire, The Bellas take on their male rivals in a campus competition.",
+    "director": "Jason Moore",
+    "actors": [
+      "Anna Kendrick",
+      "Brittany Snow",
+      "Rebel Wilson"
+    ],
+    "imdbRating": "7.1",
+    "language": "English, Ukrainian"
+  },
+  "cabaret": {
+    "title": "Cabaret",
+    "genres": [
+      "Drama",
+      "Music",
+      "Musical"
+    ],
+    "platforms": [],
+    "year": "1972",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGExNGNlNmQtZTlmNy00MmZkLWE1MjgtZGYwODY0ZDI1YzMwXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A female girlie club entertainer in Weimar Republic era Berlin romances two men while the Nazi Party rises to power around them.",
+    "director": "Bob Fosse",
+    "actors": [
+      "Liza Minnelli",
+      "Michael York",
+      "Helmut Griem"
+    ],
+    "imdbRating": "7.8",
+    "language": "English, German, Hebrew, French"
+  },
+  "the rocky horror picture show": {
+    "title": "The Rocky Horror Picture Show",
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Musical"
+    ],
+    "platforms": [],
+    "year": "1975",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTg2YzY5ZGYtNDk1My00N2Q2LWFhN2YtZWU5YTkzODIyZGRmXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A rain-soaked couple take refuge in the castle of a transvestite mad scientist from outer space who is about to unveil his greatest creation.",
+    "director": "Jim Sharman",
+    "actors": [
+      "Tim Curry",
+      "Susan Sarandon",
+      "Barry Bostwick"
+    ],
+    "imdbRating": "7.4",
+    "language": "English"
+  },
+  "the wizard of oz": {
+    "title": "The Wizard of Oz",
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
+    ],
+    "platforms": [],
+    "year": "1939",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYWRmY2I0MGItYTQ0OC00NWZmLWIwMDktYjJlNDc0MzVhMmViXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Young Dorothy Gale and her dog Toto are swept away by a tornado from their Kansas farm to the magical Land of Oz and embark on a quest with three new friends to see the Wizard, who can return her to her home and fulfill the others...",
+    "director": "Victor Fleming, George Cukor, Norman Taurog",
+    "actors": [
+      "Judy Garland",
+      "Frank Morgan",
+      "Ray Bolger"
+    ],
+    "imdbRating": "8.1",
+    "language": "English"
+  },
+  "fiddler on the roof": {
+    "title": "Fiddler on the Roof",
+    "genres": [
+      "Drama",
+      "Family",
+      "Musical"
+    ],
+    "platforms": [],
+    "year": "1971",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzYyYjJmMjctNzk3Yi00NmRhLWE5ZmQtZTNlZjU3MDMxNTBhXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "In pre-revolutionary Russia, a Jewish peasant with traditional values contends with marrying off three of his daughters with modern romantic ideals while growing anti-Semitic sentiment threatens his village.",
+    "director": "Norman Jewison",
+    "actors": [
+      "Topol",
+      "Norma Crane",
+      "Leonard Frey"
+    ],
+    "imdbRating": "8.0",
+    "language": "English, Hebrew, Russian"
+  },
+  "les misérables": {
+    "title": "Les Misérables",
+    "genres": [
+      "Drama",
+      "Musical",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2012",
+    "poster": "https://m.media-amazon.com/images/M/MV5BY2Q1YjIxZTAtZTU0YS00ZmE5LWEwODEtY2IyYWM2ZTJlOWE1XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "In 19th-century France, Jean Valjean, who, for decades, has been hunted by the ruthless policeman Javert after breaking parole, agrees to care for a factory worker's daughter. The decision changes their lives forever.",
+    "director": "Tom Hooper",
+    "actors": [
+      "Hugh Jackman",
+      "Russell Crowe",
+      "Anne Hathaway"
+    ],
+    "imdbRating": "7.5",
+    "language": "English"
+  },
+  "encanto": {
+    "title": "Encanto",
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Family"
+    ],
+    "platforms": [],
+    "year": "2021",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGEyNzk2M2MtNjBhZS00MzYwLWI0Y2YtYjc5ZWE2MjM0YWE5XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "plot": "An extraordinary family, the Madrigals, live hidden in the mountains of Colombia, in a magical house called an Encanto. The magic of the Encanto has blessed every child in the family with a unique gift - every child except one, Mi...",
+    "director": "Jared Bush, Charise Castro Smith, Byron Howard",
+    "actors": [
+      "Stephanie Beatriz",
+      "María Cecilia Botero",
+      "John Leguizamo"
+    ],
+    "imdbRating": "7.2",
+    "language": "English, Spanish"
+  },
+  "moana": {
+    "title": "Moana",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "platforms": [],
+    "year": "2016",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjI4MzU5NTExNF5BMl5BanBnXkFtZTgwNzY1MTEwMDI@._V1_SX300.jpg",
+    "plot": "In ancient Polynesia, when a terrible curse incurred by the demigod Maui reaches Moana's island, she answers the Ocean's call to seek out Maui to set things right.",
+    "director": "Ron Clements, John Musker, Don Hall",
+    "actors": [
+      "Auli'i Cravalho",
+      "Dwayne Johnson",
+      "Rachel House"
+    ],
+    "imdbRating": "7.6",
+    "language": "English, French"
+  },
+  "joseph and the amazing technicolor dreamcoat": {
+    "title": "Joseph and the Amazing Technicolor Dreamcoat",
+    "genres": [
+      "Musical"
+    ],
+    "platforms": [],
+    "year": "1999",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzI5NWViZDUtNjAzYS00MzJjLWJjMTgtMzMwMmNlZDhkMDcwXkEyXkFqcGdeQXVyNjczMzgwMDg@._V1_SX300.jpg",
+    "plot": "A humorously musical retelling of the Biblical story of Joseph.",
+    "director": "David Mallet",
+    "actors": [
+      "Donny Osmond",
+      "Maria Friedman",
+      "Richard Attenborough",
+      "Ian McNeice"
+    ],
+    "imdbRating": "7.2",
+    "language": "English"
+  },
+  "mamma mia! here we go again": {
+    "title": "Mamma Mia! Here We Go Again",
+    "genres": [
+      "Comedy",
+      "Musical",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2018",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjEwMTM3OTI1NV5BMl5BanBnXkFtZTgwNDk5NTY0NTM@._V1_SX300.jpg",
+    "plot": "Five years after the events of Mamma Mia! (2008), Sophie prepares for the grand reopening of the Hotel Bella Donna as she learns more about her mother's past.",
+    "director": "Ol Parker",
+    "actors": [
+      "Lily James",
+      "Amanda Seyfried",
+      "Meryl Streep"
+    ],
+    "imdbRating": "6.6",
+    "language": "English, French, Greek"
+  },
+  "once": {
+    "title": "Once",
+    "genres": [
+      "Drama",
+      "Music",
+      "Musical"
+    ],
+    "platforms": [],
+    "year": "2006",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmFmZmRkNzYtMTcyNy00NjY3LTkyNTUtNGExZjViNGFhZDdkXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A modern-day musical about a busker and an immigrant and their eventful week in Dublin, as they write, rehearse and record songs that tell their love story.",
+    "director": "John Carney",
+    "actors": [
+      "Glen Hansard",
+      "Markéta Irglová",
+      "Hugh Walsh"
+    ],
+    "imdbRating": "7.8",
+    "language": "English, Czech"
+  },
+  "my fair lady": {
+    "title": "My Fair Lady",
+    "genres": [
+      "Drama",
+      "Family",
+      "Musical"
+    ],
+    "platforms": [],
+    "year": "1964",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNmMxZmFjZmQtMDRiOC00MDQxLTlhNDktZTkxMmRiYWM1ZDUzXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "In 1910s London, snobbish phonetics professor Henry Higgins agrees to a wager that he can make a crude flower girl, Eliza Doolittle, presentable in high society.",
+    "director": "George Cukor",
+    "actors": [
+      "Audrey Hepburn",
+      "Rex Harrison",
+      "Stanley Holloway"
+    ],
+    "imdbRating": "7.7",
+    "language": "English"
+  },
+  "the phantom of the opera": {
+    "title": "The Phantom of the Opera",
+    "genres": [
+      "Drama",
+      "Musical",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2004",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDczNzg4OTM3MV5BMl5BanBnXkFtZTcwOTQzMTEzMw@@._V1_SX300.jpg",
+    "plot": "A young soprano becomes the obsession of a disfigured and murderous musical genius who lives beneath the Paris Opéra House.",
+    "director": "Joel Schumacher",
+    "actors": [
+      "Gerard Butler",
+      "Emmy Rossum",
+      "Patrick Wilson"
+    ],
+    "imdbRating": "7.2",
+    "language": "English, Italian"
+  },
+  "oliver!": {
+    "title": "Oliver!",
+    "genres": [
+      "Drama",
+      "Family",
+      "Musical"
+    ],
+    "platforms": [],
+    "year": "1968",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjRhYmVlZGItYzgxMS00MzI3LTgzZjctNTcxMGRiN2E5ZGYwXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "After being sold to the mortician Sowerberry, young orphan Oliver Twist runs away and meets a group of boys trained to be pickpockets by their elderly mentor Fagin in 1830s London in this musical based on Charles Dickens' Oliver T...",
+    "director": "Carol Reed",
+    "actors": [
+      "Mark Lester",
+      "Ron Moody",
+      "Shani Wallis"
+    ],
+    "imdbRating": "7.4",
+    "language": "English"
+  },
+  "nine": {
+    "title": "Nine",
+    "genres": [
+      "Drama",
+      "Musical",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2009",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTY5ODA2MzQxMl5BMl5BanBnXkFtZTcwMTI4NTEwMw@@._V1_SX300.jpg",
+    "plot": "Famous film director Guido Contini struggles to find harmony in his professional and personal lives, as he engages in dramatic relationships with his wife, his mistress, his muse, his agent, and his mother.",
+    "director": "Rob Marshall",
+    "actors": [
+      "Daniel Day-Lewis",
+      "Marion Cotillard",
+      "Penélope Cruz"
+    ],
+    "imdbRating": "5.8",
+    "language": "English, Italian, French"
+  },
+  "in the heights": {
+    "title": "In the Heights",
+    "genres": [
+      "Drama",
+      "Musical",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2021",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGUwODk5ZmItMjUzMi00YmYyLTk3NzgtNGVmYTI3MmJhYmY1XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "In Washington Heights, a sympathetic New York bodega owner saves every penny every day as he imagines and sings about a better life.",
+    "director": "Jon M. Chu",
+    "actors": [
+      "Anthony Ramos",
+      "Corey Hawkins",
+      "Leslie Grace"
+    ],
+    "imdbRating": "7.2",
+    "language": "English, Spanish, Hebrew"
+  },
+  "the music man": {
+    "title": "The Music Man",
+    "genres": [
+      "Comedy",
+      "Family",
+      "Musical"
+    ],
+    "platforms": [],
+    "year": "1962",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODBmODNmNTMtY2M5ZC00MjI0LWFkYjUtOTAwMTk3MThjYmNiXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Traveling con artist Harold Hill targets the naïve residents of a small town in 1910s Iowa by posing as a boys' band leader to raise money before he can skip town.",
+    "director": "Morton DaCosta",
+    "actors": [
+      "Robert Preston",
+      "Shirley Jones",
+      "Buddy Hackett"
+    ],
+    "imdbRating": "7.7",
+    "language": "English"
   }
 }

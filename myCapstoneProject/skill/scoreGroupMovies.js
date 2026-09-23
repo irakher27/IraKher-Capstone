@@ -125,7 +125,14 @@ function scoreGroupMovies(candidateMovies, personas, options = {}) {
     const genreMatches = persona.liked_genres.filter((g) =>
       genreMatchesMovie(g, movie.genres)
     ).length;
-    const genreScore = genreMatches / Math.max(movie.genres.length, 1);
+    // Normalize by how many genres THE PERSON selected, not by how many
+    // tags the movie happens to have. Dividing by movie.genres.length
+    // let a movie with just one tag hit a perfect score on a single
+    // match — the same score as a movie matching 3 of 5 liked genres,
+    // if that movie also had exactly 3 tags. This way, matching more
+    // of what someone actually picked always scores meaningfully
+    // higher, regardless of how many genres OMDb tagged the movie with.
+    const genreScore = genreMatches / Math.max(persona.liked_genres.length, 1);
 
     // In practice this is always 0 now: a movie in ANYONE's liked_titles
     // is excluded in Step 1 before it ever reaches scoring. Left in place
