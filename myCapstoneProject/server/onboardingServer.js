@@ -82,7 +82,10 @@ function currentUser(req) {
 // Comedy already, which a person can select directly.
 const GENRES = [
   "Musical", "Autobiography", "Horror", "Romance", "Comedy", "Thriller",
-  "Sci-Fi", "Action", "Adventure", "Drama", "Fantasy",
+  "Sci-Fi", "Action", "Adventure", "Drama", "Fantasy", "Animation",
+  // Bollywood isn't an OMDb genre tag — it's matched against a curated
+  // title list instead (see data/bollywoodTitles.json + scoreGroupMovies.js).
+  "Bollywood",
 ];
 const PLATFORMS = ["Netflix", "Prime Video", "Disney+ Hotstar", "Hulu", "HBO Max", "Apple TV+"];
 

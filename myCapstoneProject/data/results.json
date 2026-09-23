@@ -18,6 +18,7 @@
     ],
     "imdbRating": "7.8",
     "language": "English, French, German, Dutch, Italian, Yoruba",
+    "isBollywood": false,
     "groupScore": 0.4533333333333333
   },
   {
@@ -39,6 +40,7 @@
     ],
     "imdbRating": "7.7",
     "language": "English, French",
+    "isBollywood": false,
     "groupScore": 0.4
   },
   {
@@ -59,6 +61,7 @@
     ],
     "imdbRating": "8.2",
     "language": "English, German, Italian, Japanese",
+    "isBollywood": false,
     "groupScore": 0.4
   },
   {
@@ -80,6 +83,7 @@
     ],
     "imdbRating": "8.2",
     "language": "English, Japanese, French",
+    "isBollywood": false,
     "groupScore": 0.4
   },
   {
@@ -101,6 +105,7 @@
     ],
     "imdbRating": "7.3",
     "language": "English",
+    "isBollywood": false,
     "groupScore": 0.4
   }
 ]

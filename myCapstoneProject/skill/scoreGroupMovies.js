@@ -66,15 +66,23 @@ function listIncludes(list, value) {
 }
 
 /**
- * Does `movieGenres` satisfy a persona's genre preference (liked or
- * disliked)? Direct match first (case/whitespace-insensitive), then
- * falls back to the alias table for synthetic categories like
+ * Does `movie` satisfy a persona's genre preference (liked or disliked)?
+ *
+ * "Bollywood" is not an OMDb genre tag — OMDb only tags by genre
+ * (Drama, Comedy, ...), not by film industry/language — so it's
+ * special-cased here against movie.isBollywood, a flag set in
+ * runWorkflow.js from the curated data/bollywoodTitles.json list,
+ * instead of going through the normal genre-tag match below.
+ *
+ * Everything else: direct match first (case/whitespace-insensitive),
+ * then falls back to the alias table for synthetic categories like
  * "Autobiography".
  */
-function genreMatchesMovie(genrePreference, movieGenres) {
-  if (listIncludes(movieGenres, genrePreference)) return true;
+function genreMatchesMovie(genrePreference, movie) {
+  if (normalize(genrePreference) === "bollywood") return !!movie.isBollywood;
+  if (listIncludes(movie.genres, genrePreference)) return true;
   const alias = GENRE_ALIASES[normalize(genrePreference)];
-  return !!alias && alias.allOf.every((g) => listIncludes(movieGenres, g));
+  return !!alias && alias.allOf.every((g) => listIncludes(movie.genres, g));
 }
 
 function scoreGroupMovies(candidateMovies, personas, options = {}) {
@@ -99,7 +107,7 @@ function scoreGroupMovies(candidateMovies, personas, options = {}) {
   const survivors = uniqueCandidates.filter((movie) => {
     for (const persona of personas) {
       const hasDislikedGenre = persona.disliked_genres.some((g) =>
-        genreMatchesMovie(g, movie.genres)
+        genreMatchesMovie(g, movie)
       );
       const isDislikedTitle = listIncludes(persona.disliked_titles, movie.title);
       const alreadyLiked = listIncludes(persona.liked_titles, movie.title);
@@ -123,7 +131,7 @@ function scoreGroupMovies(candidateMovies, personas, options = {}) {
   // then we average across the group.
   function scoreForPersona(movie, persona) {
     const genreMatches = persona.liked_genres.filter((g) =>
-      genreMatchesMovie(g, movie.genres)
+      genreMatchesMovie(g, movie)
     ).length;
     // Normalize by how many genres THE PERSON selected, not by how many
     // tags the movie happens to have. Dividing by movie.genres.length

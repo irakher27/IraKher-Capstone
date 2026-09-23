@@ -4246,5 +4246,735 @@
     ],
     "imdbRating": "7.4",
     "language": "English"
+  },
+  "shrek": {
+    "title": "Shrek",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "platforms": [],
+    "year": "2001",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2FkMTRkNTUtYTI0NC00ZjI4LWI5MzUtMDFmOGY0NmU2OGY1XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.",
+    "director": "Andrew Adamson, Vicky Jenson",
+    "actors": [
+      "Mike Myers",
+      "Eddie Murphy",
+      "Cameron Diaz"
+    ],
+    "imdbRating": "7.9",
+    "language": "English"
+  },
+  "big hero 6": {
+    "title": "Big Hero 6",
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "platforms": [],
+    "year": "2014",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjQ3YzUyOGQtNjdlYS00YmRhLWIyOWYtMGQ3YjkwMjJiYzRjXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A special bond develops between plus-sized inflatable robot Baymax and prodigy Hiro Hamada, who together team up with a group of friends to form a band of high-tech heroes.",
+    "director": "Don Hall, Chris Williams",
+    "actors": [
+      "Ryan Potter",
+      "Scott Adsit",
+      "Jamie Chung"
+    ],
+    "imdbRating": "7.8",
+    "language": "English"
+  },
+  "despicable me": {
+    "title": "Despicable Me",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "platforms": [],
+    "year": "2010",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTY3NjY0MTQ0Nl5BMl5BanBnXkFtZTcwMzQ2MTc0Mw@@._V1_SX300.jpg",
+    "plot": "Gru, a criminal mastermind, adopts three orphans as pawns to carry out the biggest heist in history. His life takes an unexpected turn when the little girls see the evildoer as their potential father.",
+    "director": "Pierre Coffin, Chris Renaud",
+    "actors": [
+      "Steve Carell",
+      "Jason Segel",
+      "Russell Brand"
+    ],
+    "imdbRating": "7.6",
+    "language": "English"
+  },
+  "bajrangi bhaijaan": {
+    "title": "Bajrangi Bhaijaan",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "platforms": [],
+    "year": "2015",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzVjMjZiNGUtZjZiNy00Yzg4LWEzYzYtMmI1NDg5NWNiNjUwXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "An Indian man with a magnanimous heart takes a young mute Pakistani girl back to her homeland to reunite her with her family.",
+    "director": "Kabir Khan",
+    "actors": [
+      "Salman Khan",
+      "Harshaali Malhotra",
+      "Nawazuddin Siddiqui"
+    ],
+    "imdbRating": "8.1",
+    "language": "Hindi, Urdu"
+  },
+  "jab we met": {
+    "title": "Jab We Met",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2007",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmEyMmYyOTgtM2I0My00M2QyLWJhYTYtNmNhOGYzMzQwMjVhXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A depressed wealthy businessman finds his life changing after he meets a spunky and care-free young woman.",
+    "director": "Imtiaz Ali",
+    "actors": [
+      "Shahid Kapoor",
+      "Kareena Kapoor",
+      "Tarun Arora"
+    ],
+    "imdbRating": "7.9",
+    "language": "Hindi"
+  },
+  "pk": {
+    "title": "PK",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Musical"
+    ],
+    "platforms": [],
+    "year": "2014",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTYzOTE2NjkxN15BMl5BanBnXkFtZTgwMDgzMTg0MzE@._V1_SX300.jpg",
+    "plot": "An alien on Earth loses the only device he can use to communicate with his spaceship. His innocent nature and child-like questions force the country to evaluate the impact of religious views on people.",
+    "director": "Rajkumar Hirani",
+    "actors": [
+      "Aamir Khan",
+      "Anushka Sharma",
+      "Sanjay Dutt"
+    ],
+    "imdbRating": "8.1",
+    "language": "Hindi"
+  },
+  "ratatouille": {
+    "title": "Ratatouille",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "platforms": [],
+    "year": "2007",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTMzODU0NTkxMF5BMl5BanBnXkFtZTcwMjQ4MzMzMw@@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "plot": "A rat who can cook makes an unusual alliance with a young kitchen worker at a famous Paris restaurant.",
+    "director": "Brad Bird, Jan Pinkava",
+    "actors": [
+      "Brad Garrett",
+      "Lou Romano",
+      "Patton Oswalt"
+    ],
+    "imdbRating": "8.1",
+    "language": "English, French"
+  },
+  "the lego movie": {
+    "title": "The Lego Movie",
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "platforms": [],
+    "year": "2014",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTg4MDk1ODExN15BMl5BanBnXkFtZTgwNzIyNjg3MDE@._V1_SX300.jpg",
+    "plot": "An ordinary LEGO construction worker, thought to be the prophesied as \"special\", is recruited to join a quest to stop an evil tyrant from gluing the LEGO universe into eternal stasis.",
+    "director": "Phil Lord, Christopher Miller",
+    "actors": [
+      "Chris Pratt",
+      "Will Ferrell",
+      "Elizabeth Banks"
+    ],
+    "imdbRating": "7.7",
+    "language": "English"
+  },
+  "wall-e": {
+    "title": "WALL-E: Treasures and Trinkets",
+    "genres": [
+      "Animation",
+      "Short"
+    ],
+    "platforms": [],
+    "year": "2008",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzk0ZGMzMDYtMDJkYS00NTdhLWJlZWUtMTdhOTJkOTM3NDUwXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+    "plot": "A robot named WALL-E is on a uninhabitable earth by itself but when the human space ship comes and drops of a new robot named Eva on search for a plant. Eva meets WALL-E witch WALL-E shows Eva a plant. the humans come back to take...",
+    "director": "Andrew Stanton",
+    "actors": [],
+    "imdbRating": "8.3",
+    "language": "English"
+  },
+  "dostana": {
+    "title": "Dostana",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2008",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDhhYjUyNGEtMmY2My00ZDE2LWIyNjMtMTNkNzVmZGFmMmE0XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Two straight guys pretend to be gay to secure a Miami apartment. When both of them fall for their roommate Neha, hilarity ensues as they strive to convince one and all that they're gay while secretly trying to win her heart.",
+    "director": "Tarun Mansukhani, Punit Malhotra",
+    "actors": [
+      "Abhishek Bachchan",
+      "John Abraham",
+      "Priyanka Chopra Jonas"
+    ],
+    "imdbRating": "6.4",
+    "language": "Hindi, English"
+  },
+  "finding dory": {
+    "title": "Finding Dory",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "platforms": [],
+    "year": "2016",
+    "poster": "https://m.media-amazon.com/images/M/MV5BY2VlYWJjMGMtYjcwZC00MDE2LThmMDItYjVlMzNhYzBhYTk5XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Friendly but forgetful blue tang Dory begins a search for her long-lost parents and everyone learns a few things about the real meaning of family along the way.",
+    "director": "Andrew Stanton, Angus MacLane",
+    "actors": [
+      "Ellen DeGeneres",
+      "Albert Brooks",
+      "Ed O'Neill"
+    ],
+    "imdbRating": "7.2",
+    "language": "English, Indonesian"
+  },
+  "how to train your dragon": {
+    "title": "How to Train Your Dragon",
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "platforms": [],
+    "year": "2010",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjA5NDQyMjc2NF5BMl5BanBnXkFtZTcwMjg5ODcyMw@@._V1_SX300.jpg",
+    "plot": "A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed.",
+    "director": "Dean DeBlois, Chris Sanders",
+    "actors": [
+      "Jay Baruchel",
+      "Gerard Butler",
+      "Christopher Mintz-Plasse"
+    ],
+    "imdbRating": "8.1",
+    "language": "English"
+  },
+  "taare zameen par": {
+    "title": "Taare Zameen Par",
+    "genres": [
+      "Game-Show",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "2020–",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzE4NmNmZGItYTUxOS00ZDRlLWI0NjktOTYxOWNlMDE1MzRiXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Aspiring young singers from all over India showcase their talents under the mentorship of prominent artists to impress the judges.",
+    "director": null,
+    "actors": [
+      "Sugandha Mishra",
+      "Shankar Mahadevan",
+      "Aakriti Sharma"
+    ],
+    "imdbRating": "7.0",
+    "language": "Hindi"
+  },
+  "3 idiots": {
+    "title": "3 Idiots",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "platforms": [],
+    "year": "2009",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzc4ZWQ3NmYtODE0Ny00YTQ4LTlkZWItNTBkMGQ0MmUwMmJlXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently, even as the rest of the world called them \"idiots\".",
+    "director": "Rajkumar Hirani",
+    "actors": [
+      "Aamir Khan",
+      "Madhavan",
+      "Mona Singh"
+    ],
+    "imdbRating": "8.4",
+    "language": "Hindi, English"
+  },
+  "kung fu panda": {
+    "title": "Kung Fu Panda",
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "platforms": [],
+    "year": "2008",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDU5MDNiMGItYjVmZi00NDUxLTg2OTktNGE0NzNlNzM4NzgyXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "To everyone's surprise, including his own, Po, an overweight, clumsy panda, is chosen as protector of the Valley of Peace. His suitability will soon be tested as the valley's arch-enemy is on his way.",
+    "director": "Mark Osborne, John Stevenson",
+    "actors": [
+      "Jack Black",
+      "Ian McShane",
+      "Angelina Jolie"
+    ],
+    "imdbRating": "7.6",
+    "language": "English, Japanese, Chinese"
+  },
+  "soul": {
+    "title": "Soul",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "platforms": [],
+    "year": "2020",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTZkYjA5MDEtMjY1ZC00ODk5LThjOTUtZDYxODEzYWNjMTU2XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Joe is a middle-school band teacher whose life hasn't quite gone the way he expected. His true passion is jazz. But when he travels to another realm to help someone find their passion, he soon discovers what it means to have soul.",
+    "director": "Pete Docter, Kemp Powers",
+    "actors": [
+      "Jamie Foxx",
+      "Tina Fey",
+      "Graham Norton"
+    ],
+    "imdbRating": "8.0",
+    "language": "English, Korean, Inuktitut"
+  },
+  "piku": {
+    "title": "Piku",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "platforms": [],
+    "year": "2015",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTUwOTMxNjc2OV5BMl5BanBnXkFtZTgwODQ4OTMxNTE@._V1_SX300.jpg",
+    "plot": "A quirky comedy about the relationship between a daughter and her aging father, whose eccentricities drive everyone crazy.",
+    "director": "Shoojit Sircar",
+    "actors": [
+      "Deepika Padukone",
+      "Amitabh Bachchan",
+      "Irrfan Khan"
+    ],
+    "imdbRating": "7.6",
+    "language": "Hindi"
+  },
+  "queen": {
+    "title": "Queen",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Drama"
+    ],
+    "platforms": [],
+    "year": "2014",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZWU0ZWFhODYtMWE5NC00YzNiLWJlZTctMjFhODhjNDdmZjFmXkEyXkFqcGc@._V1_QL75_UY562_CR5,0,380,562_.jpg",
+    "plot": "A Delhi girl from a traditional family sets out on a solo honeymoon after her marriage gets cancelled.",
+    "director": "Vikas Bahl",
+    "actors": [
+      "Kangana Ranaut",
+      "Rajkummar Rao",
+      "Lisa Haydon"
+    ],
+    "imdbRating": "8.1",
+    "language": "Hindi"
+  },
+  "klaus": {
+    "title": "Klaus",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "platforms": [],
+    "year": "2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDA4ODhlMzctNGRmYi00NmViLTkxZGYtZjRkNGQ5YzYwYWVlXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A simple act of kindness always sparks another, even in a frozen, faraway place. When Smeerensburg's new postman, Jesper, befriends toymaker Klaus, their gifts melt an age-old feud and deliver a sleigh full of holiday traditions.",
+    "director": "Sergio Pablos, Carlos Martínez López",
+    "actors": [
+      "Jason Schwartzman",
+      "J.K. Simmons",
+      "Rashida Jones"
+    ],
+    "imdbRating": "8.2",
+    "language": "English, Saami"
+  },
+  "dil dhadakne do": {
+    "title": "Dil Dhadakne Do",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2015",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmExOTlmNDAtYWMzZC00NzEyLWFhYmYtNTgwMjZiMDRhMDQyXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "The Mehra family must contemplate over their way of living and their love lives while on a cruise celebrating their 30th wedding anniversary.",
+    "director": "Zoya Akhtar",
+    "actors": [
+      "Anil Kapoor",
+      "Shefali Shah",
+      "Priyanka Chopra Jonas"
+    ],
+    "imdbRating": "7.0",
+    "language": "Hindi"
+  },
+  "barfi": {
+    "title": "Barfi",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2013",
+    "poster": "https://m.media-amazon.com/images/M/MV5BY2QyYWYyMWQtNzFiOS00ODcxLWI4MWItY2ExNGJjNGUwMjFmXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A young man and woman must transcend communal prejudice if they want to be together.",
+    "director": "Shekar",
+    "actors": [
+      "Diganth",
+      "Bhama",
+      "Dileep Raj"
+    ],
+    "imdbRating": "6.6",
+    "language": "Kannada"
+  },
+  "spider-man: into the spider-verse": {
+    "title": "Spider-Man: Into the Spider-Verse",
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "platforms": [],
+    "year": "2018",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_SX300.jpg",
+    "plot": "Teen Miles Morales becomes the Spider-Man of his universe and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.",
+    "director": "Bob Persichetti, Peter Ramsey, Rodney Rothman",
+    "actors": [
+      "Shameik Moore",
+      "Jake Johnson",
+      "Hailee Steinfeld"
+    ],
+    "imdbRating": "8.4",
+    "language": "English, Spanish"
+  },
+  "inside out 2": {
+    "title": "Inside Out 2",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "platforms": [],
+    "year": "2024",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYWY3MDE2Y2UtOTE3Zi00MGUzLTg2MTItZjE1ZWVkMGVlODRmXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A sequel that features Riley entering puberty and experiencing brand new, more complex emotions as a result. As Riley tries to adapt to her teenage years, her old emotions try to adapt to the possibility of being replaced.",
+    "director": "Kelsey Mann",
+    "actors": [
+      "Amy Poehler",
+      "Maya Hawke",
+      "Kensington Tallman"
+    ],
+    "imdbRating": "7.5",
+    "language": "English, French, Spanish"
+  },
+  "the incredibles": {
+    "title": "The Incredibles",
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure"
+    ],
+    "platforms": [],
+    "year": "2004",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_SX300.jpg",
+    "plot": "While trying to lead a quiet suburban life, a family of undercover superheroes are forced into action to save the world.",
+    "director": "Brad Bird",
+    "actors": [
+      "Craig T. Nelson",
+      "Samuel L. Jackson",
+      "Holly Hunter"
+    ],
+    "imdbRating": "8.0",
+    "language": "English, French, German, Italian, Portuguese, Russian"
+  },
+  "gully boy": {
+    "title": "Gully Boy",
+    "genres": [
+      "Drama",
+      "Music",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWFkY2M3NDctZGEzMS00M2VmLTgzMTAtZWFiNjVmZDc5NWFjXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A coming-of-age story based on the lives of street rappers in Mumbai.",
+    "director": "Zoya Akhtar",
+    "actors": [
+      "Ranveer Singh",
+      "Alia Bhatt",
+      "Siddhant Chaturvedi"
+    ],
+    "imdbRating": "7.9",
+    "language": "Hindi, English"
+  },
+  "chak de india": null,
+  "rocky aur rani kii prem kahaani": {
+    "title": "Rocky Aur Rani Kii Prem Kahaani",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Family"
+    ],
+    "platforms": [],
+    "year": "2023",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTE2YTZlODgtMTRiNS00YjZkLTljN2YtNTM3ZTQ2MzcwZGNiXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Flamboyant Punjabi Rocky and intellectual Bengali journalist Rani fall in love despite their differences. After facing family opposition, they decide to live with each other's families for three months before getting married.",
+    "director": "Karan Johar",
+    "actors": [
+      "Ranveer Singh",
+      "Alia Bhatt",
+      "Dharmendra"
+    ],
+    "imdbRating": "6.5",
+    "language": "Hindi, English"
+  },
+  "dangal": {
+    "title": "Dangal",
+    "genres": [
+      "Action",
+      "Biography",
+      "Drama"
+    ],
+    "platforms": [],
+    "year": "2016",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTQ4MzQzMzM2Nl5BMl5BanBnXkFtZTgwMTQ1NzU3MDI@._V1_SX300.jpg",
+    "plot": "Mahavir Singh Phogat, a former wrestler, decides to fulfill his dream of winning a gold medal for his country by training his daughters for the Commonwealth Games despite the existing social stigmas.",
+    "director": "Nitesh Tiwari",
+    "actors": [
+      "Aamir Khan",
+      "Sakshi Tanwar",
+      "Fatima Sana Shaikh"
+    ],
+    "imdbRating": "8.3",
+    "language": "Hindi, English"
+  },
+  "udaan": {
+    "title": "Udaan",
+    "genres": [
+      "Drama"
+    ],
+    "platforms": [],
+    "year": "2010",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzgxMzExMzUwNV5BMl5BanBnXkFtZTcwMDc2MjUwNA@@._V1_SX300.jpg",
+    "plot": "Expelled from his school, a 16-year old boy returns home to his abusive and oppressive father.",
+    "director": "Vikramaditya Motwane",
+    "actors": [
+      "Rajat Barmecha",
+      "Ronit Roy",
+      "Manjot Singh"
+    ],
+    "imdbRating": "8.1",
+    "language": "Hindi"
+  },
+  "andhadhun": {
+    "title": "Andhadhun",
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Thriller"
+    ],
+    "platforms": [],
+    "year": "2018",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjZiYTNkNjUtNzI3MC00YWJmLTljM2QtNTI3MTU3ODYzNWFjXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A series of mysterious events change the life of a blind pianist, who must now report a crime that he should technically know nothing of.",
+    "director": "Sriram Raghavan",
+    "actors": [
+      "Ayushmann Khurrana",
+      "Tabu",
+      "Radhika Apte"
+    ],
+    "imdbRating": "8.2",
+    "language": "Hindi, English"
+  },
+  "dil chahta hai": {
+    "title": "Dil Chahta Hai",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2001",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjY4NzgzNTQtZDhiNi00ZGJiLWIzMWQtNDg3YzkyNTdkZjAyXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Three inseparable childhood friends are just out of college. Nothing comes between them - until they each fall in love, and their wildly different approaches to relationships creates tension.",
+    "director": "Farhan Akhtar",
+    "actors": [
+      "Aamir Khan",
+      "Saif Ali Khan",
+      "Akshaye Khanna"
+    ],
+    "imdbRating": "8.1",
+    "language": "Hindi, English"
+  },
+  "the boy and the heron": {
+    "title": "The Boy and the Heron",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Drama"
+    ],
+    "platforms": [],
+    "year": "2023",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzA5Zjg3MTAtM2FhZS00NTNjLTg3NjEtNWQ4MTRhZjhiNzVmXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "In the wake of his mother's death and his father's remarriage, a headstrong boy ventures into a dreamlike world shared by the living and the dead in search of his missing stepmother.",
+    "director": "Hayao Miyazaki",
+    "actors": [
+      "Soma Santoki",
+      "Masaki Suda",
+      "Kô Shibasaki"
+    ],
+    "imdbRating": "7.3",
+    "language": "Japanese"
+  },
+  "kabhi khushi kabhie gham": {
+    "title": "Kabhi Khushi Kabhie Gham...",
+    "genres": [
+      "Drama",
+      "Musical",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2001",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2MyZGVhNmMtY2JkNy00ZmIzLTkwOGItY2NiM2MyOGMxODkzXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "After marrying a poor woman, rich Rahul is disowned by his father and moves to London to build a new life. Years later, his now-grown younger brother Rohan embarks on a mission to bring Rahul back home and reunite the family.",
+    "director": "Karan Johar",
+    "actors": [
+      "Shah Rukh Khan",
+      "Kajol",
+      "Amitabh Bachchan"
+    ],
+    "imdbRating": "7.4",
+    "language": "Hindi, English, Punjabi, Urdu"
+  },
+  "kabir singh": {
+    "title": "Kabir Singh",
+    "genres": [
+      "Action",
+      "Drama",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjU5ZTljMDEtNzg5Ny00OTliLWI3NmYtOTE1ZDg3NTNkMDM0XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "An exalted but short-fused surgeon plunges into a spiral of drugs, alcohol and rage after his intense relationship with his girlfriend turbulently ends.",
+    "director": "Sandeep Reddy Vanga",
+    "actors": [
+      "Shahid Kapoor",
+      "Kiara Advani",
+      "Nikita Dutta"
+    ],
+    "imdbRating": "7.0",
+    "language": "Hindi"
+  },
+  "zindagi na milegi dobara": {
+    "title": "Zindagi Na Milegi Dobara",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Musical"
+    ],
+    "platforms": [],
+    "year": "2011",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGIzYzg5NzItNDRkYS00NmIzLTk3NzQtZWYwY2VlZDhiYWQ4XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Three friends decide to turn their fantasy vacation into reality after one of their friends gets engaged.",
+    "director": "Zoya Akhtar",
+    "actors": [
+      "Hrithik Roshan",
+      "Farhan Akhtar",
+      "Abhay Deol"
+    ],
+    "imdbRating": "8.2",
+    "language": "Hindi"
+  },
+  "wall·e": {
+    "title": "WALL·E",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Family"
+    ],
+    "platforms": [],
+    "year": "2008",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjExMTg5OTU0NF5BMl5BanBnXkFtZTcwMjMxMzMzMw@@._V1_SX300.jpg",
+    "plot": "A robot who is responsible for cleaning a waste-covered Earth meets another robot and falls in love with her. Together, they set out on a journey that will alter the fate of mankind.",
+    "director": "Andrew Stanton",
+    "actors": [
+      "Ben Burtt",
+      "Elissa Knight",
+      "Jeff Garlin"
+    ],
+    "imdbRating": "8.4",
+    "language": "English"
+  },
+  "chak de! india": {
+    "title": "Chak De! India",
+    "genres": [
+      "Drama",
+      "Family",
+      "Sport"
+    ],
+    "platforms": [],
+    "year": "2007",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjYyOTdmYTYtYjQ4Ni00ZmFiLWJlZjYtZmJkNDI5MmNlNjMyXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Kabir Khan, the coach of the Indian Women's National Hockey Team, dreams of making his all-girls team emerge victorious against all odds.",
+    "director": "Shimit Amin",
+    "actors": [
+      "Shah Rukh Khan",
+      "Vidya Malvade",
+      "Sagarika Ghatge"
+    ],
+    "imdbRating": "8.1",
+    "language": "Hindi, English"
+  },
+  "kabhi khushi kabhie gham...": {
+    "title": "Kabhi Khushi Kabhie Gham...",
+    "genres": [
+      "Drama",
+      "Musical",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2001",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2MyZGVhNmMtY2JkNy00ZmIzLTkwOGItY2NiM2MyOGMxODkzXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "After marrying a poor woman, rich Rahul is disowned by his father and moves to London to build a new life. Years later, his now-grown younger brother Rohan embarks on a mission to bring Rahul back home and reunite the family.",
+    "director": "Karan Johar",
+    "actors": [
+      "Shah Rukh Khan",
+      "Kajol",
+      "Amitabh Bachchan"
+    ],
+    "imdbRating": "7.4",
+    "language": "Hindi, English, Punjabi, Urdu"
   }
 }

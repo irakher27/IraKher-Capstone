@@ -19,6 +19,10 @@ const { createFilesystemClient } = require("./mcpFilesystemClient");
 const PROJECT_ROOT = path.join(__dirname, "..");
 const PERSONAS_DIR = path.join(PROJECT_ROOT, "personas");
 const CANDIDATE_TITLES_PATH = path.join(PROJECT_ROOT, "data", "candidateTitles.json");
+// Curated list of Bollywood titles — OMDb has no film-industry/language
+// tag to match "Bollywood" against, so this file is the source of truth
+// instead (see scoreGroupMovies.js's special-case handling of it).
+const BOLLYWOOD_TITLES_PATH = path.join(PROJECT_ROOT, "data", "bollywoodTitles.json");
 const OUTPUT_PATH = path.join(PROJECT_ROOT, "data", "results.json");
 
 const fsClient = createFilesystemClient(PROJECT_ROOT);
@@ -56,7 +60,12 @@ async function runWorkflow(personas) {
   // --- ACT ---
   console.log("Acting: fetching candidate movie details from OMDb...");
   const seedTitles = JSON.parse(fs.readFileSync(CANDIDATE_TITLES_PATH, "utf-8"));
-  const candidates = await fetchMoviesByTitles(seedTitles);
+  const bollywoodTitles = JSON.parse(fs.readFileSync(BOLLYWOOD_TITLES_PATH, "utf-8"));
+  const bollywoodSet = new Set(bollywoodTitles.map((t) => t.trim().toLowerCase()));
+  const candidates = (await fetchMoviesByTitles(seedTitles)).map((movie) => ({
+    ...movie,
+    isBollywood: bollywoodSet.has(movie.title.trim().toLowerCase()),
+  }));
   console.log(`Fetched details for ${candidates.length} candidate movies.`);
 
   // --- OBSERVE (attempt 1: full checks, including platform overlap) ---
