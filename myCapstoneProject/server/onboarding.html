@@ -344,6 +344,21 @@
   .detail-ticket-wrap .ticket-body h3 { margin: 0 0 8px; font-size: 1.7rem; }
   .detail-ticket-wrap .ticket-stub-line { border-top: none; padding-top: 0; }
 
+  .detail-watch-wrap { margin-bottom: 22px; }
+  .watch-btn-grid { display: grid; gap: 10px; }
+  .watch-btn {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    background: linear-gradient(90deg, var(--good), #2aa968);
+    color: white; text-decoration: none; font-weight: 600; font-size: 0.95rem;
+    border-radius: 10px; padding: 13px; text-align: center;
+  }
+  .watch-unavailable {
+    text-align: center; color: var(--muted); font-size: 0.9rem;
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 10px; padding: 13px;
+  }
+  .watch-loading { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 6px 0; }
+
   .result-actions { display: grid; gap: 10px; }
   .result-actions button {
     background: var(--panel); border: 1px solid var(--border); color: var(--text);
@@ -487,6 +502,7 @@
       <div class="detail-row" id="detailLanguageRow"><strong>Language:</strong> <span id="detailLanguage"></span></div>
     </div>
     <div class="detail-ticket-wrap" id="detailTicketWrap"></div>
+    <div class="detail-watch-wrap" id="detailWatchWrap"></div>
   </section>
 
 <script>
@@ -1025,7 +1041,51 @@
     ticket.querySelector('.ticket-stub-line').lastElementChild.remove();
     ticketWrap.appendChild(ticket);
 
+    loadWatchOptions(movie);
     showScreen('detail');
+  }
+
+  // ---------------- "Watch Now" (real streaming availability) ----------------
+  let watchRequestId = 0;
+
+  async function loadWatchOptions(movie) {
+    const wrap = document.getElementById('detailWatchWrap');
+    const thisRequestId = ++watchRequestId;
+    wrap.innerHTML = '<div class="watch-loading">Checking where this is streaming…</div>';
+
+    let sources = [];
+    try {
+      const params = new URLSearchParams({ title: movie.title });
+      if (movie.year) params.set('year', movie.year);
+      const res = await fetch('/api/streaming?' + params.toString());
+      const data = await res.json();
+      if (data.ok) sources = data.sources || [];
+    } catch (err) {
+      sources = []; // network hiccup — fall back to the "not available" message below, never a broken button
+    }
+
+    // The user may have clicked into a different movie before this
+    // lookup finished — don't clobber whatever's showing now.
+    if (thisRequestId !== watchRequestId) return;
+
+    if (sources.length === 0) {
+      wrap.innerHTML = '<div class="watch-unavailable">Not currently available for streaming</div>';
+      return;
+    }
+
+    const grid = document.createElement('div');
+    grid.className = 'watch-btn-grid';
+    sources.forEach((source) => {
+      const link = document.createElement('a');
+      link.className = 'watch-btn';
+      link.href = source.url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = 'Watch on ' + source.platform;
+      grid.appendChild(link);
+    });
+    wrap.innerHTML = '';
+    wrap.appendChild(grid);
   }
 
   function setDetailRow(rowId, spanId, value) {

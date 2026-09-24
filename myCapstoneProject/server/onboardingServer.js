@@ -21,6 +21,7 @@ const fs = require("fs");
 const path = require("path");
 
 const { runWorkflow, runRedoWorkflow } = require("../agent/runWorkflow");
+const { getStreamingAvailability } = require("../adapters/watchmodeAdapter");
 const googleAuth = require("./googleAuth");
 const profileStore = require("./profileStore");
 
@@ -200,6 +201,19 @@ const server = http.createServer(async (req, res) => {
 
     if (req.method === "GET" && pathname === "/api/state") {
       return sendJson(res, 200, stateSnapshot());
+    }
+
+    if (req.method === "GET" && pathname === "/api/streaming") {
+      const title = parsedUrl.searchParams.get("title");
+      const year = parsedUrl.searchParams.get("year") || undefined;
+      if (!title) return sendJson(res, 400, { ok: false, error: "title is required." });
+      try {
+        const sources = await getStreamingAvailability(title, year);
+        return sendJson(res, 200, { ok: true, sources });
+      } catch (err) {
+        console.error(`Watchmode lookup failed for "${title}":`, err.message);
+        return sendJson(res, 200, { ok: true, sources: [] });
+      }
     }
 
     if (req.method === "GET" && pathname === "/api/me") {

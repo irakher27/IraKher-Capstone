@@ -1,0 +1,40 @@
+{
+  "inception::2010": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.04a9f72c-f9c8-c4d1-f97b-6d7ad986a51f"
+    },
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000530"
+    }
+  ],
+  "coco::2017": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1660010633"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/coco"
+    }
+  ],
+  "3 idiots::2009": [],
+  "dangal::2016": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271659734"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/80166185"
+    }
+  ],
+  "crazy, stupid, love.::2011": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000591"
+    }
+  ],
+  "the shawshank redemption::1994": []
+}
