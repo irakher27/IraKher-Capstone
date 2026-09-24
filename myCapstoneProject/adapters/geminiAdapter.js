@@ -26,11 +26,13 @@
 require("dotenv").config();
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-// The "-latest" alias tracks Google's current recommended flash model
-// instead of pinning a specific version — avoids hardcoding a model
-// name that gets deprecated (already happened once during setup) and
-// tends to be more available than a brand-new model under launch load.
-const GEMINI_MODEL = "gemini-flash-latest";
+// "flash-lite" instead of the full flash/"-latest" alias: this task
+// (extract a small JSON object from one short sentence) is simple
+// enough that a lite model handles it fine, and in practice the lite
+// tier has a meaningfully higher free-tier request quota — the full
+// flash model's ~20/day free-tier cap was hit repeatedly just from
+// development testing, which a lite model's quota comfortably absorbs.
+const GEMINI_MODEL = "gemini-3.1-flash-lite";
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 
 /**
