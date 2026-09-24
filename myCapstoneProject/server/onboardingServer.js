@@ -21,7 +21,7 @@ const fs = require("fs");
 const path = require("path");
 
 const { runWorkflow, runRedoWorkflow } = require("../agent/runWorkflow");
-const { getStreamingAvailability, getSearchFallbackLinks } = require("../adapters/watchmodeAdapter");
+const { getStreamingAvailability, getSearchFallbackLinks, normalizePlatformName, cacheKey: watchmodeCacheKey } = require("../adapters/watchmodeAdapter");
 const googleAuth = require("./googleAuth");
 const profileStore = require("./profileStore");
 
@@ -90,6 +90,23 @@ const GENRES = [
 ];
 const PLATFORMS = ["Netflix", "Prime Video", "Disney+ Hotstar", "Hulu", "HBO Max", "Apple TV+"];
 
+// Same curated Bollywood list the recommendation pool trusts (see
+// agent/runWorkflow.js) — Watch Now needs to know whether a title is
+// Bollywood too, since those get a live Watchmode lookup regardless
+// of the India-availability cache (see /api/streaming below).
+const BOLLYWOOD_TITLES = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "..", "data", "bollywoodTitles.json"), "utf-8")
+);
+const BOLLYWOOD_TITLE_SET = new Set(BOLLYWOOD_TITLES.map((t) => t.trim().toLowerCase()));
+
+function loadIndiaAvailabilityCache() {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(__dirname, "..", "data", "indiaAvailability.json"), "utf-8"));
+  } catch (err) {
+    return {};
+  }
+}
+
 function normalize(value) {
   return String(value).trim().toLowerCase();
 }
@@ -132,6 +149,26 @@ function readJsonBody(req) {
     });
     req.on("error", reject);
   });
+}
+
+/**
+ * The platforms to cross-reference Watch Now buttons against: the
+ * currently-authenticated session's own persona (their platforms from
+ * onboarding), since this is a shared-device app and that's the most
+ * specific "the user" the server can identify for a given request. If
+ * nobody's currently signed in (session expired, or the results
+ * screen is being viewed after everyone's logged out), fall back to
+ * the union of every platform anyone in the group selected, so the
+ * feature still degrades usefully instead of matching nothing.
+ */
+function relevantUserPlatforms(req) {
+  const user = currentUser(req);
+  const persona = user && personasByEmail.get(user.email);
+  if (persona) return persona.platforms;
+
+  const union = new Set();
+  for (const p of personasByEmail.values()) p.platforms.forEach((plat) => union.add(plat));
+  return [...union];
 }
 
 function stateSnapshot() {
@@ -207,20 +244,51 @@ const server = http.createServer(async (req, res) => {
       const title = parsedUrl.searchParams.get("title");
       const year = parsedUrl.searchParams.get("year") || undefined;
       if (!title) return sendJson(res, 400, { ok: false, error: "title is required." });
+
+      const isBollywood = BOLLYWOOD_TITLE_SET.has(title.trim().toLowerCase());
+
+      let sources;
       try {
-        const sources = await getStreamingAvailability(title, year);
-        // Watchmode's India catalog has real gaps (Bollywood/regional
-        // titles especially) — an empty result means "Watchmode doesn't
-        // know," not "not available," so offer search links on the
-        // major platforms instead of telling the user it's unavailable.
-        if (sources.length === 0) {
-          return sendJson(res, 200, { ok: true, sources: getSearchFallbackLinks(title) });
+        if (isBollywood) {
+          // Bollywood titles skip the India-availability cache (that
+          // cache never gates them — see runWorkflow.js), but Watch
+          // Now still benefits from a real per-title Watchmode lookup
+          // when one exists (e.g. Dangal genuinely has Hotstar/Netflix
+          // data) — this call is itself cached (watchmodeCache.json),
+          // so it's not a live hit on every request.
+          sources = await getStreamingAvailability(title, year);
+        } else {
+          // Non-Bollywood titles were already checked once when
+          // data/indiaAvailability.json was built — reuse that instead
+          // of re-hitting Watchmode. Falls back to a live lookup only
+          // if this title somehow isn't in the cache yet (e.g. the
+          // cache hasn't been refreshed since this title was added).
+          const entry = loadIndiaAvailabilityCache()[watchmodeCacheKey(title, year)];
+          sources = entry ? entry.platforms : await getStreamingAvailability(title, year);
         }
-        return sendJson(res, 200, { ok: true, sources });
       } catch (err) {
         console.error(`Watchmode lookup failed for "${title}":`, err.message);
+        sources = [];
+      }
+
+      // Watchmode's India catalog has real gaps (Bollywood/regional
+      // titles especially) — an empty result means "Watchmode doesn't
+      // know," not "not available," so offer search links on the
+      // major platforms instead of telling the user it's unavailable.
+      // (Unconfirmed by design, so not cross-referenced against the
+      // user's platforms below — we don't know enough to filter it.)
+      if (sources.length === 0) {
         return sendJson(res, 200, { ok: true, sources: getSearchFallbackLinks(title) });
       }
+
+      // Confirmed available in India — but only worth a button if it's
+      // also on a platform this user actually has.
+      const userPlatforms = relevantUserPlatforms(req);
+      const matched = sources.filter((s) => userPlatforms.includes(normalizePlatformName(s.platform)));
+      if (matched.length === 0) {
+        return sendJson(res, 200, { ok: true, sources: [], notOnUserPlatforms: true });
+      }
+      return sendJson(res, 200, { ok: true, sources: matched });
     }
 
     if (req.method === "GET" && pathname === "/api/me") {

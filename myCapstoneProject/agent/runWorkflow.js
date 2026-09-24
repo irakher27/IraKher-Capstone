@@ -15,6 +15,7 @@ const path = require("path");
 const { scoreGroupMovies } = require("../skill/scoreGroupMovies");
 const { getFreshRecommendations } = require("../skill/getFreshRecommendations");
 const { fetchMoviesByTitles } = require("../adapters/omdbAdapter");
+const { cacheKey: watchmodeCacheKey } = require("../adapters/watchmodeAdapter");
 const { createFilesystemClient } = require("./mcpFilesystemClient");
 
 const PROJECT_ROOT = path.join(__dirname, "..");
@@ -24,6 +25,11 @@ const CANDIDATE_TITLES_PATH = path.join(PROJECT_ROOT, "data", "candidateTitles.j
 // tag to match "Bollywood" against, so this file is the source of truth
 // instead (see scoreGroupMovies.js's special-case handling of it).
 const BOLLYWOOD_TITLES_PATH = path.join(PROJECT_ROOT, "data", "bollywoodTitles.json");
+// Built by agent/refreshIndiaAvailability.js — which non-Bollywood
+// candidates are actually confirmed streaming in India (Watchmode),
+// so the recommendation pool never has to guess. Re-run that script
+// to refresh it (e.g. after adding new candidate titles).
+const INDIA_AVAILABILITY_PATH = path.join(PROJECT_ROOT, "data", "indiaAvailability.json");
 const OUTPUT_PATH = path.join(PROJECT_ROOT, "data", "results.json");
 
 const fsClient = createFilesystemClient(PROJECT_ROOT);
@@ -44,10 +50,13 @@ async function loadPersonas() {
 
 /**
  * ACT (shared): fetch every candidate's OMDb details and tag each one
- * with isBollywood. Both the original recommendation workflow and the
- * "get new recommendations" redo workflow need this exact same pool.
+ * with isBollywood. Unfiltered — used both as the base for the real,
+ * India-availability-filtered candidate pool below, and by
+ * agent/refreshIndiaAvailability.js, which needs the raw list (plus
+ * each title's year, for accurate Watchmode disambiguation) to build
+ * that filter in the first place.
  */
-async function fetchCandidates() {
+async function fetchRawCandidates() {
   const seedTitles = JSON.parse(fs.readFileSync(CANDIDATE_TITLES_PATH, "utf-8"));
   const bollywoodTitles = JSON.parse(fs.readFileSync(BOLLYWOOD_TITLES_PATH, "utf-8"));
   const bollywoodSet = new Set(bollywoodTitles.map((t) => t.trim().toLowerCase()));
@@ -55,6 +64,34 @@ async function fetchCandidates() {
     ...movie,
     isBollywood: bollywoodSet.has(movie.title.trim().toLowerCase()),
   }));
+}
+
+function loadIndiaAvailability() {
+  try {
+    return JSON.parse(fs.readFileSync(INDIA_AVAILABILITY_PATH, "utf-8"));
+  } catch (err) {
+    return {}; // not refreshed yet — every non-Bollywood candidate is treated as unconfirmed (excluded) until it is
+  }
+}
+
+/**
+ * ACT (shared): the real candidate pool — fetchRawCandidates(),
+ * restricted to only movies actually confirmed streaming in India.
+ * Bollywood titles (curated, trusted) always pass through untouched;
+ * everything else must have a confirmed-available entry in
+ * data/indiaAvailability.json (built by
+ * agent/refreshIndiaAvailability.js) or it's excluded — a title this
+ * cache has never checked is treated the same as "not available",
+ * not silently let through.
+ */
+async function fetchCandidates() {
+  const raw = await fetchRawCandidates();
+  const availability = loadIndiaAvailability();
+  return raw.filter((movie) => {
+    if (movie.isBollywood) return true;
+    const entry = availability[watchmodeCacheKey(movie.title, movie.year)];
+    return !!entry && entry.available === true;
+  });
 }
 
 /**
@@ -145,7 +182,7 @@ async function runRedoWorkflow(personas, shownTitles) {
   return results;
 }
 
-module.exports = { runWorkflow, runRedoWorkflow };
+module.exports = { runWorkflow, runRedoWorkflow, fetchRawCandidates };
 
 // Only auto-run when invoked directly (`node agent/runWorkflow.js`) —
 // not when required as a module by the onboarding server.

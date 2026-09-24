@@ -1,0 +1,2280 @@
+{
+  "dune::1984": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "odyssey::2026": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "the avengers::2012": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1660000015"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/marvels-the-avengers"
+      }
+    ]
+  },
+  "scream::1996": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "good will hunting::1998": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1271672402"
+      },
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/17405997"
+      }
+    ]
+  },
+  "tangled::2010": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1660010196"
+      }
+    ]
+  },
+  "jurassic park::1993": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7ea9f6d9-bdc8-9b2e-97a9-c341306e36ef"
+      },
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/60002360"
+      },
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000492"
+      }
+    ]
+  },
+  "karate kid::1967": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8aa9f6b1-df22-2865-4274-1a7d4b41756c"
+      },
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1271651426"
+      },
+      {
+        "platform": "Sony LIV",
+        "url": "https://www.sonyliv.com/movies/the-karate-kid-2010-1000257948"
+      }
+    ]
+  },
+  "top gun::1986": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971001341"
+      }
+    ]
+  },
+  "finding nemo::2003": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1660010114"
+      }
+    ]
+  },
+  "barbie::2023": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.17f2bd91-afd8-4ae8-8dbc-9c49066e771c"
+      }
+    ]
+  },
+  "dead poets society::1989": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260017844"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/dead-poets-society"
+      }
+    ]
+  },
+  "the maze runner::2014": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1770000289"
+      }
+    ]
+  },
+  "divergent::2014": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.78658cb5-2c7e-4f7a-802d-471d085b49c5"
+      }
+    ]
+  },
+  "the hunger games::2012": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8ebbd4b3-5921-b021-2f14-b7a7246c3d89"
+      }
+    ]
+  },
+  "spider-man::2002": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.16a9f6fd-c82a-d83d-6bfc-0265e317f307"
+      },
+      {
+        "platform": "Sony LIV",
+        "url": "https://www.sonyliv.com/movies/spider-man-1000007752"
+      },
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1271668105"
+      }
+    ]
+  },
+  "sound of music::1963–1970": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1770001029"
+      }
+    ]
+  },
+  "the greatest showman::2017": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1770019156"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/the-greatest-showman"
+      }
+    ]
+  },
+  "mamma mia::1998": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/70097579"
+      }
+    ]
+  },
+  "coraline::2009": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "la la land::2016": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a2b315ef-feed-47dd-9fd2-41e50afbb891"
+      }
+    ]
+  },
+  "set it up::2018": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/80184100"
+      }
+    ]
+  },
+  "monte carlo::2011": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "27 dresses::2008": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1770000668"
+      }
+    ]
+  },
+  "13 going on 30::2004": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "how to lose a guy in 10 days::2003": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "10 things i hate about you::1999": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260018201"
+      }
+    ]
+  },
+  "clueless::1995": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "marty supreme::2025": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7d3a0712-3794-4dd9-a6e3-b2b08315c6dc"
+      }
+    ]
+  },
+  "a complete unknown::2024": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "m.s. dhoni: the untold story::2016": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1000164358"
+      },
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e28427d2-ce84-4356-ace8-855530420526"
+      }
+    ]
+  },
+  "a star is born::2018": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000533"
+      }
+    ]
+  },
+  "lion::2016": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6eba6439-de88-f6cb-2ce4-f6bcd13d89e9"
+      }
+    ]
+  },
+  "michael::2026": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "oppenheimer::2023": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971011128"
+      }
+    ]
+  },
+  "the hangover::2009": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.86b3421a-51fd-0a65-c897-9ab54e4c8cad"
+      },
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000502"
+      }
+    ]
+  },
+  "21 jump street::2012": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "MGM+ (Via Amazon Prime)",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.44a9f6d0-5299-1692-34c3-05e1bd22287e"
+      }
+    ]
+  },
+  "the social network::2010": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "17 again::2009": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "ted::2012": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000483"
+      },
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e4b42705-401a-2950-ad75-def855aed3b0"
+      },
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/70218756"
+      }
+    ]
+  },
+  "crazy, stupid, love.::2011": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000591"
+      }
+    ]
+  },
+  "superbad::2007": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/70058023"
+      }
+    ]
+  },
+  "no hard feelings::2023": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/81659034"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/no-hard-feelings"
+      },
+      {
+        "platform": "Sony Pictures Amazon Channel",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.1a8f5293-d3b0-4de8-a414-bfbfe7e2fd2a"
+      }
+    ]
+  },
+  "harry potter and the sorcerer's stone::2001": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000398"
+      }
+    ]
+  },
+  "percy jackson and the olympians: the lightning thief fan film::2019": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "the lord of the rings: the fellowship of the ring::2001": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000578"
+      },
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/60004480"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/the-lord-of-the-rings-the-fellowship-of-the-ring"
+      }
+    ]
+  },
+  "star wars: episode iv - a new hope::1977": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260016021"
+      }
+    ]
+  },
+  "inception::2010": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.04a9f72c-f9c8-c4d1-f97b-6d7ad986a51f"
+      },
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000530"
+      }
+    ]
+  },
+  "interstellar::2014": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000531"
+      },
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.91c15743-d78a-4667-9b48-fbd8ed9cacbc"
+      }
+    ]
+  },
+  "grease::1978": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "chicago::2002": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "moulin rouge!::2001": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "hairspray::2007": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "rent::2005": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "into the woods::2014": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/into-the-woods"
+      }
+    ]
+  },
+  "singin' in the rain::1952": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "west side story::1961": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f4106a15-87e6-44b5-9666-0fbafd84c8f9"
+      }
+    ]
+  },
+  "wicked::2024": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/movies/wicked/1271396608"
+      }
+    ]
+  },
+  "dreamgirls::2006": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "bohemian rhapsody::2018": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/bohemian-rhapsody"
+      }
+    ]
+  },
+  "rocketman::2019": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "the theory of everything::2014": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "ray::2004": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1271413495"
+      }
+    ]
+  },
+  "walk the line::2005": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "steve jobs::2015": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000491"
+      }
+    ]
+  },
+  "the imitation game::2014": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "catch me if you can::2002": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971001326"
+      }
+    ]
+  },
+  "elvis::2022": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "i, tonya::2017": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "get out::2017": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971183762"
+      }
+    ]
+  },
+  "hereditary::2018": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9b57dac9-3ec4-48b9-9562-2492233f466f"
+      }
+    ]
+  },
+  "the exorcist::1973": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "a quiet place::2018": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971001357"
+      },
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.98b427d5-d2be-4310-3e1f-08489baa842a"
+      }
+    ]
+  },
+  "it::2017": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "insidious::2011": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "the shining::1980": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "sinister::2012": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "smile::2022": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.840682d0-9a41-4a44-9fc6-ed9c43a5d4de"
+      }
+    ]
+  },
+  "talk to me::2022": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.472a6c33-7cc4-4e1e-9093-aa2366ce80e4"
+      }
+    ]
+  },
+  "pride and prejudice::1995": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "titanic::1997": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1770001166"
+      }
+    ]
+  },
+  "me before you::2016": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "MGM+ (Via Amazon Prime)",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.58aabcaf-9488-5a45-70d3-3ffdce14d1af"
+      }
+    ]
+  },
+  "the fault in our stars::2014": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1770000333"
+      }
+    ]
+  },
+  "notting hill::1999": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.34a9f741-a748-63b1-1f54-fec118de2a23"
+      }
+    ]
+  },
+  "before sunrise::1995": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "love actually::2003": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "silver linings playbook::2012": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f8fd013d-b658-4426-93fe-940b1e20cb97"
+      }
+    ]
+  },
+  "about time::2013": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000582"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/about-time"
+      }
+    ]
+  },
+  "the notebook::2004": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "bridesmaids::2011": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000523"
+      }
+    ]
+  },
+  "step brothers::2008": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "anchorman::2009": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "dumb and dumber::1994": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "mean girls::2004": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.cff3ec1e-89a5-4204-af50-6cf283bd545c"
+      }
+    ]
+  },
+  "zombieland::2009": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.22a9f792-9559-22ef-2c52-7670edf7ad7b"
+      },
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1271640231"
+      },
+      {
+        "platform": "Sony LIV",
+        "url": "https://www.sonyliv.com/movies/zombieland-1000215233"
+      },
+      {
+        "platform": "Sony Pictures Amazon Channel",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.22a9f792-9559-22ef-2c52-7670edf7ad7b"
+      }
+    ]
+  },
+  "game night::2018": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "tropic thunder::2008": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "bridget jones's diary::2001": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.fac2dd5f-4bdb-4b18-938b-3753119b05cb"
+      }
+    ]
+  },
+  "the other guys::2010": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Sony LIV",
+        "url": "https://www.sonyliv.com/movies/the-other-guys-1000246011"
+      }
+    ]
+  },
+  "gone girl::2014": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "se7en::2016": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "shutter island::2010": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971001342"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/shutter-island"
+      }
+    ]
+  },
+  "prisoners::2013": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3aa9f76f-8377-5b2e-288c-39837a1c7c7e"
+      },
+      {
+        "platform": "Lionsgate+ (Via Amazon Prime)",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3aa9f76f-8377-5b2e-288c-39837a1c7c7e"
+      }
+    ]
+  },
+  "zodiac::2007": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "the silence of the lambs::1991": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.42d5f63d-ceb0-4a3d-b9c2-17c9914e3cae"
+      }
+    ]
+  },
+  "fight club::1999": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/26004747"
+      }
+    ]
+  },
+  "nightcrawler::2014": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "no country for old men::2007": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/70071613"
+      }
+    ]
+  },
+  "oldboy::2003": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.595e6db6-b814-4f6c-8afe-90da57887247"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/old-boy"
+      }
+    ]
+  },
+  "the matrix::1999": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000620"
+      },
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.dea9f6b7-e0a0-38c9-7467-d6079c6fb4f0"
+      }
+    ]
+  },
+  "blade runner 2049::2017": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c5d0912f-4e6c-46f0-9f52-bdf1f17e2841"
+      },
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1271643831"
+      },
+      {
+        "platform": "Sony LIV",
+        "url": "https://www.sonyliv.com/movies/blade-runner-2049-1090426687"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/blade-runner-2049"
+      }
+    ]
+  },
+  "arrival::2016": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "ex machina::2014": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971001887"
+      }
+    ]
+  },
+  "edge of tomorrow::2014": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9cba5c02-910e-368c-0c9b-8505ea0c7b09"
+      },
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/70298735"
+      }
+    ]
+  },
+  "district 9::2009": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "looper::2012": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "tenet::2020": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e8bb0e4e-a5af-14d4-004c-3a38fdd9ce3b"
+      },
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/81198930"
+      }
+    ]
+  },
+  "minority report::2002": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971001502"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/minority-report"
+      }
+    ]
+  },
+  "children of men::2006": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "john wick::2014": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "mad max: fury road::2015": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000538"
+      },
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0c9da1a1-af0f-41d7-be82-0bb2fd6e7f32"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/mad-max-fury-road"
+      }
+    ]
+  },
+  "mission: impossible - fallout::2018": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971001332"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/mission-impossible-fallout"
+      }
+    ]
+  },
+  "die hard::1988": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1770001194"
+      }
+    ]
+  },
+  "the dark knight::2008": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.4aa9f68b-5e9d-1955-a451-d4d0087ef56c"
+      },
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000395"
+      }
+    ]
+  },
+  "gladiator::2000": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.1eb7a861-a2d6-4ab1-8efd-81608b3a8dd7"
+      }
+    ]
+  },
+  "kill bill: vol. 1::2003": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/60031236"
+      },
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3243b400-bf07-434d-95e0-1e318b62d932"
+      }
+    ]
+  },
+  "the raid::1954": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "speed::1994": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1770000923"
+      }
+    ]
+  },
+  "the bourne identity::2002": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.d8a9f682-6eee-ebba-2ed8-6f520068c709"
+      }
+    ]
+  },
+  "the goonies::1985": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "pirates of the caribbean: the curse of the black pearl::2003": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1660010115"
+      }
+    ]
+  },
+  "life of pi::2012": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1770000706"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/life-of-pi"
+      }
+    ]
+  },
+  "the jungle book::2016": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260018310"
+      }
+    ]
+  },
+  "into the wild::2007": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "national treasure::2004": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260017703"
+      }
+    ]
+  },
+  "jumanji::1995": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.94a9f6c2-edbe-6132-d4d8-5ff6d528ee7b"
+      }
+    ]
+  },
+  "the princess bride::1987": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Lionsgate+ (Via Amazon Prime)",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.bd3a74d0-eb8a-4a12-aca9-e0b2bc77a9f1"
+      }
+    ]
+  },
+  "journey to the center of the earth::2008": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/70097578"
+      }
+    ]
+  },
+  "the shawshank redemption::1994": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "forrest gump::1994": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1271416362"
+      }
+    ]
+  },
+  "a beautiful mind::2002": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "manchester by the sea::2016": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "moonlight::2016": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "the pursuit of happyness::2006": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Sony Pictures Amazon Channel",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.82af6faf-4a40-8cdd-6682-6710f5ce2a7e"
+      }
+    ]
+  },
+  "12 years a slave::2013": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "green book::2018": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "spotlight::2015": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "marriage story::2019": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/80223779"
+      }
+    ]
+  },
+  "the chronicles of narnia: the lion, the witch and the wardrobe::2005": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260018747"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/the-chronicles-of-narnia-the-lion-the-witch-and-the-wardrobe"
+      }
+    ]
+  },
+  "pan's labyrinth::2007": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "stardust::2007": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "the shape of water::2017": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "edward scissorhands::1990": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "big fish::2003": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Sony LIV",
+        "url": "https://www.sonyliv.com/movies/big-fish-1000263246"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/big-fish"
+      }
+    ]
+  },
+  "spirited away::2003": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/60023642"
+      }
+    ]
+  },
+  "howl's moving castle::2004": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/70028883"
+      }
+    ]
+  },
+  "beetlejuice::1988": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "corpse bride::2005": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "everything everywhere all at once::2022": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Sony LIV",
+        "url": "https://www.sonyliv.com/movies/everything-everywhere-all-at-once-1000213025"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/everything-everywhere-all-at-once"
+      }
+    ]
+  },
+  "the batman::2022": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1271608356"
+      },
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/81500601"
+      }
+    ]
+  },
+  "top gun: maverick::2022": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1271399288"
+      },
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a8c482a4-39a8-4009-91ad-080630b5a6d7"
+      }
+    ]
+  },
+  "deadpool & wolverine::2024": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "anora::2024": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/81952362"
+      }
+    ]
+  },
+  "the substance::2024": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "MUBI",
+        "url": "https://mubi.com/films/the-substance"
+      }
+    ]
+  },
+  "poor things::2023": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "barbenheimer::2023": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "wonka::2023": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/81602840"
+      }
+    ]
+  },
+  "dune: part two::2024": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/81602836"
+      }
+    ]
+  },
+  "a minecraft movie::2025": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/movies/a-minecraft-movie/1271443009"
+      },
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/81042820"
+      }
+    ]
+  },
+  "sinners::2025": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/movies/sinners/1271446366"
+      },
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/81957166"
+      }
+    ]
+  },
+  "the conjuring: last rites::2025": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://jiohotstar.com/1271526246"
+      }
+    ]
+  },
+  "weapons::2025": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/movies/weapons/1271516007"
+      }
+    ]
+  },
+  "one battle after another::2025": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/movies/one-battle-after-another/1271532249"
+      }
+    ]
+  },
+  "wicked: for good::2025": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "avatar: the way of water::2022": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/movies/avatar-the-way-of-water/1260142021"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/avatar-the-way-of-water"
+      }
+    ]
+  },
+  "spider-man: no way home::2021": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Sony LIV",
+        "url": "https://www.sonyliv.com/movies/spider-man-no-way-home-1000224331"
+      },
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1271661204"
+      },
+      {
+        "platform": "Sony Pictures Amazon Channel",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.53065791-4335-46ce-bc1b-5c5ebbb21073"
+      }
+    ]
+  },
+  "the godfather::1972": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1271413394"
+      }
+    ]
+  },
+  "pulp fiction::1994": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a391bb9d-4315-4b8a-a835-2a3159eeac73"
+      }
+    ]
+  },
+  "casablanca::1943": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "schindler's list::1994": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1271413509"
+      },
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e62610ba-f9e9-4635-b0f6-6e0b0b8a9624"
+      }
+    ]
+  },
+  "the lion king::1994": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1660000046"
+      }
+    ]
+  },
+  "jaws::1975": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000506"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/jaws"
+      }
+    ]
+  },
+  "e.t. the extra-terrestrial::1982": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000520"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/e-t-the-extra-terrestrial"
+      }
+    ]
+  },
+  "back to the future::1985": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1271627208"
+      }
+    ]
+  },
+  "rocky::1976": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "the departed::2006": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8befa417-816c-4303-9895-4120a1bb9e7a"
+      }
+    ]
+  },
+  "no time to die::2021": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "MGM+ (Via Amazon Prime)",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.bfe2fd05-01b0-4209-b2ff-2b1db2e96e14"
+      }
+    ]
+  },
+  "whiplash::2014": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.dab7fae4-a906-34b4-cb3b-2bf390970ac2"
+      }
+    ]
+  },
+  "the grand budapest hotel::2014": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1770000334"
+      }
+    ]
+  },
+  "coco::2017": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1660010633"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/coco"
+      }
+    ]
+  },
+  "up::2009": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1660010198"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/up"
+      }
+    ]
+  },
+  "inside out::2015": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260018307"
+      }
+    ]
+  },
+  "toy story::1995": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1660010197"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/toy-story"
+      }
+    ]
+  },
+  "frozen::2013": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260018197"
+      }
+    ]
+  },
+  "zootopia::2016": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260017510"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/zootopia"
+      }
+    ]
+  },
+  "the wizard of oz::1939": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "mary poppins::1964": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260018316"
+      }
+    ]
+  },
+  "beauty and the beast::1991": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260018151"
+      }
+    ]
+  },
+  "cabaret::1972": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "the rocky horror picture show::1975": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "fiddler on the roof::1971": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.54b8a8e4-8db5-7de3-9cb2-6595e9b262ec"
+      }
+    ]
+  },
+  "annie::1982": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "sweeney todd: the demon barber of fleet street::2007": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "moana::2016": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260017500"
+      }
+    ]
+  },
+  "les misérables::2012": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/les-mis-rables"
+      }
+    ]
+  },
+  "pitch perfect::2012": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000513"
+      }
+    ]
+  },
+  "encanto::2021": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260076051"
+      }
+    ]
+  },
+  "once::2006": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Lionsgate+ (Via Amazon Prime)",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.fe908f3d-180c-45ef-a468-f906fabce928"
+      }
+    ]
+  },
+  "mamma mia! here we go again::2018": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000775"
+      },
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/80235214"
+      }
+    ]
+  },
+  "joseph and the amazing technicolor dreamcoat::1999": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "nine::2009": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "the music man::1962": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "oliver!::1968": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "my fair lady::1964": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "the phantom of the opera::2004": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "in the heights::2021": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "shrek::2001": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.dab0a83d-a456-2887-7423-48e96de4e8c7"
+      },
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/60020686"
+      }
+    ]
+  },
+  "the incredibles::2004": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260018306"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/the-incredibles"
+      }
+    ]
+  },
+  "kung fu panda::2008": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.d0b0a846-c40e-4fdf-74ba-be366aa7b5fb"
+      },
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971001864"
+      },
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/70075480"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/kung-fu-panda"
+      }
+    ]
+  },
+  "how to train your dragon::2010": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1271517345"
+      },
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/70109893"
+      },
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.76a9f6df-ba74-693c-4b43-07067f71094d"
+      }
+    ]
+  },
+  "wall·e::2008": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1660010169"
+      }
+    ]
+  },
+  "ratatouille::2007": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260016855"
+      }
+    ]
+  },
+  "spider-man: into the spider-verse::2018": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8cb3d0d2-8276-69ba-e66b-f200871aacf7"
+      },
+      {
+        "platform": "Sony LIV",
+        "url": "https://www.sonyliv.com/movies/spider-man-into-the-spider-verse-1090427051"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/spider-man-into-the-spider-verse-1"
+      },
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1271668892"
+      }
+    ]
+  },
+  "finding dory::2016": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260016574"
+      }
+    ]
+  },
+  "inside out 2::2024": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/inside-out-2"
+      }
+    ]
+  },
+  "despicable me::2010": {
+    "available": false,
+    "trusted": false,
+    "platforms": []
+  },
+  "the lego movie::2014": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Prime Video",
+        "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.caa9f66b-20ba-3a20-9a6c-bdd14d07fbf9"
+      },
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1971000711"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/the-lego-movie"
+      }
+    ]
+  },
+  "big hero 6::2014": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260018153"
+      }
+    ]
+  },
+  "klaus::2019": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/80183187"
+      }
+    ]
+  },
+  "soul::2020": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Hotstar",
+        "url": "https://www.hotstar.com/in/1260049853"
+      },
+      {
+        "platform": "VI movies and tv",
+        "url": "https://moviesandtv.myvi.in/movie/soul"
+      }
+    ]
+  },
+  "the boy and the heron::2023": {
+    "available": true,
+    "trusted": false,
+    "platforms": [
+      {
+        "platform": "Netflix",
+        "url": "https://www.netflix.com/title/81725555"
+      }
+    ]
+  },
+  "dangal::2016": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "queen::2014": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "dil chahta hai::2001": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "pk::2014": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "bajrangi bhaijaan::2015": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "dostana::2008": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "jab we met::2007": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "rocky aur rani kii prem kahaani::2023": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "barfi::2013": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "kabhi khushi kabhie gham...::2001": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "3 idiots::2009": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "zindagi na milegi dobara::2011": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "andhadhun::2018": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "udaan::2010": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "taare zameen par::2020–": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "dil dhadakne do::2015": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "chak de! india::2007": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "kabir singh::2019": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "gully boy::2019": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  },
+  "piku::2015": {
+    "available": true,
+    "trusted": true,
+    "platforms": []
+  }
+}

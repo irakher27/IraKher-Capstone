@@ -1054,12 +1054,16 @@
     wrap.innerHTML = '<div class="watch-loading">Checking where this is streaming…</div>';
 
     let sources = [];
+    let notOnUserPlatforms = false;
     try {
       const params = new URLSearchParams({ title: movie.title });
       if (movie.year) params.set('year', movie.year);
       const res = await fetch('/api/streaming?' + params.toString());
       const data = await res.json();
-      if (data.ok) sources = data.sources || [];
+      if (data.ok) {
+        sources = data.sources || [];
+        notOnUserPlatforms = !!data.notOnUserPlatforms;
+      }
     } catch (err) {
       sources = []; // network hiccup — fall back to the "not available" message below, never a broken button
     }
@@ -1067,6 +1071,11 @@
     // The user may have clicked into a different movie before this
     // lookup finished — don't clobber whatever's showing now.
     if (thisRequestId !== watchRequestId) return;
+
+    if (notOnUserPlatforms) {
+      wrap.innerHTML = '<div class="watch-unavailable">Not available on your selected platforms</div>';
+      return;
+    }
 
     if (sources.length === 0) {
       wrap.innerHTML = '<div class="watch-unavailable">Not currently available for streaming</div>';

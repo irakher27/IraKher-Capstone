@@ -153,4 +153,36 @@ function getSearchFallbackLinks(title) {
   }));
 }
 
-module.exports = { getStreamingAvailability, getSearchFallbackLinks };
+// Watchmode's platform names don't always match this app's own
+// platform picker (server/onboardingServer.js's PLATFORMS list) —
+// e.g. Watchmode says "Hotstar", the app says "Disney+ Hotstar";
+// Watchmode says "AppleTV", the app says "Apple TV+". Cross-
+// referencing "is this movie on a platform the user has" requires
+// both sides to agree on names first.
+const PLATFORM_NAME_ALIASES = {
+  hotstar: "Disney+ Hotstar",
+  "jiohotstar": "Disney+ Hotstar",
+  "disney+ hotstar": "Disney+ Hotstar",
+  appletv: "Apple TV+",
+  "apple tv": "Apple TV+",
+  "apple tv+": "Apple TV+",
+  amazon: "Prime Video",
+  "prime video": "Prime Video",
+  netflix: "Netflix",
+  hulu: "Hulu",
+  max: "HBO Max",
+  "hbo max": "HBO Max",
+};
+
+/**
+ * @param {string} platformName - a platform name as Watchmode (or our
+ *   own search-fallback list) spells it
+ * @returns {string} the app's own canonical spelling, or the input
+ *   unchanged if it's not one of the app's selectable platforms
+ */
+function normalizePlatformName(platformName) {
+  const key = String(platformName).trim().toLowerCase();
+  return PLATFORM_NAME_ALIASES[key] || platformName;
+}
+
+module.exports = { getStreamingAvailability, getSearchFallbackLinks, normalizePlatformName, cacheKey };
