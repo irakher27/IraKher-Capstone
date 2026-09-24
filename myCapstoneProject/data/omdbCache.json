@@ -11818,5 +11818,855 @@
     ],
     "imdbRating": "7.5",
     "language": "English"
+  },
+  "28 weeks later": {
+    "title": "28 Weeks Later",
+    "genres": [
+      "Horror",
+      "Sci-Fi"
+    ],
+    "platforms": [],
+    "year": "2007",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTUxMjc2MTcxNV5BMl5BanBnXkFtZTcwMzgzOTY0MQ@@._V1_SX300.jpg",
+    "plot": "Six months after the rage virus was inflicted on the population of Great Britain, the US Army helps to secure a small area of London for the survivors to repopulate and start again. But not everything goes according to plan.",
+    "director": "Juan Carlos Fresnadillo",
+    "actors": [
+      "Jeremy Renner",
+      "Rose Byrne",
+      "Robert Carlyle"
+    ],
+    "imdbRating": "6.8",
+    "language": "English"
+  },
+  "you're next": {
+    "title": "You're Next",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Mystery"
+    ],
+    "platforms": [],
+    "year": "2011",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTQwODAxMTE1NF5BMl5BanBnXkFtZTcwNTQ0MjY3OQ@@._V1_SX300.jpg",
+    "plot": "When the Davison family comes under attack during their wedding anniversary getaway, the gang of mysterious killers soon learns that one of the victims harbors a secret talent for fighting back.",
+    "director": "Adam Wingard",
+    "actors": [
+      "Sharni Vinson",
+      "Joe Swanberg",
+      "AJ Bowen"
+    ],
+    "imdbRating": "6.6",
+    "language": "English"
+  },
+  "split": {
+    "title": "Split",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "platforms": [],
+    "year": "2016",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTZjNmVjMzAtZjg2Mi00MWNmLTk5NTItOTExZDYwNTE2YmExXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Three girls are kidnapped by a man with a diagnosed 23 distinct personalities. They must try to escape before the apparent emergence of a frightful new 24th.",
+    "director": "M. Night Shyamalan",
+    "actors": [
+      "James McAvoy",
+      "Anya Taylor-Joy",
+      "Haley Lu Richardson"
+    ],
+    "imdbRating": "7.3",
+    "language": "English"
+  },
+  "love & mercy": {
+    "title": "Love & Mercy",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "2014",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTk1MTkwMzU4Nl5BMl5BanBnXkFtZTgwNjY0MDE1NTE@._V1_SX300.jpg",
+    "plot": "In the 60s, Beach Boys leader Brian Wilson struggles with emerging psychosis as he attempts to craft his avant-garde pop masterpiece. In the 80s, he's a broken, confused man under the 24-hour watch of shady therapist, Dr. Eugene L...",
+    "director": "Bill Pohlad",
+    "actors": [
+      "John Cusack",
+      "Paul Dano",
+      "Elizabeth Banks"
+    ],
+    "imdbRating": "7.4",
+    "language": "English"
+  },
+  "insidious: the last key": {
+    "title": "Insidious: The Last Key",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "platforms": [],
+    "year": "2018",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTUxODU0NjQ2Nl5BMl5BanBnXkFtZTgwMTc4NDQ0MzI@._V1_QL75_UX380_CR0,20,380,562_.jpg",
+    "plot": "Parapsychologist Dr. Elise Rainier faces her most fearsome and personal haunting yet, as she is drawn back to her ghostly childhood home where the terror began.",
+    "director": "Adam Robitel",
+    "actors": [
+      "Lin Shaye",
+      "Leigh Whannell",
+      "Angus Sampson"
+    ],
+    "imdbRating": "5.7",
+    "language": "English"
+  },
+  "get on up": {
+    "title": "Get on Up",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "2014",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTY1NjAyMTUzMl5BMl5BanBnXkFtZTgwMTM4NzQ4MTE@._V1_SX300.jpg",
+    "plot": "A chronicle of James Brown's rise from extreme poverty to become one of the most influential musicians in history.",
+    "director": "Tate Taylor",
+    "actors": [
+      "Chadwick Boseman",
+      "Nelsan Ellis",
+      "Dan Aykroyd"
+    ],
+    "imdbRating": "6.9",
+    "language": "English"
+  },
+  "the united states vs. billie holiday": {
+    "title": "The United States vs. Billie Holiday",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "2021",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTk3NGZkZGEtNGMxMC00NDZiLTgzZDUtZTAzOTk4YTE1OTU5XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Follows Holiday during her career as she is targeted by the Federal Department of Narcotics with an undercover sting operation led by black Federal Agent Jimmy Fletcher, with whom she has a tumultuous affair.",
+    "director": "Lee Daniels",
+    "actors": [
+      "Andra Day",
+      "Trevante Rhodes",
+      "Garrett Hedlund"
+    ],
+    "imdbRating": "6.3",
+    "language": "English, Italian, German"
+  },
+  "i wanna dance with somebody": {
+    "title": "Whitney Houston: I Wanna Dance with Somebody",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "2022",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzM0Y2QwOTUtMDg3NS00MDU4LTllNmItYzEwNmVmZGZkMTljXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A joyous, emotional, heartbreaking celebration of the life and music of Whitney Houston, one of the greatest female R&amp;B pop vocalists of all time, tracking her journey from obscurity to musical super stardom.",
+    "director": "Kasi Lemmons",
+    "actors": [
+      "Naomi Ackie",
+      "Stanley Tucci",
+      "Ashton Sanders"
+    ],
+    "imdbRating": "6.6",
+    "language": "English"
+  },
+  "what's love got to do with it": {
+    "title": "What's Love Got to Do with It",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "1993",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjAwZDAwNzAtZTBjYy00YjZhLWFhNWItYjFiYzg2YzcxOWY5XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "The story of singer Tina Turner's rise to stardom and how she gained the courage to break free from her abusive husband, Ike Turner.",
+    "director": "Brian Gibson",
+    "actors": [
+      "Angela Bassett",
+      "Laurence Fishburne",
+      "RaéVen Kelly"
+    ],
+    "imdbRating": "7.4",
+    "language": "English"
+  },
+  "the nun": {
+    "title": "The Nun",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "platforms": [],
+    "year": "2018",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjM3NzQ5NDcxOF5BMl5BanBnXkFtZTgwNzM4MTQ5NTM@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "plot": "A priest with a haunted past and a novice on the threshold of her final vows are sent by the Vatican to investigate the death of a young nun in Romania and confront a malevolent force in the form of a demonic nun.",
+    "director": "Corin Hardy",
+    "actors": [
+      "Demián Bichir",
+      "Taissa Farmiga",
+      "Jonas Bloquet"
+    ],
+    "imdbRating": "5.4",
+    "language": "English, French, Romanian, Latin"
+  },
+  "selena": {
+    "title": "Selena",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "1997",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWU2MjkzN2EtNzY4MC00N2RlLThiNzEtMjk2M2M3NGJjZjRlXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "The true story of Selena, a Texas-born Tejana singer who rose from cult status to performing at the Astrodome, as well as having chart-topping albums on the Latin music charts.",
+    "director": "Gregory Nava",
+    "actors": [
+      "Jennifer Lopez",
+      "Edward James Olmos",
+      "Jon Seda"
+    ],
+    "imdbRating": "6.9",
+    "language": "English, Spanish"
+  },
+  "annabelle comes home": {
+    "title": "Annabelle Comes Home",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "platforms": [],
+    "year": "2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjRjYmQ5NTQtYzIyNi00MmNlLTlmNjYtNjQ3NzRlZmY3YjFlXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "plot": "While babysitting the daughter of Ed and Lorraine Warren, a teenager and her friend unknowingly awaken an evil spirit trapped in a doll.",
+    "director": "Gary Dauberman",
+    "actors": [
+      "Vera Farmiga",
+      "Patrick Wilson",
+      "Mckenna Grace"
+    ],
+    "imdbRating": "5.9",
+    "language": "English"
+  },
+  "respect": {
+    "title": "Respect",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "2021",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGZmODhhMjUtMDFlMS00ZDA5LWFmMjUtOTAwMDUwZWNlYmVmXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "plot": "Following the rise of Aretha Franklin's career from a child singing in her father's church's choir to her international superstardom, RESPECT is the remarkable true story of the music icon's journey to find her voice.",
+    "director": "Liesl Tommy",
+    "actors": [
+      "Jennifer Hudson",
+      "Forest Whitaker",
+      "Marlon Wayans"
+    ],
+    "imdbRating": "6.6",
+    "language": "English"
+  },
+  "the invisible man": {
+    "title": "The Invisible Man",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Mystery"
+    ],
+    "platforms": [],
+    "year": "2020",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTM3NDJhZWUtZWM1Yy00ODk4LThjNmMtNDg3OGYzMGM2OGYzXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "When Cecilia's abusive ex takes his own life and leaves her his fortune, she suspects his death was a hoax. As a series of coincidences turn lethal, Cecilia works to prove that she is being hunted by someone nobody can see.",
+    "director": "Leigh Whannell",
+    "actors": [
+      "Elisabeth Moss",
+      "Oliver Jackson-Cohen",
+      "Harriet Dyer"
+    ],
+    "imdbRating": "7.1",
+    "language": "English"
+  },
+  "la bamba": {
+    "title": "La Bamba",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "1987",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjFiYWM4YjItNzcwMC00NWRkLWJlN2ItMDhhNWRlNDZkNWQ3XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Biographical story of the rise from nowhere of early rock and roll singer Ritchie Valens who died at age 17 in a plane crash with Buddy Holly and The Big Bopper.",
+    "director": "Luis Valdez",
+    "actors": [
+      "Lou Diamond Phillips",
+      "Esai Morales",
+      "Rosanna DeSoto"
+    ],
+    "imdbRating": "7.0",
+    "language": "English, Spanish"
+  },
+  "the doors": {
+    "title": "The Doors",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "1991",
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2JlMDYyYWEtMmY3Ny00ODgyLWFiMDMtZjFmNzQ3NzE3Njg5XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Jim Morrison's life, from his LA film student days to his death in Paris. Val Kilmer delivers an uncanny portrayal, with vocals indistinguishable from Morrison's originals. It depicts Morrison's journey as the iconic 60s rock fron...",
+    "director": "Oliver Stone",
+    "actors": [
+      "Val Kilmer",
+      "Meg Ryan",
+      "Kyle MacLachlan"
+    ],
+    "imdbRating": "7.2",
+    "language": "English"
+  },
+  "nowhere boy": {
+    "title": "Nowhere Boy",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "2009",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzkwNzhiOTItNTMxMS00NDc0LTk0ZjgtNTdmZmVmNWZkZTVjXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A chronicle of John Lennon's first years, focused mainly in his adolescence and his relationship with his stern aunt Mimi, who raised him, and his absentee mother Julia, who re-entered his life at a crucial moment in his young life.",
+    "director": "Sam Taylor-Johnson",
+    "actors": [
+      "Aaron Taylor-Johnson",
+      "Kristin Scott Thomas",
+      "David Threlfall"
+    ],
+    "imdbRating": "7.1",
+    "language": "English, French"
+  },
+  "notorious": {
+    "title": "Notorious",
+    "genres": [
+      "Drama",
+      "Film-Noir",
+      "Mystery"
+    ],
+    "platforms": [],
+    "year": "1946",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGU5ZjdmNzUtMGY0Ny00NjMyLWJiMDEtMmMzYmMyOTNjNzlmXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "The daughter of a convicted German spy is asked by American agents to gather information on a ring of German scientists in South America. How far will she have to go to ingratiate herself with them?",
+    "director": "Alfred Hitchcock",
+    "actors": [
+      "Cary Grant",
+      "Ingrid Bergman",
+      "Claude Rains"
+    ],
+    "imdbRating": "7.9",
+    "language": "English, Portuguese, French"
+  },
+  "how to be single": {
+    "title": "How to Be Single",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2016",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzI4MDMwMzUwNF5BMl5BanBnXkFtZTgwMDgyNzkyNzE@._V1_SX300.jpg",
+    "plot": "A group of young adults navigate love and relationships in New York City.",
+    "director": "Christian Ditter",
+    "actors": [
+      "Dakota Johnson",
+      "Rebel Wilson",
+      "Leslie Mann"
+    ],
+    "imdbRating": "6.1",
+    "language": "English"
+  },
+  "50 first dates": {
+    "title": "50 First Dates",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2004",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjAwMzc4MDgxNF5BMl5BanBnXkFtZTYwNjUwMzE3._V1_QL75_UX380_CR0,1,380,562_.jpg",
+    "plot": "Henry Roth is a man afraid of commitment until he meets the beautiful Lucy. They hit it off and Henry think he's finally found the girl of his dreams until discovering she has short-term memory loss and forgets him the next day.",
+    "director": "Peter Segal",
+    "actors": [
+      "Adam Sandler",
+      "Drew Barrymore",
+      "Rob Schneider"
+    ],
+    "imdbRating": "6.8",
+    "language": "English, Hawaiian, Mandarin"
+  },
+  "fifty shades of grey": {
+    "title": "Fifty Shades of Grey",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Thriller"
+    ],
+    "platforms": [],
+    "year": "2015",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjE1MTM4NDAzOF5BMl5BanBnXkFtZTgwNTMwNjI0MzE@._V1_SX300.jpg",
+    "plot": "Literature student Anastasia Steele's life changes forever when she meets handsome, yet tormented, billionaire Christian Grey.",
+    "director": "Sam Taylor-Johnson",
+    "actors": [
+      "Dakota Johnson",
+      "Jamie Dornan",
+      "Jennifer Ehle"
+    ],
+    "imdbRating": "4.2",
+    "language": "English"
+  },
+  "hitch": {
+    "title": "Hitch",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2005",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzYyNzM2NzM2NF5BMl5BanBnXkFtZTcwNjg5NTQzMw@@._V1_SX300.jpg",
+    "plot": "A smooth-talking man falls for a hardened columnist while helping a shy accountant woo a beautiful heiress.",
+    "director": "Andy Tennant",
+    "actors": [
+      "Will Smith",
+      "Eva Mendes",
+      "Kevin James"
+    ],
+    "imdbRating": "6.6",
+    "language": "English"
+  },
+  "just go with it": {
+    "title": "Just Go with It",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2011",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTM3MzM3NDE5MV5BMl5BanBnXkFtZTcwNDE5MTUxNA@@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "plot": "On a weekend trip to Hawaii, a plastic surgeon convinces his loyal assistant to pose as his soon-to-be-divorced wife in order to cover up a careless lie he told to his much-younger girlfriend.",
+    "director": "Dennis Dugan",
+    "actors": [
+      "Adam Sandler",
+      "Jennifer Aniston",
+      "Brooklyn Decker"
+    ],
+    "imdbRating": "6.4",
+    "language": "English"
+  },
+  "trainwreck": {
+    "title": "Trainwreck",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2015",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTQ4MjgwNTMyOV5BMl5BanBnXkFtZTgwMTc1MjI0NDE@._V1_SX300.jpg",
+    "plot": "A commitment-phobic career woman who has always thought that monogamy was impossible must face her fears when she meets a good guy.",
+    "director": "Judd Apatow",
+    "actors": [
+      "Amy Schumer",
+      "Bill Hader",
+      "Brie Larson"
+    ],
+    "imdbRating": "6.2",
+    "language": "English, Mandarin"
+  },
+  "the wedding date": {
+    "title": "The Wedding Date",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2005",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzZjNWY4NmMtMjU5Ni00YzQ2LWIwNjYtMDU5ZGM0ZDIyNGUzXkEyXkFqcGc@._V1_QL75_UY562_CR5,0,380,562_.jpg",
+    "plot": "Single-girl anxiety causes Kat Ellis to hire a male escort to pose as her boyfriend at her sister's wedding. Her plan, an attempt to dupe her ex-fiancé, who dumped her a couple years prior, proves to be her undoing.",
+    "director": "Clare Kilner",
+    "actors": [
+      "Dermot Mulroney",
+      "Debra Messing",
+      "Jack Davenport"
+    ],
+    "imdbRating": "6.1",
+    "language": "English"
+  },
+  "beyond the lights": {
+    "title": "Beyond the Lights",
+    "genres": [
+      "Drama",
+      "Music",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2014",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTkzNDA0NzY1Ml5BMl5BanBnXkFtZTgwMjEwMDkzMjE@._V1_QL75_UY562_CR1,0,380,562_.jpg",
+    "plot": "The pressures of fame have superstar singer Noni on the edge, until she meets Kaz, a young cop who works to help her find the courage to develop her own voice and break free to become the artist she was meant to be.",
+    "director": "Gina Prince-Bythewood",
+    "actors": [
+      "Gugu Mbatha-Raw",
+      "Nate Parker",
+      "Minnie Driver"
+    ],
+    "imdbRating": "6.8",
+    "language": "English"
+  },
+  "to all the boys: p.s. i still love you": {
+    "title": "To All the Boys: P.S. I Still Love You",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2020",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGVlMGUwNmYtZjY2YS00NGUwLWE2NjYtZThlMzVjMzRkYjM0XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "Lara Jean and Peter have just taken their relationship from pretend to officially official when another recipient of one of her old love letters enters the picture.",
+    "director": "Michael Fimognari",
+    "actors": [
+      "Lana Condor",
+      "Noah Centineo",
+      "Jordan Fisher"
+    ],
+    "imdbRating": "6.1",
+    "language": "English"
+  },
+  "cadillac records": {
+    "title": "Cadillac Records",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "2008",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTIzMzA5MTgzN15BMl5BanBnXkFtZTcwNzUxMzIwMg@@._V1_SX300.jpg",
+    "plot": "Chronicles the rise of Chess Records and its recording artists.",
+    "director": "Darnell Martin",
+    "actors": [
+      "Adrien Brody",
+      "Jeffrey Wright",
+      "Beyoncé"
+    ],
+    "imdbRating": "7.0",
+    "language": "English"
+  },
+  "twilight": {
+    "title": "Twilight",
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2008",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTQ2NzUxMTAxN15BMl5BanBnXkFtZTcwMzEyMTIwMg@@._V1_SX300.jpg",
+    "plot": "When Bella Swan moves to a small town in the Pacific Northwest, she falls in love with Edward Cullen, a mysterious classmate who reveals himself to be a 108-year-old vampire.",
+    "director": "Catherine Hardwicke",
+    "actors": [
+      "Kristen Stewart",
+      "Robert Pattinson",
+      "Billy Burke"
+    ],
+    "imdbRating": "5.4",
+    "language": "English"
+  },
+  "bird": {
+    "title": "Bird",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "1988",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTViMmEwYjQtMTMxMS00YmVmLTk1NzEtODcxOGRmZjQ3MGEwXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "The troubled life and career of jazz musician Charlie Parker.",
+    "director": "Clint Eastwood",
+    "actors": [
+      "Forest Whitaker",
+      "Diane Venora",
+      "Michael Zelniker"
+    ],
+    "imdbRating": "7.1",
+    "language": "English"
+  },
+  "she's all that": {
+    "title": "She's All That",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "1999",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGUyZTFiOTEtN2Y1Ny00NDFhLWEyMTMtZmE0MzNjODE3MzAzXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "When Zack's famous girlfriend, Taylor, cheats on him with another boy and parts ways with him, he makes a bet with his friends to turn a socially inept Laney into their high school's next prom queen.",
+    "director": "Robert Iscove",
+    "actors": [
+      "Freddie Prinze Jr.",
+      "Rachael Leigh Cook",
+      "Matthew Lillard"
+    ],
+    "imdbRating": "5.9",
+    "language": "English"
+  },
+  "my best friend's wedding": {
+    "title": "My Best Friend's Wedding",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "1997",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzhlZjE4NTYtZDBlOC00NTAwLWFmMTQtMWVjNDQwZGI1MjViXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "When a woman's long-time friend reveals he's engaged, she realizes she loves him herself and sets out to get him, with only days before the wedding.",
+    "director": "P.J. Hogan",
+    "actors": [
+      "Julia Roberts",
+      "Dermot Mulroney",
+      "Cameron Diaz"
+    ],
+    "imdbRating": "6.4",
+    "language": "English, French, Italian"
+  },
+  "a cinderella story": {
+    "title": "A Cinderella Story",
+    "genres": [
+      "Comedy",
+      "Family",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2004",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTA1NDI0OTkwNDNeQTJeQWpwZ15BbWU3MDQ3Nzc1MjE@._V1_SX300.jpg",
+    "plot": "Routinely exploited by her wicked stepmother, the downtrodden Samantha Montgomery is excited about the prospect of meeting her Internet beau at the school's Halloween dance.",
+    "director": "Mark Rosman",
+    "actors": [
+      "Hilary Duff",
+      "Chad Michael Murray",
+      "Jennifer Coolidge"
+    ],
+    "imdbRating": "5.9",
+    "language": "English, German, Czech"
+  },
+  "the kissing booth": {
+    "title": "The Kissing Booth",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2018",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjQ0Mzk0OTE5MF5BMl5BanBnXkFtZTgwNDkyOTI0NTM@._V1_SX300.jpg",
+    "plot": "A high school student is forced to confront her secret crush at a kissing booth.",
+    "director": "Vince Marcello",
+    "actors": [
+      "Joey King",
+      "Jacob Elordi",
+      "Joel Courtney"
+    ],
+    "imdbRating": "5.9",
+    "language": "English"
+  },
+  "sweet november": {
+    "title": "Sweet November",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "platforms": [],
+    "year": "2001",
+    "poster": "https://m.media-amazon.com/images/M/MV5BY2QyYWU1Y2EtZmU2Yi00NzMxLTllODUtYTU2NjM4MWQwYzJiXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+    "plot": "A workaholic executive, and an unconventional woman agree to a personal relationship for a short period. In this short period she changes his life.",
+    "director": "Pat O&apos;Connor",
+    "actors": [
+      "Keanu Reeves",
+      "Charlize Theron",
+      "Jason Isaacs"
+    ],
+    "imdbRating": "6.7",
+    "language": "English"
+  },
+  "coal miner's daughter": {
+    "title": "Coal Miner's Daughter",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "1980",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzM4YTY2ZWUtOTAzZS00OWE0LTg3NzctOWMzMTljOTJjMGQ2XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "The fictionalized life of singer Loretta Lynn, a girl who rose from humble beginnings to become a country music star in the 1960s/70s.",
+    "director": "Michael Apted",
+    "actors": [
+      "Sissy Spacek",
+      "Tommy Lee Jones",
+      "Levon Helm"
+    ],
+    "imdbRating": "7.5",
+    "language": "English"
+  },
+  "wild rose": {
+    "title": "Wild Rose",
+    "genres": [
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "2018",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTBlOWM4ZTgtYTIyYS00YTViLWE0YTYtNGVhNGM5YTQxODFkXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A troubled young Glaswegian woman dreams of becoming a Nashville country star.",
+    "director": "Tom Harper",
+    "actors": [
+      "Jessie Buckley",
+      "Matt Costello",
+      "Jane Patterson"
+    ],
+    "imdbRating": "7.1",
+    "language": "English"
+  },
+  "jimi: all is by my side": {
+    "title": "Jimi: All Is by My Side",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "2013",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzg3MjU5OTI5MV5BMl5BanBnXkFtZTgwNTM1NDMyMjE@._V1_SX300.jpg",
+    "plot": "A drama based on Jimi Hendrix's life as he left New York City for London, where his career took off.",
+    "director": "John Ridley",
+    "actors": [
+      "André 3000",
+      "Hayley Atwell",
+      "Imogen Poots"
+    ],
+    "imdbRating": "5.7",
+    "language": "English"
+  },
+  "blinded by the light": {
+    "title": "Blinded by the Light",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "2019",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODA4YjY1NTItODUwNi00NDM2LWJjNTgtYjY4NmFiY2E5YzQ0XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "plot": "In England in 1987, a teenager from an Asian family learns to live his life, understand his family and find his own voice through the music of American rock star Bruce Springsteen.",
+    "director": "Gurinder Chadha",
+    "actors": [
+      "Billy Barratt",
+      "Ronak Singh Chadha Berges",
+      "Viveik Kalra"
+    ],
+    "imdbRating": "6.9",
+    "language": "English, Urdu"
+  },
+  "20th century women": {
+    "title": "20th Century Women",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "platforms": [],
+    "year": "2016",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTkwNDE4NzQwM15BMl5BanBnXkFtZTgwNzQ5Nzg0MDI@._V1_SX300.jpg",
+    "plot": "In 1979 Santa Barbara, Dorothea is a determined single mother who is raising her son, Jamie. Dorothea enlists the help of two women -- Abbie, a free-spirited punk artist and Julie, a savvy teenager -- to help with Jamie's upbringing.",
+    "director": "Mike Mills",
+    "actors": [
+      "Annette Bening",
+      "Elle Fanning",
+      "Greta Gerwig"
+    ],
+    "imdbRating": "7.3",
+    "language": "English"
+  },
+  "the runaways": {
+    "title": "The Runaways",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "2010",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTI3Nzc2ODI4NV5BMl5BanBnXkFtZTcwMzkxNDMyMw@@._V1_SX300.jpg",
+    "plot": "A coming-of-age biographical film about the 1970s teenage all-girl rock band The Runaways. The relationship between band members Cherie Currie and Joan Jett is also explored.",
+    "director": "Floria Sigismondi",
+    "actors": [
+      "Kristen Stewart",
+      "Dakota Fanning",
+      "Michael Shannon"
+    ],
+    "imdbRating": "6.5",
+    "language": "English"
+  },
+  "miles ahead": {
+    "title": "Miles Ahead",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "2015",
+    "poster": "https://m.media-amazon.com/images/M/MV5BY2Y2M2U4MWQtYTRhOS00ZmU5LTgwODktOWEzOGY5Y2MwMDVjXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "An exploration of the life and music of Miles Davis.",
+    "director": "Don Cheadle",
+    "actors": [
+      "Don Cheadle",
+      "Emayatzy Corinealdi",
+      "Ewan McGregor"
+    ],
+    "imdbRating": "6.4",
+    "language": "English"
+  },
+  "whitney houston: i wanna dance with somebody": {
+    "title": "Whitney Houston: I Wanna Dance with Somebody",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "2022",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzM0Y2QwOTUtMDg3NS00MDU4LTllNmItYzEwNmVmZGZkMTljXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A joyous, emotional, heartbreaking celebration of the life and music of Whitney Houston, one of the greatest female R&amp;B pop vocalists of all time, tracking her journey from obscurity to musical super stardom.",
+    "director": "Kasi Lemmons",
+    "actors": [
+      "Naomi Ackie",
+      "Stanley Tucci",
+      "Ashton Sanders"
+    ],
+    "imdbRating": "6.6",
+    "language": "English"
   }
 }

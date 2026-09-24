@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T10:37:49.221Z",
+  "generatedAt": "2026-09-24T20:59:23.326Z",
   "personas": [
     {
       "name": "Ira",
@@ -38,7 +38,7 @@
       "disliked_titles": [],
       "platforms": [
         "Netflix",
-        "Disney+ Hotstar"
+        "JioHotstar"
       ]
     },
     {
@@ -93,7 +93,7 @@
       "platforms": [
         "Netflix",
         "Prime Video",
-        "Disney+ Hotstar"
+        "JioHotstar"
       ]
     }
   ],
@@ -124,7 +124,6 @@
     "Lion",
     "Oppenheimer",
     "The Hangover",
-    "21 Jump Street",
     "Ted",
     "Crazy, Stupid, Love.",
     "Superbad",
@@ -134,10 +133,8 @@
     "Star Wars",
     "Inception",
     "Interstellar",
-    "Into the Woods",
     "West Side Story",
     "Wicked",
-    "Bohemian Rhapsody",
     "Ray",
     "Steve Jobs",
     "Catch Me If You Can",
@@ -147,7 +144,6 @@
     "Smile",
     "Talk to Me",
     "Titanic",
-    "Me Before You",
     "The Fault in Our Stars",
     "Notting Hill",
     "Silver Linings Playbook",
@@ -183,10 +179,8 @@
     "The Jungle Book",
     "National Treasure",
     "Jumanji",
-    "The Princess Bride",
     "Journey to the Center of the Earth",
     "Forrest Gump",
-    "The Pursuit of Happyness",
     "Marriage Story",
     "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
     "Big Fish",
@@ -196,7 +190,6 @@
     "The Batman",
     "Top Gun: Maverick",
     "Anora",
-    "The Substance",
     "Wonka",
     "Dune: Part Two",
     "A Minecraft Movie",
@@ -214,7 +207,6 @@
     "E.T. the Extra-Terrestrial",
     "Back to the Future",
     "The Departed",
-    "No Time to Die",
     "Whiplash",
     "The Grand Budapest Hotel",
     "Coco",
@@ -227,10 +219,8 @@
     "Beauty and the Beast",
     "Fiddler on the Roof",
     "Moana",
-    "Les Misérables",
     "Pitch Perfect",
     "Encanto",
-    "Once",
     "Mamma Mia! Here We Go Again",
     "Shrek",
     "The Incredibles",
@@ -240,7 +230,6 @@
     "Ratatouille",
     "Spider-Man: Into the Spider-Verse",
     "Finding Dory",
-    "Inside Out 2",
     "The Lego Movie",
     "Big Hero 6",
     "Klaus",
@@ -270,7 +259,6 @@
     "Rock of Ages",
     "8 Mile",
     "Popstar: Never Stop Never Stopping",
-    "Burlesque",
     "Honey",
     "Step Up",
     "Step Up 2 the Streets",
@@ -279,7 +267,6 @@
     "Pitch Perfect 2",
     "The Prom",
     "Dear Evan Hansen",
-    "CODA",
     "Harry Potter and the Prisoner of Azkaban",
     "Doctor Strange",
     "Aquaman",
@@ -289,7 +276,6 @@
     "Wonder Woman 1984",
     "Percy Jackson: Sea of Monsters",
     "The Chronicles of Narnia: The Voyage of the Dawn Treader",
-    "Zombies",
     "It: Chapter Two",
     "Alice in Wonderland",
     "Fantastic Beasts and Where to Find Them",
@@ -300,20 +286,16 @@
     "Hidden Figures",
     "The Aviator",
     "J. Edgar",
-    "Capote",
     "Radioactive",
-    "Bombshell",
     "Rush",
     "Straight Outta Compton",
     "A Beautiful Day in the Neighborhood",
     "Richard Jewell",
-    "Foxcatcher",
     "tick, tick... BOOM!",
     "Ford v Ferrari",
     "The Wolf of Wall Street",
     "Moneyball",
     "Erin Brockovich",
-    "When Harry Met Sally...",
     "Meet the Parents",
     "Little Women",
     "Friends with Benefits",
@@ -325,7 +307,6 @@
     "A Walk to Remember",
     "P.S. I Love You",
     "The Big Sick",
-    "Midsommar",
     "Train to Busan",
     "28 Days Later",
     "World War Z",
@@ -353,7 +334,6 @@
     "Furious 7",
     "Evil Dead",
     "Smile 2",
-    "Parasite",
     "The Da Vinci Code",
     "Angels & Demons",
     "Trolls",
@@ -378,7 +358,6 @@
     "Bad Boys for Life",
     "Fast X",
     "Baby Driver",
-    "Skyfall",
     "Turning Red",
     "Puss in Boots: The Last Wish",
     "Kung Fu Panda 2",
@@ -388,7 +367,6 @@
     "Dallas Buyers Club",
     "Pawn Sacrifice",
     "Gone Baby Gone",
-    "The Girl with the Dragon Tattoo",
     "Annihilation",
     "Maleficent",
     "Maleficent: Mistress of Evil",
@@ -400,7 +378,26 @@
     "Peter Pan",
     "Ice Age",
     "Ice Age: The Meltdown",
-    "Ice Age: Dawn of the Dinosaurs"
+    "Ice Age: Dawn of the Dinosaurs",
+    "Everest",
+    "Everybody's Talking About Jamie",
+    "Whitney Houston: I Wanna Dance with Somebody",
+    "Beyond the Lights",
+    "Blinded by the Light",
+    "The Little Mermaid",
+    "Warcraft",
+    "The Invisible Man",
+    "Insidious: The Last Key",
+    "The Equalizer",
+    "Salt",
+    "The Bourne Supremacy",
+    "Trainwreck",
+    "50 First Dates",
+    "Black Panther",
+    "Iron Man",
+    "Robin Hood",
+    "Avengers: Endgame",
+    "A Simple Favor"
   ],
   "candidates": [
     {
@@ -911,26 +908,6 @@
       "language": "English"
     },
     {
-      "title": "21 Jump Street",
-      "genres": [
-        "Action",
-        "Comedy",
-        "Crime"
-      ],
-      "platforms": [],
-      "year": "2012",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTg2NjJiODctM2IyMS00MmQ5LWI1YmQtNTBjMTI4M2U2YzA5XkEyXkFqcGc@._V1_SX300.jpg",
-      "plot": "A pair of underachieving cops are sent back to a local high school to blend in and bring down a synthetic drug ring.",
-      "director": "Phil Lord, Christopher Miller",
-      "actors": [
-        "Jonah Hill",
-        "Channing Tatum",
-        "Ice Cube"
-      ],
-      "imdbRating": "7.2",
-      "language": "English"
-    },
-    {
       "title": "Ted",
       "genres": [
         "Comedy"
@@ -1106,26 +1083,6 @@
       "language": "English"
     },
     {
-      "title": "Into the Woods",
-      "genres": [
-        "Adventure",
-        "Comedy",
-        "Drama"
-      ],
-      "platforms": [],
-      "year": "2014",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTY4MzQ4OTY3NF5BMl5BanBnXkFtZTgwNjM5MDI3MjE@._V1_SX300.jpg",
-      "plot": "A witch tasks a childless baker and his wife with procuring magical items from classic fairy tales to reverse the curse put on their family tree.",
-      "director": "Rob Marshall",
-      "actors": [
-        "Anna Kendrick",
-        "Meryl Streep",
-        "Chris Pine"
-      ],
-      "imdbRating": "5.9",
-      "language": "English"
-    },
-    {
       "title": "West Side Story",
       "genres": [
         "Crime",
@@ -1164,26 +1121,6 @@
       ],
       "imdbRating": "7.4",
       "language": "English"
-    },
-    {
-      "title": "Bohemian Rhapsody",
-      "genres": [
-        "Biography",
-        "Drama",
-        "Music"
-      ],
-      "platforms": [],
-      "year": "2018",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTA2NDc3Njg5NDVeQTJeQWpwZ15BbWU4MDc1NDcxNTUz._V1_SX300.jpg",
-      "plot": "With his impeccable vocal abilities, Freddie Mercury and his rock band, Queen, achieve superstardom. However, amidst his skyrocketing success, he grapples with his ego, sexuality and a fatal illness.",
-      "director": "Bryan Singer",
-      "actors": [
-        "Rami Malek",
-        "Lucy Boynton",
-        "Gwilym Lee"
-      ],
-      "imdbRating": "7.9",
-      "language": "English, British Sign "
     },
     {
       "title": "Ray",
@@ -1361,25 +1298,6 @@
       ],
       "imdbRating": "8.0",
       "language": "English, Swedish, Italian, French"
-    },
-    {
-      "title": "Me Before You",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "platforms": [],
-      "year": "2016",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTQ2NjE4NDE2NV5BMl5BanBnXkFtZTgwOTcwNDE5NzE@._V1_SX300.jpg",
-      "plot": "A girl in a small town forms an unlikely bond with a recently-paralyzed man she's taking care of.",
-      "director": "Thea Sharrock",
-      "actors": [
-        "Emilia Clarke",
-        "Sam Claflin",
-        "Janet McTeer"
-      ],
-      "imdbRating": "7.4",
-      "language": "English, French"
     },
     {
       "title": "The Fault in Our Stars",
@@ -2074,26 +1992,6 @@
       "language": "English, French"
     },
     {
-      "title": "The Princess Bride",
-      "genres": [
-        "Adventure",
-        "Comedy",
-        "Family"
-      ],
-      "platforms": [],
-      "year": "1987",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjFiOTEyNGMtN2E4MC00ZjZlLTk3ZDQtNTU1ZGNiZTA1MzJlXkEyXkFqcGc@._V1_SX300.jpg",
-      "plot": "A bedridden boy's grandfather reads him the story of a farmboy-turned-pirate who encounters numerous obstacles, enemies and allies in his quest to be reunited with his true love.",
-      "director": "Rob Reiner",
-      "actors": [
-        "Cary Elwes",
-        "Mandy Patinkin",
-        "Robin Wright"
-      ],
-      "imdbRating": "8.0",
-      "language": "English"
-    },
-    {
       "title": "Journey to the Center of the Earth",
       "genres": [
         "Action",
@@ -2131,25 +2029,6 @@
       ],
       "imdbRating": "8.8",
       "language": "English"
-    },
-    {
-      "title": "The Pursuit of Happyness",
-      "genres": [
-        "Biography",
-        "Drama"
-      ],
-      "platforms": [],
-      "year": "2006",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTQ5NjQ0NDI3NF5BMl5BanBnXkFtZTcwNDI0MjEzMw@@._V1_SX300.jpg",
-      "plot": "A struggling salesman takes custody of his son as he's poised to begin a life-changing professional career.",
-      "director": "Gabriele Muccino",
-      "actors": [
-        "Will Smith",
-        "Thandiwe Newton",
-        "Jaden Smith"
-      ],
-      "imdbRating": "8.0",
-      "language": "English, Cantonese"
     },
     {
       "title": "Marriage Story",
@@ -2328,26 +2207,6 @@
       ],
       "imdbRating": "7.4",
       "language": "English, Russian, Armenian"
-    },
-    {
-      "title": "The Substance",
-      "genres": [
-        "Drama",
-        "Horror",
-        "Sci-Fi"
-      ],
-      "platforms": [],
-      "year": "2024",
-      "poster": "https://m.media-amazon.com/images/M/MV5BZDQ1NGE5MGMtYzdlZC00ODExLWJlMDMtNWU4NjA5OWYwMDEwXkEyXkFqcGc@._V1_QL75_UY562_CR2,0,380,562_.jpg",
-      "plot": "A fading celebrity takes a black-market drug: a cell-replicating substance that helps her create a younger, better version of herself.",
-      "director": "Coralie Fargeat",
-      "actors": [
-        "Demi Moore",
-        "Margaret Qualley",
-        "Dennis Quaid"
-      ],
-      "imdbRating": "7.2",
-      "language": "English"
     },
     {
       "title": "Wonka",
@@ -2687,26 +2546,6 @@
       "language": "English, Cantonese"
     },
     {
-      "title": "No Time to Die",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Thriller"
-      ],
-      "platforms": [],
-      "year": "2021",
-      "poster": "https://m.media-amazon.com/images/M/MV5BZGZiOGZhZDQtZmRkNy00ZmUzLTliMGEtZGU0NjExOGMxZDVkXkEyXkFqcGc@._V1_SX300.jpg",
-      "plot": "James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
-      "director": "Cary Joji Fukunaga",
-      "actors": [
-        "Daniel Craig",
-        "Ana de Armas",
-        "Rami Malek"
-      ],
-      "imdbRating": "7.3",
-      "language": "English, French, Italian, Russian, Spanish, Norwegian, German"
-    },
-    {
       "title": "Whiplash",
       "genres": [
         "Drama",
@@ -2945,26 +2784,6 @@
       "language": "English, French"
     },
     {
-      "title": "Les Misérables",
-      "genres": [
-        "Drama",
-        "Musical",
-        "Romance"
-      ],
-      "platforms": [],
-      "year": "2012",
-      "poster": "https://m.media-amazon.com/images/M/MV5BY2Q1YjIxZTAtZTU0YS00ZmE5LWEwODEtY2IyYWM2ZTJlOWE1XkEyXkFqcGc@._V1_SX300.jpg",
-      "plot": "In 19th-century France, Jean Valjean, who, for decades, has been hunted by the ruthless policeman Javert after breaking parole, agrees to care for a factory worker's daughter. The decision changes their lives forever.",
-      "director": "Tom Hooper",
-      "actors": [
-        "Hugh Jackman",
-        "Russell Crowe",
-        "Anne Hathaway"
-      ],
-      "imdbRating": "7.5",
-      "language": "English"
-    },
-    {
       "title": "Pitch Perfect",
       "genres": [
         "Comedy",
@@ -3003,26 +2822,6 @@
       ],
       "imdbRating": "7.2",
       "language": "English, Spanish"
-    },
-    {
-      "title": "Once",
-      "genres": [
-        "Drama",
-        "Music",
-        "Musical"
-      ],
-      "platforms": [],
-      "year": "2006",
-      "poster": "https://m.media-amazon.com/images/M/MV5BYmFmZmRkNzYtMTcyNy00NjY3LTkyNTUtNGExZjViNGFhZDdkXkEyXkFqcGc@._V1_SX300.jpg",
-      "plot": "A modern-day musical about a busker and an immigrant and their eventful week in Dublin, as they write, rehearse and record songs that tell their love story.",
-      "director": "John Carney",
-      "actors": [
-        "Glen Hansard",
-        "Markéta Irglová",
-        "Hugh Walsh"
-      ],
-      "imdbRating": "7.8",
-      "language": "English, Czech"
     },
     {
       "title": "Mamma Mia! Here We Go Again",
@@ -3203,26 +3002,6 @@
       ],
       "imdbRating": "7.2",
       "language": "English, Indonesian"
-    },
-    {
-      "title": "Inside Out 2",
-      "genres": [
-        "Animation",
-        "Adventure",
-        "Comedy"
-      ],
-      "platforms": [],
-      "year": "2024",
-      "poster": "https://m.media-amazon.com/images/M/MV5BYWY3MDE2Y2UtOTE3Zi00MGUzLTg2MTItZjE1ZWVkMGVlODRmXkEyXkFqcGc@._V1_SX300.jpg",
-      "plot": "A sequel that features Riley entering puberty and experiencing brand new, more complex emotions as a result. As Riley tries to adapt to her teenage years, her old emotions try to adapt to the possibility of being replaced.",
-      "director": "Kelsey Mann",
-      "actors": [
-        "Amy Poehler",
-        "Maya Hawke",
-        "Kensington Tallman"
-      ],
-      "imdbRating": "7.5",
-      "language": "English, French, Spanish"
     },
     {
       "title": "The Lego Movie",
@@ -3798,26 +3577,6 @@
       "language": "English"
     },
     {
-      "title": "Burlesque",
-      "genres": [
-        "Drama",
-        "Music",
-        "Musical"
-      ],
-      "platforms": [],
-      "year": "2010",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjczYmE1NWMtNDE2Ni00MzNlLTlkZDUtYjc1OWFkZDJmZGFmXkEyXkFqcGc@._V1_SX300.jpg",
-      "plot": "A small-town girl ventures to Los Angeles and finds her place in a neo-burlesque club run by a former dancer.",
-      "director": "Steve Antin",
-      "actors": [
-        "Cher",
-        "Christina Aguilera",
-        "Alan Cumming"
-      ],
-      "imdbRating": "6.4",
-      "language": "English, Ukrainian"
-    },
-    {
       "title": "Honey",
       "genres": [
         "Drama",
@@ -3974,26 +3733,6 @@
       ],
       "imdbRating": "6.1",
       "language": "English"
-    },
-    {
-      "title": "CODA",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Music"
-      ],
-      "platforms": [],
-      "year": "2021",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNzIzOTNjOTQtM2QzOC00NjFlLTljZDUtZmI4Yjg1YTkyMTBiXkEyXkFqcGc@._V1_SX300.jpg",
-      "plot": "When the family's fishing business is threatened, Ruby finds herself torn between pursuing her musical passion and her fear of abandoning her deaf parents.",
-      "director": "Sian Heder",
-      "actors": [
-        "Emilia Jones",
-        "Marlee Matlin",
-        "Troy Kotsur"
-      ],
-      "imdbRating": "8.0",
-      "language": "American Sign , English"
     },
     {
       "title": "Harry Potter and the Prisoner of Azkaban",
@@ -4173,26 +3912,6 @@
         "Georgie Henley"
       ],
       "imdbRating": "6.3",
-      "language": "English"
-    },
-    {
-      "title": "Zombies",
-      "genres": [
-        "Adventure",
-        "Family",
-        "Fantasy"
-      ],
-      "platforms": [],
-      "year": "2018",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTczMTQ1ODAyNl5BMl5BanBnXkFtZTgwMjU2NzY2NDM@._V1_SX300.jpg",
-      "plot": "Students from Zombietown are transferred to a high school in a suburban town preoccupied with uniformity, traditions and pep rallies.",
-      "director": "Paul Hoen",
-      "actors": [
-        "Milo Manheim",
-        "Meg Donnelly",
-        "Trevor Tordjman"
-      ],
-      "imdbRating": "6.0",
       "language": "English"
     },
     {
@@ -4395,26 +4114,6 @@
       "language": "English"
     },
     {
-      "title": "Capote",
-      "genres": [
-        "Biography",
-        "Crime",
-        "Drama"
-      ],
-      "platforms": [],
-      "year": "2005",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTczMzU0MjM1MV5BMl5BanBnXkFtZTcwMjczNzgyNA@@._V1_SX300.jpg",
-      "plot": "In 1959, Truman Capote learns of the murder of a Kansas family and decides to write a book about the case. While researching for his novel In Cold Blood, Capote forms a relationship with one of the killers, Perry Smith, who is on ...",
-      "director": "Bennett Miller",
-      "actors": [
-        "Philip Seymour Hoffman",
-        "Clifton Collins Jr.",
-        "Catherine Keener"
-      ],
-      "imdbRating": "7.3",
-      "language": "English"
-    },
-    {
       "title": "Radioactive",
       "genres": [
         "Biography",
@@ -4432,25 +4131,6 @@
         "Mirjam Novak"
       ],
       "imdbRating": "6.3",
-      "language": "English"
-    },
-    {
-      "title": "Bombshell",
-      "genres": [
-        "Biography",
-        "Drama"
-      ],
-      "platforms": [],
-      "year": "2019",
-      "poster": "https://m.media-amazon.com/images/M/MV5BODY3ODVkYTAtZDFmNS00ZDYyLTlkOTEtNTY3NTFhNDE4ZjFjXkEyXkFqcGc@._V1_SX300.jpg",
-      "plot": "A group of women take on Fox News head Roger Ailes and the toxic atmosphere he presided over at the network.",
-      "director": "Jay Roach",
-      "actors": [
-        "Charlize Theron",
-        "Nicole Kidman",
-        "Margot Robbie"
-      ],
-      "imdbRating": "6.8",
       "language": "English"
     },
     {
@@ -4532,26 +4212,6 @@
       ],
       "imdbRating": "7.5",
       "language": "English"
-    },
-    {
-      "title": "Foxcatcher",
-      "genres": [
-        "Biography",
-        "Drama",
-        "History"
-      ],
-      "platforms": [],
-      "year": "2014",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTQ2MjQxNjYxOV5BMl5BanBnXkFtZTgwMzIwODUxMzE@._V1_SX300.jpg",
-      "plot": "U.S. Olympic wrestling champions and brothers Mark Schultz and Dave Schultz join \"Team Foxcatcher\", led by eccentric multi-millionaire John du Pont, as they train for the 1988 Olympic Games in Seoul, South Korea, but John's self-d...",
-      "director": "Bennett Miller",
-      "actors": [
-        "Steve Carell",
-        "Channing Tatum",
-        "Mark Ruffalo"
-      ],
-      "imdbRating": "7.0",
-      "language": "English, French"
     },
     {
       "title": "tick, tick... BOOM!",
@@ -4650,26 +4310,6 @@
         "David Brisbin"
       ],
       "imdbRating": "7.5",
-      "language": "English"
-    },
-    {
-      "title": "When Harry Met Sally...",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Romance"
-      ],
-      "platforms": [],
-      "year": "1989",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjE0ODEwNjM2NF5BMl5BanBnXkFtZTcwMjU2Mzg3NA@@._V1_SX300.jpg",
-      "plot": "Harry and Sally have known each other for years, and are very good friends, but they fear sex would ruin the friendship.",
-      "director": "Rob Reiner",
-      "actors": [
-        "Billy Crystal",
-        "Meg Ryan",
-        "Carrie Fisher"
-      ],
-      "imdbRating": "7.7",
       "language": "English"
     },
     {
@@ -4885,26 +4525,6 @@
       ],
       "imdbRating": "7.5",
       "language": "English, Urdu"
-    },
-    {
-      "title": "Midsommar",
-      "genres": [
-        "Drama",
-        "Horror",
-        "Mystery"
-      ],
-      "platforms": [],
-      "year": "2019",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_QL75_UX380_CR0,0,380,562_.jpg",
-      "plot": "A couple travels to Northern Europe to visit a rural hometown's fabled Swedish mid-summer festival. What begins as an idyllic retreat quickly devolves into an increasingly violent and bizarre competition at the hands of a pagan cult.",
-      "director": "Ari Aster",
-      "actors": [
-        "Florence Pugh",
-        "Jack Reynor",
-        "Vilhelm Blomgren"
-      ],
-      "imdbRating": "7.1",
-      "language": "English, Swedish"
     },
     {
       "title": "Train to Busan",
@@ -5444,25 +5064,6 @@
       "language": "English"
     },
     {
-      "title": "Parasite",
-      "genres": [
-        "Drama",
-        "Thriller"
-      ],
-      "platforms": [],
-      "year": "2019",
-      "poster": "https://m.media-amazon.com/images/M/MV5BYjk1Y2U4MjQtY2ZiNS00OWQyLWI3MmYtZWUwNmRjYWRiNWNhXkEyXkFqcGc@._V1_SX300.jpg",
-      "plot": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
-      "director": "Bong Joon Ho",
-      "actors": [
-        "Song Kang-ho",
-        "Lee Sun-kyun",
-        "Cho Yeo-jeong"
-      ],
-      "imdbRating": "8.5",
-      "language": "Korean, English"
-    },
-    {
       "title": "The Da Vinci Code",
       "genres": [
         "Mystery",
@@ -5941,26 +5542,6 @@
       "language": "English, American Sign Language"
     },
     {
-      "title": "Skyfall",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Thriller"
-      ],
-      "platforms": [],
-      "year": "2012",
-      "poster": "https://m.media-amazon.com/images/M/MV5BNjAzMWNkODUtM2FlMi00NzgyLWJhMGUtMWEyNDYyZGFiN2RlXkEyXkFqcGc@._V1_SX300.jpg",
-      "plot": "James Bond's loyalty to M is tested when her past comes back to haunt her. When MI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost.",
-      "director": "Sam Mendes",
-      "actors": [
-        "Daniel Craig",
-        "Javier Bardem",
-        "Naomie Harris"
-      ],
-      "imdbRating": "7.8",
-      "language": "English, Turkish, Shanghainese, Portuguese, Japanese"
-    },
-    {
       "title": "Turning Red",
       "genres": [
         "Animation",
@@ -6138,26 +5719,6 @@
       ],
       "imdbRating": "7.6",
       "language": "English"
-    },
-    {
-      "title": "The Girl with the Dragon Tattoo",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
-      "platforms": [],
-      "year": "2011",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMTczNDk4NTQ0OV5BMl5BanBnXkFtZTcwNDAxMDgxNw@@._V1_SX300.jpg",
-      "plot": "Journalist Mikael Blomkvist is aided in his search for a woman who has been missing for 40 years by hacker Lisbeth Salander.",
-      "director": "David Fincher",
-      "actors": [
-        "Daniel Craig",
-        "Rooney Mara",
-        "Christopher Plummer"
-      ],
-      "imdbRating": "7.8",
-      "language": "English, Swedish"
     },
     {
       "title": "Annihilation",
@@ -6396,6 +5957,385 @@
         "Denis Leary"
       ],
       "imdbRating": "6.9",
+      "language": "English"
+    },
+    {
+      "title": "Everest",
+      "genres": [
+        "Adventure",
+        "Biography",
+        "Drama"
+      ],
+      "platforms": [],
+      "year": "2015",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDAzOTYxMTctY2ViNi00NDI3LTgwMGItY2FhN2JjZWE5MjRkXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "On May 10, 1996, mountain guides Rob Hall and Scott Fischer combine their expedition teams for a final ascent to the summit of Mount Everest. With little warning, a storm strikes the mountain and the climbers must now battle to su...",
+      "director": "Baltasar Kormákur",
+      "actors": [
+        "Jason Clarke",
+        "Ang Phula Sherpa",
+        "Thomas M. Wright"
+      ],
+      "imdbRating": "7.1",
+      "language": "English, Russian"
+    },
+    {
+      "title": "Everybody's Talking About Jamie",
+      "genres": [
+        "Biography",
+        "Comedy",
+        "Drama"
+      ],
+      "platforms": [],
+      "year": "2021",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYWVkYzhkNzMtMGQzNC00NmNmLThkZTMtZTk0ZmM1M2U2MGI1XkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "Jamie New is a 16-year-old who doesn't quite fit in. Instead of pursuing a traditional career, he dreams of becoming a drag queen. Supported by his mother and friends, Jamie overcomes discrimination and bullying to step into the s...",
+      "director": "Jonathan Butterell, Dan Gillespie Sells, Tom MacRae",
+      "actors": [
+        "Max Harwood",
+        "Lauren Patel",
+        "Sarah Lancashire"
+      ],
+      "imdbRating": "6.6",
+      "language": "English"
+    },
+    {
+      "title": "Whitney Houston: I Wanna Dance with Somebody",
+      "genres": [
+        "Biography",
+        "Drama",
+        "Music"
+      ],
+      "platforms": [],
+      "year": "2022",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzM0Y2QwOTUtMDg3NS00MDU4LTllNmItYzEwNmVmZGZkMTljXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "A joyous, emotional, heartbreaking celebration of the life and music of Whitney Houston, one of the greatest female R&amp;B pop vocalists of all time, tracking her journey from obscurity to musical super stardom.",
+      "director": "Kasi Lemmons",
+      "actors": [
+        "Naomi Ackie",
+        "Stanley Tucci",
+        "Ashton Sanders"
+      ],
+      "imdbRating": "6.6",
+      "language": "English"
+    },
+    {
+      "title": "Beyond the Lights",
+      "genres": [
+        "Drama",
+        "Music",
+        "Romance"
+      ],
+      "platforms": [],
+      "year": "2014",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTkzNDA0NzY1Ml5BMl5BanBnXkFtZTgwMjEwMDkzMjE@._V1_QL75_UY562_CR1,0,380,562_.jpg",
+      "plot": "The pressures of fame have superstar singer Noni on the edge, until she meets Kaz, a young cop who works to help her find the courage to develop her own voice and break free to become the artist she was meant to be.",
+      "director": "Gina Prince-Bythewood",
+      "actors": [
+        "Gugu Mbatha-Raw",
+        "Nate Parker",
+        "Minnie Driver"
+      ],
+      "imdbRating": "6.8",
+      "language": "English"
+    },
+    {
+      "title": "Blinded by the Light",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Music"
+      ],
+      "platforms": [],
+      "year": "2019",
+      "poster": "https://m.media-amazon.com/images/M/MV5BODA4YjY1NTItODUwNi00NDM2LWJjNTgtYjY4NmFiY2E5YzQ0XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "plot": "In England in 1987, a teenager from an Asian family learns to live his life, understand his family and find his own voice through the music of American rock star Bruce Springsteen.",
+      "director": "Gurinder Chadha",
+      "actors": [
+        "Billy Barratt",
+        "Ronak Singh Chadha Berges",
+        "Viveik Kalra"
+      ],
+      "imdbRating": "6.9",
+      "language": "English, Urdu"
+    },
+    {
+      "title": "The Little Mermaid",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Family"
+      ],
+      "platforms": [],
+      "year": "1989",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNmQ3ODcyZGMtMjNlOS00YzhlLTg0YzAtZGVjNmQ0OTYyNDg0XkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "A mermaid princess makes a Faustian bargain in an attempt to become human and win a prince's love.",
+      "director": "Ron Clements, John Musker",
+      "actors": [
+        "Jodi Benson",
+        "Samuel E. Wright",
+        "Rene Auberjonois"
+      ],
+      "imdbRating": "7.6",
+      "language": "English, French"
+    },
+    {
+      "title": "Warcraft",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "platforms": [],
+      "year": "2016",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjIwNTM0Mzc5MV5BMl5BanBnXkFtZTgwMDk5NDU1ODE@._V1_QL75_UX380_CR0,20,380,562_.jpg",
+      "plot": "As an Orc horde invades the planet Azeroth using a magic portal, a few human heroes and dissenting Orcs must attempt to stop the true evil behind this war.",
+      "director": "Duncan Jones",
+      "actors": [
+        "Travis Fimmel",
+        "Paula Patton",
+        "Ben Foster"
+      ],
+      "imdbRating": "6.7",
+      "language": "English"
+    },
+    {
+      "title": "The Invisible Man",
+      "genres": [
+        "Drama",
+        "Horror",
+        "Mystery"
+      ],
+      "platforms": [],
+      "year": "2020",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYTM3NDJhZWUtZWM1Yy00ODk4LThjNmMtNDg3OGYzMGM2OGYzXkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "When Cecilia's abusive ex takes his own life and leaves her his fortune, she suspects his death was a hoax. As a series of coincidences turn lethal, Cecilia works to prove that she is being hunted by someone nobody can see.",
+      "director": "Leigh Whannell",
+      "actors": [
+        "Elisabeth Moss",
+        "Oliver Jackson-Cohen",
+        "Harriet Dyer"
+      ],
+      "imdbRating": "7.1",
+      "language": "English"
+    },
+    {
+      "title": "Insidious: The Last Key",
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
+      "platforms": [],
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTUxODU0NjQ2Nl5BMl5BanBnXkFtZTgwMTc4NDQ0MzI@._V1_QL75_UX380_CR0,20,380,562_.jpg",
+      "plot": "Parapsychologist Dr. Elise Rainier faces her most fearsome and personal haunting yet, as she is drawn back to her ghostly childhood home where the terror began.",
+      "director": "Adam Robitel",
+      "actors": [
+        "Lin Shaye",
+        "Leigh Whannell",
+        "Angus Sampson"
+      ],
+      "imdbRating": "5.7",
+      "language": "English"
+    },
+    {
+      "title": "The Equalizer",
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "platforms": [],
+      "year": "2014",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTQ2MzE2NTk0NF5BMl5BanBnXkFtZTgwOTM3NTk1MjE@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "plot": "A man who believes he has put his mysterious past behind him cannot stand idly by when he meets a young girl under the control of ultra-violent Russian gangsters.",
+      "director": "Antoine Fuqua",
+      "actors": [
+        "Denzel Washington",
+        "Marton Csokas",
+        "Chloë Grace Moretz"
+      ],
+      "imdbRating": "7.3",
+      "language": "English, Russian, Spanish, German, Ukrainian"
+    },
+    {
+      "title": "Salt",
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
+      "platforms": [],
+      "year": "2010",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjIyODA2NDg4NV5BMl5BanBnXkFtZTcwMjg4NDAwMw@@._V1_SX300.jpg",
+      "plot": "A CIA agent goes on the run after a defector accuses her of being a Russian spy.",
+      "director": "Phillip Noyce",
+      "actors": [
+        "Angelina Jolie",
+        "Liev Schreiber",
+        "Chiwetel Ejiofor"
+      ],
+      "imdbRating": "6.5",
+      "language": "English, Russian, Korean"
+    },
+    {
+      "title": "The Bourne Supremacy",
+      "genres": [
+        "Action",
+        "Mystery",
+        "Thriller"
+      ],
+      "platforms": [],
+      "year": "2004",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZTU4ZDgyYjgtODA0Mi00MmE3LTgzYWQtZjc1YTFiMTczZTQ3XkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "When Jason Bourne is framed for a CIA operation gone awry, he is forced to resume his former life as a trained assassin to survive.",
+      "director": "Paul Greengrass",
+      "actors": [
+        "Matt Damon",
+        "Franka Potente",
+        "Joan Allen"
+      ],
+      "imdbRating": "7.7",
+      "language": "English, Russian, German, Italian"
+    },
+    {
+      "title": "Trainwreck",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "platforms": [],
+      "year": "2015",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTQ4MjgwNTMyOV5BMl5BanBnXkFtZTgwMTc1MjI0NDE@._V1_SX300.jpg",
+      "plot": "A commitment-phobic career woman who has always thought that monogamy was impossible must face her fears when she meets a good guy.",
+      "director": "Judd Apatow",
+      "actors": [
+        "Amy Schumer",
+        "Bill Hader",
+        "Brie Larson"
+      ],
+      "imdbRating": "6.2",
+      "language": "English, Mandarin"
+    },
+    {
+      "title": "50 First Dates",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "platforms": [],
+      "year": "2004",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjAwMzc4MDgxNF5BMl5BanBnXkFtZTYwNjUwMzE3._V1_QL75_UX380_CR0,1,380,562_.jpg",
+      "plot": "Henry Roth is a man afraid of commitment until he meets the beautiful Lucy. They hit it off and Henry think he's finally found the girl of his dreams until discovering she has short-term memory loss and forgets him the next day.",
+      "director": "Peter Segal",
+      "actors": [
+        "Adam Sandler",
+        "Drew Barrymore",
+        "Rob Schneider"
+      ],
+      "imdbRating": "6.8",
+      "language": "English, Hawaiian, Mandarin"
+    },
+    {
+      "title": "Black Panther",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "platforms": [],
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "plot": "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.",
+      "director": "Ryan Coogler",
+      "actors": [
+        "Chadwick Boseman",
+        "Michael B. Jordan",
+        "Lupita Nyong'o"
+      ],
+      "imdbRating": "7.3",
+      "language": "English, Swahili, Nama, Xhosa, Korean"
+    },
+    {
+      "title": "Iron Man",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "platforms": [],
+      "year": "2008",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "plot": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+      "director": "Jon Favreau",
+      "actors": [
+        "Robert Downey Jr.",
+        "Gwyneth Paltrow",
+        "Terrence Howard"
+      ],
+      "imdbRating": "7.9",
+      "language": "English, Persian, Urdu, Arabic, Kurdish, Hindi, Hungarian"
+    },
+    {
+      "title": "Robin Hood",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "platforms": [],
+      "year": "2010",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTM5NzcwMzEwOF5BMl5BanBnXkFtZTcwNjg5MTgwMw@@._V1_SX300.jpg",
+      "plot": "In twelfth-century England, Robin Longstride and his band of marauders confront corruption in a local village and lead an uprising against the crown that will forever alter the balance of world power.",
+      "director": "Ridley Scott",
+      "actors": [
+        "Russell Crowe",
+        "Cate Blanchett",
+        "Matthew Macfadyen"
+      ],
+      "imdbRating": "6.6",
+      "language": "English, French, Ukrainian"
+    },
+    {
+      "title": "Avengers: Endgame",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "platforms": [],
+      "year": "2019",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMWEyNDM2ZmQtMmFkNi00MTQ1LTk1MjItMzdlZGJlYmIyYzZlXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "plot": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+      "director": "Anthony Russo, Joe Russo",
+      "actors": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Mark Ruffalo"
+      ],
+      "imdbRating": "8.4",
+      "language": "English, Japanese, Xhosa, German"
+    },
+    {
+      "title": "A Simple Favor",
+      "genres": [
+        "Comedy",
+        "Crime",
+        "Mystery"
+      ],
+      "platforms": [],
+      "year": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZmM4MGFkMTItNzI1ZS00ODZlLThjYjktMTQyYmQzM2M2M2Y3XkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "Stephanie is a single mother with a parenting vlog who befriends Emily, a secretive upper-class woman who has a child at the same elementary school. When Emily goes missing, Stephanie takes it upon herself to investigate.",
+      "director": "Paul Feig",
+      "actors": [
+        "Anna Kendrick",
+        "Blake Lively",
+        "Henry Golding"
+      ],
+      "imdbRating": "6.7",
       "language": "English"
     }
   ],
@@ -7596,52 +7536,6 @@
         ]
       },
       {
-        "title": "21 Jump Street",
-        "genres": [
-          "Action",
-          "Comedy",
-          "Crime"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
         "title": "Ted",
         "genres": [
           "Comedy"
@@ -8055,52 +7949,6 @@
         ]
       },
       {
-        "title": "Into the Woods",
-        "genres": [
-          "Adventure",
-          "Comedy",
-          "Drama"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
         "title": "West Side Story",
         "genres": [
           "Crime",
@@ -8181,52 +8029,6 @@
             "vetoed": true,
             "reasons": [
               "dislikes genre \"Romance\"",
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Bohemian Rhapsody",
-        "genres": [
-          "Biography",
-          "Drama",
-          "Music"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
               "not available on any platform this persona has"
             ]
           },
@@ -8618,52 +8420,6 @@
       },
       {
         "title": "Titanic",
-        "genres": [
-          "Drama",
-          "Romance"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Romance\"",
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Me Before You",
         "genres": [
           "Drama",
           "Romance"
@@ -10324,52 +10080,6 @@
         ]
       },
       {
-        "title": "The Princess Bride",
-        "genres": [
-          "Adventure",
-          "Comedy",
-          "Family"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
         "title": "Journey to the Center of the Earth",
         "genres": [
           "Action",
@@ -10449,51 +10159,6 @@
             "vetoed": true,
             "reasons": [
               "dislikes genre \"Romance\"",
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "The Pursuit of Happyness",
-        "genres": [
-          "Biography",
-          "Drama"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
               "not available on any platform this persona has"
             ]
           },
@@ -10908,55 +10573,6 @@
             "vetoed": true,
             "reasons": [
               "dislikes genre \"Romance\"",
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "The Substance",
-        "genres": [
-          "Drama",
-          "Horror",
-          "Sci-Fi"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Horror\"",
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Sci-Fi\"",
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Horror\"",
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
               "not available on any platform this persona has"
             ]
           },
@@ -11759,52 +11375,6 @@
         ]
       },
       {
-        "title": "No Time to Die",
-        "genres": [
-          "Action",
-          "Adventure",
-          "Thriller"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
         "title": "Whiplash",
         "genres": [
           "Drama",
@@ -12355,53 +11925,6 @@
         ]
       },
       {
-        "title": "Les Misérables",
-        "genres": [
-          "Drama",
-          "Musical",
-          "Romance"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Romance\"",
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
         "title": "Pitch Perfect",
         "genres": [
           "Comedy",
@@ -12454,52 +11977,6 @@
           "Animation",
           "Comedy",
           "Family"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Once",
-        "genres": [
-          "Drama",
-          "Music",
-          "Musical"
         ],
         "survived": false,
         "personaVetoes": [
@@ -12911,52 +12388,6 @@
       },
       {
         "title": "Finding Dory",
-        "genres": [
-          "Animation",
-          "Adventure",
-          "Comedy"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Inside Out 2",
         "genres": [
           "Animation",
           "Adventure",
@@ -14337,52 +13768,6 @@
         ]
       },
       {
-        "title": "Burlesque",
-        "genres": [
-          "Drama",
-          "Music",
-          "Musical"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
         "title": "Honey",
         "genres": [
           "Drama",
@@ -14710,52 +14095,6 @@
         "genres": [
           "Drama",
           "Musical"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "CODA",
-        "genres": [
-          "Comedy",
-          "Drama",
-          "Music"
         ],
         "survived": false,
         "personaVetoes": [
@@ -15166,52 +14505,6 @@
       },
       {
         "title": "The Chronicles of Narnia: The Voyage of the Dawn Treader",
-        "genres": [
-          "Adventure",
-          "Family",
-          "Fantasy"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Zombies",
         "genres": [
           "Adventure",
           "Family",
@@ -15719,52 +15012,6 @@
         ]
       },
       {
-        "title": "Capote",
-        "genres": [
-          "Biography",
-          "Crime",
-          "Drama"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
         "title": "Radioactive",
         "genres": [
           "Biography",
@@ -15799,51 +15046,6 @@
             "vetoed": true,
             "reasons": [
               "dislikes genre \"Romance\"",
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Bombshell",
-        "genres": [
-          "Biography",
-          "Drama"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
               "not available on any platform this persona has"
             ]
           },
@@ -16000,52 +15202,6 @@
           "Biography",
           "Crime",
           "Drama"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Foxcatcher",
-        "genres": [
-          "Biography",
-          "Drama",
-          "History"
         ],
         "survived": false,
         "personaVetoes": [
@@ -16303,53 +15459,6 @@
             "persona": "Neela",
             "vetoed": true,
             "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "When Harry Met Sally...",
-        "genres": [
-          "Comedy",
-          "Drama",
-          "Romance"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Romance\"",
               "not available on any platform this persona has"
             ]
           },
@@ -16862,54 +15971,6 @@
             "vetoed": true,
             "reasons": [
               "dislikes genre \"Romance\"",
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Midsommar",
-        "genres": [
-          "Drama",
-          "Horror",
-          "Mystery"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Horror\"",
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Horror\"",
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
               "not available on any platform this persona has"
             ]
           },
@@ -18205,51 +17266,6 @@
         ]
       },
       {
-        "title": "Parasite",
-        "genres": [
-          "Drama",
-          "Thriller"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
         "title": "The Da Vinci Code",
         "genres": [
           "Mystery",
@@ -19353,52 +18369,6 @@
         ]
       },
       {
-        "title": "Skyfall",
-        "genres": [
-          "Action",
-          "Adventure",
-          "Thriller"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
         "title": "Turning Red",
         "genres": [
           "Animation",
@@ -19767,52 +18737,6 @@
       },
       {
         "title": "Gone Baby Gone",
-        "genres": [
-          "Crime",
-          "Drama",
-          "Mystery"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": true,
-            "reasons": [
-              "not available on any platform this persona has"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "The Girl with the Dragon Tattoo",
         "genres": [
           "Crime",
           "Drama",
@@ -20371,6 +19295,889 @@
           "Animation",
           "Adventure",
           "Comedy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Everest",
+        "genres": [
+          "Adventure",
+          "Biography",
+          "Drama"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Everybody's Talking About Jamie",
+        "genres": [
+          "Biography",
+          "Comedy",
+          "Drama"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Whitney Houston: I Wanna Dance with Somebody",
+        "genres": [
+          "Biography",
+          "Drama",
+          "Music"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Beyond the Lights",
+        "genres": [
+          "Drama",
+          "Music",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Blinded by the Light",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Music"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Little Mermaid",
+        "genres": [
+          "Animation",
+          "Adventure",
+          "Family"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Warcraft",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Invisible Man",
+        "genres": [
+          "Drama",
+          "Horror",
+          "Mystery"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Insidious: The Last Key",
+        "genres": [
+          "Horror",
+          "Mystery",
+          "Thriller"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Equalizer",
+        "genres": [
+          "Action",
+          "Crime",
+          "Thriller"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Salt",
+        "genres": [
+          "Action",
+          "Thriller"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Bourne Supremacy",
+        "genres": [
+          "Action",
+          "Mystery",
+          "Thriller"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Trainwreck",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "50 First Dates",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Black Panther",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Iron Man",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Robin Hood",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Drama"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Avengers: Endgame",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\"",
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": true,
+            "reasons": [
+              "not available on any platform this persona has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "A Simple Favor",
+        "genres": [
+          "Comedy",
+          "Crime",
+          "Mystery"
         ],
         "survived": false,
         "personaVetoes": [
@@ -21363,42 +21170,6 @@
         ]
       },
       {
-        "title": "21 Jump Street",
-        "genres": [
-          "Action",
-          "Comedy",
-          "Crime"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
         "title": "Ted",
         "genres": [
           "Comedy"
@@ -21726,42 +21497,6 @@
         ]
       },
       {
-        "title": "Into the Woods",
-        "genres": [
-          "Adventure",
-          "Comedy",
-          "Drama"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
         "title": "West Side Story",
         "genres": [
           "Crime",
@@ -21827,42 +21562,6 @@
             "reasons": [
               "dislikes genre \"Romance\""
             ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Bohemian Rhapsody",
-        "genres": [
-          "Biography",
-          "Drama",
-          "Music"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
           },
           {
             "persona": "Arunima",
@@ -22181,43 +21880,6 @@
       },
       {
         "title": "Titanic",
-        "genres": [
-          "Drama",
-          "Romance"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Romance\""
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Me Before You",
         "genres": [
           "Drama",
           "Romance"
@@ -23532,42 +23194,6 @@
         ]
       },
       {
-        "title": "The Princess Bride",
-        "genres": [
-          "Adventure",
-          "Comedy",
-          "Family"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
         "title": "Journey to the Center of the Earth",
         "genres": [
           "Action",
@@ -23632,41 +23258,6 @@
             "reasons": [
               "dislikes genre \"Romance\""
             ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "The Pursuit of Happyness",
-        "genres": [
-          "Biography",
-          "Drama"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
           },
           {
             "persona": "Arunima",
@@ -23993,48 +23584,6 @@
             "reasons": [
               "dislikes genre \"Romance\""
             ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "The Substance",
-        "genres": [
-          "Drama",
-          "Horror",
-          "Sci-Fi"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Horror\""
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Sci-Fi\""
-            ]
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Horror\""
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
           },
           {
             "persona": "Arunima",
@@ -24673,42 +24222,6 @@
         ]
       },
       {
-        "title": "No Time to Die",
-        "genres": [
-          "Action",
-          "Adventure",
-          "Thriller"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
         "title": "Whiplash",
         "genres": [
           "Drama",
@@ -25139,44 +24652,6 @@
         ]
       },
       {
-        "title": "Les Misérables",
-        "genres": [
-          "Drama",
-          "Musical",
-          "Romance"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Romance\""
-            ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
         "title": "Pitch Perfect",
         "genres": [
           "Comedy",
@@ -25220,42 +24695,6 @@
           "Animation",
           "Comedy",
           "Family"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Once",
-        "genres": [
-          "Drama",
-          "Music",
-          "Musical"
         ],
         "survived": true,
         "personaVetoes": [
@@ -25578,42 +25017,6 @@
       },
       {
         "title": "Finding Dory",
-        "genres": [
-          "Animation",
-          "Adventure",
-          "Comedy"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Inside Out 2",
         "genres": [
           "Animation",
           "Adventure",
@@ -26702,42 +26105,6 @@
         ]
       },
       {
-        "title": "Burlesque",
-        "genres": [
-          "Drama",
-          "Music",
-          "Musical"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
         "title": "Honey",
         "genres": [
           "Drama",
@@ -26997,42 +26364,6 @@
         "genres": [
           "Drama",
           "Musical"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "CODA",
-        "genres": [
-          "Comedy",
-          "Drama",
-          "Music"
         ],
         "survived": true,
         "personaVetoes": [
@@ -27353,42 +26684,6 @@
       },
       {
         "title": "The Chronicles of Narnia: The Voyage of the Dawn Treader",
-        "genres": [
-          "Adventure",
-          "Family",
-          "Fantasy"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Zombies",
         "genres": [
           "Adventure",
           "Family",
@@ -27789,42 +27084,6 @@
         ]
       },
       {
-        "title": "Capote",
-        "genres": [
-          "Biography",
-          "Crime",
-          "Drama"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
         "title": "Radioactive",
         "genres": [
           "Biography",
@@ -27854,41 +27113,6 @@
             "reasons": [
               "dislikes genre \"Romance\""
             ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Bombshell",
-        "genres": [
-          "Biography",
-          "Drama"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
           },
           {
             "persona": "Arunima",
@@ -28011,42 +27235,6 @@
           "Biography",
           "Crime",
           "Drama"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Foxcatcher",
-        "genres": [
-          "Biography",
-          "Drama",
-          "History"
         ],
         "survived": true,
         "personaVetoes": [
@@ -28248,44 +27436,6 @@
             "persona": "Neela",
             "vetoed": false,
             "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "When Harry Met Sally...",
-        "genres": [
-          "Comedy",
-          "Drama",
-          "Romance"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Romance\""
-            ]
           },
           {
             "persona": "Arunima",
@@ -28700,46 +27850,6 @@
             "reasons": [
               "dislikes genre \"Romance\""
             ]
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "Midsommar",
-        "genres": [
-          "Drama",
-          "Horror",
-          "Mystery"
-        ],
-        "survived": false,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Horror\""
-            ]
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": true,
-            "reasons": [
-              "dislikes genre \"Horror\""
-            ]
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
           },
           {
             "persona": "Arunima",
@@ -29804,41 +28914,6 @@
         ]
       },
       {
-        "title": "Parasite",
-        "genres": [
-          "Drama",
-          "Thriller"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
         "title": "The Da Vinci Code",
         "genres": [
           "Mystery",
@@ -30703,42 +29778,6 @@
         ]
       },
       {
-        "title": "Skyfall",
-        "genres": [
-          "Action",
-          "Adventure",
-          "Thriller"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
         "title": "Turning Red",
         "genres": [
           "Animation",
@@ -31027,42 +30066,6 @@
       },
       {
         "title": "Gone Baby Gone",
-        "genres": [
-          "Crime",
-          "Drama",
-          "Mystery"
-        ],
-        "survived": true,
-        "personaVetoes": [
-          {
-            "persona": "Ira",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Richa",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Avani",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Neela",
-            "vetoed": false,
-            "reasons": []
-          },
-          {
-            "persona": "Arunima",
-            "vetoed": false,
-            "reasons": []
-          }
-        ]
-      },
-      {
-        "title": "The Girl with the Dragon Tattoo",
         "genres": [
           "Crime",
           "Drama",
@@ -31533,9 +30536,712 @@
             "reasons": []
           }
         ]
+      },
+      {
+        "title": "Everest",
+        "genres": [
+          "Adventure",
+          "Biography",
+          "Drama"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Everybody's Talking About Jamie",
+        "genres": [
+          "Biography",
+          "Comedy",
+          "Drama"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Whitney Houston: I Wanna Dance with Somebody",
+        "genres": [
+          "Biography",
+          "Drama",
+          "Music"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Beyond the Lights",
+        "genres": [
+          "Drama",
+          "Music",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Blinded by the Light",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Music"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Little Mermaid",
+        "genres": [
+          "Animation",
+          "Adventure",
+          "Family"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Warcraft",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Invisible Man",
+        "genres": [
+          "Drama",
+          "Horror",
+          "Mystery"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\""
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\""
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Insidious: The Last Key",
+        "genres": [
+          "Horror",
+          "Mystery",
+          "Thriller"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\""
+            ]
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Horror\""
+            ]
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Equalizer",
+        "genres": [
+          "Action",
+          "Crime",
+          "Thriller"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Salt",
+        "genres": [
+          "Action",
+          "Thriller"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "The Bourne Supremacy",
+        "genres": [
+          "Action",
+          "Mystery",
+          "Thriller"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Trainwreck",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "50 First Dates",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Romance\""
+            ]
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Black Panther",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\""
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Iron Man",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\""
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Robin Hood",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Drama"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "Avengers: Endgame",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "survived": false,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": true,
+            "reasons": [
+              "dislikes genre \"Sci-Fi\""
+            ]
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
+      },
+      {
+        "title": "A Simple Favor",
+        "genres": [
+          "Comedy",
+          "Crime",
+          "Mystery"
+        ],
+        "survived": true,
+        "personaVetoes": [
+          {
+            "persona": "Ira",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Richa",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Avani",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Neela",
+            "vetoed": false,
+            "reasons": []
+          },
+          {
+            "persona": "Arunima",
+            "vetoed": false,
+            "reasons": []
+          }
+        ]
       }
     ],
-    "survivorsCount": 205,
+    "survivorsCount": 199,
     "scored": [
       {
         "title": "Red Notice",
@@ -31601,6 +31307,27 @@
         "groupScore": 0.4533333333333333
       },
       {
+        "title": "The Bourne Supremacy",
+        "genres": [
+          "Action",
+          "Mystery",
+          "Thriller"
+        ],
+        "platforms": [],
+        "year": "2004",
+        "poster": "https://m.media-amazon.com/images/M/MV5BZTU4ZDgyYjgtODA0Mi00MmE3LTgzYWQtZjc1YTFiMTczZTQ3XkEyXkFqcGc@._V1_SX300.jpg",
+        "plot": "When Jason Bourne is framed for a CIA operation gone awry, he is forced to resume his former life as a trained assassin to survive.",
+        "director": "Paul Greengrass",
+        "actors": [
+          "Matt Damon",
+          "Franka Potente",
+          "Joan Allen"
+        ],
+        "imdbRating": "7.7",
+        "language": "English, Russian, German, Italian",
+        "groupScore": 0.4533333333333333
+      },
+      {
         "title": "Mission: Impossible - Fallout",
         "genres": [
           "Action",
@@ -31619,26 +31346,6 @@
         ],
         "imdbRating": "7.7",
         "language": "English, French",
-        "groupScore": 0.4
-      },
-      {
-        "title": "Die Hard",
-        "genres": [
-          "Action",
-          "Thriller"
-        ],
-        "platforms": [],
-        "year": "1988",
-        "poster": "https://m.media-amazon.com/images/M/MV5BMGNlYmM1NmQtYWExMS00NmRjLTg5ZmEtMmYyYzJkMzljYWMxXkEyXkFqcGc@._V1_SX300.jpg",
-        "plot": "A New York City cop, John McClane, tries to save his estranged wife and several others taken hostage by terrorists during a Christmas Eve party at the Nakatomi Plaza Skyscraper in Los Angeles, California.",
-        "director": "John McTiernan",
-        "actors": [
-          "Bruce Willis",
-          "Alan Rickman",
-          "Bonnie Bedelia"
-        ],
-        "imdbRating": "8.2",
-        "language": "English, German, Italian, Japanese",
         "groupScore": 0.4
       }
     ]
@@ -31708,6 +31415,27 @@
       "groupScore": 0.4533333333333333
     },
     {
+      "title": "The Bourne Supremacy",
+      "genres": [
+        "Action",
+        "Mystery",
+        "Thriller"
+      ],
+      "platforms": [],
+      "year": "2004",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZTU4ZDgyYjgtODA0Mi00MmE3LTgzYWQtZjc1YTFiMTczZTQ3XkEyXkFqcGc@._V1_SX300.jpg",
+      "plot": "When Jason Bourne is framed for a CIA operation gone awry, he is forced to resume his former life as a trained assassin to survive.",
+      "director": "Paul Greengrass",
+      "actors": [
+        "Matt Damon",
+        "Franka Potente",
+        "Joan Allen"
+      ],
+      "imdbRating": "7.7",
+      "language": "English, Russian, German, Italian",
+      "groupScore": 0.4533333333333333
+    },
+    {
       "title": "Mission: Impossible - Fallout",
       "genres": [
         "Action",
@@ -31726,26 +31454,6 @@
       ],
       "imdbRating": "7.7",
       "language": "English, French",
-      "groupScore": 0.4
-    },
-    {
-      "title": "Die Hard",
-      "genres": [
-        "Action",
-        "Thriller"
-      ],
-      "platforms": [],
-      "year": "1988",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMGNlYmM1NmQtYWExMS00NmRjLTg5ZmEtMmYyYzJkMzljYWMxXkEyXkFqcGc@._V1_SX300.jpg",
-      "plot": "A New York City cop, John McClane, tries to save his estranged wife and several others taken hostage by terrorists during a Christmas Eve party at the Nakatomi Plaza Skyscraper in Los Angeles, California.",
-      "director": "John McTiernan",
-      "actors": [
-        "Bruce Willis",
-        "Alan Rickman",
-        "Bonnie Bedelia"
-      ],
-      "imdbRating": "8.2",
-      "language": "English, German, Italian, Japanese",
       "groupScore": 0.4
     }
   ]

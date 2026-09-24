@@ -2673,5 +2673,167 @@
       "platform": "Netflix",
       "url": "https://www.netflix.com/title/60011649"
     }
+  ],
+  "28 weeks later::2007": [],
+  "you're next::2011": [],
+  "the invisible man::2020": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f0b81ff6-2e8a-d3ca-b55b-9e1687286615"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/81183718"
+    }
+  ],
+  "insidious: the last key::2018": [
+    {
+      "platform": "Sony LIV",
+      "url": "https://www.sonyliv.com/movies/insidious-the-last-key-1000214645"
+    }
+  ],
+  "annabelle comes home::2019": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.16cbc94d-59d8-4410-9afb-bffda20205c0"
+    },
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000622"
+    }
+  ],
+  "the nun::2018": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000623"
+    },
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.58b8d6f6-c968-255d-6c1c-d1a8f0cec722"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/80233862"
+    }
+  ],
+  "split::2016": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000631"
+    }
+  ],
+  "respect::2021": [],
+  "the united states vs. billie holiday::2021": [],
+  "selena::1997": [],
+  "what's love got to do with it::1993": [],
+  "get on up::2014": [],
+  "love & mercy::2014": [],
+  "whitney houston: i wanna dance with somebody::2022": [
+    {
+      "platform": "Sony LIV",
+      "url": "https://www.sonyliv.com/movies/whitney-houston-i-wanna-dance-with-somebody-1000274403"
+    }
+  ],
+  "the doors::1991": [],
+  "bird::1988": [],
+  "la bamba::1987": [],
+  "notorious::1946": [],
+  "cadillac records::2008": [],
+  "nowhere boy::2009": [],
+  "coal miner's daughter::1980": [],
+  "beyond the lights::2014": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/70295409"
+    }
+  ],
+  "how to be single::2016": [
+    {
+      "platform": "MGM+ (Via Amazon Prime)",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3b14107b-6173-45cf-ab7e-08ef93df54ff"
+    }
+  ],
+  "trainwreck::2015": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971309285"
+    }
+  ],
+  "50 first dates::2004": [
+    {
+      "platform": "Sony LIV",
+      "url": "https://www.sonyliv.com/movies/50-first-dates-1000215170"
+    }
+  ],
+  "the wedding date::2005": [],
+  "just go with it::2011": [
+    {
+      "platform": "Sony Pictures Amazon Channel",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0ea9f71d-433f-6252-9f67-0a8469c74a62"
+    }
+  ],
+  "hitch::2005": [],
+  "my best friend's wedding::1997": [
+    {
+      "platform": "Sony LIV",
+      "url": "https://www.sonyliv.com/movies/my-best-friends-wedding-1997-1000263242"
+    }
+  ],
+  "sweet november::2001": [],
+  "fifty shades of grey::2015": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000518"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/fifty-shades-of-grey"
+    }
+  ],
+  "twilight::2008": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.44a9f666-05ef-c87b-623c-fbb87a10222b"
+    }
+  ],
+  "she's all that::1999": [],
+  "a cinderella story::2004": [],
+  "the kissing booth::2018": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/80143556"
+    }
+  ],
+  "to all the boys: p.s. i still love you::2020": [],
+  "miles ahead::2015": [],
+  "jimi: all is by my side::2013": [],
+  "the runaways::2010": [],
+  "blinded by the light::2019": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/80997140"
+    }
+  ],
+  "wild rose::2018": [],
+  "20th century women::2016": [],
+  "queen::2014": [],
+  "dil chahta hai::2001": [],
+  "pk::2014": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/70303496"
+    }
+  ],
+  "bajrangi bhaijaan::2015": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/80065328"
+    }
+  ],
+  "sound of music::1963": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1770001029"
+    }
   ]
 }

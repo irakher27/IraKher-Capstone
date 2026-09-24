@@ -4,7 +4,9 @@
  * Manually-run script that builds/updates data/indiaAvailability.json
  * — the cache agent/runWorkflow.js's fetchCandidates() uses to
  * restrict the recommendation pool to movies actually confirmed
- * streaming in India.
+ * streaming in India, on one of the app's 5 supported platforms
+ * (adapters/watchmodeAdapter.js's ALLOWED_PLATFORMS — Netflix,
+ * JioHotstar, Prime Video, Apple TV, SonyLIV).
  *
  * For every NON-Bollywood title in data/candidateTitles.json, checks
  * Watchmode (via adapters/watchmodeAdapter.js) for India streaming
@@ -13,16 +15,18 @@
  * gaps there, and would incorrectly exclude legitimate, well-known
  * titles it simply hasn't indexed.
  *
- * Re-run this any time candidateTitles.json changes, or to pick up
- * new Watchmode data:
+ * Re-run this any time candidateTitles.json changes, to pick up new
+ * Watchmode data, or after changing ALLOWED_PLATFORMS:
  *   node agent/refreshIndiaAvailability.js
  *
- * Safe to re-run: titles already in the cache are skipped (their
- * result won't change day to day), so a re-run only fills in gaps —
- * new candidate titles, or ones that errored out on a previous run
- * (e.g. Watchmode's rate limit). To force-recheck a specific title,
- * delete its entry from data/indiaAvailability.json first; to force a
- * full recheck, delete the whole file.
+ * Always recomputes every non-Bollywood title's available/platforms
+ * fields from scratch (so criteria changes like a narrower allowed-
+ * platform list take effect on every title, not just new ones) — but
+ * this is cheap and safe to re-run often, since the expensive part
+ * (the actual Watchmode API calls) is itself cached one layer down,
+ * in watchmodeCache.json via getStreamingAvailability. A title only
+ * ever hits the live API once; re-running this script after that just
+ * re-derives available/platforms from the already-cached raw sources.
  */
 
 require("dotenv").config();
@@ -30,7 +34,7 @@ const fs = require("fs");
 const path = require("path");
 
 const { fetchRawCandidates } = require("./runWorkflow");
-const { getStreamingAvailability, cacheKey } = require("../adapters/watchmodeAdapter");
+const { getStreamingAvailability, cacheKey, filterToAllowedPlatforms } = require("../adapters/watchmodeAdapter");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 const INDIA_AVAILABILITY_PATH = path.join(DATA_DIR, "indiaAvailability.json");
@@ -52,9 +56,9 @@ async function refreshIndiaAvailability() {
   const candidates = await fetchRawCandidates();
   console.log(`${candidates.length} total candidates (${candidates.filter((c) => c.isBollywood).length} Bollywood, trusted as-is).`);
 
-  const cache = loadCache();
+  const previousCache = loadCache();
+  const cache = {};
   let checked = 0;
-  let skipped = 0;
   let errored = 0;
   const newlyExcluded = [];
   const newlyIncluded = [];
@@ -69,26 +73,24 @@ async function refreshIndiaAvailability() {
       continue;
     }
 
-    if (Object.prototype.hasOwnProperty.call(cache, key)) {
-      skipped++;
-      continue;
-    }
-
     try {
-      const sources = await getStreamingAvailability(movie.title, movie.year);
-      const available = sources.length > 0;
-      cache[key] = { available, trusted: false, platforms: sources };
+      const rawSources = await getStreamingAvailability(movie.title, movie.year);
+      const allowedSources = filterToAllowedPlatforms(rawSources);
+      const available = allowedSources.length > 0;
+      const wasAvailable = previousCache[key] && previousCache[key].available;
+      cache[key] = { available, trusted: false, platforms: allowedSources };
       checked++;
-      if (available) newlyIncluded.push(`${movie.title} (${movie.year || "?"})`);
-      else newlyExcluded.push(`${movie.title} (${movie.year || "?"})`);
+      if (available && !wasAvailable) newlyIncluded.push(`${movie.title} (${movie.year || "?"})`);
+      if (!available && wasAvailable) newlyExcluded.push(`${movie.title} (${movie.year || "?"})`);
       // Saved after every title, not just at the end — this loop can
       // run for several minutes over 200+ titles, and a crash or
       // rate-limit abort partway through shouldn't lose everything
       // already checked.
       saveCache(cache);
     } catch (err) {
-      // Leave it unresolved rather than guessing — a later re-run
-      // will retry it (see loadCache/hasOwnProperty check above).
+      // Fall back to whatever this title's previous entry said rather
+      // than guessing — a later re-run will retry it for real.
+      if (previousCache[key]) cache[key] = previousCache[key];
       console.error(`  Watchmode lookup failed for "${movie.title}": ${err.message}`);
       errored++;
     }
@@ -102,16 +104,16 @@ async function refreshIndiaAvailability() {
 
   console.log("");
   console.log("=== Refresh summary ===");
-  console.log(`Newly checked this run: ${checked} (already-cached, skipped: ${skipped}; errored, left for next run: ${errored})`);
-  console.log(`Cache now covers ${allEntries.length} titles total: ${totalAvailable} available in India, ${totalExcluded} excluded.`);
+  console.log(`Checked this run: ${checked} (errored, kept previous result: ${errored})`);
+  console.log(`Cache now covers ${allEntries.length} titles total: ${totalAvailable} available on an allowed platform in India, ${totalExcluded} excluded.`);
   if (newlyExcluded.length) {
-    console.log(`Newly excluded this run (${newlyExcluded.length}):`, newlyExcluded.join(", "));
+    console.log(`Newly excluded this run (${newlyExcluded.length}, were available before -- now only on a non-allowed platform or no longer available at all):`, newlyExcluded.join(", "));
   }
   if (newlyIncluded.length) {
     console.log(`Newly confirmed-available this run (${newlyIncluded.length}):`, newlyIncluded.join(", "));
   }
 
-  return { checked, skipped, errored, totalAvailable, totalExcluded };
+  return { checked, errored, totalAvailable, totalExcluded, newlyExcluded, newlyIncluded };
 }
 
 module.exports = { refreshIndiaAvailability };

@@ -1,111 +1,112 @@
 [
   {
-    "title": "Sound of Music",
+    "title": "Red Notice",
     "genres": [
+      "Action",
       "Comedy",
-      "Music"
+      "Thriller"
     ],
     "platforms": [],
-    "year": "1963–1970",
-    "poster": "https://m.media-amazon.com/images/M/MV5BODM0Njk0ZTEtN2JlNC00MjcwLThhYmUtODE1ZmU2NzBhMDdlXkEyXkFqcGdeQXVyMzI2MDEwNA@@._V1_SX300.jpg",
-    "plot": null,
-    "director": null,
+    "year": "2021",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGNjNGQ3MmItYTM5NS00NjBiLWI0ZTItZDE5ZjQyNjg3ODBjXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "plot": "An Interpol agent successfully tracks down the world's most wanted art thief with help from a rival thief. But nothing is as it seems as a series of double-crosses ensues.",
+    "director": "Rawson Marshall Thurber",
     "actors": [
-      "Dawn Lake",
-      "Bobby Limb",
-      "Tony Martin"
+      "Dwayne Johnson",
+      "Ryan Reynolds",
+      "Gal Gadot"
+    ],
+    "imdbRating": "6.3",
+    "language": "English, Russian, Italian, Spanish, Indonesian",
+    "isBollywood": false,
+    "groupScore": 0.49333333333333335
+  },
+  {
+    "title": "The Bourne Identity",
+    "genres": [
+      "Action",
+      "Mystery",
+      "Thriller"
+    ],
+    "platforms": [],
+    "year": "2002",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTk1ZTcyMWMtMWUxYS00MmEzLTlmODYtOTk1MGRjOTg1ZjlmXkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A man is picked up by a fishing boat, bullet-riddled and suffering from amnesia, before racing to elude assassins and attempting to regain his memory.",
+    "director": "Doug Liman",
+    "actors": [
+      "Franka Potente",
+      "Matt Damon",
+      "Chris Cooper"
     ],
     "imdbRating": "7.8",
-    "language": "English",
+    "language": "English, French, German, Dutch, Italian, Yoruba",
     "isBollywood": false,
-    "groupScore": 0.8
+    "groupScore": 0.4533333333333333
   },
   {
-    "title": "The Greatest Showman",
+    "title": "The Gray Man",
     "genres": [
-      "Biography",
-      "Drama",
-      "Musical"
+      "Action",
+      "Mystery",
+      "Thriller"
     ],
     "platforms": [],
-    "year": "2017",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjI1NDYzNzY2Ml5BMl5BanBnXkFtZTgwODQwODczNTM@._V1_SX300.jpg",
-    "plot": "Celebrates the birth of show business and tells of a visionary who rose from nothing to create a spectacle that became a worldwide sensation.",
-    "director": "Michael Gracey",
-    "actors": [
-      "Hugh Jackman",
-      "Michelle Williams",
-      "Zac Efron"
-    ],
-    "imdbRating": "7.5",
-    "language": "English",
-    "isBollywood": false,
-    "groupScore": 0.8
-  },
-  {
-    "title": "La La Land",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Music"
-    ],
-    "platforms": [],
-    "year": "2016",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_QL75_UX380_CR0,0,380,562_.jpg",
-    "plot": "When Sebastian, a pianist, and Mia, an actress, follow their passion and achieve success in their respective fields, they find themselves torn between their love for each other and their careers.",
-    "director": "Damien Chazelle",
+    "year": "2022",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "plot": "When the CIA's most skilled operative, whose true identity is known to none, accidentally uncovers dark agency secrets, a psychopathic former colleague puts a bounty on his head, setting off a global manhunt by international assas...",
+    "director": "Anthony Russo, Joe Russo",
     "actors": [
       "Ryan Gosling",
-      "Emma Stone",
-      "Rosemarie DeWitt"
+      "Chris Evans",
+      "Ana de Armas"
     ],
-    "imdbRating": "8.0",
-    "language": "English, Cantonese",
+    "imdbRating": "6.5",
+    "language": "English",
     "isBollywood": false,
-    "groupScore": 0.8
+    "groupScore": 0.4533333333333333
   },
   {
-    "title": "A Star Is Born",
+    "title": "The Bourne Supremacy",
     "genres": [
-      "Drama",
-      "Music",
-      "Romance"
+      "Action",
+      "Mystery",
+      "Thriller"
+    ],
+    "platforms": [],
+    "year": "2004",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTU4ZDgyYjgtODA0Mi00MmE3LTgzYWQtZjc1YTFiMTczZTQ3XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "When Jason Bourne is framed for a CIA operation gone awry, he is forced to resume his former life as a trained assassin to survive.",
+    "director": "Paul Greengrass",
+    "actors": [
+      "Matt Damon",
+      "Franka Potente",
+      "Joan Allen"
+    ],
+    "imdbRating": "7.7",
+    "language": "English, Russian, German, Italian",
+    "isBollywood": false,
+    "groupScore": 0.4533333333333333
+  },
+  {
+    "title": "Mission: Impossible - Fallout",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
     ],
     "platforms": [],
     "year": "2018",
-    "poster": "https://m.media-amazon.com/images/M/MV5BNGUxZTc0NTAtNzQwMy00MmM2LTgzMGYtZWIyY2E1MGFjYmM5XkEyXkFqcGc@._V1_SX300.jpg",
-    "plot": "A hard-drinking country music star falls in love with a singer whose career quickly takes off.",
-    "director": "Bradley Cooper",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmUwZTg2YmMtMmZjOS00ZDYwLWI2ZDgtZDcyY2ZmMWMwZDdlXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "plot": "A group of terrorists plans to detonate three plutonium cores for a simultaneous nuclear attack on different cities. Ethan Hunt, along with his IMF team, sets out to stop the carnage.",
+    "director": "Christopher McQuarrie",
     "actors": [
-      "Lady Gaga",
-      "Bradley Cooper",
-      "Sam Elliott"
+      "Tom Cruise",
+      "Henry Cavill",
+      "Ving Rhames"
     ],
-    "imdbRating": "7.6",
+    "imdbRating": "7.7",
     "language": "English, French",
     "isBollywood": false,
-    "groupScore": 0.8
-  },
-  {
-    "title": "West Side Story",
-    "genres": [
-      "Crime",
-      "Drama",
-      "Musical"
-    ],
-    "platforms": [],
-    "year": "1961",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTM0NDAxOTI5MF5BMl5BanBnXkFtZTcwNjI4Mjg3NA@@._V1_SX300.jpg",
-    "plot": "Two youngsters from rival New York City gangs fall in love, but tensions between their respective friends build toward tragedy.",
-    "director": "Jerome Robbins, Robert Wise",
-    "actors": [
-      "Natalie Wood",
-      "George Chakiris",
-      "Richard Beymer"
-    ],
-    "imdbRating": "7.6",
-    "language": "English, Spanish",
-    "isBollywood": false,
-    "groupScore": 0.8
+    "groupScore": 0.4
   }
 ]

@@ -21,7 +21,7 @@ const fs = require("fs");
 const path = require("path");
 
 const { runWorkflow, runRedoWorkflow } = require("../agent/runWorkflow");
-const { getStreamingAvailability, getSearchFallbackLinks, normalizePlatformName, cacheKey: watchmodeCacheKey } = require("../adapters/watchmodeAdapter");
+const { getStreamingAvailability, getSearchFallbackLinks, normalizePlatformName, cacheKey: watchmodeCacheKey, filterToAllowedPlatforms } = require("../adapters/watchmodeAdapter");
 const googleAuth = require("./googleAuth");
 const profileStore = require("./profileStore");
 
@@ -88,7 +88,9 @@ const GENRES = [
   // title list instead (see data/bollywoodTitles.json + scoreGroupMovies.js).
   "Bollywood",
 ];
-const PLATFORMS = ["Netflix", "Prime Video", "Disney+ Hotstar", "Hulu", "HBO Max", "Apple TV+"];
+// Must match adapters/watchmodeAdapter.js's ALLOWED_PLATFORMS exactly
+// — that's what actually gates the candidate pool and Watch Now.
+const PLATFORMS = ["Netflix", "JioHotstar", "Prime Video", "Apple TV", "SonyLIV"];
 
 // Same curated Bollywood list the recommendation pool trusts (see
 // agent/runWorkflow.js) — Watch Now needs to know whether a title is
@@ -270,6 +272,12 @@ const server = http.createServer(async (req, res) => {
         console.error(`Watchmode lookup failed for "${title}":`, err.message);
         sources = [];
       }
+
+      // Belt-and-suspenders: whichever path produced `sources` above,
+      // only the app's 5 supported platforms are ever allowed through
+      // — e.g. the Bollywood live-lookup path returns Watchmode's full
+      // unfiltered source list (Zee5, MX Player, Sony LIV, etc.).
+      sources = filterToAllowedPlatforms(sources);
 
       // Watchmode's India catalog has real gaps (Bollywood/regional
       // titles especially) — an empty result means "Watchmode doesn't

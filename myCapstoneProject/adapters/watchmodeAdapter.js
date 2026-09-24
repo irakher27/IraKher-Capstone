@@ -126,18 +126,70 @@ async function getStreamingAvailability(title, year) {
   return sources;
 }
 
+// Watchmode's platform names don't always match this app's own
+// platform picker (server/onboardingServer.js's PLATFORMS list) —
+// e.g. Watchmode says "Hotstar", the app says "JioHotstar"; Watchmode
+// says "AppleTV", the app says "Apple TV". Cross-referencing "is this
+// movie on a platform the user has" requires both sides to agree on
+// names first.
+const PLATFORM_NAME_ALIASES = {
+  hotstar: "JioHotstar",
+  jiohotstar: "JioHotstar",
+  "disney+ hotstar": "JioHotstar",
+  appletv: "Apple TV",
+  "apple tv": "Apple TV",
+  "apple tv+": "Apple TV",
+  amazon: "Prime Video",
+  "prime video": "Prime Video",
+  netflix: "Netflix",
+  "sony liv": "SonyLIV",
+  sonyliv: "SonyLIV",
+};
+
+/**
+ * @param {string} platformName - a platform name as Watchmode (or our
+ *   own search-fallback list) spells it
+ * @returns {string} the app's own canonical spelling, or the input
+ *   unchanged if it's not one of the app's selectable platforms
+ */
+function normalizePlatformName(platformName) {
+  const key = String(platformName).trim().toLowerCase();
+  return PLATFORM_NAME_ALIASES[key] || platformName;
+}
+
+// The only 5 platforms this app supports — must match
+// server/onboardingServer.js's PLATFORMS list exactly. A movie only
+// available in India on something else (Zee5, MX Player, Plex,
+// MUBI, an Amazon/Apple *rental* add-on channel, etc.) doesn't count
+// as available here, and Watch Now must never show a button for one.
+const ALLOWED_PLATFORMS = new Set(["Netflix", "JioHotstar", "Prime Video", "Apple TV", "SonyLIV"]);
+
+function isAllowedPlatform(platformName) {
+  return ALLOWED_PLATFORMS.has(normalizePlatformName(platformName));
+}
+
+/**
+ * @param {{platform: string, url: string}[]} sources
+ * @returns {{platform: string, url: string}[]} only the sources on one of the 5 allowed platforms
+ */
+function filterToAllowedPlatforms(sources) {
+  return sources.filter((s) => isAllowedPlatform(s.platform));
+}
+
 // Watchmode's India catalog has real gaps, especially for Bollywood/
 // Indian-language titles (see data/bollywoodTitles.json) — it simply
 // doesn't have those titles indexed at all, not that they're
 // unavailable. Rather than tell a user a movie "isn't available"
 // when the truth is just "Watchmode doesn't know," fall back to a
-// direct search link on the major platforms so they can check
+// direct search link on the 5 supported platforms so they can check
 // themselves. Callers should only use this when getStreamingAvailability
-// returns an empty array.
+// returns no allowed-platform sources.
 const SEARCH_FALLBACK_PLATFORMS = [
   { platform: "Netflix", buildUrl: (q) => `https://www.netflix.com/search?q=${q}` },
   { platform: "Prime Video", buildUrl: (q) => `https://www.primevideo.com/search/ref=atv_nb_sr?phrase=${q}` },
   { platform: "JioHotstar", buildUrl: (q) => `https://www.hotstar.com/in/search?q=${q}` },
+  { platform: "Apple TV", buildUrl: (q) => `https://tv.apple.com/search?term=${q}` },
+  { platform: "SonyLIV", buildUrl: (q) => `https://www.sonyliv.com/search?searchTerm=${q}` },
 ];
 
 /**
@@ -153,36 +205,12 @@ function getSearchFallbackLinks(title) {
   }));
 }
 
-// Watchmode's platform names don't always match this app's own
-// platform picker (server/onboardingServer.js's PLATFORMS list) —
-// e.g. Watchmode says "Hotstar", the app says "Disney+ Hotstar";
-// Watchmode says "AppleTV", the app says "Apple TV+". Cross-
-// referencing "is this movie on a platform the user has" requires
-// both sides to agree on names first.
-const PLATFORM_NAME_ALIASES = {
-  hotstar: "Disney+ Hotstar",
-  "jiohotstar": "Disney+ Hotstar",
-  "disney+ hotstar": "Disney+ Hotstar",
-  appletv: "Apple TV+",
-  "apple tv": "Apple TV+",
-  "apple tv+": "Apple TV+",
-  amazon: "Prime Video",
-  "prime video": "Prime Video",
-  netflix: "Netflix",
-  hulu: "Hulu",
-  max: "HBO Max",
-  "hbo max": "HBO Max",
+module.exports = {
+  getStreamingAvailability,
+  getSearchFallbackLinks,
+  normalizePlatformName,
+  cacheKey,
+  isAllowedPlatform,
+  filterToAllowedPlatforms,
+  ALLOWED_PLATFORMS,
 };
-
-/**
- * @param {string} platformName - a platform name as Watchmode (or our
- *   own search-fallback list) spells it
- * @returns {string} the app's own canonical spelling, or the input
- *   unchanged if it's not one of the app's selectable platforms
- */
-function normalizePlatformName(platformName) {
-  const key = String(platformName).trim().toLowerCase();
-  return PLATFORM_NAME_ALIASES[key] || platformName;
-}
-
-module.exports = { getStreamingAvailability, getSearchFallbackLinks, normalizePlatformName, cacheKey };
