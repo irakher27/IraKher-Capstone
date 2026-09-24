@@ -48,6 +48,13 @@
     font-size: 1rem; margin-bottom: 8px;
   }
   input[type="text"]:focus { outline: none; border-color: var(--accent); }
+  textarea {
+    width: 100%; background: var(--panel); border: 1px solid var(--border);
+    color: var(--text); border-radius: 10px; padding: 12px 14px;
+    font-size: 1rem; font-family: inherit; resize: vertical; margin-bottom: 6px;
+  }
+  textarea:focus { outline: none; border-color: var(--accent); }
+  .field-hint { font-size: 0.78rem; color: var(--muted); }
 
   /* ---- OTT-platform style selection pills (genres/platforms) ---- */
   .chip-grid { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -469,6 +476,12 @@
       <div class="chip-grid" id="platformsGrid"></div>
     </div>
 
+    <div class="field">
+      <label class="field-label">Anything else about your mood or taste? (optional)</label>
+      <textarea id="tasteNotes" rows="2" maxlength="300" placeholder="e.g. I love slow-burn mysteries but not in the mood for anything gory tonight"></textarea>
+      <div class="field-hint">Our AI reads this to fine-tune your picks beyond the checkboxes above.</div>
+    </div>
+
     <div class="error-note" id="formError"></div>
     <button class="primary-btn" id="submitBtn">Save my preferences</button>
     <button class="ghost-btn" id="viewGroupBtn" style="display:none;">View current group</button>
@@ -619,6 +632,7 @@
     document.getElementById('title1').value = '';
     document.getElementById('title2').value = '';
     document.getElementById('title3').value = '';
+    document.getElementById('tasteNotes').value = '';
     document.querySelectorAll('.chip-option input').forEach((el) => {
       el.checked = false;
       el.closest('.chip-option').classList.remove('checked-like', 'checked-dislike', 'checked-platform');
@@ -667,6 +681,7 @@
     document.getElementById('title1').value = titles[0] || '';
     document.getElementById('title2').value = titles[1] || '';
     document.getElementById('title3').value = titles[2] || '';
+    document.getElementById('tasteNotes').value = profile.taste_notes || '';
   }
 
   // ---------------- roster ----------------
@@ -723,6 +738,7 @@
         document.getElementById('title3').value,
       ].map((t) => t.trim()).filter(Boolean),
       platforms: getChecked(document.getElementById('platformsGrid')),
+      taste_notes: document.getElementById('tasteNotes').value.trim(),
     };
 
     const res = await fetch('/api/personas', {
@@ -735,6 +751,16 @@
     if (!data.ok) {
       errorEl.textContent = data.error;
       return;
+    }
+
+    // Real, visible confirmation that the free-text note actually did
+    // something — Gemini inferred these genres beyond the checkboxes.
+    const inferred = data.geminiInferred || { liked: [], disliked: [] };
+    if (inferred.liked.length || inferred.disliked.length) {
+      const parts = [];
+      if (inferred.liked.length) parts.push('like ' + inferred.liked.join(', '));
+      if (inferred.disliked.length) parts.push('skip ' + inferred.disliked.join(', '));
+      alert('AI picked up from your note: ' + parts.join(' and '));
     }
 
     resetForm();

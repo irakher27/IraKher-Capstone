@@ -22,6 +22,7 @@ const path = require("path");
 
 const { runWorkflow, runRedoWorkflow } = require("../agent/runWorkflow");
 const { getStreamingAvailability, getSearchFallbackLinks, normalizePlatformName, cacheKey: watchmodeCacheKey, filterToAllowedPlatforms } = require("../adapters/watchmodeAdapter");
+const { inferGenresFromFreeText } = require("../adapters/geminiAdapter");
 const googleAuth = require("./googleAuth");
 const profileStore = require("./profileStore");
 
@@ -205,6 +206,12 @@ function buildPersona(body) {
   const likedGenres = canonicalizeGenres(body.liked_genres);
   const dislikedGenres = canonicalizeGenres(body.disliked_genres);
 
+  // Optional free-text mood/taste description — Gemini reads this in
+  // the route handler below to infer extra genre signal beyond the
+  // checkboxes (see adapters/geminiAdapter.js). Capped since it's
+  // fed straight into an LLM prompt.
+  const tasteNotes = String(body.taste_notes || "").trim().slice(0, 300);
+
   return {
     persona: {
       name,
@@ -213,8 +220,33 @@ function buildPersona(body) {
       disliked_genres: dislikedGenres,
       disliked_titles: [],
       platforms,
+      taste_notes: tasteNotes,
     },
   };
+}
+
+// Adds any genres Gemini inferred from persona.taste_notes into the
+// persona's liked/disliked lists (deduped), and returns exactly what
+// got added so the caller can log/surface it. A genre inferred as
+// disliked is dropped from liked (and vice versa) if it was already
+// there some other way — a hard exclusion should never silently
+// coexist with a genre the same persona also claims to like.
+async function applyGeminiGenreInference(persona) {
+  if (!persona.taste_notes) return { likedAdded: [], dislikedAdded: [] };
+
+  const inferred = await inferGenresFromFreeText(persona.taste_notes, GENRES);
+  const likedSet = new Set(persona.liked_genres);
+  const dislikedSet = new Set(persona.disliked_genres);
+
+  const likedAdded = inferred.liked_genres.filter((g) => !likedSet.has(g) && !dislikedSet.has(g));
+  const dislikedAdded = inferred.disliked_genres.filter((g) => !dislikedSet.has(g) && !likedSet.has(g));
+
+  likedAdded.forEach((g) => likedSet.add(g));
+  dislikedAdded.forEach((g) => dislikedSet.add(g));
+  persona.liked_genres = [...likedSet];
+  persona.disliked_genres = [...dislikedSet];
+
+  return { likedAdded, dislikedAdded };
 }
 
 const server = http.createServer(async (req, res) => {
@@ -374,6 +406,14 @@ const server = http.createServer(async (req, res) => {
       const { persona, error } = buildPersona(body);
       if (error) return sendJson(res, 400, { ok: false, error });
 
+      const { likedAdded, dislikedAdded } = await applyGeminiGenreInference(persona);
+      if (likedAdded.length || dislikedAdded.length) {
+        console.log(
+          `Gemini inferred from "${persona.taste_notes}": ` +
+          `liked +[${likedAdded.join(", ")}], disliked +[${dislikedAdded.join(", ")}]`
+        );
+      }
+
       const alreadyInRound = personasByEmail.has(user.email);
       personasByEmail.set(user.email, persona); // upsert — editing never duplicates
       console.log(
@@ -384,7 +424,7 @@ const server = http.createServer(async (req, res) => {
       await profileStore.saveProfile(user.email, persona);
       console.log(`Saved preferences for ${user.email} for next time.`);
 
-      return sendJson(res, 200, { ok: true, ...stateSnapshot() });
+      return sendJson(res, 200, { ok: true, ...stateSnapshot(), geminiInferred: { liked: likedAdded, disliked: dislikedAdded } });
     }
 
     if (req.method === "POST" && pathname === "/api/generate") {
