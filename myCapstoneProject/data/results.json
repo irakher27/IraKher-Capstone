@@ -1,111 +1,111 @@
 [
   {
-    "title": "The Bourne Identity",
+    "title": "Sound of Music",
     "genres": [
-      "Action",
-      "Mystery",
-      "Thriller"
+      "Comedy",
+      "Music"
     ],
     "platforms": [],
-    "year": "2002",
-    "poster": "https://m.media-amazon.com/images/M/MV5BYTk1ZTcyMWMtMWUxYS00MmEzLTlmODYtOTk1MGRjOTg1ZjlmXkEyXkFqcGc@._V1_SX300.jpg",
-    "plot": "A man is picked up by a fishing boat, bullet-riddled and suffering from amnesia, before racing to elude assassins and attempting to regain his memory.",
-    "director": "Doug Liman",
+    "year": "1963–1970",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODM0Njk0ZTEtN2JlNC00MjcwLThhYmUtODE1ZmU2NzBhMDdlXkEyXkFqcGdeQXVyMzI2MDEwNA@@._V1_SX300.jpg",
+    "plot": null,
+    "director": null,
     "actors": [
-      "Franka Potente",
-      "Matt Damon",
-      "Chris Cooper"
+      "Dawn Lake",
+      "Bobby Limb",
+      "Tony Martin"
     ],
     "imdbRating": "7.8",
-    "language": "English, French, German, Dutch, Italian, Yoruba",
+    "language": "English",
     "isBollywood": false,
-    "groupScore": 0.4533333333333333
+    "groupScore": 0.8
   },
   {
-    "title": "Mission: Impossible - Fallout",
+    "title": "The Greatest Showman",
     "genres": [
-      "Action",
-      "Adventure",
-      "Thriller"
+      "Biography",
+      "Drama",
+      "Musical"
+    ],
+    "platforms": [],
+    "year": "2017",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjI1NDYzNzY2Ml5BMl5BanBnXkFtZTgwODQwODczNTM@._V1_SX300.jpg",
+    "plot": "Celebrates the birth of show business and tells of a visionary who rose from nothing to create a spectacle that became a worldwide sensation.",
+    "director": "Michael Gracey",
+    "actors": [
+      "Hugh Jackman",
+      "Michelle Williams",
+      "Zac Efron"
+    ],
+    "imdbRating": "7.5",
+    "language": "English",
+    "isBollywood": false,
+    "groupScore": 0.8
+  },
+  {
+    "title": "La La Land",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Music"
+    ],
+    "platforms": [],
+    "year": "2016",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "plot": "When Sebastian, a pianist, and Mia, an actress, follow their passion and achieve success in their respective fields, they find themselves torn between their love for each other and their careers.",
+    "director": "Damien Chazelle",
+    "actors": [
+      "Ryan Gosling",
+      "Emma Stone",
+      "Rosemarie DeWitt"
+    ],
+    "imdbRating": "8.0",
+    "language": "English, Cantonese",
+    "isBollywood": false,
+    "groupScore": 0.8
+  },
+  {
+    "title": "A Star Is Born",
+    "genres": [
+      "Drama",
+      "Music",
+      "Romance"
     ],
     "platforms": [],
     "year": "2018",
-    "poster": "https://m.media-amazon.com/images/M/MV5BZmUwZTg2YmMtMmZjOS00ZDYwLWI2ZDgtZDcyY2ZmMWMwZDdlXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
-    "plot": "A group of terrorists plans to detonate three plutonium cores for a simultaneous nuclear attack on different cities. Ethan Hunt, along with his IMF team, sets out to stop the carnage.",
-    "director": "Christopher McQuarrie",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGUxZTc0NTAtNzQwMy00MmM2LTgzMGYtZWIyY2E1MGFjYmM5XkEyXkFqcGc@._V1_SX300.jpg",
+    "plot": "A hard-drinking country music star falls in love with a singer whose career quickly takes off.",
+    "director": "Bradley Cooper",
     "actors": [
-      "Tom Cruise",
-      "Henry Cavill",
-      "Ving Rhames"
+      "Lady Gaga",
+      "Bradley Cooper",
+      "Sam Elliott"
     ],
-    "imdbRating": "7.7",
+    "imdbRating": "7.6",
     "language": "English, French",
     "isBollywood": false,
-    "groupScore": 0.4
+    "groupScore": 0.8
   },
   {
-    "title": "Die Hard",
+    "title": "West Side Story",
     "genres": [
-      "Action",
-      "Thriller"
-    ],
-    "platforms": [],
-    "year": "1988",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMGNlYmM1NmQtYWExMS00NmRjLTg5ZmEtMmYyYzJkMzljYWMxXkEyXkFqcGc@._V1_SX300.jpg",
-    "plot": "A New York City cop, John McClane, tries to save his estranged wife and several others taken hostage by terrorists during a Christmas Eve party at the Nakatomi Plaza Skyscraper in Los Angeles, California.",
-    "director": "John McTiernan",
-    "actors": [
-      "Bruce Willis",
-      "Alan Rickman",
-      "Bonnie Bedelia"
-    ],
-    "imdbRating": "8.2",
-    "language": "English, German, Italian, Japanese",
-    "isBollywood": false,
-    "groupScore": 0.4
-  },
-  {
-    "title": "Kill Bill: Vol. 1",
-    "genres": [
-      "Action",
       "Crime",
-      "Thriller"
+      "Drama",
+      "Musical"
     ],
     "platforms": [],
-    "year": "2003",
-    "poster": "https://m.media-amazon.com/images/M/MV5BZmMyYzJlZmYtY2I3NC00NjAyLTkyZWItZjdjZDI1YTYyYTEwXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
-    "plot": "After waking from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.",
-    "director": "Quentin Tarantino",
+    "year": "1961",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTM0NDAxOTI5MF5BMl5BanBnXkFtZTcwNjI4Mjg3NA@@._V1_SX300.jpg",
+    "plot": "Two youngsters from rival New York City gangs fall in love, but tensions between their respective friends build toward tragedy.",
+    "director": "Jerome Robbins, Robert Wise",
     "actors": [
-      "Uma Thurman",
-      "David Carradine",
-      "Daryl Hannah"
+      "Natalie Wood",
+      "George Chakiris",
+      "Richard Beymer"
     ],
-    "imdbRating": "8.2",
-    "language": "English, Japanese, French",
+    "imdbRating": "7.6",
+    "language": "English, Spanish",
     "isBollywood": false,
-    "groupScore": 0.4
-  },
-  {
-    "title": "Speed",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Thriller"
-    ],
-    "platforms": [],
-    "year": "1994",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMDc2ODI5YWQtMmM2ZS00MTdmLWEyNWEtNmRmOGE5NGZlYWMzXkEyXkFqcGc@._V1_SX300.jpg",
-    "plot": "An extortionist bomber rigs a Los Angeles city bus to explode if its speed drops below 50 mph, forcing a young cop and a female passenger to keep it moving and save everyone on board.",
-    "director": "Jan de Bont",
-    "actors": [
-      "Keanu Reeves",
-      "Dennis Hopper",
-      "Sandra Bullock"
-    ],
-    "imdbRating": "7.3",
-    "language": "English",
-    "isBollywood": false,
-    "groupScore": 0.4
+    "groupScore": 0.8
   }
 ]

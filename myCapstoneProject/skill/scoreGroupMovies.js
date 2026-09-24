@@ -51,6 +51,13 @@
 
 const GENRE_ALIASES = {
   autobiography: { allOf: ["Biography"] },
+  // OMDb inconsistently tags movie-musicals as "Music" instead of
+  // "Musical" (even titles with "Musical" literally in the name, e.g.
+  // "Matilda: The Musical") — this alias lets a "Music"-tagged movie
+  // still satisfy someone who selected "Musical" as a liked genre.
+  // The direct match above already covers movies OMDb *does* tag
+  // "Musical", so this only needs to check the fallback tag.
+  musical: { allOf: ["Music"] },
 };
 
 function normalize(value) {

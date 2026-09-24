@@ -1264,5 +1264,1414 @@
       "platform": "Netflix",
       "url": "https://www.netflix.com/title/81725555"
     }
+  ],
+  "hamilton::2020": [],
+  "cats::2019": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.dcb77608-f9dd-9d23-fdfe-02944eadcdc8"
+    }
+  ],
+  "purple rain::1984": [],
+  "jersey boys::2014": [],
+  "mary poppins returns::2018": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260014604"
+    }
+  ],
+  "sing::2016": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000716"
+    }
+  ],
+  "sing 2::2021": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971001462"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/sing-2"
+    }
+  ],
+  "the prince of egypt::1998": [],
+  "enchanted::2007": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260018186"
+    }
+  ],
+  "yesterday::2019": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271520769"
+    }
+  ],
+  "pitch perfect 2::2015": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000514"
+    }
+  ],
+  "pitch perfect 3::2017": [],
+  "the nightmare before christmas::1993": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260103980"
+    }
+  ],
+  "frozen ii::2019": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260022015"
+    }
+  ],
+  "trolls::2016": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271419578"
+    },
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.04b0a839-04fc-8f2a-66aa-e9b42846f211"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/80108182"
+    }
+  ],
+  "trolls world tour::2020": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000698"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/81198527"
+    },
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9eb89aa9-d291-737f-7ed4-5ad4d4077c33"
+    }
+  ],
+  "begin again::2013": [],
+  "sing street::2016": [],
+  "tick, tick... boom!::2021": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/81149184"
+    }
+  ],
+  "vivo::2021": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/81199052"
+    }
+  ],
+  "the prom::2020": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/81079914"
+    }
+  ],
+  "dear evan hansen::2021": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971001466"
+    }
+  ],
+  "purple hearts::2022": [],
+  "camp rock::2008": [],
+  "high school musical::2006": [],
+  "high school musical 2::2007": [],
+  "descendants::2015": [],
+  "zombies::2018": [
+    {
+      "platform": "Plex",
+      "url": "https://watch.plex.tv/movie/zombies-2016-1?autoplay=1"
+    }
+  ],
+  "teen beach movie::2013": [],
+  "the conjuring::2013": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2eb10715-f27f-e730-ae85-a45fae7a5583"
+    },
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271608348"
+    }
+  ],
+  "the conjuring 2::2016": [],
+  "annabelle::2014": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.99848853-c6ce-4e6a-bc7f-af0a2f83009b"
+    },
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000592"
+    }
+  ],
+  "a nightmare on elm street::1984": [],
+  "halloween::1978": [],
+  "us::2019": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971001143"
+    }
+  ],
+  "nope::2022": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971001697"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/nope"
+    }
+  ],
+  "the babadook::2014": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9cb980f2-5a05-dcfe-1fdf-3ef88135b58d"
+    }
+  ],
+  "it follows::2014": [],
+  "the witch::2016": [],
+  "midsommar::2019": [
+    {
+      "platform": "MUBI",
+      "url": "https://mubi.com/films/midsommar"
+    }
+  ],
+  "train to busan::2016": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000185"
+    },
+    {
+      "platform": "Amazon MX Player",
+      "url": "https://www.mxplayer.in/movie/watch-train-to-busan-movie-online-3ac6ef72dc06e251ce5735b076a2f8cf"
+    },
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.63e20650-7aac-48cf-9665-0fee36a7bdd9"
+    }
+  ],
+  "28 days later::2002": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.12b6914c-a35b-5e03-3f25-b82960a668e4"
+    }
+  ],
+  "world war z::2013": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971293290"
+    },
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6391ebab-606e-4dcb-b114-0b22e8a0238d"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/70262639"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/world-war-z"
+    }
+  ],
+  "don't breathe::2016": [
+    {
+      "platform": "Sony LIV",
+      "url": "https://www.sonyliv.com/movies/dont-breathe-1000213376"
+    }
+  ],
+  "ready or not::2019": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260024423"
+    }
+  ],
+  "malignant::2021": [],
+  "barbarian::2022": [],
+  "m3gan::2022": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000544"
+    }
+  ],
+  "the purge::2013": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271413537"
+    },
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6aa9f6f8-3f97-9897-cea8-18ae81e2bb4e"
+    }
+  ],
+  "paranormal activity::2007": [],
+  "it: chapter two::2019": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.23841b88-b1cc-4bdf-894e-41325647d09f"
+    }
+  ],
+  "evil dead::2013": [
+    {
+      "platform": "Sony LIV",
+      "url": "https://www.sonyliv.com/movies/evil-dead-1000052365"
+    }
+  ],
+  "smile 2::2024": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271700525"
+    }
+  ],
+  "gravity::2013": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.82a9f710-e451-a727-b8fe-efed03ff56f2"
+    }
+  ],
+  "the martian::2015": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1770002321"
+    }
+  ],
+  "ad astra::2019": [],
+  "annihilation::2018": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0216ff5c-0386-485c-846e-b9d62a81d507"
+    }
+  ],
+  "war of the worlds::2005": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271672983"
+    }
+  ],
+  "independence day::1996": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1770001199"
+    }
+  ],
+  "i am legend::2007": [],
+  "elysium::2013": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/70251536"
+    }
+  ],
+  "chappie::2015": [],
+  "ready player one::2018": [],
+  "jurassic world::2015": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.58a9f75d-ff98-6a86-fc1e-539281902600"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/80029196"
+    },
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000540"
+    }
+  ],
+  "godzilla::2014": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000539"
+    }
+  ],
+  "godzilla vs. kong::2021": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.044d47c4-3312-4123-8919-1128926bf173"
+    },
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271608349"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/81183713"
+    }
+  ],
+  "passengers::2016": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/80117456"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/passengers-2016"
+    }
+  ],
+  "bird box::2018": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/80196789"
+    }
+  ],
+  "don't look up::2021": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/81252357"
+    }
+  ],
+  "prometheus::2012": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1770000300"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/prometheus"
+    }
+  ],
+  "maleficent::2014": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260018314"
+    }
+  ],
+  "maleficent: mistress of evil::2019": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260025280"
+    }
+  ],
+  "alice in wonderland::2010": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260016795"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/alice-in-wonderland"
+    }
+  ],
+  "fantastic beasts and where to find them::2016": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000401"
+    }
+  ],
+  "harry potter and the chamber of secrets::2002": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000409"
+    }
+  ],
+  "harry potter and the prisoner of azkaban::2004": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000405"
+    }
+  ],
+  "the hobbit: an unexpected journey::2012": [],
+  "the chronicles of narnia: prince caspian::2008": [],
+  "cinderella::2015": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260018164"
+    }
+  ],
+  "the bfg::2016": [],
+  "pan::2015": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/70307653"
+    }
+  ],
+  "peter pan::1953": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260018323"
+    }
+  ],
+  "doctor strange::2016": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260018179"
+    }
+  ],
+  "aquaman::2018": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.6abbf101-cb31-7daa-d84b-e1867e20361f"
+    },
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971001981"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/81004278"
+    }
+  ],
+  "shazam!::2019": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.feb53693-bc55-273b-bd01-7f4de7f2ee19"
+    },
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000580"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/shazam"
+    }
+  ],
+  "luca::2021": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260063730"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/luca"
+    }
+  ],
+  "turning red::2022": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260086978"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/turning-red"
+    }
+  ],
+  "onward::2020": [],
+  "the croods::2013": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.d2a9f6c2-3485-d1ae-ae76-0fb4b344ce8a"
+    },
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271510278"
+    }
+  ],
+  "the croods: a new age::2020": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000765"
+    }
+  ],
+  "puss in boots: the last wish::2022": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000543"
+    }
+  ],
+  "migration::2023": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271462736"
+    }
+  ],
+  "elemental::2023": [],
+  "wish::2023": [],
+  "rio::2011": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1770000661"
+    }
+  ],
+  "rio 2::2014": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1770001364"
+    }
+  ],
+  "ice age::2002": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1770000963"
+    }
+  ],
+  "ice age: the meltdown::2006": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1770000722"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/ice-age-the-meltdown"
+    }
+  ],
+  "ice age: dawn of the dinosaurs::2009": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1770000673"
+    }
+  ],
+  "madagascar::2005": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.84a9f6d7-0fe4-d16b-9452-752dfb36af8d"
+    }
+  ],
+  "madagascar: escape 2 africa::2008": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c6a9f6d7-5185-1660-c5ae-2c306f04a51b"
+    }
+  ],
+  "kung fu panda 2::2011": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e4ba6579-5d5f-935a-6972-e02d1792022a"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/70126574"
+    }
+  ],
+  "kung fu panda 3::2016": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.deb0a816-b022-8b17-40cf-b862b7952e47"
+    },
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000614"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/80071348"
+    }
+  ],
+  "how to train your dragon 2::2014": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000613"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/70298991"
+    },
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.76b0a844-78e7-9cf2-d089-6a515e189384"
+    }
+  ],
+  "ford v ferrari::2019": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260029222"
+    }
+  ],
+  "the wolf of wall street::2013": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271542892"
+    }
+  ],
+  "moneyball::2011": [
+    {
+      "platform": "Sony LIV",
+      "url": "https://www.sonyliv.com/movies/moneyball-1000214837"
+    },
+    {
+      "platform": "Sony Pictures Amazon Channel",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.16a9f698-ae6c-88cb-2b18-ba06b07d699b"
+    }
+  ],
+  "the blind side::2009": [],
+  "erin brockovich::2000": [
+    {
+      "platform": "Sony LIV",
+      "url": "https://www.sonyliv.com/movies/erin-brockovich-1000007696"
+    }
+  ],
+  "lincoln::2012": [],
+  "darkest hour::2017": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271519529"
+    }
+  ],
+  "the king's speech::2010": [],
+  "judy::2019": [],
+  "selma::2014": [],
+  "42::2013": [],
+  "the danish girl::2015": [],
+  "vice::2018": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c6b3f0fd-b766-7a98-77da-01e48030984b"
+    }
+  ],
+  "american sniper::2015": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.3ca9f685-1f7f-1d44-5cad-0472301b7d70"
+    }
+  ],
+  "hidden figures::2016": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1770016538"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/hidden-figures"
+    }
+  ],
+  "the aviator::2004": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/70011213"
+    }
+  ],
+  "j. edgar::2011": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000666"
+    }
+  ],
+  "capote::2005": [
+    {
+      "platform": "MGM+ (Via Amazon Prime)",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b8a9f66e-4782-f998-b0f9-4ed45e6937c9"
+    }
+  ],
+  "milk::2008": [],
+  "frida::2002": [],
+  "la vie en rose::2007": [],
+  "amadeus::1984": [],
+  "braveheart::1995": [],
+  "knives out::2019": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.bd5bb5ac-9dfe-4bf3-9987-02e2ef5dc117"
+    }
+  ],
+  "glass onion: a knives out mystery (2022)::2022": [],
+  "parasite::2019": [
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/parasite-hindi"
+    }
+  ],
+  "the girl on the train::2016": [],
+  "a simple favor::2018": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.4348c993-bd87-416a-94a5-efe743db46df"
+    }
+  ],
+  "widows::2018": [],
+  "drive::2011": [],
+  "wind river::2017": [],
+  "sicario::2015": [],
+  "the talented mr. ripley::1999": [],
+  "rear window::1954": [],
+  "the da vinci code::2006": [
+    {
+      "platform": "Sony LIV",
+      "url": "https://www.sonyliv.com/movies/the-da-vinci-code-1000214429"
+    }
+  ],
+  "angels & demons::2009": [
+    {
+      "platform": "Sony LIV",
+      "url": "https://www.sonyliv.com/movies/angels-and-demons-1000131110"
+    }
+  ],
+  "extraction::2020": [],
+  "damn you hollywood: extraction 2/flamin hot (2023)::2023": [],
+  "6 underground::2019": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/81001887"
+    }
+  ],
+  "red notice::2021": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/81161626"
+    }
+  ],
+  "the gray man::2022": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/81160697"
+    }
+  ],
+  "bad boys for life::2020": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271631595"
+    },
+    {
+      "platform": "Sony LIV",
+      "url": "https://www.sonyliv.com/movies/bad-boys-for-life-1090468777"
+    }
+  ],
+  "furious 7::2015": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971011143"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/80019608"
+    },
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f8a9f6c2-ee64-57e0-3072-2e69cd5cbb13"
+    }
+  ],
+  "fast x::2023": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971309276"
+    }
+  ],
+  "kingsman: the secret service::2015": [],
+  "atomic blonde::2017": [],
+  "baby driver::2017": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.76ae61ff-94b1-06d8-762e-8c542e1c978d"
+    }
+  ],
+  "skyfall::2012": [
+    {
+      "platform": "MGM+ (Via Amazon Prime)",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7c573752-29f1-47e2-bb71-afd978b23dbc"
+    }
+  ],
+  "casino royale::2006": [
+    {
+      "platform": "MGM+ (Via Amazon Prime)",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.67d67132-66a8-46fb-9b4d-3ebe25602945"
+    }
+  ],
+  "wonder woman::2017": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.0eb0d509-6a82-7a0a-8daf-20ab1de8f5b6"
+    },
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000396"
+    }
+  ],
+  "black panther::2018": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1660010672"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/black-panther"
+    }
+  ],
+  "iron man::2008": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1660000038"
+    }
+  ],
+  "avengers: endgame::2019": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260013556"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/avengers-endgame"
+    }
+  ],
+  "the equalizer::2014": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.64a9f694-ac15-f72f-7968-e829a9132ad5"
+    }
+  ],
+  "jumanji: welcome to the jungle::2017": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.80b01be8-9b16-5d55-4118-07db2f948bd3"
+    },
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271629687"
+    },
+    {
+      "platform": "Sony LIV",
+      "url": "https://www.sonyliv.com/movies/jumanji-welcome-to-the-jungle-1000214836"
+    }
+  ],
+  "jumanji: the next level::2019": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f0b764be-4838-4b3e-065a-f346a84c25cf"
+    },
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271647530"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/jumanji-the-next-level"
+    }
+  ],
+  "national treasure: book of secrets::2007": [],
+  "uncharted::2022": [],
+  "tomb raider::2018": [],
+  "indiana jones and the last crusade::1989": [],
+  "indiana jones and the temple of doom::1984": [],
+  "journey 2: the mysterious island::2012": [],
+  "the secret life of walter mitty::2013": [],
+  "cast away::2000": [],
+  "the revenant::2016": [],
+  "127 hours::2010": [],
+  "to all the boys i've loved before::2018": [],
+  "always be my maybe::2019": [],
+  "crazy rich asians::2018": [],
+  "the half of it::2020": [],
+  "someone great::2019": [],
+  "palm springs::2020": [],
+  "the proposal::2009": [],
+  "not a love story: making (500) days of summer::2009": [],
+  "warm bodies::2013": [],
+  "the vow::2012": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.78a9f699-25dc-4eb1-4e97-221bfe773c9d"
+    }
+  ],
+  "dear john::2010": [],
+  "a walk to remember::2002": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.cebc5216-ea18-b86d-75a4-beb89a7b1c8c"
+    }
+  ],
+  "p.s. i love you::2007": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e7e0ecc4-0e28-41b0-bf6b-177ad8c72b01"
+    }
+  ],
+  "the big sick::2017": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.caaff08b-3f53-3853-a265-8f6936a09f70"
+    }
+  ],
+  "when harry met sally...::1989": [
+    {
+      "platform": "MGM+ (Via Amazon Prime)",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.606ee96e-ef6a-414a-9800-3ea5aa66982d"
+    }
+  ],
+  "zoolander::2001": [],
+  "booksmart::2019": [
+    {
+      "platform": "MGM+ (Via Amazon Prime)",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.bab5f62a-cf81-c015-7883-3b5aafa26d8e"
+    }
+  ],
+  "central intelligence::2016": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271705311"
+    }
+  ],
+  "free guy::2021": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260071301"
+    }
+  ],
+  "deadpool::2016": [],
+  "deadpool 2::2018": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1770020234"
+    }
+  ],
+  "the nice guys::2016": [],
+  "meet the parents::2000": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971001346"
+    }
+  ],
+  "wedding crashers::2005": [],
+  "napoleon dynamite::2004": [],
+  "little women::2019": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.8cb78d19-fc57-4ec8-3226-c04c8a8f48b9"
+    },
+    {
+      "platform": "Sony LIV",
+      "url": "https://www.sonyliv.com/movies/little-women-2019-1090426718"
+    }
+  ],
+  "the help::2011": [],
+  "room::2015": [],
+  "nomadland::2020": [],
+  "coda::2021": [
+    {
+      "platform": "AppleTV+ Amazon Channel",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e4f00c81-ba1d-4ee1-97ee-cb0bc72556e2"
+    }
+  ],
+  "the mummy::1999": [],
+  "grease 2::1982": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/60028292"
+    }
+  ],
+  "joyful noise::2012": [],
+  "rock of ages::2012": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000602"
+    }
+  ],
+  "footloose::1984": [],
+  "dirty dancing::1987": [],
+  "flashdance::1983": [],
+  "saturday night fever::1977": [],
+  "fame::1980": [],
+  "xanadu::1980": [],
+  "across the universe::2007": [
+    {
+      "platform": "Sony LIV",
+      "url": "https://www.sonyliv.com/movies/across-the-universe-1000131109"
+    }
+  ],
+  "school of rock::2003": [],
+  "bye bye birdie::1963": [],
+  "sister act::1992": [],
+  "sister act 2: back in the habit::1993": [],
+  "the little mermaid::1989": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1660010306"
+    }
+  ],
+  "willy wonka & the chocolate factory::1971": [],
+  "the hobbit: the desolation of smaug::2013": [],
+  "the hobbit: the battle of the five armies::2014": [],
+  "ella enchanted::2004": [],
+  "ever after: a cinderella story::1998": [],
+  "the golden compass::2007": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000607"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/the-golden-compass"
+    }
+  ],
+  "mirror mirror::2012": [],
+  "snow white and the huntsman::2012": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271419618"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/70217912"
+    }
+  ],
+  "the nutcracker and the four realms::2018": [],
+  "a wrinkle in time::2018": [],
+  "wonder woman 1984::2020": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000394"
+    },
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.f1b65247-0b98-4a4b-a21e-0d02cae1fc66"
+    }
+  ],
+  "radioactive::2019": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.d5231f5a-d2c5-4a52-a2a2-c2edea9504f4"
+    }
+  ],
+  "bombshell::2019": [
+    {
+      "platform": "Lionsgate+ (Via Amazon Prime)",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.fa03e892-38a3-4685-9d74-101ac04f083b"
+    }
+  ],
+  "on the basis of sex::2018": [],
+  "big eyes::2014": [],
+  "rush::2013": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1271685252"
+    }
+  ],
+  "the big short::2015": [],
+  "straight outta compton::2015": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000487"
+    }
+  ],
+  "8 mile::2002": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000524"
+    }
+  ],
+  "a beautiful day in the neighborhood::2019": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/81121682"
+    }
+  ],
+  "richard jewell::2019": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000626"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/richard-jewell"
+    }
+  ],
+  "public enemies::2009": [],
+  "foxcatcher::2014": [
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/jai-atharabhuja-saptashrungi-mata"
+    }
+  ],
+  "dallas buyers club::2013": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.a58d706d-d5d8-4d4b-a43a-5ccd6c86acb8"
+    }
+  ],
+  "pawn sacrifice::2015": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.20bb162e-b2fe-1f7e-27a9-c8b10915a92f"
+    }
+  ],
+  "concussion::2015": [],
+  "spencer::2021": [],
+  "gone baby gone::2007": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9447ef67-2168-4d4b-b1c6-5f18945d8082"
+    }
+  ],
+  "mystic river::2003": [],
+  "the fugitive::1993": [],
+  "the girl with the dragon tattoo::2011": [
+    {
+      "platform": "MGM+ (Via Amazon Prime)",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.c6a9f792-1ba0-5818-6e89-54f8350da6fb"
+    }
+  ],
+  "salt::2010": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.74a9f700-99b3-aa6b-8f3c-fea50ef86f03"
+    },
+    {
+      "platform": "Sony LIV",
+      "url": "https://www.sonyliv.com/movies/salt-1000053245"
+    }
+  ],
+  "unknown::2011": [],
+  "the bourne supremacy::2004": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.9ff57bb1-dbf2-4cf6-8f21-c5569adb38c2"
+    }
+  ],
+  "the bourne ultimatum::2007": [],
+  "body of lies::2008": [],
+  "now you see me::2013": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2224a1aa-76a5-47fc-913d-07e1d163d445"
+    }
+  ],
+  "now you see me 2::2016": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.feab3890-e840-fe49-bb19-eb9bf62ccbe6"
+    }
+  ],
+  "enemy of the state::1998": [],
+  "robin hood::2010": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000632"
+    }
+  ],
+  "king arthur: legend of the sword::2017": [],
+  "the lost city::2022": [],
+  "jungle cruise::2021": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1260072687"
+    }
+  ],
+  "prince of persia: the sands of time::2010": [],
+  "percy jackson: sea of monsters::2013": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1770002244"
+    }
+  ],
+  "the water diviner::2014": [],
+  "everest::2015": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000732"
+    }
+  ],
+  "tracks::2014": [],
+  "sweet home alabama::2002": [],
+  "the holiday::2006": [],
+  "love, rosie::2014": [],
+  "two weeks notice::2002": [],
+  "definitely, maybe::2008": [],
+  "no strings attached::2011": [],
+  "friends with benefits::2011": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.34a9f65d-343c-e299-a877-329bec4fe1d6"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/70167075"
+    }
+  ],
+  "serendipity::2001": [],
+  "forgetting sarah marshall::2008": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000565"
+    }
+  ],
+  "he's just not that into you::2009": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000667"
+    }
+  ],
+  "new year's eve::2011": [],
+  "valentine's day::2010": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.b0a9f779-e203-4973-eb42-c4fe0b0a5a4e"
+    },
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/70124804"
+    }
+  ],
+  "about a boy::2002": [],
+  "the hangover part ii::2011": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.2ea9f758-2d51-6fe7-fb4c-3b6db53265ec"
+    },
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000503"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/the-hangover-part-ii"
+    }
+  ],
+  "the heat::2013": [],
+  "spy::2015": [],
+  "tag::2018": [],
+  "blockers::2018": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000576"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/blockers"
+    }
+  ],
+  "big daddy::1999": [],
+  "click::2006": [],
+  "get him to the greek::2010": [],
+  "pineapple express::2008": [],
+  "22 jump street::2014": [],
+  "horrible bosses::2011": [],
+  "we're the millers::2013": [],
+  "ted 2::2015": [],
+  "coming to america::1988": [],
+  "the green mile::1999": [],
+  "1917::2020": [],
+  "joker::2019": [],
+  "django unchained::2012": [],
+  "the fighter::2010": [],
+  "million dollar baby::2005": [],
+  "blood diamond::2006": [],
+  "american history x::1998": [],
+  "hacksaw ridge::2016": [],
+  "the terminal::2004": [],
+  "requiem for a dream::2000": [],
+  "good boys::2019": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971001419"
+    }
+  ],
+  "matilda: the musical::2022": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/80993016"
+    }
+  ],
+  "everybody's talking about jamie::2021": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.443af870-8461-471d-a0c2-41c3c74ac245"
+    }
+  ],
+  "the wiz::1978": [],
+  "newsies::1992": [],
+  "godspell::1973": [],
+  "jesus christ superstar::1973": [],
+  "dumplin'::2018": [],
+  "popstar: never stop never stopping::2016": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/80092424"
+    }
+  ],
+  "hustle & flow::2005": [],
+  "walk hard: the dewey cox story::2007": [],
+  "the umbrellas of cherbourg::1964": [],
+  "sweet charity::1969": [],
+  "funny girl::1968": [],
+  "gypsy::2017": [],
+  "annie get your gun::1950": [],
+  "south pacific::1958": [],
+  "burlesque::2010": [
+    {
+      "platform": "Sony Pictures Amazon Channel",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.70a9f7a0-ab35-b98e-a13f-387a6b492866"
+    }
+  ],
+  "coyote ugly::2000": [],
+  "august rush::2007": [],
+  "bandslam::2009": [],
+  "teen beach 2::2015": [],
+  "camp rock 2: the final jam::2010": [],
+  "honey::2003": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000639"
+    }
+  ],
+  "step up::2006": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/70050484"
+    },
+    {
+      "platform": "Lionsgate+ (Via Amazon Prime)",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.e0916fcd-57b0-4ce4-8da2-4e989bb1cdc6"
+    }
+  ],
+  "step up 2 the streets::2008": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/70083112"
+    }
+  ],
+  "step up 3d::2010": [],
+  "save the last dance::2001": [],
+  "center stage::2000": [],
+  "the spiderwick chronicles::2008": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/70077556"
+    }
+  ],
+  "eragon::2006": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1770000714"
+    }
+  ],
+  "inkheart::2008": [],
+  "city of ember::2008": [],
+  "a series of unfortunate events::2004": [],
+  "miss peregrine's home for peculiar children::2016": [],
+  "the mummy returns::2001": [],
+  "magic mike::2012": [],
+  "magic mike xxl::2015": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/80031499"
+    }
+  ],
+  "charlie and the chocolate factory::2005": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1971000549"
+    },
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.7aa9f6b8-6b16-976f-cb50-672cc533b053"
+    }
+  ],
+  "the chronicles of narnia: the voyage of the dawn treader::2010": [
+    {
+      "platform": "Hotstar",
+      "url": "https://www.hotstar.com/in/1770000662"
+    },
+    {
+      "platform": "VI movies and tv",
+      "url": "https://moviesandtv.myvi.in/movie/the-chronicles-of-narnia-the-voyage-of-the-dawn-treader"
+    }
+  ],
+  "warcraft::2016": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/80093133"
+    }
+  ],
+  "raiders of the lost ark::1981": [
+    {
+      "platform": "Netflix",
+      "url": "https://www.netflix.com/title/60011649"
+    }
   ]
 }
