@@ -205,6 +205,14 @@
     text-shadow: 0 2px 0 rgba(0,0,0,0.3);
   }
 
+  /* Secondary line under the ticket, explaining what the app does —
+     smaller and quieter than .ticket-big-title, same cream/retro
+     palette as the rest of the landing screen. */
+  .landing-tagline {
+    max-width: 360px; margin: 0 auto 26px; text-align: center;
+    color: rgba(255,243,214,0.75); font-size: 0.92rem; line-height: 1.45;
+  }
+
   .landing-login-panel {
     /* No card/box around this — just the subtitle + button sitting
        directly on the page, centered as a group. */
@@ -402,6 +410,8 @@
           <span></span><span></span><span></span><span></span><span></span>
         </div>
       </div>
+
+      <div class="landing-tagline">Choose your preferences and get personalized movie picks - solo or with your group!</div>
 
       <div class="landing-login-panel">
         <div class="subtitle" id="loginSubtitle">Sign in with Google to add your preferences.</div>
