@@ -170,6 +170,16 @@
     background-repeat: no-repeat, repeat, repeat, no-repeat;
     margin: -48px -20px; padding: 60px 20px 64px;
     min-height: calc(100vh);
+  }
+  /* Scoped to #screen-login.active (not the bare #screen-login rule
+     above): an ID selector's display value beats .screen.active's
+     "display: block" no matter what, so declaring display:flex on
+     #screen-login unconditionally kept this screen visible even
+     after showScreen() switched away from it — it rendered stacked
+     beside whatever screen became active instead of being hidden.
+     Requiring .active here means the base ".screen { display: none }"
+     rule is what actually hides it again. */
+  #screen-login.active {
     /* Center the title + sign-in button as a group, both axes — not
        just horizontally via .landing-inner's margin: 0 auto below. */
     display: flex; flex-direction: column; align-items: center; justify-content: center;
