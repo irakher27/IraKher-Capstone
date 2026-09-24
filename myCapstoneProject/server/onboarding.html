@@ -170,6 +170,9 @@
     background-repeat: no-repeat, repeat, repeat, no-repeat;
     margin: -48px -20px; padding: 60px 20px 64px;
     min-height: calc(100vh);
+    /* Center the title + sign-in button as a group, both axes — not
+       just horizontally via .landing-inner's margin: 0 auto below. */
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
   }
   .landing-inner { max-width: 640px; margin: 0 auto; }
 
@@ -195,10 +198,6 @@
   }
   .ticket-flourish { display: block; width: 32px; height: 24px; margin: 0 auto 6px; color: var(--tk-gold); }
   .ticket-flourish.bottom { margin: 6px auto 0; transform: scaleY(-1); }
-  .ticket-eyebrow-line {
-    text-align: center; font-size: 0.62rem; letter-spacing: 0.3em;
-    color: var(--tk-cream); font-weight: 700; margin-bottom: 2px;
-  }
   .ticket-big-title {
     font-family: 'Bungee', 'Bebas Neue', system-ui, sans-serif;
     text-align: center; color: var(--tk-gold);
@@ -207,11 +206,9 @@
   }
 
   .landing-login-panel {
+    /* No card/box around this — just the subtitle + button sitting
+       directly on the page, centered as a group. */
     max-width: 320px; margin: 0 auto; text-align: center;
-    background: linear-gradient(160deg, #200d0d, #140707);
-    border: 1px solid rgba(217,184,114,0.4);
-    border-radius: 14px; padding: 22px 22px 24px;
-    box-shadow: 0 14px 34px rgba(0,0,0,0.5);
   }
   .landing-login-panel .subtitle { color: rgba(255,243,214,0.75); margin-bottom: 18px; font-size: 0.9rem; }
   .landing-login-btn {
@@ -391,7 +388,6 @@
           <path d="M22 34C22 22 30 13 39 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
         </svg>
 
-        <div class="ticket-eyebrow-line">Welcome To</div>
         <div class="ticket-big-title">Book Your Movie</div>
 
         <svg class="ticket-flourish bottom" width="44" height="34" viewBox="0 0 44 34" fill="none" aria-hidden="true">
