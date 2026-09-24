@@ -1073,6 +1073,18 @@
       return;
     }
 
+    wrap.innerHTML = '';
+
+    // Search-fallback sources mean we don't actually know which
+    // platform has it (Watchmode had no match) — label + word the
+    // buttons accordingly instead of implying confirmed availability.
+    if (sources[0] && sources[0].isSearchFallback) {
+      const note = document.createElement('div');
+      note.className = 'watch-loading';
+      note.textContent = "Exact availability isn't confirmed — try searching these platforms:";
+      wrap.appendChild(note);
+    }
+
     const grid = document.createElement('div');
     grid.className = 'watch-btn-grid';
     sources.forEach((source) => {
@@ -1081,10 +1093,9 @@
       link.href = source.url;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
-      link.textContent = 'Watch on ' + source.platform;
+      link.textContent = (source.isSearchFallback ? 'Search on ' : 'Watch on ') + source.platform;
       grid.appendChild(link);
     });
-    wrap.innerHTML = '';
     wrap.appendChild(grid);
   }
 

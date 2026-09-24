@@ -21,7 +21,7 @@ const fs = require("fs");
 const path = require("path");
 
 const { runWorkflow, runRedoWorkflow } = require("../agent/runWorkflow");
-const { getStreamingAvailability } = require("../adapters/watchmodeAdapter");
+const { getStreamingAvailability, getSearchFallbackLinks } = require("../adapters/watchmodeAdapter");
 const googleAuth = require("./googleAuth");
 const profileStore = require("./profileStore");
 
@@ -209,10 +209,17 @@ const server = http.createServer(async (req, res) => {
       if (!title) return sendJson(res, 400, { ok: false, error: "title is required." });
       try {
         const sources = await getStreamingAvailability(title, year);
+        // Watchmode's India catalog has real gaps (Bollywood/regional
+        // titles especially) — an empty result means "Watchmode doesn't
+        // know," not "not available," so offer search links on the
+        // major platforms instead of telling the user it's unavailable.
+        if (sources.length === 0) {
+          return sendJson(res, 200, { ok: true, sources: getSearchFallbackLinks(title) });
+        }
         return sendJson(res, 200, { ok: true, sources });
       } catch (err) {
         console.error(`Watchmode lookup failed for "${title}":`, err.message);
-        return sendJson(res, 200, { ok: true, sources: [] });
+        return sendJson(res, 200, { ok: true, sources: getSearchFallbackLinks(title) });
       }
     }
 

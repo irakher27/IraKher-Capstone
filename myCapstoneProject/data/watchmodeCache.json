@@ -36,5 +36,12 @@
       "url": "https://www.hotstar.com/in/1971000591"
     }
   ],
-  "the shawshank redemption::1994": []
+  "the shawshank redemption::1994": [],
+  "gully boy::2019": [],
+  "notting hill::1999": [
+    {
+      "platform": "Prime Video",
+      "url": "https://app.primevideo.com/detail?gti=amzn1.dv.gti.34a9f741-a748-63b1-1f54-fec118de2a23"
+    }
+  ]
 }

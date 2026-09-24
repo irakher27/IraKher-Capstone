@@ -126,4 +126,31 @@ async function getStreamingAvailability(title, year) {
   return sources;
 }
 
-module.exports = { getStreamingAvailability };
+// Watchmode's India catalog has real gaps, especially for Bollywood/
+// Indian-language titles (see data/bollywoodTitles.json) — it simply
+// doesn't have those titles indexed at all, not that they're
+// unavailable. Rather than tell a user a movie "isn't available"
+// when the truth is just "Watchmode doesn't know," fall back to a
+// direct search link on the major platforms so they can check
+// themselves. Callers should only use this when getStreamingAvailability
+// returns an empty array.
+const SEARCH_FALLBACK_PLATFORMS = [
+  { platform: "Netflix", buildUrl: (q) => `https://www.netflix.com/search?q=${q}` },
+  { platform: "Prime Video", buildUrl: (q) => `https://www.primevideo.com/search/ref=atv_nb_sr?phrase=${q}` },
+  { platform: "JioHotstar", buildUrl: (q) => `https://www.hotstar.com/in/search?q=${q}` },
+];
+
+/**
+ * @param {string} title
+ * @returns {{platform: string, url: string, isSearchFallback: true}[]}
+ */
+function getSearchFallbackLinks(title) {
+  const q = encodeURIComponent(title);
+  return SEARCH_FALLBACK_PLATFORMS.map(({ platform, buildUrl }) => ({
+    platform,
+    url: buildUrl(q),
+    isSearchFallback: true,
+  }));
+}
+
+module.exports = { getStreamingAvailability, getSearchFallbackLinks };
