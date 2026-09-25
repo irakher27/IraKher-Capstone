@@ -19,40 +19,73 @@
     (Watchmode/Gemini rate limits, multi-round verification batches) between
     commits that the raw span understates. Treat "~9h" as conservative, not
     precise.
-- **Approx tokens used: not precisely tracked**, same as every entry below —
-  there's no reliable way to pull actual token-usage numbers from inside a
-  conversation, so this has never been a real measurement, just a placeholder.
+- **Cumulative tokens: 592,396,967** (measured, not estimated — see
+  methodology below). Category breakdown: 2,576 fresh input + 1,002,839 output
+  + 6,727,524 cache-write + 584,664,028 cache-read. That last number
+  dominates the total and is worth understanding correctly: this whole
+  project has been **one continuous Claude Code session** (see below), and
+  with prompt caching, every single turn re-reads the entire accumulated
+  conversation-so-far as a cheap cache hit rather than paying full price for
+  it again. A long-running session naturally racks up a huge cache-read
+  total over many turns even though each individual turn is cheap — it is
+  *not* 585M tokens of fresh generation, and isn't directly comparable to
+  raw per-request API pricing without accounting for that.
+  - **Methodology**: Claude Code logs every real API response to a local
+    JSONL transcript. For this project, that's exactly one file:
+    `~/.claude/projects/c--Users-irakh-OneDrive-Desktop-capstone-desg319-IraKher-Capstone/8ff2a5e0-d6c7-4c8a-a786-b4c2b7f2d53e.jsonl`
+    (confirmed as the *only* session file for this project — no others
+    exist). Each response's `message.usage` object (the same
+    `input_tokens`/`output_tokens`/`cache_creation_input_tokens`/
+    `cache_read_input_tokens` fields the Anthropic API itself returns) was
+    summed after de-duplicating by `message.id`, since Claude Code writes
+    multiple JSONL lines per actual API call (one per streamed content
+    block) that all carry an identical copy of that call's usage — naively
+    summing every line would have overcounted by roughly 2x. 1,288 unique
+    API calls total.
+  - **This is a live, growing number.** The session was still open at the
+    moment this was last measured (last transcript timestamp:
+    2026-09-25T09:25:49Z / 2:55 PM IST) — asking this same question again
+    later will return a higher total, including the tokens this very
+    measurement and its write-up used. (Re-measured once already: it was
+    575,295,552 a couple hours earlier in this same session — only the
+    "this session" entry below actually moved; every earlier session's
+    numbers are frozen and correct as-is.)
 
 ## [2026-09-17]
 - Time spent: ~2 hour
-- Approx tokens used: ~X tokens across sessions, not precisely tracked
+- Approx tokens used: 0 — the local session transcript (see methodology
+  above) shows no session activity anywhere before 2026-09-18 15:00 IST.
+  This independently confirms the running-total note above: this and the
+  next entry are mis-dated duplicates of the 2026-09-18 work, not a
+  separate real session.
 - What shipped: Built the group movie-picker capstone Skill (scoreGroupMovies.js — hard-excludes any movie disliked by a persona, then scores and ranks the rest by group fit). Built an OMDb adapter to fetch and reshape real movie data. Built the agent loop (runWorkflow.js) implementing perceive → act → observe → reason → act again: loads persona profiles, fetches candidate movies from OMDb, scores them through the Skill, and retries with a loosened platform check when too few results survive. Wired in filesystem MCP so the agent reads persona files and writes results.json through the MCP connector rather than direct file I/O. Full workflow runs end-to-end on real persona input and produces real ranked movie output.
 
 ## [2026-09-17]
 - Time spent: ~2 hour
-- Approx tokens used: ~X tokens across sessions, not precisely tracked
+- Approx tokens used: 0 — same as above; see the running-total note.
 - What shipped: Added a .gitignore (.env, node_modules) and a Node package.json so the project actually installs and runs. Built three visualization layers on top of the existing pipeline: viewer.html (final ranked results as cards), process.html (a 6-step walkthrough — personas, fetched candidates, attempt 1 scoring with per-persona veto reasons, the agent's reasoning, attempt 2, final ranking), and site.html (the actual end-user journey — pick who's watching, animated "working" steps, ranked picks). Upgraded site.html so it's not just a mockup: the real scoreGroupMovies skill and the real fetched candidate movies are embedded and rerun live in the browser against whichever personas are checked, so different group selections genuinely produce different rankings. Renamed the five personas from generic "Persona N" labels to real names (Ira, Richa, Avani, Neela, Arunima) across the data files and every generated page. Started this build log.
 
 
 ## [2026-09-18]
 - Time spent: ~2 hour
-- Approx tokens used: ~X tokens across sessions, not precisely tracked
+- Approx tokens used: **12,575,552** (118 API calls; in=236 out=74,129 cache-write=238,605 cache-read=12,262,582)
 - What shipped: Built the group movie-picker capstone Skill (scoreGroupMovies.js — hard-excludes any movie disliked by a persona, then scores and ranks the rest by group fit). Built an OMDb adapter to fetch and reshape real movie data. Built the agent loop (runWorkflow.js) implementing perceive → act → observe → reason → act again: loads persona profiles, fetches candidate movies from OMDb, scores them through the Skill, and retries with a loosened platform check when too few results survive. Wired in filesystem MCP so the agent reads persona files and writes results.json through the MCP connector rather than direct file I/O. Full workflow runs end-to-end on real persona input and produces real ranked movie output.
 
 ## [2026-09-18]
 - Time spent: ~2 hour
-- Approx tokens used: ~X tokens across sessions, not precisely tracked
+- Approx tokens used: counted together with the entry above — both
+  "2026-09-18" entries are one real session in the transcript, not two.
 - What shipped: Added a .gitignore (.env, node_modules) and a Node package.json so the project actually installs and runs. Built three visualization layers on top of the existing pipeline: viewer.html (final ranked results as cards), process.html (a 6-step walkthrough — personas, fetched candidates, attempt 1 scoring with per-persona veto reasons, the agent's reasoning, attempt 2, final ranking), and site.html (the actual end-user journey — pick who's watching, animated "working" steps, ranked picks). Upgraded site.html so it's not just a mockup: the real scoreGroupMovies skill and the real fetched candidate movies are embedded and rerun live in the browser against whichever personas are checked, so different group selections genuinely produce different rankings. Renamed the five personas from generic "Persona N" labels to real names (Ira, Richa, Avani, Neela, Arunima) across the data files and every generated page. Started this build log.
 
 ## [2026-09-19]
 - Time spent: ~6.5 hours (estimated from commit timestamps, 13:22–19:10, plus pre-commit and this finalization pass)
-- Approx tokens used: ~X tokens across sessions, not precisely tracked
+- Approx tokens used: **124,269,277** (329 API calls; in=658 out=261,234 cache-write=1,228,492 cache-read=122,778,893)
 - What shipped: Expanded the candidate movie list to 159 titles and the recognized genre vocabulary (Musical, Autobiography, Horror, Romance, Comedy, Thriller, Sci-Fi, Action, Adventure, Drama, Fantasy — removed redundant RomCom/Raunchy Comedy since they're just Romance/Comedy combos). Fixed several real matching/logic bugs in scoreGroupMovies.js: previously-liked titles are now excluded from someone's own recommendations instead of being re-suggested, genre/title matching is case- and whitespace-insensitive, duplicate candidates are de-duplicated, and a real quota-vs-not-found ambiguity in the OMDb adapter (both were silently treated as "not found," hiding actual API failures) now throws a clear error. Added local caching for OMDb lookups so the same title is never re-fetched from the network twice, protecting against OMDb's 1,000-request/day free-tier limit. Replaced the static personas/*.json test files with a real multi-user onboarding flow: people sign in with Google (OAuth 2.0, via server/googleAuth.js), answer a short form (works solo or as a group, no hardcoded minimum), their preferences save to disk keyed by email (server/profileStore.js) and are editable anytime through a persistent profile badge/modal, and "Get recommendations" runs the exact same agent loop against whoever just answered — no static persona files involved. Made the app deployable: reads Railway's injected PORT and a configurable PUBLIC_BASE_URL/DATA_DIR instead of assuming localhost, added railway.toml, and wrote the project's README.md. Finished with a verification pass confirming the Skill/agent loop/MCP mechanism is still genuinely exercised by the live app and that the failure-handling from earlier (bad titles, empty results, already-liked exclusion) still works correctly end-to-end.
 
 ## [2026-09-22]
 - Time spent: ~1 hour (estimated from commit timestamps, 21:47–22:19 — see the
   running-total note above on why this likely undercounts)
-- Approx tokens used: not precisely tracked
+- Approx tokens used: **106,929,408** (149 API calls; in=298 out=144,124 cache-write=1,371,488 cache-read=105,413,498)
 - What shipped: Redesigned the results screen and the landing/login screen
   around a retro cinema-ticket theme, replacing the plain card list. Added
   rich per-movie metadata (poster, plot, director, actors, IMDb rating,
@@ -69,7 +102,7 @@
 
 ## [2026-09-24, morning]
 - Time spent: ~1 hour (estimated from commit timestamps, 02:16–03:22)
-- Approx tokens used: not precisely tracked
+- Approx tokens used: **133,131,997** (235 API calls; in=470 out=185,680 cache-write=1,109,120 cache-read=131,836,727)
 - What shipped: A round of bug fixes reported from actually using the live
   app. Fixed genre-priority scoring (a movie matching more of a person's
   selected genres now reliably outranks one matching fewer, normalized
@@ -104,7 +137,7 @@
   this session involved multiple multi-minute background batches of
   Watchmode API calls with deliberate pacing to respect its rate limits, so
   the real elapsed time was meaningfully longer than the commit span alone)
-- Approx tokens used: not precisely tracked
+- Approx tokens used: **82,389,831** (239 API calls; in=478 out=166,389 cache-write=672,938 cache-read=81,550,026)
 - What shipped: Real streaming-platform data, replacing "we don't actually
   know where this is available." Added `adapters/watchmodeAdapter.js`
   (Watchmode API integration, cached like the OMDb adapter) and a "Watch
@@ -137,7 +170,7 @@
 
 ## [2026-09-25, early morning]
 - Time spent: ~1 hour (estimated from commit timestamps, 01:16–02:29)
-- Approx tokens used: not precisely tracked
+- Approx tokens used: **80,224,782** (143 API calls; in=286 out=101,490 cache-write=607,422 cache-read=79,515,584)
 - What shipped: A focused pass on the login/landing screen and a real bug
   fix. Removed the "Welcome To" eyebrow line so the title reads exactly
   "Book Your Movie," added a one-line tagline explaining what the app does,
@@ -165,9 +198,12 @@
   replacement found.
 
 ## [2026-09-25, this session]
-- Time spent: ~1.5 hours (this session, not yet reflected in a commit-span
-  estimate at time of writing)
-- Approx tokens used: not precisely tracked
+- Time spent: ~1.5 hours+ (this session, still open — not yet reflected in
+  a commit-span estimate at time of writing)
+- Approx tokens used: **52,876,120 as of the last query** (75 API calls;
+  in=150 out=69,793 cache-write=1,499,459 cache-read=51,306,718) — this
+  number is a snapshot and grows every turn; see the running-total
+  methodology note above.
 - What shipped: Received grading feedback that the project's one
   non-optional course requirement — genuine AI/LLM usage somewhere in the
   app, not just well-engineered deterministic automation — wasn't met. Every
@@ -205,4 +241,21 @@
   Watchmode/India platform filtering, Watch Now, the redo Skill, or the
   retro ticket UI, and Gemini was listed as "not currently used") — and
   backfilled this build log with the four sessions of real, shipped work
-  between 2026-09-19 and today that had never been logged.
+  between 2026-09-19 and today that had never been logged. Later in the
+  same session: tested the Gemini feature with a real blank-vs-filled
+  comparison (same persona, `taste_notes` empty vs "feeling like a
+  nostalgic 90s comedy") and hit that ~20/day quota ceiling for real mid-
+  test — switched `adapters/geminiAdapter.js` to `gemini-3.1-flash-lite`
+  (a better fit for this simple extraction task anyway, with meaningfully
+  more free-tier headroom), then re-ran the comparison clean: Comedy-tagged
+  results went from 1/5 (baseline) to 5/5 (with the free-text note), a
+  fully different top-5 list — genuine evidence the LLM inference actually
+  moves recommendations, not just decoration. Then pulled the real
+  cumulative token totals in this entry and throughout this log from the
+  local Claude Code session transcript itself (see the running-total
+  methodology note above) instead of leaving every entry's token line as
+  an untracked placeholder. Re-measured again shortly after (asked to
+  "update the tokens used everywhere needed") to confirm the live-number
+  caveat was real, not hypothetical: the running total and this entry's
+  own line both moved (575.3M → 592.4M) purely from the turns in between,
+  while every earlier, closed session's numbers stayed exactly the same.
